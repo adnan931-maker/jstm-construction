@@ -182,12 +182,12 @@ export default function Header({ currentPage = "home" }: HeaderProps) {
           <>
             {/* Backdrop overlay */}
             <div
-              className="lg:hidden fixed inset-0 top-20 bg-black/60 backdrop-blur-xs z-40"
+              className="lg:hidden fixed inset-0 top-20 bg-black/70 backdrop-blur-sm z-40 transition-opacity duration-300"
               onClick={() => setMobileMenuOpen(false)}
               aria-hidden="true"
             />
             <div
-              className="lg:hidden absolute top-full left-0 right-0 z-50 border-b border-slate-800 p-6 shadow-2xl max-h-[calc(100vh-5rem)] overflow-y-auto"
+              className="lg:hidden absolute top-full left-0 right-0 z-50 border-b border-slate-800 p-6 shadow-2xl max-h-[calc(100vh-5rem)] overflow-y-auto animate-drawer-down"
               style={{ backgroundColor: '#121927' }}
             >
               <nav className="flex flex-col space-y-4 text-base font-semibold">

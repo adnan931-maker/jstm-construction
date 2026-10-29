@@ -181,11 +181,11 @@ export default function HomePage() {
                 </p>
                 {/*  Hero Action Buttons  */}
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2 animate-fade-in-up [animation-delay:450ms]">
-                  <a className="inline-flex items-center justify-center px-5 py-3 sm:px-7 sm:py-3.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base shadow-xl shadow-emerald-900/40 transition-all duration-200" href="#contact">
+                  <a className="inline-flex items-center justify-center px-5 py-3 sm:px-7 sm:py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 active:scale-[0.97] text-white font-bold text-sm sm:text-base shadow-xl shadow-emerald-900/40 hover:shadow-emerald-700/60 hover:-translate-y-0.5 transition-all duration-200 group" href="#contact">
                     <span>Request a Free Site Survey</span>
-                    <i className="fa-solid fa-calendar-check ml-2.5"></i>
+                    <i className="fa-solid fa-calendar-check ml-2.5 group-hover:scale-110 transition-transform"></i>
                   </a>
-                  <a className="inline-flex items-center justify-center px-5 py-3 sm:px-7 sm:py-3.5 rounded-lg border border-slate-700 hover:border-emerald-500/60 bg-slate-900/70 text-slate-200 hover:text-white font-semibold text-sm sm:text-base transition-colors" href="#projects">
+                  <a className="inline-flex items-center justify-center px-5 py-3 sm:px-7 sm:py-3.5 rounded-xl border border-slate-700 hover:border-emerald-500/60 bg-slate-900/70 text-slate-200 hover:text-white active:scale-[0.97] hover:-translate-y-0.5 font-semibold text-sm sm:text-base transition-all duration-200" href="#projects">
                     <span>Explore London Projects</span>
                   </a>
                 </div>
@@ -213,9 +213,9 @@ export default function HomePage() {
               </div>
               {/*  Hero Visual Grid / Image Composition  */}
               <div className="lg:col-span-5 relative animate-fade-in-up [animation-delay:350ms]">
-                <div className="relative mx-auto max-w-md lg:max-w-none group cursor-pointer">
-                  {/* Subtle Ambient Glow Behind Card */}
-                  <div className="absolute -inset-1.5 bg-gradient-to-r from-emerald-600/30 to-teal-500/20 rounded-3xl blur-xl opacity-50 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 pointer-events-none" />
+                <div className="relative mx-auto max-w-md lg:max-w-none group cursor-pointer active:scale-[0.98] transition-transform duration-200">
+                  {/* Subtle Ambient Glow Behind Card (continuous pulse on mobile so it stays glowing) */}
+                  <div className="absolute -inset-1.5 bg-gradient-to-r from-emerald-600/35 to-teal-500/25 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 group-hover:scale-105 animate-pulse transition-all duration-700 pointer-events-none" />
 
                   {/* Main Image Frame with 3D Depth & Hover Lift */}
                   <div className="relative overflow-hidden rounded-2xl border-2 border-emerald-600/30 group-hover:border-emerald-400/80 shadow-2xl shadow-emerald-950/60 group-hover:shadow-[0_25px_60px_-15px_rgba(5,150,105,0.45)] group-hover:-translate-y-2 bg-slate-900 transition-all duration-500 ease-out">
