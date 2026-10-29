@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JSTM Construction London | Premier Property Renovation &amp; Extensions</title>
+<meta content="Premier construction, house extensions, loft conversions, and luxury refurbishment serving Greater London and surrounding boroughs. FMB accredited with 10-year guarantees." name="description"/>
+<!-- Tailwind CSS CDN with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter & Outfit -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Outfit:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- FontAwesome for architectural & construction icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            emerald: {
+              DEFAULT: '#059669',
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#0B5345',
+              950: '#042f24'
+            },
+            accent: {
+              gold: '#D97706',
+              amber: '#F59E0B',
+              lime: '#10B981'
+            },
+            charcoal: {
+              800: '#1e293b',
+              900: '#111827',
+              950: '#0B0F17'
+            }
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="custom-styling">
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FAFAF9;
+      color: #1E293B;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Outfit', sans-serif;
+    }
+    .hero-pattern {
+      background-image: radial-gradient(rgba(16, 185, 129, 0.12) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #059669;
+      border-radius: 4px;
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 25s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+<!-- END: Custom Styles -->
+<meta content="web_standard" name="shell-type"/></head>
+<body class="antialiased text-slate-800">
+<!-- BEGIN: TopBar -->
+<div class="bg-charcoal-950 text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800/80 hidden md:block">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<div class="flex items-center space-x-6">
+<span class="flex items-center space-x-2">
+<i class="fa-solid fa-location-dot text-emerald-500"></i>
+<span>Mayfair, London &amp; Serving All 32 London Boroughs</span>
+</span>
+<span class="flex items-center space-x-2">
+<i class="fa-solid fa-clock text-emerald-500"></i>
+<span>Mon - Sat: 07:30 - 18:30</span>
+</span>
+<span class="flex items-center space-x-2">
+<i class="fa-solid fa-shield-check text-emerald-500"></i>
+<span class="font-medium text-emerald-400">FMB &amp; TrustMark Accredited Master Builders</span>
+</span>
+</div>
+<div class="flex items-center space-x-4">
+<a class="hover:text-emerald-400 transition-colors flex items-center gap-1.5 font-medium" href="tel:+442079460192">
+<i class="fa-solid fa-phone text-xs text-emerald-500"></i> +44 (0) 20 7946 0192
+        </a>
+<div class="h-3 w-px bg-slate-700"></div>
+<div class="flex items-center space-x-3 text-slate-400">
+<a aria-label="LinkedIn" class="hover:text-emerald-400 transition-colors" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+<a aria-label="Instagram" class="hover:text-emerald-400 transition-colors" href="#"><i class="fa-brands fa-instagram"></i></a>
+<a aria-label="Houzz" class="hover:text-emerald-400 transition-colors" href="#"><i class="fa-brands fa-houzz"></i></a>
+</div>
+</div>
+</div>
+</div>
+<!-- END: TopBar -->
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-charcoal-900/95 backdrop-blur-md border-b border-slate-800 shadow-xl">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-600 to-emerald-900 flex items-center justify-center text-white shadow-lg shadow-emerald-900/40 group-hover:scale-105 transition-transform duration-300">
+<i class="fa-solid fa-compass-drafting text-2xl text-emerald-100"></i>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="text-2xl font-extrabold tracking-tight text-white font-heading">JSTM</span>
+<span class="text-xs uppercase tracking-widest bg-emerald-900/70 text-emerald-400 px-1.5 py-0.5 rounded font-bold border border-emerald-700/50">London</span>
+</div>
+<p class="text-[10px] uppercase tracking-wider text-slate-400 font-semibold">Construction &amp; Refurbishment</p>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center space-x-7">
+<a class="text-sm font-semibold text-emerald-400 transition-colors" href="#home">Home</a>
+<a class="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors" href="#about">About Us</a>
+<a class="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors" href="#services">Services</a>
+<a class="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors" href="#process">Work Process</a>
+<a class="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors" href="#projects">Portfolio</a>
+<a class="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors" href="#pricing">Estimator</a>
+<a class="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors" href="#testimonials">Reviews</a>
+<a class="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors" href="#contact">Contact</a>
+</nav>
+<!-- Right Side Header Action -->
+<div class="flex items-center space-x-4">
+<a class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm shadow-lg shadow-emerald-700/30 transition-all duration-200 transform hover:-translate-y-0.5" href="#contact">
+<span>Get Free Quote</span>
+<i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+</a>
+<!-- Mobile Menu Trigger -->
+<button aria-label="Toggle navigation" class="lg:hidden text-slate-300 hover:text-white p-2 rounded-lg" type="button">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main id="home"><div class="flex flex-col w-full">
+<!-- SECTION 1: Dark Architectural Hero Section (#0b1120 / #060d17 / #0f172a) -->
+<section class="relative bg-gradient-to-b from-[#0b1120] via-[#060d17] to-[#0f172a] text-white border-b border-slate-800/80 overflow-hidden">
+<!-- Ambient Structural Grid and Glow Overlay -->
+<div class="absolute inset-0 hero-pattern pointer-events-none opacity-40"></div>
+<div class="absolute top-0 right-1/4 w-96 h-96 bg-emerald-600/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 relative z-10">
+<!-- Breadcrumb & Direct Channel Indicator Pill -->
+<div class="flex flex-wrap items-center gap-3 mb-6">
+<nav class="flex items-center space-x-2 text-xs font-medium text-slate-400">
+<a class="hover:text-emerald-400 transition-colors" href="#home">Home</a>
+<span class="text-slate-600">/</span>
+<span class="text-emerald-400">Contact Us</span>
+</nav>
+<span class="h-4 w-px bg-slate-700/60 hidden sm:block"></span>
+<div class="inline-flex items-center gap-2 bg-slate-900/80 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase text-emerald-400 border border-emerald-500/30 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+<span>DIRECT DIRECTOR &amp; COMMERCIAL ENGAGEMENT • MAYFAIR HQ</span>
+</div>
+</div>
+<!-- Main Headline with Typographic Rhythm -->
+<div class="max-w-4xl space-y-6">
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white font-heading leading-tight">
+          Let's Discuss Your <span class="text-emerald-400 underline decoration-emerald-500/40 decoration-2 underline-offset-8">Prime London Residential</span> Project
+        </h1>
+<p class="text-lg sm:text-xl text-slate-300 max-w-3xl leading-relaxed font-normal">
+          Connect directly with our senior quantity surveyors, chartered structural engineers, and residential directors. Available for tender reviews, architectural feasibility appraisals, and Mayfair consultation suite bookings across all 32 London Boroughs.
+        </p>
+</div>
+<!-- Quick Action Dial & Status Bar -->
+<div class="mt-8 flex flex-wrap items-center gap-6 pt-6 border-t border-slate-800">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-emerald-950/80 border border-emerald-700/50 flex items-center justify-center text-emerald-400">
+<i class="fa-solid fa-phone text-sm"></i>
+</div>
+<div>
+<div class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Direct Enquiries Line</div>
+<a class="text-lg font-bold text-white hover:text-emerald-400 transition-colors tracking-tight font-heading" href="tel:+442079460192">
+              +44 (0) 20 7946 0192
+            </a>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-slate-900/80 px-4 py-2.5 rounded-lg border border-slate-800 text-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+<span class="text-slate-200 font-medium">Mayfair Suite: Appointments Available This Week</span>
+</div>
+<div class="flex items-center gap-3 bg-slate-900/80 px-4 py-2.5 rounded-lg border border-slate-800 text-sm">
+<i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+<span class="text-slate-200 font-medium">JCT Standard &amp; RIBA Form Contract Certified</span>
+</div>
+</div>
+<!-- Metric Highlights Cards (Deep Slate Cards) -->
+<div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="bg-slate-900/90 rounded-xl p-5 border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/40 transition-colors">
+<div class="text-2xl font-extrabold text-emerald-400 font-heading">&lt; 24hr</div>
+<div class="text-base text-white mt-1 font-semibold">Response Guarantee</div>
+<p class="text-xs text-slate-400 mt-1.5 leading-relaxed">Guaranteed acknowledgment and dedicated lead QS allocation for tender dossiers.</p>
+</div>
+<div class="bg-slate-900/90 rounded-xl p-5 border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/40 transition-colors">
+<div class="text-2xl font-extrabold text-emerald-400 font-heading">1-on-1</div>
+<div class="text-base text-white mt-1 font-semibold">Direct Access to Directors</div>
+<p class="text-xs text-slate-400 mt-1.5 leading-relaxed">Personal architectural liaison without layers of junior account intermediaries.</p>
+</div>
+<div class="bg-slate-900/90 rounded-xl p-5 border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/40 transition-colors">
+<div class="text-2xl font-extrabold text-emerald-400 font-heading">Zero Fee</div>
+<div class="text-base text-white mt-1 font-semibold">Site Walkthrough &amp; Appraisal</div>
+<p class="text-xs text-slate-400 mt-1.5 leading-relaxed">Complimentary structural viability assessment prior to preliminary pricing commitments.</p>
+</div>
+<div class="bg-slate-900/90 rounded-xl p-5 border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/40 transition-colors">
+<div class="text-2xl font-extrabold text-emerald-400 font-heading">Strict NDA</div>
+<div class="text-base text-white mt-1 font-semibold">Discretion for Prime Estates</div>
+<p class="text-xs text-slate-400 mt-1.5 leading-relaxed">Institutional confidentiality standard across Grosvenor, Crown, and Cadogan footprints.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Light Mayfair Executive HQ & Tender Submission Split Layout (#ffffff / #f8fafc) -->
+<section class="bg-slate-50/70 py-16 lg:py-24 border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<!-- LEFT COLUMN: Executive Consultation Hub & Logistics (5 cols) -->
+<div class="lg:col-span-5 space-y-8">
+<div>
+<span class="text-xs font-bold tracking-wider uppercase text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200 inline-block">Executive Headquarters</span>
+<h2 class="text-3xl font-extrabold text-slate-900 mt-3 tracking-tight font-heading">Mayfair Consultation Suite &amp; Central Depot</h2>
+<p class="text-sm text-slate-600 mt-3 leading-relaxed">
+              We welcome clients, RIBA project architects, and planning attorneys to our Mayfair private boardroom for confidential specification reviews.
+            </p>
+</div>
+<!-- Contact Channels List -->
+<div class="space-y-4">
+<!-- Physical Location -->
+<div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition-shadow flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">apartment</span>
+</div>
+<div class="space-y-1">
+<span class="text-xs text-slate-500 uppercase font-bold tracking-wider">Head Office &amp; Boardroom</span>
+<div class="text-base text-slate-900 font-bold">42 Berkeley Square, Mayfair</div>
+<div class="text-sm text-slate-600">London, W1J 5AW, United Kingdom</div>
+<div class="pt-2 text-xs text-emerald-700 flex items-center gap-1.5 font-semibold">
+<span class="material-symbols-outlined text-sm">schedule</span>
+                  In-person architectural review sessions strictly by appointment
+                </div>
+</div>
+</div>
+<!-- Telephony -->
+<div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition-shadow flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">support_agent</span>
+</div>
+<div class="space-y-2 w-full">
+<span class="text-xs text-slate-500 uppercase font-bold tracking-wider">Direct Telephone Lines</span>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-600">Commercial Estimating:</span>
+<a class="font-bold text-slate-900 hover:text-emerald-700 transition-colors" href="tel:+442079460192">+44 (0) 20 7946 0192</a>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-600">Out-of-Hours / Site Duty:</span>
+<a class="font-bold text-slate-900 hover:text-emerald-700 transition-colors" href="tel:+442079460193">+44 (0) 20 7946 0193</a>
+</div>
+</div>
+</div>
+<!-- Email Dispatches -->
+<div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition-shadow flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">mark_email_read</span>
+</div>
+<div class="space-y-2 w-full">
+<span class="text-xs text-slate-500 uppercase font-bold tracking-wider">Direct Architectural Dossiers</span>
+<div class="flex flex-col text-sm">
+<span class="text-slate-500 text-xs">Drawings, BoQs &amp; RFPs:</span>
+<a class="font-bold text-emerald-700 hover:underline" href="mailto:tenders@jstm-construction.co.uk">tenders@jstm-construction.co.uk</a>
+</div>
+<div class="flex flex-col text-sm pt-1">
+<span class="text-slate-500 text-xs">Private Client Directorship:</span>
+<a class="font-bold text-slate-900 hover:text-emerald-700" href="mailto:private@jstm-construction.co.uk">private@jstm-construction.co.uk</a>
+</div>
+</div>
+</div>
+<!-- Hours & Site Compliance Notice -->
+<div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">event_available</span>
+</div>
+<div class="space-y-1">
+<span class="text-xs text-slate-500 uppercase font-bold tracking-wider">Operational Framework</span>
+<div class="text-base text-slate-900 font-bold">Consultation Hours: 07:30 – 18:30 Mon – Sat</div>
+<p class="text-xs text-slate-600 leading-snug">
+                  Site Operations adhere strictly to London Considerate Constructors Scheme &amp; Local Council Quiet Working Directives (08:00 – 17:00).
+                </p>
+</div>
+</div>
+</div>
+<!-- Mayfair Interactive Map Representation with Directions Card -->
+<div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm overflow-hidden">
+<div class="flex items-center justify-between mb-3 px-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-600 text-xl">near_me</span>
+<span class="text-sm text-slate-900 font-bold">Mayfair Transit &amp; Access</span>
+</div>
+<span class="text-xs text-slate-500">Borough of Westminster</span>
+</div>
+<!-- Map Container with Data-Location Pipeline -->
+<div class="w-full h-56 bg-cover bg-center rounded-lg relative overflow-hidden flex items-end p-3 border border-slate-200" data-location="Berkeley Square, Mayfair, London" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMo2iCYhlVtQ2TY6VaN8pIJQu65Q1lK01tTI1Wr-l-VxLrOxI8Tb2UOII_UMfagpGFma8bugfHKsMUWUQ53Re_AKou8yKxclO5XEgu_ifjc5MSJw5bgl8MIJSeakeNG3reCgEa2yNkUJ_vo9nhIRJitX6KJzmUppCrh_6FB9Rzi3WYX-xU_39a-Wry57ACsZ2vKsXhF_W-A3poTtOXcF_nuFqSf7hb1weBm0Ov6UmPxpu6BpYgFxoizw')">
+<div class="bg-slate-950/90 backdrop-blur-md px-3 py-2 rounded text-white text-xs font-semibold flex items-center gap-2 border border-slate-800">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+<span>JSTM Mayfair Boardroom • Berkeley Square</span>
+</div>
+</div>
+<!-- Route Details -->
+<div class="mt-4 grid grid-cols-2 gap-2 text-xs">
+<div class="bg-slate-100 p-2.5 rounded text-slate-700 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-emerald-700">directions_subway</span>
+<span class="font-medium">Green Park (5 min walk)</span>
+</div>
+<div class="bg-slate-100 p-2.5 rounded text-slate-700 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-emerald-700">directions_subway</span>
+<span class="font-medium">Bond Street (6 min walk)</span>
+</div>
+<div class="bg-slate-100 p-2.5 rounded text-slate-700 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-emerald-700">local_parking</span>
+<span class="font-medium">Euro 6 Logistics Bays</span>
+</div>
+<div class="bg-slate-100 p-2.5 rounded text-slate-700 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-emerald-700">badge</span>
+<span class="font-medium">Visitor Concierge Desk</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: High-Density Project Intake & Tender Form in Crisp White Elevated Card (7 cols) -->
+<div class="lg:col-span-7">
+<div class="bg-white text-slate-900 rounded-2xl p-6 sm:p-10 border border-slate-200 shadow-xl relative overflow-hidden">
+<!-- Architectural Gradient Accent Border at top -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-emerald-600 via-emerald-400 to-emerald-700"></div>
+<div class="mb-8">
+<div class="inline-flex items-center gap-2 text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-base">assignment_turned_in</span>
+                Formal Architectural Tender Form
+              </div>
+<h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-heading">Submit Project Feasibility or Tender Specification</h3>
+<p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                Upload preliminary architectural drawings or schedule a direct site walkover with our resident engineering director.
+              </p>
+</div>
+<!-- Form Body with JavaScript Simulated Feedback -->
+<form class="space-y-6" id="tender-consultation-form" onsubmit="event.preventDefault(); document.getElementById('tender-form-success').classList.remove('hidden'); document.getElementById('tender-form-body').classList.add('hidden');">
+<div class="space-y-6" id="tender-form-body">
+<!-- Two Column Names & Roles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="block text-xs uppercase tracking-wider text-slate-700 font-bold" for="contact-name">Full Name &amp; Title *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors" id="contact-name" placeholder="e.g. Lord Davies / Sarah Jenkins" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-xs uppercase tracking-wider text-slate-700 font-bold" for="client-type">Client / Professional Role *</label>
+<select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors" id="client-type" required="">
+<option class="text-slate-900" value="">Select Category...</option>
+<option class="text-slate-900" value="private">Private Prime Homeowner</option>
+<option class="text-slate-900" value="architect">RIBA Chartered Architect / Practice</option>
+<option class="text-slate-900" value="designer">Interior Architect / Designer</option>
+<option class="text-slate-900" value="developer">Property Developer / Estate Asset Office</option>
+<option class="text-slate-900" value="qs">Independent Quantity Surveyor / Project Manager</option>
+</select>
+</div>
+</div>
+<!-- Contact Coordinates -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="block text-xs uppercase tracking-wider text-slate-700 font-bold" for="contact-phone">Direct Telephone Number *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors" id="contact-phone" placeholder="+44 7000 000000" required="" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="block text-xs uppercase tracking-wider text-slate-700 font-bold" for="contact-email">Work / Personal Email Address *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors" id="contact-email" placeholder="client@estate.co.uk" required="" type="email"/>
+</div>
+</div>
+<!-- Borough & Scope -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="block text-xs uppercase tracking-wider text-slate-700 font-bold" for="project-postcode">London Borough / Postcode *</label>
+<input class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors" id="project-postcode" placeholder="e.g. SW3 Chelsea, W11 Notting Hill, NW3" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-xs uppercase tracking-wider text-slate-700 font-bold" for="project-scope">Primary Scope of Works *</label>
+<select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors" id="project-scope" required="">
+<option class="text-slate-900" value="">Select Scope...</option>
+<option class="text-slate-900" value="extension">Structural Extension &amp; Slimline Glazing</option>
+<option class="text-slate-900" value="basement">Subterranean Basement Excavation</option>
+<option class="text-slate-900" value="heritage">Heritage / Grade I &amp; II Listed Conservation</option>
+<option class="text-slate-900" value="loft">Full Mansard / Dormer Architectural Conversion</option>
+<option class="text-slate-900" value="fitout">Turnkey Luxury Refurbishment &amp; Interior Fit-out</option>
+<option class="text-slate-900" value="commercial">Boutique Commercial / Mixed-Use Structural</option>
+</select>
+</div>
+</div>
+<!-- Financial Envelope & Target Timeline -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="block text-xs uppercase tracking-wider text-slate-700 font-bold" for="budget-tier">Target Capital Envelope (£)</label>
+<select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors" id="budget-tier">
+<option class="text-slate-900" value="tier1">£150,000 – £300,000 (Specialist Refurbishment)</option>
+<option class="text-slate-900" value="tier2">£300,000 – £600,000 (Major Extension &amp; Remodel)</option>
+<option class="text-slate-900" value="tier3">£600,000 – £1,500,000 (Prime Whole House Restoration)</option>
+<option class="text-slate-900" value="tier4">£1,500,000+ (High-Spec Heritage &amp; Subterranean)</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block text-xs uppercase tracking-wider text-slate-700 font-bold" for="target-commencement">Target Site Start</label>
+<select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors" id="target-commencement">
+<option class="text-slate-900" value="immediate">Within 30 Days (Tender Ready)</option>
+<option class="text-slate-900" value="q1">1 – 3 Months (In Planning / Building Control)</option>
+<option class="text-slate-900" value="q2">3 – 6 Months (Early Architectural Design Stage)</option>
+<option class="text-slate-900" value="feasibility">Feasibility / Property Acquisition Appraisal</option>
+</select>
+</div>
+</div>
+<!-- Description / Architectural Specifics -->
+<div class="space-y-2">
+<label class="block text-xs uppercase tracking-wider text-slate-700 font-bold" for="tender-brief">Architectural Notes &amp; Scope Details</label>
+<textarea class="w-full bg-slate-50 border border-slate-300 rounded-lg p-4 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors resize-none" id="tender-brief" placeholder="Detail specific requirements: e.g. Party Wall conditions, steel beam configurations, bespoke joinery, Grosvenor Estate approvals, or specific completion milestones." rows="4"></textarea>
+</div>
+<!-- Simulated File Attachment Dropzone -->
+<div class="space-y-2">
+<label class="block text-xs uppercase tracking-wider text-slate-700 font-bold">Tender Dossiers, Drawings or Planning Notices</label>
+<div class="border-2 border-dashed border-slate-300 hover:border-emerald-500 rounded-xl p-6 text-center cursor-pointer bg-slate-50/60 transition-all group" id="dropzone">
+<span class="material-symbols-outlined text-4xl text-emerald-600 group-hover:scale-110 transition-transform">cloud_upload</span>
+<p class="text-sm font-semibold text-slate-800 mt-2">Click to select architectural files or drag &amp; drop</p>
+<p class="text-xs text-slate-500 mt-1">Accepted: PDF, DWG, BIM / IFC, ZIP packages up to 50MB</p>
+</div>
+</div>
+<!-- Submit Action & NDA Notice -->
+<div class="pt-4 space-y-4">
+<button class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-lg flex items-center justify-center gap-3 transition-colors shadow-lg shadow-emerald-700/20" type="submit">
+<span class="text-sm font-semibold">Submit For Director Review &amp; Tender Appraisal</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<div class="flex items-center justify-center gap-2 text-xs text-slate-500">
+<span class="material-symbols-outlined text-emerald-600 text-base">lock</span>
+<span>Protected under strict NDA &amp; GDPR. Information treated with complete fiduciary privacy.</span>
+</div>
+</div>
+</div>
+<!-- Success State Simulation -->
+<div class="hidden text-center py-12 space-y-4" id="tender-form-success">
+<div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl">check_circle</span>
+</div>
+<h4 class="text-2xl font-bold text-slate-900 font-heading">Dossier Received Successfully</h4>
+<p class="text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
+                  Our Managing Director and Senior Quantity Surveyor will review your brief within 24 business hours. A formal acknowledgment and initial appraisal call will be scheduled.
+                </p>
+<div class="pt-4">
+<button class="text-sm font-bold text-emerald-700 underline hover:text-emerald-900" onclick="document.getElementById('tender-form-success').classList.add('hidden'); document.getElementById('tender-form-body').classList.remove('hidden');" type="button">
+                    Submit another specification or amendment
+                  </button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Dark Direct Fiduciary Accountability & Practice Directors Section (#0f172a / #0b1120) -->
+<section class="bg-gradient-to-b from-[#0f172a] via-[#0b1120] to-[#0f172a] text-white py-16 lg:py-24 border-b border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded border border-emerald-700/50 inline-block">Direct Fiduciary Accountability</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 tracking-tight font-heading">Meet Our Practice Directors &amp; Commercial Leads</h2>
+</div>
+<p class="text-sm text-slate-300 max-w-md mt-4 md:mt-0 leading-relaxed">
+          Every JSTM contract is directly overseen by a chartered partner, guaranteeing clear decisions, cost certainty, and rigorous build standards.
+        </p>
+</div>
+<!-- Director Cards Grid (4 Key Department Heads in Dark Slate Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Director 1: MD -->
+<div class="bg-slate-900/90 rounded-xl p-6 border border-slate-800 hover:border-emerald-500/50 shadow-lg transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-4 mb-4">
+<img class="w-14 h-14 rounded-full object-cover border-2 border-emerald-500/40" data-alt="Portrait of Julian Davies, Founder and Managing Director of JSTM Construction London, experienced British master builder in tailored navy suit against architectural blueprint background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMVKoZZH1NWdwNcafshYkf8vQxjqFXC8pte2Hkc02MHfNDx_44uJW_hZNINTRGC0bGd_OI5kZEcsYbL0iz0CsSB_2rPeCrWIMrZPysX8WmxUcdZooTrBVA2QUAB306T44xISFaTkCSMDISiTbdB4I4CvOHVl-FSvUqvPlyJTjbyEKs07yLZOPLDnId-iT9XOTi0aHXXke0duUNNa6UaW2x6tOLb3HwCfy-PX54RfdOtUXD7wVFM3Lh4w"/>
+<div>
+<h3 class="text-lg font-bold text-white font-heading">Julian Davies</h3>
+<span class="text-xs text-emerald-400 font-semibold">Founder &amp; Managing Director</span>
+</div>
+</div>
+<div class="space-y-1.5 text-xs text-slate-300">
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-circle-check text-emerald-400"></i>
+<span>Fellow, FMB (30+ Yrs Prime London)</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-file-contract text-emerald-400"></i>
+<span>JCT &amp; Bespoke Main Contracts</span>
+</div>
+</div>
+<p class="text-xs text-slate-400 mt-4 leading-relaxed">
+              Leads executive procurement, multi-phase master programming, and strategic client governance across Chelsea and Westminster.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-800 flex flex-col gap-1.5">
+<a class="text-xs font-semibold text-slate-200 hover:text-emerald-400 transition-colors flex items-center justify-between" href="mailto:j.davies@jstm-construction.co.uk">
+<span>j.davies@jstm-construction.co.uk</span>
+<i class="fa-solid fa-paper-plane text-[10px] text-emerald-400"></i>
+</a>
+<span class="text-[11px] text-slate-500">Extension: #101</span>
+</div>
+</div>
+<!-- Director 2: Head of Structural Engineering -->
+<div class="bg-slate-900/90 rounded-xl p-6 border border-slate-800 hover:border-emerald-500/50 shadow-lg transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-4 mb-4">
+<img class="w-14 h-14 rounded-full object-cover border-2 border-emerald-500/40" data-alt="Portrait of Marcus Sterling, Head of Structural Engineering at JSTM Construction, professional engineer in high-contrast crisp architectural studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc5pP4wvYYuTtU5EXqN0mv5kx_Ut0xJ3hTyOe5SWVW2oxCzYHbPs-2eTosi8b9DOFQNZ7rHJdtqFSninGlgbigvZfAL0Ob95-Ip_l1OFCFy6VwceFgwtp6nx96YYXYu0laGPM3E3fDA1VecZIFwFACyrgNq9ESAWtimD_mUEVXEon8eIE_iFQAMWGR_hI10ZIwiLMK67vPQqMcLIH026r6nExVlTPptv1cMVCUvhtEMo2IMXFpMA9itw"/>
+<div>
+<h3 class="text-lg font-bold text-white font-heading">Marcus Sterling</h3>
+<span class="text-xs text-emerald-400 font-semibold">Head of Structural Eng.</span>
+</div>
+</div>
+<div class="space-y-1.5 text-xs text-slate-300">
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-compass-drafting text-emerald-400"></i>
+<span>CEng MIStructE Accredited</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-cube text-emerald-400"></i>
+<span>Subterranean &amp; Underpinning</span>
+</div>
+</div>
+<p class="text-xs text-slate-400 mt-4 leading-relaxed">
+              Oversees complex temporary works, basement retrofits, and high-span steel portal design across sensitive conservation areas.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-800 flex flex-col gap-1.5">
+<a class="text-xs font-semibold text-slate-200 hover:text-emerald-400 transition-colors flex items-center justify-between" href="mailto:m.sterling@jstm-construction.co.uk">
+<span>m.sterling@jstm-construction.co.uk</span>
+<i class="fa-solid fa-paper-plane text-[10px] text-emerald-400"></i>
+</a>
+<span class="text-[11px] text-slate-500">Extension: #104</span>
+</div>
+</div>
+<!-- Director 3: Architectural Collaboration -->
+<div class="bg-slate-900/90 rounded-xl p-6 border border-slate-800 hover:border-emerald-500/50 shadow-lg transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-4 mb-4">
+<img class="w-14 h-14 rounded-full object-cover border-2 border-emerald-500/40" data-alt="Portrait of Elena Rostova, Director of Architectural Collaboration at JSTM Construction London, modern architect standing beside architectural models" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwet6ZgMRiJTC5K5s3YFSDfahx_f4BZHd7qAKdqnIzRWDzV3c9CBLsVJKi1-EKHIVGMijJZTIfDfIX5JrI1JZAcpeSSR0g2S7xqp0yenfd3WhYH3E6RwlLsZvcGsPPu3JitJ_gcMpyOE3leAA_pGWuRUBDCTC1PxjRWfRYskuibncvVbn1aR8n-rZIK72VygpvF7x4s1Dn2YlB7xAqrQDErZjmlTfedhD6VmPS8yFz5znM9Pv4LwEI3Q"/>
+<div>
+<h3 class="text-lg font-bold text-white font-heading">Elena Rostova</h3>
+<span class="text-xs text-emerald-400 font-semibold">Dir. Architectural Liaison</span>
+</div>
+</div>
+<div class="space-y-1.5 text-xs text-slate-300">
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-landmark text-emerald-400"></i>
+<span>ARB / RIBA Chartered Partner</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-shield text-emerald-400"></i>
+<span>Historic England &amp; Estate Approvals</span>
+</div>
+</div>
+<p class="text-xs text-slate-400 mt-4 leading-relaxed">
+              Acts as the crucial bridge between external design studios and our site delivery teams to preserve architectural intent down to the millimeter.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-800 flex flex-col gap-1.5">
+<a class="text-xs font-semibold text-slate-200 hover:text-emerald-400 transition-colors flex items-center justify-between" href="mailto:e.rostova@jstm-construction.co.uk">
+<span>e.rostova@jstm-construction.co.uk</span>
+<i class="fa-solid fa-paper-plane text-[10px] text-emerald-400"></i>
+</a>
+<span class="text-[11px] text-slate-500">Extension: #108</span>
+</div>
+</div>
+<!-- Director 4: Senior Quantity Surveyor -->
+<div class="bg-slate-900/90 rounded-xl p-6 border border-slate-800 hover:border-emerald-500/50 shadow-lg transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-4 mb-4">
+<img class="w-14 h-14 rounded-full object-cover border-2 border-emerald-500/40" data-alt="Portrait of James Thorne, Senior Commercial Estimator and Lead Quantity Surveyor at JSTM Construction, professional financial estimator reviewing cost schedules" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh-tiWPD6e1p0XetvS8QxefB3mi3Mi9Ngeai_vkbaAOiQ7hvB16uSB3aBmdsWus3ALlF0Xi3wu4SUh6o0LrkZ8v8FdglIHuoz2C8UriYzUmBx1GMLfHM8huTQnUDv-cxXocP63P0dar_3TqA4VGUg45UqQI76aA4tKDy-E-qeG4IvOaxQP6CwIgc1mSGutc9qqChVUwa4gXtxLSa1QhgrwUECeoT9-1p_k0yJOzOw2O08oCMwJHZuNuA"/>
+<div>
+<h3 class="text-lg font-bold text-white font-heading">James Thorne</h3>
+<span class="text-xs text-emerald-400 font-semibold">Senior Estimator &amp; Lead QS</span>
+</div>
+</div>
+<div class="space-y-1.5 text-xs text-slate-300">
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-calculator text-emerald-400"></i>
+<span>MRICS Commercial Standards</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-stamp text-emerald-400"></i>
+<span>Fixed Price Contract Commitments</span>
+</div>
+</div>
+<p class="text-xs text-slate-400 mt-4 leading-relaxed">
+              Prepares exhaustive BoQs, transparent cost breakdowns, and manages rigorous cost-control mechanisms with zero unexpected variations.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-800 flex flex-col gap-1.5">
+<a class="text-xs font-semibold text-slate-200 hover:text-emerald-400 transition-colors flex items-center justify-between" href="mailto:j.thorne@jstm-construction.co.uk">
+<span>j.thorne@jstm-construction.co.uk</span>
+<i class="fa-solid fa-paper-plane text-[10px] text-emerald-400"></i>
+</a>
+<span class="text-[11px] text-slate-500">Extension: #112</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Light Client Procurement FAQ (#ffffff / #f8fafc) -->
+<section class="bg-slate-50/70 text-slate-900 py-16 lg:py-24 border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200 inline-block">Client Procurement FAQ</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight font-heading">Essential Questions Before Tendering</h2>
+<p class="text-sm text-slate-600 mt-3 leading-relaxed">
+          Clarity before engagement. Here is how JSTM Construction operates on prime London residential projects and joint-venture frameworks.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- FAQ 1 -->
+<div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow transition-shadow">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">speed</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 font-heading">How quickly do you turn around tenders?</h3>
+<p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+                For fully specified architectural drawing sets and Schedules of Work, our commercial department provides line-item BoQ pricing within 5 to 10 working days. For preliminary feasibility appraisals, we can provide cost-per-square-meter guidance within 48 hours.
+              </p>
+</div>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow transition-shadow">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">handshake</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 font-heading">Do you work alongside appointed RIBA architects?</h3>
+<p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+                Yes. Over 70% of our turnover is realized in direct joint venture with London’s leading architectural practices and interior designers. We act as principal main contractor, respecting design integrity while contributing constructive value engineering.
+              </p>
+</div>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow transition-shadow">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">account_balance_wallet</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 font-heading">How are cost overruns prevented?</h3>
+<p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+                We contract under standard JCT Minor Works or Standard Building contracts with fixed-price commitments for clearly scoped packages. No variation is undertaken without prior written sign-off by the client or contract administrator.
+              </p>
+</div>
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow transition-shadow">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">policy</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 font-heading">Do you handle Party Wall notices &amp; council licenses?</h3>
+<p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+                Our in-house project managers coordinate directly with your appointed Party Wall surveyors, arrange scaffolding and skip highway licenses with Westminster, Kensington &amp; Chelsea, or Camden councils, and ensure complete statutory compliance.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Listed Building Inquiry Banner -->
+<div class="mt-12 bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 flex-shrink-0">
+<span class="material-symbols-outlined text-3xl">help_outline</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-slate-900 font-heading">Have a complex listed building enquiry?</h4>
+<p class="text-xs text-slate-600 mt-0.5">Speak directly with our Historic Environment &amp; Conservation consultant.</p>
+</div>
+</div>
+<a class="px-6 py-3 rounded-lg bg-slate-900 text-white font-semibold hover:bg-emerald-600 transition-colors text-sm flex items-center gap-2 flex-shrink-0" href="tel:+442079460192">
+<span>Call Mayfair Team</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 5: Crisp Light Trust, Insurance & Accreditation Strip -->
+<section class="bg-white py-12 border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+<!-- Trust Statement & Rating -->
+<div class="space-y-2 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
+<div class="flex text-amber-500">
+<i class="fa-solid fa-star text-xs"></i>
+<i class="fa-solid fa-star text-xs"></i>
+<i class="fa-solid fa-star text-xs"></i>
+<i class="fa-solid fa-star text-xs"></i>
+<i class="fa-solid fa-star text-xs"></i>
+</div>
+<span class="text-xs font-bold text-slate-800">5.0 / 5.0 Independent Master Builder Audit</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 tracking-tight font-heading">Regulated, Certified &amp; Fully Insured</h3>
+<p class="text-xs text-slate-600">
+            £20,000,000 Contractor's All-Risks &amp; Public Liability Cover backed by Zurich Municipal.
+          </p>
+</div>
+<!-- Accreditations Badges Strip -->
+<div class="flex flex-wrap items-center justify-center gap-4">
+<div class="flex items-center gap-2.5 bg-slate-50 px-4 py-2.5 rounded-lg border border-slate-200">
+<span class="material-symbols-outlined text-emerald-700 text-2xl">verified_user</span>
+<div class="text-left">
+<div class="text-xs font-bold text-slate-900">Federation of Master Builders</div>
+<div class="text-[11px] text-slate-500">Licence #88412 • Inspected</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 bg-slate-50 px-4 py-2.5 rounded-lg border border-slate-200">
+<span class="material-symbols-outlined text-emerald-700 text-2xl">shield</span>
+<div class="text-left">
+<div class="text-xs font-bold text-slate-900">TrustMark Govt Endorsed</div>
+<div class="text-[11px] text-slate-500">Quality Scheme #49120</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 bg-slate-50 px-4 py-2.5 rounded-lg border border-slate-200">
+<span class="material-symbols-outlined text-emerald-700 text-2xl">local_fire_department</span>
+<div class="text-left">
+<div class="text-xs font-bold text-slate-900">Gas Safe Register</div>
+<div class="text-[11px] text-slate-500">Ref #551928 Certified</div>
+</div>
+</div>
+<div class="flex items-center gap-2.5 bg-slate-50 px-4 py-2.5 rounded-lg border border-slate-200">
+<span class="material-symbols-outlined text-emerald-700 text-2xl">electrical_services</span>
+<div class="text-left">
+<div class="text-xs font-bold text-slate-900">NICEIC Platinum Approved</div>
+<div class="text-[11px] text-slate-500">Contractor Accreditation</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main>
+<!-- BEGIN: MainFooter (#060d17 / #0B0F17) -->
+<footer class="bg-charcoal-950 text-slate-400 border-t border-slate-800 text-xs">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+<!-- Col 1: Brand & Bio -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white">
+<i class="fa-solid fa-compass-drafting text-xl"></i>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="text-xl font-extrabold tracking-tight text-white font-heading">JSTM</span>
+<span class="text-[10px] uppercase tracking-widest bg-emerald-900 text-emerald-400 px-1 py-0.5 rounded font-bold border border-emerald-700/50">London</span>
+</div>
+<p class="text-[9px] uppercase tracking-wider text-slate-400 font-semibold">Construction &amp; Refurbishment</p>
+</div>
+</div>
+<p class="text-slate-400 leading-relaxed pr-6 text-xs">
+            Premier construction, architectural remodeling, and high-specification property renovation across Greater London. Committed to structural precision, Passivhaus standards, and client peace of mind.
+          </p>
+<div class="flex items-center space-x-3 text-slate-400 pt-2">
+<a aria-label="LinkedIn" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-emerald-400 hover:border-emerald-600 transition-colors" href="#"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+<a aria-label="Instagram" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-emerald-400 hover:border-emerald-600 transition-colors" href="#"><i class="fa-brands fa-instagram text-xs"></i></a>
+<a aria-label="Houzz" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-emerald-400 hover:border-emerald-600 transition-colors" href="#"><i class="fa-brands fa-houzz text-xs"></i></a>
+<a aria-label="Facebook" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-emerald-400 hover:border-emerald-600 transition-colors" href="#"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+</div>
+</div>
+<!-- Col 2: Services -->
+<div class="space-y-3">
+<h4 class="text-sm font-bold text-white font-heading uppercase tracking-wider">Our Services</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-emerald-400 transition-colors" href="#services">House Extensions</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#services">Loft Conversions</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#services">Full Refurbishments</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#services">Kitchen Renovations</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#services">Roofing &amp; Structural</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#services">Flooring &amp; Tiling</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#services">Painting &amp; Decorating</a></li>
+</ul>
+</div>
+<!-- Col 3: Quick Links -->
+<div class="space-y-3">
+<h4 class="text-sm font-bold text-white font-heading uppercase tracking-wider">Company</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-emerald-400 transition-colors" href="#about">About JSTM</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#process">Our Work Process</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#projects">London Case Studies</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#pricing">Cost Estimator Guide</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#testimonials">Accreditations</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#contact">Book Site Survey</a></li>
+</ul>
+</div>
+<!-- Col 4: Newsletter & Direct Call -->
+<div class="space-y-3">
+<h4 class="text-sm font-bold text-white font-heading uppercase tracking-wider">Stay Connected</h4>
+<p class="text-xs text-slate-400 leading-relaxed">
+            Subscribe for seasonal architectural insights, planning updates, and recent London completions.
+          </p>
+<form class="space-y-2 pt-1" onsubmit="event.preventDefault(); alert('Subscribed to JSTM Construction London updates.');">
+<input class="w-full bg-charcoal-900 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-emerald-500" placeholder="Your email address" required="" type="email"/>
+<button class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2 rounded-lg text-xs transition-colors" type="submit">
+              Subscribe
+            </button>
+</form>
+</div>
+</div>
+<!-- Bottom Legal Row -->
+<div class="mt-12 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-500">
+<p>© 2026 JSTM Construction London Ltd. All Rights Reserved. Registered in England &amp; Wales.</p>
+<div class="flex space-x-6">
+<a class="hover:text-slate-400" href="#">Privacy Policy</a>
+<a class="hover:text-slate-400" href="#">Terms of Service</a>
+<a class="hover:text-slate-400" href="#">Building Control Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>

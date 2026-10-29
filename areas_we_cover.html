@@ -1,0 +1,1386 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>JSTM Construction London | Prime Residential Renovation &amp; Architectural Refurbishment</title>
+<meta content="Premier construction, architectural remodeling, and high-specification property renovation across Greater London." name="description">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-fixed": "#131b2e",
+            "error": "#ba1a1a",
+            "inverse-primary": "#68dba9",
+            "surface-dim": "#ccdbf4",
+            "surface-tint": "#006c4a",
+            "on-tertiary-fixed-variant": "#6e3900",
+            "on-tertiary-fixed": "#2f1500",
+            "surface-container-highest": "#d5e3fd",
+            "inverse-on-surface": "#ebf1ff",
+            "on-surface-variant": "#3d4a42",
+            "on-surface": "#0d1c2f",
+            "secondary-container": "#dae2fd",
+            "outline-variant": "#bccac0",
+            "surface-bright": "#f8f9ff",
+            "primary-fixed-dim": "#68dba9",
+            "surface-variant": "#d5e3fd",
+            "on-error-container": "#93000a",
+            "inverse-surface": "#233144",
+            "on-tertiary-container": "#fffbff",
+            "tertiary-container": "#b15f00",
+            "on-primary": "#ffffff",
+            "on-background": "#0d1c2f",
+            "on-error": "#ffffff",
+            "tertiary-fixed": "#ffdcc3",
+            "primary-container": "#00855d",
+            "surface-container": "#e6eeff",
+            "surface": "#f8f9ff",
+            "on-secondary-container": "#5c647a",
+            "tertiary-fixed-dim": "#ffb77d",
+            "primary-fixed": "#85f8c4",
+            "surface-container-high": "#dde9ff",
+            "surface-container-low": "#eff4ff",
+            "secondary-fixed": "#dae2fd",
+            "primary": "#006948",
+            "outline": "#6d7a72",
+            "secondary": "#565e74",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed-variant": "#005137",
+            "tertiary": "#8d4b00",
+            "on-primary-container": "#f5fff7",
+            "background": "#f8f9ff",
+            "on-secondary-fixed-variant": "#3f465c",
+            "on-primary-fixed": "#002114",
+            "error-container": "#ffdad6",
+            "secondary-fixed-dim": "#bec6e0",
+            "on-tertiary": "#ffffff",
+            "surface-container-lowest": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "margin": "1rem",
+            "margin-desktop": "3rem",
+            "margin-tablet": "2rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "gutter-desktop": "2rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "label-sm": ["Inter"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "body-lg": ["Inter"],
+            "display-hero": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Plus Jakarta Sans"],
+            "label-lg": ["Inter"]
+          },
+          "fontSize": {
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    @layer base {
+      body {
+        overscroll-behavior-y: none;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+  </style>
+<meta content="web_standard" name="shell-type">
+</head>
+<body class="bg-background text-on-surface antialiased">
+<!-- BEGIN: TopBar -->
+<div class="bg-[#060d17] border-b border-slate-800 text-slate-300 text-label-sm py-2.5 px-margin hidden md:block">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<div class="flex items-center space-x-gutter">
+<span class="flex items-center space-x-space-xs">
+<i class="fa-solid fa-location-dot text-primary-fixed"></i>
+<span class="">Mayfair, London &amp; Serving All 32 London Boroughs</span>
+</span>
+<span class="flex items-center space-x-space-xs">
+<i class="fa-solid fa-clock text-primary-fixed"></i>
+<span class="">Mon - Sat: 07:30 - 18:30</span>
+</span>
+<span class="flex items-center space-x-space-xs">
+<i class="fa-solid fa-shield-halved text-primary-fixed"></i>
+<span class="font-label-sm text-inverse-primary">FMB &amp; TrustMark Accredited Master Builders</span>
+</span>
+</div>
+<div class="flex items-center space-x-space-md">
+<a class="hover:text-primary-fixed transition-colors flex items-center gap-1.5 font-label-sm text-surface-container" href="tel:+442079460192">
+<i class="fa-solid fa-phone text-[10px] text-primary-fixed"></i> +44 (0) 20 7946 0192
+        </a>
+<div class="h-3 w-px bg-outline"></div>
+<div class="flex items-center space-x-space-sm text-outline-variant">
+<a aria-label="LinkedIn" class="hover:text-primary-fixed transition-colors" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+<a aria-label="Instagram" class="hover:text-primary-fixed transition-colors" href="#"><i class="fa-brands fa-instagram"></i></a>
+<a aria-label="Houzz" class="hover:text-primary-fixed transition-colors" href="#"><i class="fa-brands fa-houzz"></i></a>
+</div>
+</div>
+</div>
+</div>
+<!-- END: TopBar -->
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#0b1120]/95 border-b border-slate-800/80 backdrop-blur-md shadow-md">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="flex justify-between items-center h-20">
+<!-- Brand Logo -->
+<a class="flex items-center gap-space-sm group" data-path="home" href="#">
+<div class="w-11 h-11 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm group-hover:scale-105 transition-transform duration-300">
+<i class="fa-solid fa-compass-drafting text-xl"></i>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="text-headline-sm font-headline-sm font-bold tracking-tight text-on-primary">JSTM</span>
+<span class="text-label-sm uppercase tracking-widest bg-primary-container text-on-primary-container px-1.5 py-0.5 rounded-lg font-bold">London</span>
+</div>
+<p class="text-label-sm uppercase tracking-wider text-outline-variant font-label-sm">Construction &amp; Refurbishment</p>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center space-x-gutter" data-active-classes="text-primary-fixed font-semibold border-b-2 border-primary-fixed pb-1">
+<a class="text-label-lg font-label-lg text-surface-container hover:text-primary-fixed transition-colors" data-path="home" href="#">Home</a>
+<a class="text-label-lg font-label-lg text-surface-container hover:text-primary-fixed transition-colors" data-path="about-us" href="#">About Us</a>
+<a class="text-label-lg font-label-lg text-surface-container hover:text-primary-fixed transition-colors" data-path="services" href="#">Services</a>
+<a class="text-label-lg font-label-lg text-surface-container hover:text-primary-fixed transition-colors" data-path="portfolio" href="#">Portfolio</a>
+<a aria-current="page" class="transition-colors text-primary-fixed font-semibold border-b-2 border-primary-fixed pb-1" data-path="areas-we-cover" href="#">Areas We Cover</a>
+<a class="text-label-lg font-label-lg text-surface-container hover:text-primary-fixed transition-colors" data-path="work-process" href="#">Work Process</a>
+<a class="text-label-lg font-label-lg text-surface-container hover:text-primary-fixed transition-colors" data-path="cost-estimator" href="#">Estimator</a>
+<a class="text-label-lg font-label-lg text-surface-container hover:text-primary-fixed transition-colors" data-path="reviews" href="#">Reviews</a>
+<a class="text-label-lg font-label-lg text-surface-container hover:text-primary-fixed transition-colors" data-path="contact" href="#">Contact</a>
+</nav>
+<!-- Right Side Header Action -->
+<div class="flex items-center space-x-space-sm">
+<a class="hidden sm:inline-flex items-center justify-center px-space-md py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg transition-all duration-200" data-path="contact" href="#contact">
+<span class="">Get Free Quote</span>
+<i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+</a>
+<button aria-label="Toggle navigation" class="lg:hidden text-surface-container hover:text-on-primary p-2 rounded-lg" type="button">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main class="pt-20 min-h-screen"><div class="flex flex-col w-full">
+<!-- ========================================================================= -->
+<!-- 1. HERO SECTION (Dark Architectural Canvas, #0b1120 / #0f172a)             -->
+<!-- ========================================================================= -->
+<section class="relative bg-[#0b1120] text-slate-100 overflow-hidden -mt-20 pt-28 pb-20 lg:pb-28 border-b border-slate-800/80">
+<!-- Ambient architectural vector grid background -->
+<div class="absolute inset-0 pointer-events-none opacity-10">
+<svg class="w-full h-full" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="64" id="arch-grid" patternUnits="userSpaceOnUse" width="64">
+<path d="M 64 0 L 0 0 0 64" fill="none" stroke="currentColor" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect fill="url(#arch-grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<!-- Soft glowing emerald radial blur for atmospheric depth -->
+<div class="absolute top-1/4 right-0 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative max-w-7xl mx-auto px-margin">
+<!-- Breadcrumb and Authority Badge -->
+<div class="flex flex-wrap items-center gap-3 mb-6">
+<nav class="flex items-center space-x-2 text-label-sm font-label-sm text-outline-variant">
+<a class="hover:text-primary-fixed transition-colors" href="#">Home</a>
+<span class="">/</span>
+<span class="text-surface-container font-semibold">Areas We Cover</span>
+</nav>
+<div class="inline-flex items-center gap-2 bg-surface-container-highest/15 text-primary-fixed text-label-sm font-label-sm px-3 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed animate-pulse"></span>
+<span class="">PRIME LONDON COVERAGE &amp; BOROUGH COMPLIANCE</span>
+</div>
+</div>
+<!-- Hero Header & Value Proposition -->
+<div class="max-w-4xl space-y-6">
+<h1 class="text-display-hero-mobile lg:text-display-hero font-display-hero tracking-tight text-on-primary">
+          Prime Central London &amp; Home Counties Architectural Coverage
+        </h1>
+<p class="text-body-md lg:text-body-lg font-body-lg text-surface-container-high leading-relaxed max-w-3xl">
+          Specialist principal contracting, subterranean excavations, and heritage refurbishments across all 32 London Boroughs. Operating with dedicated resident site management, strict party wall protocols, and longstanding conservation officer liaison throughout West, Central, and South West London.
+        </p>
+</div>
+<!-- Postcode Dynamic Lookup Component -->
+<div class="mt-10 max-w-3xl bg-surface-container-highest/10 backdrop-blur-md p-4 sm:p-5 rounded-xl shadow-xl">
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-outline-variant mb-2" for="postcode-input">
+          Verify Borough Jurisdiction &amp; Operational Presence
+        </label>
+<div class="flex flex-col sm:flex-row gap-3">
+<div class="relative flex-1">
+<span class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-outline-variant">
+<span class="material-symbols-outlined text-lg">search</span>
+</span>
+<input class="w-full h-12 pl-11 pr-4 bg-inverse-surface/80 text-on-primary rounded-lg text-body-md font-body-md placeholder:text-outline focus:outline-none focus:bg-inverse-surface transition-all" id="postcode-input" placeholder="e.g. SW3, W11, SW1, W1, SW7, TW10, SW19..." type="text">
+</div>
+<button class="h-12 px-6 bg-primary hover:bg-primary-container text-on-primary text-label-lg font-label-lg rounded-lg transition-colors flex items-center justify-center gap-2 whitespace-nowrap shadow-md" onclick="checkPostcode()" type="button">
+<span class="">Check Postcode</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+<!-- Live Status Feedback Strip -->
+<div class="mt-3.5 flex items-center justify-between flex-wrap gap-2 pt-3 text-label-sm font-label-sm" id="postcode-result">
+<div class="flex items-center gap-2 text-primary-fixed">
+<span class="material-symbols-outlined text-base">verified</span>
+<span id="lookup-message" class="">Full Prime Principal Contracting Service Active across all London Sectors.</span>
+</div>
+<span class="text-outline-variant text-[12px]">Direct Resident Site Directors Active In 32 Boroughs</span>
+</div>
+</div>
+<!-- Key Quantitative Milestones Strip -->
+<div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6"><div class="bg-slate-900/80 border border-slate-800/90 backdrop-blur-sm p-6 rounded-xl shadow-lg"><div class="text-headline-md font-headline-md font-bold text-emerald-400">32</div><div class="text-label-sm font-label-sm text-slate-200 mt-1 uppercase tracking-wider font-semibold">London Boroughs Covered</div><div class="text-body-sm font-body-sm text-slate-400 mt-1">Inner &amp; Outer Greater London</div></div><div class="bg-slate-900/80 border border-slate-800/90 backdrop-blur-sm p-6 rounded-xl shadow-lg"><div class="text-headline-md font-headline-md font-bold text-emerald-400">100%</div><div class="text-label-sm font-label-sm text-slate-200 mt-1 uppercase tracking-wider font-semibold">Conservation Record</div><div class="text-body-sm font-body-sm text-slate-400 mt-1">Grade II &amp; Article 4 Directives</div></div><div class="bg-slate-900/80 border border-slate-800/90 backdrop-blur-sm p-6 rounded-xl shadow-lg"><div class="text-headline-md font-headline-md font-bold text-emerald-400">450+</div><div class="text-label-sm font-label-sm text-slate-200 mt-1 uppercase tracking-wider font-semibold">Prime Residences</div><div class="text-body-sm font-body-sm text-slate-400 mt-1">Delivered on Spec &amp; Schedule</div></div><div class="bg-slate-900/80 border border-slate-800/90 backdrop-blur-sm p-6 rounded-xl shadow-lg"><div class="text-headline-md font-headline-md font-bold text-emerald-400">£20M</div><div class="text-label-sm font-label-sm text-slate-200 mt-1 uppercase tracking-wider font-semibold">All-Risks Cover</div><div class="text-body-sm font-body-sm text-slate-400 mt-1">Fully Bonded &amp; Underwritten</div></div></div>
+<!-- Action Anchors -->
+<div class="mt-10 flex flex-wrap items-center gap-4"><a class="px-7 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white text-label-lg font-label-lg font-semibold rounded-lg transition-all shadow-md flex items-center gap-2" href="#feasibility-survey"><span class="">Book Borough Feasibility Survey</span><span class="material-symbols-outlined text-base">calendar_month</span></a><a class="px-6 py-3.5 bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 text-slate-200 text-label-lg font-label-lg font-medium rounded-lg transition-all flex items-center gap-2" href="#planning-matrix"><span class="material-symbols-outlined text-base text-emerald-400">download</span><span class="">Download London Planning Guide (PDF)</span></a></div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 2. BOROUGH REGIONS FILTER CONTROLS (Crisp White Baseline, #ffffff)       -->
+<!-- ========================================================================= -->
+<section class="bg-white border-b border-slate-200 sticky top-20 z-40 shadow-sm">
+<div class="max-w-7xl mx-auto px-margin py-4">
+<div class="flex items-center justify-between gap-4 overflow-x-auto pb-1 scrollbar-none">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-outline shrink-0 hidden md:inline">
+          Filter Sector:
+        </span>
+<div class="flex items-center gap-2 shrink-0" id="borough-filter-tabs">
+<button class="borough-tab active px-4 py-2 rounded-full text-label-sm font-label-sm bg-primary text-on-primary transition-colors" data-borough="all" onclick="filterBoroughs('all')">
+            All Prime Boroughs (32)
+          </button>
+<button class="borough-tab px-4 py-2 rounded-full text-label-sm font-label-sm bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" data-borough="rbkc" onclick="filterBoroughs('rbkc')">
+            Kensington &amp; Chelsea (RBKC)
+          </button>
+<button class="borough-tab px-4 py-2 rounded-full text-label-sm font-label-sm bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" data-borough="westminster" onclick="filterBoroughs('westminster')">
+            Westminster &amp; Mayfair
+          </button>
+<button class="borough-tab px-4 py-2 rounded-full text-label-sm font-label-sm bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" data-borough="wandsworth" onclick="filterBoroughs('wandsworth')">
+            Wandsworth &amp; Battersea
+          </button>
+<button class="borough-tab px-4 py-2 rounded-full text-label-sm font-label-sm bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" data-borough="richmond" onclick="filterBoroughs('richmond')">
+            Richmond &amp; Kingston
+          </button>
+<button class="borough-tab px-4 py-2 rounded-full text-label-sm font-label-sm bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" data-borough="camden" onclick="filterBoroughs('camden')">
+            Camden &amp; Hampstead
+          </button>
+<button class="borough-tab px-4 py-2 rounded-full text-label-sm font-label-sm bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" data-borough="hammersmith" onclick="filterBoroughs('hammersmith')">
+            Hammersmith &amp; Fulham
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 3. FEATURED PRIME BOROUGH DOSSIERS / REGIONAL HUBS                        -->
+<!-- ========================================================================= -->
+<section class="bg-[#f8fafc] py-20 lg:py-28 border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-margin space-y-16">
+<!-- Section Intro Header -->
+<div class="max-w-3xl space-y-3">
+<div class="inline-flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase tracking-widest font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="">Bespoke Territorial Expertise</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">
+          Comprehensive Regional Dossiers
+        </h2>
+<p class="text-body-md font-body-md text-secondary leading-relaxed">
+          Every London Borough operates under distinct statutory constraints, architectural precedents, and building control frameworks. Here is how our engineering teams navigate each prime enclave.
+        </p>
+</div>
+<!-- Dossier Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8" id="borough-cards-grid">
+<!-- CARD 1: Kensington & Chelsea -->
+<div class="borough-card bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col justify-between transition-all hover:shadow-xl border border-slate-200 bg-white" data-category="rbkc">
+<div>
+<div class="relative h-64 w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Victorian stucco-fronted luxury townhouse in Kensington, London, with modern bronze Crittall rear extension and pristine architectural landscaping under clear twilight skies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQJYfd1OOFunCJfsCLaPNQocjYL8D9QRxHOPCyBm2p_6k-5zFDDnWxzDm4TaBvZf1A525fdDmttsO2xTWLw0EpvT4diZk5yiZMC_cZ2eGsN4pNxJY8LF4-v87qTTAOEnrzTdsFu3ezJorlqvjTEQH3IRoC9c8ZgMeVZOkpPAbgLJrxotvKqFnX2qflZb8xfwb53vpsisXV25w7SPXuu3VRN1yCmHU52fKh-4liBh8ktp1s4th1U-8XHQ">
+<div class="absolute top-4 left-4 bg-inverse-surface/90 backdrop-blur-md text-surface text-label-sm font-label-sm px-3 py-1 rounded">
+                SW3, SW7, SW10, W8, W11, W14
+              </div>
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-label-sm font-label-sm px-3 py-1 rounded flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-xs">verified</span> 140+ Delivered
+              </div>
+</div>
+<div class="p-6 sm:p-8 space-y-6">
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface">
+                  Royal Borough of Kensington &amp; Chelsea
+                </h3>
+<p class="text-label-sm font-label-sm text-primary font-semibold mt-1 uppercase tracking-wider">
+                  RBKC Code of Construction Practice Certified
+                </p>
+</div>
+<p class="text-body-md font-body-md text-secondary leading-relaxed">
+                Specialized in Grade II listed restorations, subterranean basement dig-outs compliant with the stringent RBKC Basements SPD, and intricate structural underpinning on constrained mews streets.
+              </p>
+<!-- Technical Specifications Matrix -->
+<div class="grid grid-cols-2 gap-3 text-body-sm font-body-sm bg-surface-container-low p-4 rounded-lg">
+<div>
+<span class="text-outline text-label-sm font-label-sm block uppercase">Approval Rate</span>
+<span class="font-semibold text-on-surface">100% Planning Rapport</span>
+</div>
+<div>
+<span class="text-outline text-label-sm font-label-sm block uppercase">Lead Time</span>
+<span class="font-semibold text-on-surface">4-6 Weeks Pre-Commencement</span>
+</div>
+<div class="col-span-2 pt-2">
+<span class="text-outline text-label-sm font-label-sm block uppercase">Frequent Streets Handled</span>
+<span class="text-on-surface font-medium">The Boltons, Sloane Square, Holland Park, Chelsea Embankment</span>
+</div>
+</div>
+<!-- Specialization tags -->
+<div class="space-y-2">
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-wider block">Key Competencies</span>
+<div class="flex flex-wrap gap-2 text-label-sm font-label-sm">
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Grade II Conservation</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Silent Acoustic Piling</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Heritage Lime Plastering</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Party Wall Awards</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 sm:p-8 pt-0 flex items-center justify-between">
+<a class="text-label-lg font-label-lg text-primary hover:text-primary-container font-semibold flex items-center gap-1.5 transition-colors" href="#feasibility-survey">
+<span class="">Request RBKC Site Survey</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<span class="text-label-sm font-label-sm text-outline">Lead Foreman On-Call</span>
+</div>
+</div>
+<!-- CARD 2: City of Westminster, Mayfair & Belgravia -->
+<div class="borough-card bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col justify-between transition-all hover:shadow-xl border border-slate-200 bg-white" data-category="westminster">
+<div>
+<div class="relative h-64 w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Luxurious Mayfair penthouse interior refurbishment featuring dark timber parquet herringbone flooring, bronze accents, and floor-to-ceiling glass looking toward London skyline." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNSF26Vcgj7-aLFBIZdHZ4PNnLdUirxCMqiAftreiWeYBZuZ0QRJfMCGQGoM6lvrjp7m1m-3gEDkMcBzbNVI3-E5VJ6ZoueIYD6wynaQeeTmd3CiPmdgzVbwoyhFFVfQ5ogfz4RPTrg6YzIZEqe6-neGWZJiYtIJo7gLI2zYzaf-AdZ1IaNNo1sFe_9gtRGNHgwCEeYUHChfjzN3ycf4zgASJCZhY_MfPdLTRIDCky0qv2nquAaU3T6A">
+<div class="absolute top-4 left-4 bg-inverse-surface/90 backdrop-blur-md text-surface text-label-sm font-label-sm px-3 py-1 rounded">
+                W1, SW1, NW8, WC2
+              </div>
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-label-sm font-label-sm px-3 py-1 rounded flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-xs">verified</span> 95+ Delivered
+              </div>
+</div>
+<div class="p-6 sm:p-8 space-y-6">
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface">
+                  City of Westminster &amp; Mayfair
+                </h3>
+<p class="text-label-sm font-label-sm text-primary font-semibold mt-1 uppercase tracking-wider">
+                  Grosvenor &amp; Crown Estate Licences Streamlined
+                </p>
+</div>
+<p class="text-body-md font-body-md text-secondary leading-relaxed">
+                Experts in complex Great Estates management, acoustic floor decoupling in lateral mansions, and structural reconfigurations in historic conservation quarters.
+              </p>
+<!-- Technical Specifications Matrix -->
+<div class="grid grid-cols-2 gap-3 text-body-sm font-body-sm bg-surface-container-low p-4 rounded-lg">
+<div>
+<span class="text-outline text-label-sm font-label-sm block uppercase">Estate Clearance</span>
+<span class="font-semibold text-on-surface">Grosvenor &amp; Cadogan Accredited</span>
+</div>
+<div>
+<span class="text-outline text-label-sm font-label-sm block uppercase">Noise Protocol</span>
+<span class="font-semibold text-on-surface">Restricted Hours Acoustic Control</span>
+</div>
+<div class="col-span-2 pt-2">
+<span class="text-outline text-label-sm font-label-sm block uppercase">Frequent Streets Handled</span>
+<span class="text-on-surface font-medium">Berkeley Square, Eaton Square, Mount Street, Chester Square</span>
+</div>
+</div>
+<!-- Specialization tags -->
+<div class="space-y-2">
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-wider block">Key Competencies</span>
+<div class="flex flex-wrap gap-2 text-label-sm font-label-sm">
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Mews House Structurals</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Acoustic Decoupling</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Estate Licence Approvals</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">High-Rise Penthouse Hoists</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 sm:p-8 pt-0 flex items-center justify-between">
+<a class="text-label-lg font-label-lg text-primary hover:text-primary-container font-semibold flex items-center gap-1.5 transition-colors" href="#feasibility-survey">
+<span class="">Request Westminster Survey</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<span class="text-label-sm font-label-sm text-outline">Resident Liaison Engaged</span>
+</div>
+</div>
+<!-- CARD 3: Wandsworth, Battersea & Clapham -->
+<div class="borough-card bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col justify-between transition-all hover:shadow-xl border border-slate-200 bg-white" data-category="wandsworth">
+<div>
+<div class="relative h-64 w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Modern double-height glass kitchen pavilion in a Victorian terraced family residence facing a private landscaped garden in Battersea, London." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0xahoDUEolOjdhSi49t_Xp6VRYbrj6o2RhSC8PvNdRcIoRGrHDInvOligaOWUB8YNPcCaPeVWrZVZNtmAwyLajVwgWjAAMH0Upq_Q2WMUAeiIP4Caz706uIn0NGihl4jI3mYG6ZV4mIShLET_1Fj4IgfpIOnNLI9MJRmkZlPfdFRJAWe58BZUkMymDZt3sf_Pf5K7xLfCFWDfuCoVP252VuGLVymDEtcGq36PhlacPezmX_uY4Pctsw">
+<div class="absolute top-4 left-4 bg-inverse-surface/90 backdrop-blur-md text-surface text-label-sm font-label-sm px-3 py-1 rounded">
+                SW11, SW12, SW18, SW4
+              </div>
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-label-sm font-label-sm px-3 py-1 rounded flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-xs">verified</span> 115+ Delivered
+              </div>
+</div>
+<div class="p-6 sm:p-8 space-y-6">
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface">
+                  Wandsworth, Battersea &amp; Clapham
+                </h3>
+<p class="text-label-sm font-label-sm text-primary font-semibold mt-1 uppercase tracking-wider">
+                  Fast-Track Permitted Development Leader
+                </p>
+</div>
+<p class="text-body-md font-body-md text-secondary leading-relaxed">
+                Victorian and Edwardian wraparound kitchen expansions, side-return glass pavilions, and multi-level mansard lofts with full Building Control sign-offs.
+              </p>
+<!-- Technical Specifications Matrix -->
+<div class="grid grid-cols-2 gap-3 text-body-sm font-body-sm bg-surface-container-low p-4 rounded-lg">
+<div>
+<span class="text-outline text-label-sm font-label-sm block uppercase">Party Wall Turnaround</span>
+<span class="font-semibold text-on-surface">Average 14 Days In-House</span>
+</div>
+<div>
+<span class="text-outline text-label-sm font-label-sm block uppercase">Planning Route</span>
+<span class="font-semibold text-on-surface">Lawful Development Certs</span>
+</div>
+<div class="col-span-2 pt-2">
+<span class="text-outline text-label-sm font-label-sm block uppercase">Frequent Streets Handled</span>
+<span class="text-on-surface font-medium">Nightingale Triangle, Spencer Park, Wandsworth Common, Prince of Wales Drive</span>
+</div>
+</div>
+<!-- Specialization tags -->
+<div class="space-y-2">
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-wider block">Key Competencies</span>
+<div class="flex flex-wrap gap-2 text-label-sm font-label-sm">
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Side-Return Glazing</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">L-Shaped Mansard Dormers</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Underfloor Radiant Screed</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Basement Playrooms</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 sm:p-8 pt-0 flex items-center justify-between">
+<a class="text-label-lg font-label-lg text-primary hover:text-primary-container font-semibold flex items-center gap-1.5 transition-colors" href="#feasibility-survey">
+<span class="">Request Wandsworth Survey</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<span class="text-label-sm font-label-sm text-outline">Fast Site Deployment</span>
+</div>
+</div>
+<!-- CARD 4: Richmond upon Thames & Kingston -->
+<div class="borough-card bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col justify-between transition-all hover:shadow-xl border border-slate-200 bg-white" data-category="richmond">
+<div>
+<div class="relative h-64 w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Detached riverside luxury family home in Richmond upon Thames showcasing a zinc clad architectural roof extension and energy-efficient Passivhaus glazing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgt4fdA0PjyAI10wHj6tO_gX1r5ob18F4q4Af3oqECfmoQPgzil2lP6od2xaIHoRndupeey83kFXN-P405GXFEuMoohcjC8p6mce9nRyVK_XWum8gDyHeZbIKbYVFBUB_gDnVYXy7mMF7ZcJlf2Y2aIx0NW5e-Ypdg8wN8rRrsVjNGM2uQ2MA0j3hFLm50vfJJGGsxiWy1EjZSfBWYZ5AGNKnGtmXXLbTzckY8vSzG-wwumFXvWEKfUw">
+<div class="absolute top-4 left-4 bg-inverse-surface/90 backdrop-blur-md text-surface text-label-sm font-label-sm px-3 py-1 rounded">
+                TW9, TW10, KT1, KT2
+              </div>
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-label-sm font-label-sm px-3 py-1 rounded flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-xs">verified</span> 60+ Delivered
+              </div>
+</div>
+<div class="p-6 sm:p-8 space-y-6">
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface">
+                  Richmond upon Thames &amp; Kingston
+                </h3>
+<p class="text-label-sm font-label-sm text-primary font-semibold mt-1 uppercase tracking-wider">
+                  Thames Water &amp; Conservation Zone Specialists
+                </p>
+</div>
+<p class="text-body-md font-body-md text-secondary leading-relaxed">
+                Specialists in flood-risk mitigation engineering, green-belt architectural integration, standing seam zinc roofs, and Passivhaus thermal envelope retrofits.
+              </p>
+<!-- Technical Specifications Matrix -->
+<div class="grid grid-cols-2 gap-3 text-body-sm font-body-sm bg-surface-container-low p-4 rounded-lg">
+<div>
+<span class="text-outline text-label-sm font-label-sm block uppercase">Water Authority</span>
+<span class="font-semibold text-on-surface">Thames Water Build-Over Approved</span>
+</div>
+<div>
+<span class="text-outline text-label-sm font-label-sm block uppercase">Green Standard</span>
+<span class="font-semibold text-on-surface">Passivhaus EnerPHit Capable</span>
+</div>
+<div class="col-span-2 pt-2">
+<span class="text-outline text-label-sm font-label-sm block uppercase">Frequent Streets Handled</span>
+<span class="text-on-surface font-medium">Richmond Hill, St Margarets, Ham Common, Petersham Road</span>
+</div>
+</div>
+<!-- Specialization tags -->
+<div class="space-y-2">
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-wider block">Key Competencies</span>
+<div class="flex flex-wrap gap-2 text-label-sm font-label-sm">
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Standing Seam Zinc Lofts</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Waterproof Tanking</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Timber Glulam Beams</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Air-Source Heat Pumps</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 sm:p-8 pt-0 flex items-center justify-between">
+<a class="text-label-lg font-label-lg text-primary hover:text-primary-container font-semibold flex items-center gap-1.5 transition-colors" href="#feasibility-survey">
+<span class="">Request Richmond Survey</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<span class="text-label-sm font-label-sm text-outline">Environmental Team Assigned</span>
+</div>
+</div>
+<!-- CARD 5: Camden, Hampstead & Highgate -->
+<div class="borough-card bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col justify-between transition-all hover:shadow-xl border border-slate-200 bg-white" data-category="camden">
+<div>
+<div class="relative h-64 w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Grand Georgian red-brick residence in Hampstead, London, undergoing meticulous architectural restoration with lime mortar and restored sash windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ61skmXlgutxijOB3D2HjYWVKJi4V7-xugVihcr1J-AIhAK8Jkp2LhXDuCYAfHFPtsxBM17i4H2DqCu4njwXVscL_xgTllvxd7Q7pn8aTXZhfoDkffYK-sb3y8ZDLE8CG3cbhpV5VTmizkPTxNr4H5jHOjF2xalQ2q2F0u5p495vPLjqZqntj2r-fhpNAJd2bPEMIGvV9df6rm76XtiGXbjwi9XyjaUA9wOVprUQX2Hi9m34X_hDQcw">
+<div class="absolute top-4 left-4 bg-inverse-surface/90 backdrop-blur-md text-surface text-label-sm font-label-sm px-3 py-1 rounded">
+                NW3, NW1, N6
+              </div>
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-label-sm font-label-sm px-3 py-1 rounded flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-xs">verified</span> 42+ Delivered
+              </div>
+</div>
+<div class="p-6 sm:p-8 space-y-6">
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface">
+                  Camden, Hampstead &amp; Highgate
+                </h3>
+<p class="text-label-sm font-label-sm text-primary font-semibold mt-1 uppercase tracking-wider">
+                  Hampstead Garden Suburb Trust Accordance
+                </p>
+</div>
+<p class="text-body-md font-body-md text-secondary leading-relaxed">
+                Pristine red-brick Georgian restoration, deep Heath-adjacent foundation underpinning, and delicate tree-root preservation architecture.
+              </p>
+<!-- Technical Specifications Matrix -->
+<div class="grid grid-cols-2 gap-3 text-body-sm font-body-sm bg-surface-container-low p-4 rounded-lg">
+<div>
+<span class="text-outline text-label-sm font-label-sm block uppercase">Conservation Liaison</span>
+<span class="font-semibold text-on-surface">HGS Trust &amp; Highgate Society</span>
+</div>
+<div>
+<span class="text-outline text-label-sm font-label-sm block uppercase">Geotechnical Protocol</span>
+<span class="font-semibold text-on-surface">London Clay Deep Underpinning</span>
+</div>
+<div class="col-span-2 pt-2">
+<span class="text-outline text-label-sm font-label-sm block uppercase">Frequent Streets Handled</span>
+<span class="text-on-surface font-medium">Well Walk, Church Row, Highgate West Hill, Primrose Hill Road</span>
+</div>
+</div>
+<!-- Specialization tags -->
+<div class="space-y-2">
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-wider block">Key Competencies</span>
+<div class="flex flex-wrap gap-2 text-label-sm font-label-sm">
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Heritage Tuck Pointing</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Arboricultural Protection</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Bespoke Timber Joinery</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Structural Steel Frames</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 sm:p-8 pt-0 flex items-center justify-between">
+<a class="text-label-lg font-label-lg text-primary hover:text-primary-container font-semibold flex items-center gap-1.5 transition-colors" href="#feasibility-survey">
+<span class="">Request Camden Survey</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<span class="text-label-sm font-label-sm text-outline">Heritage Specialist Lead</span>
+</div>
+</div>
+<!-- CARD 6: Hammersmith & Fulham -->
+<div class="borough-card bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col justify-between transition-all hover:shadow-xl border border-slate-200 bg-white" data-category="hammersmith">
+<div>
+<div class="relative h-64 w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Renovated Lion House in Peterborough Estate, Fulham, displaying refined architectural brickwork, bespoke sash windows, and contemporary zinc dormers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE4EtrLY5vNvjjJ2dCgWS0MUqpRt34vn-K4ezNtl2d_2EFlGA_9t5vi9DoPsTuB0fLDX0RaUjE9BK1jrqRXphO8rjK4yoHRPDNhoIWvBthRYfTyP2v3n_VDcaTU7UNipUhrKwAwXa3V2oys-jYexFc1bHVUmvDUHhEdtwkXul0nuYOnom8lUMMvtkVWnu-9dIC0ui8PkdtTc9Q6bFoCavUngwCHK0v4NbBywpM9mGVvFY6gx6tBf_qng">
+<div class="absolute top-4 left-4 bg-inverse-surface/90 backdrop-blur-md text-surface text-label-sm font-label-sm px-3 py-1 rounded">
+                W6, SW6
+              </div>
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-label-sm font-label-sm px-3 py-1 rounded flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-xs">verified</span> 50+ Delivered
+              </div>
+</div>
+<div class="p-6 sm:p-8 space-y-6">
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface">
+                  Hammersmith &amp; Fulham
+                </h3>
+<p class="text-label-sm font-label-sm text-primary font-semibold mt-1 uppercase tracking-wider">
+                  Peterborough Estate Lion House Specialists
+                </p>
+</div>
+<p class="text-body-md font-body-md text-secondary leading-relaxed">
+                Full turn-key refurbishments of iconic Peterborough Estate Lion houses, pod conversions, complex structural steel frame installations, and urban garden transformations.
+              </p>
+<!-- Technical Specifications Matrix -->
+<div class="grid grid-cols-2 gap-3 text-body-sm font-body-sm bg-surface-container-low p-4 rounded-lg">
+<div>
+<span class="text-outline text-label-sm font-label-sm block uppercase">Planning Directives</span>
+<span class="font-semibold text-on-surface">LBHF Clearances Approved</span>
+</div>
+<div>
+<span class="text-outline text-label-sm font-label-sm block uppercase">Structural Steel Rigging</span>
+<span class="font-semibold text-on-surface">Precision RSJ Box Frames</span>
+</div>
+<div class="col-span-2 pt-2">
+<span class="text-outline text-label-sm font-label-sm block uppercase">Frequent Streets Handled</span>
+<span class="text-on-surface font-medium">Broomhouse Road, Hurlingham Road, Parsons Green, Brook Green</span>
+</div>
+</div>
+<!-- Specialization tags -->
+<div class="space-y-2">
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-wider block">Key Competencies</span>
+<div class="flex flex-wrap gap-2 text-label-sm font-label-sm">
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Lion Terraces</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Pod Rooms</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Open-Plan RSJ Frames</span>
+<span class="bg-surface-container px-2.5 py-1 rounded text-on-surface">Crittall Glazed Doors</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 sm:p-8 pt-0 flex items-center justify-between">
+<a class="text-label-lg font-label-lg text-primary hover:text-primary-container font-semibold flex items-center gap-1.5 transition-colors" href="#feasibility-survey">
+<span class="">Request Fulham Survey</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<span class="text-label-sm font-label-sm text-outline">Active Riggers in SW6</span>
+</div>
+</div>
+</div>
+<!-- London Borough Full 32 Accordion Quick Reference Directory -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm space-y-6">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">
+              Complete London 32-Borough Directory
+            </h3>
+<p class="text-body-sm font-body-sm text-secondary mt-1">
+              JSTM Construction London maintains established site logistics across all administrative sectors.
+            </p>
+</div>
+<span class="text-label-sm font-label-sm bg-surface-container px-3 py-1.5 rounded-full text-on-surface font-semibold shrink-0">
+            Greater London Authority Fully Regulated
+          </span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 pt-2 text-body-sm font-body-sm">
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Barking &amp; Dagenham</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Barnet</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Bexley</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Brent</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Bromley</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Camden</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Croydon</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Ealing</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Enfield</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Greenwich</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Hackney</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Hammersmith &amp; Fulham</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Haringey</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Harrow</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Havering</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Hillingdon</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Hounslow</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Islington</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Kensington &amp; Chelsea</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Kingston upon Thames</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Lambeth</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Lewisham</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Merton</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Newham</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Redbridge</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Richmond upon Thames</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Southwark</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Sutton</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Tower Hamlets</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Waltham Forest</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">Wandsworth</span></div>
+<div class="p-3 bg-surface-container-low rounded flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span><span class="">City of Westminster</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 4. LOGISTICS & SITE MANAGEMENT MAP SECTION (Dark Canvas, #0f172a)          -->
+<!-- ========================================================================= -->
+<section class="bg-[#0b1120] text-slate-100 py-20 lg:py-28 relative overflow-hidden border-b border-slate-800">
+<div class="max-w-7xl mx-auto px-margin space-y-16">
+<!-- Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+<div class="max-w-3xl space-y-3">
+<div class="inline-flex items-center gap-2 text-primary-fixed font-label-sm text-label-sm uppercase tracking-widest font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
+<span class="">Unrivalled Municipal Logistics</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-primary tracking-tight">
+            Strategic Central London Logistics Hub &amp; Site Orchestration
+          </h2>
+<p class="text-body-md font-body-md text-surface-container-high leading-relaxed">
+            Delivering premier renovations in high-density London settings demands acute site logistics: rapid parking bay suspensions, acoustic acoustic baffles, and considerately managed delivery corridors.
+          </p>
+</div>
+<!-- Central Operations Headquarters Badge -->
+<div class="bg-surface-container-highest/10 p-5 rounded-xl border border-surface-container-highest/15 backdrop-blur-md shrink-0">
+<div class="text-label-sm font-label-sm uppercase tracking-wider text-outline-variant">Central Operations Headquarters</div>
+<div class="text-headline-sm font-headline-sm text-primary-fixed mt-1">42 Berkeley Square</div>
+<div class="text-body-sm font-body-sm text-surface-container">Mayfair, London, W1J 5AW</div>
+</div>
+</div>
+<!-- Map & Logistics Visualization Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Map Viewport -->
+<div class="lg:col-span-7 rounded-xl overflow-hidden shadow-2xl relative min-h-[420px] bg-inverse-surface flex flex-col justify-end">
+<div class="w-full h-full absolute inset-0 bg-cover bg-center" data-location="Mayfair, London, UK" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBFmUrW3LPR06O3lBcaTcV3RIY6EWXnayc7YtgNeRI5AnixDcXMZY_h4zKcDXhCCoNWDJFbPWup_IMcEtaJL1eLY0T7LNoNMDet6lt74UsfcqaXCYHZqOIlrHhkKAGusy7gNWcvgJjFXlHU6ebc8Rcy57DavMgp1rArQIGEe-jpXMI9_JF9O6VETKm6pm1si81sF51PRI9qgSvm0aOod42lZ0LKSh-dXAjnWoMnleHXJMBwXYYQ3YV_JA')"></div>
+<!-- Translucent Logistics Overlay -->
+<div class="relative z-10 m-6 p-6 rounded-lg bg-inverse-surface/90 backdrop-blur-md space-y-4">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-primary-fixed font-semibold">Live Fleet &amp; Site Dispatch</span>
+<span class="flex items-center gap-1.5 text-label-sm font-label-sm text-surface-container">
+<span class="w-2 h-2 rounded-full bg-primary-fixed animate-ping"></span> Real-Time Monitored
+              </span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center text-body-sm font-body-sm">
+<div class="bg-surface-container-highest/10 p-2.5 rounded">
+<span class="block text-headline-sm font-headline-sm text-on-primary">18m</span>
+<span class="text-outline-variant text-label-sm font-label-sm">Avg Emergency Response</span>
+</div>
+<div class="bg-surface-container-highest/10 p-2.5 rounded">
+<span class="block text-headline-sm font-headline-sm text-on-primary">100%</span>
+<span class="text-outline-variant text-label-sm font-label-sm">Euro 6 Clean Fleet</span>
+</div>
+<div class="bg-surface-container-highest/10 p-2.5 rounded">
+<span class="block text-headline-sm font-headline-sm text-on-primary">Zero</span>
+<span class="text-outline-variant text-label-sm font-label-sm">Congestion Delays</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 4 Key Operational Guarantees -->
+<div class="lg:col-span-5 grid grid-cols-1 gap-4">
+<div class="p-6 rounded-xl bg-surface-container-highest/10 backdrop-blur-sm space-y-2 hover:bg-surface-container-highest/15 transition-colors">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-lg bg-primary/20 text-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">local_parking</span>
+</span>
+<h3 class="text-headline-sm font-headline-sm text-on-primary">1. Bay Suspensions Managed</h3>
+</div>
+<p class="text-body-sm font-body-sm text-surface-container-high leading-relaxed pl-13">
+              We process all residential parking suspensions, TfL Red Route clearances, and crane lift permits directly with borough transport offices—zero client administration.
+            </p>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-highest/10 backdrop-blur-sm space-y-2 hover:bg-surface-container-highest/15 transition-colors">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-lg bg-primary/20 text-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">clean_hands</span>
+</span>
+<h3 class="text-headline-sm font-headline-sm text-on-primary">2. Considerate Constructors</h3>
+</div>
+<p class="text-body-sm font-body-sm text-surface-container-high leading-relaxed pl-13">
+              Certified dust extraction systems, acoustic hoardings, and HEPA air scrubbing protect neighboring properties, ensuring neighbor goodwill and zero stop-notices.
+            </p>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-highest/10 backdrop-blur-sm space-y-2 hover:bg-surface-container-highest/15 transition-colors">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-lg bg-primary/20 text-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">engineering</span>
+</span>
+<h3 class="text-headline-sm font-headline-sm text-on-primary">3. Dedicated Resident Directors</h3>
+</div>
+<p class="text-body-sm font-body-sm text-surface-container-high leading-relaxed pl-13">
+              Every active project is commanded by a non-split Site Director permanently stationed on your property from 07:30 to 18:30 daily, managing every subcontractor and delivery.
+            </p>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-highest/10 backdrop-blur-sm space-y-2 hover:bg-surface-container-highest/15 transition-colors">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-lg bg-primary/20 text-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">handshake</span>
+</span>
+<h3 class="text-headline-sm font-headline-sm text-on-primary">4. Pre-Packaged Party Wall Care</h3>
+</div>
+<p class="text-body-sm font-body-sm text-surface-container-high leading-relaxed pl-13">
+              Chartered surveyors on retainer handle Schedules of Condition and Party Wall Awards with adjoining owners before ground is broken, preventing legal bottlenecks.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 5. BOROUGH REGULATORY & PLANNING RAPPORT TABLE (Crisp Light, #ffffff)       -->
+<!-- ========================================================================= -->
+<section class="bg-white py-20 lg:py-28 border-b border-slate-200" id="planning-matrix">
+<div class="max-w-7xl mx-auto px-margin space-y-12">
+<!-- Section Header -->
+<div class="max-w-3xl space-y-3">
+<div class="inline-flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase tracking-widest font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="">Regulatory Intelligence</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">
+          Borough Planning &amp; Conservation Nuance Matrix
+        </h2>
+<p class="text-body-md font-body-md text-secondary leading-relaxed">
+          Statutory standards vary greatly across London's prime councils. Review our track records and clearance timelines for each prominent local authority.
+        </p>
+</div>
+<!-- Comparative Table Container -->
+<div class="overflow-x-auto rounded-xl shadow-md bg-surface-container-lowest">
+<table class="w-full text-left text-body-sm font-body-sm">
+<thead class="bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-4 px-6" scope="col">Borough Jurisdiction</th>
+<th class="py-4 px-6" scope="col">Basement / Excavation Policy</th>
+<th class="py-4 px-6" scope="col">Permitted Development Scope</th>
+<th class="py-4 px-6" scope="col">Conservation Officer Rapport</th>
+<th class="py-4 px-6 text-right" scope="col">Avg. Approval Period</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 font-semibold">
+                Kensington &amp; Chelsea (RBKC)
+              </td>
+<td class="py-4 px-6 text-secondary">
+                Strict single-storey constraint; 50% garden max; CoCP Level 1 audits.
+              </td>
+<td class="py-4 px-6 text-secondary">
+                Heavily restricted via Article 4 directions in 70% of conservation zones.
+              </td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-primary font-semibold">
+<span class="material-symbols-outlined text-sm">check_circle</span> Established 15+ Yrs
+                </span>
+</td>
+<td class="py-4 px-6 text-right font-medium">8 - 10 Weeks</td>
+</tr>
+<!-- Row 2 -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 font-semibold">
+                City of Westminster (WCC)
+              </td>
+<td class="py-4 px-6 text-secondary">
+                Subterranean SPD compliant; structural method statement (SMS) mandatory.
+              </td>
+<td class="py-4 px-6 text-secondary">
+                Restricted in Grosvenor, Howard de Walden, and Crown Estate enclaves.
+              </td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-primary font-semibold">
+<span class="material-symbols-outlined text-sm">check_circle</span> Direct Liaison
+                </span>
+</td>
+<td class="py-4 px-6 text-right font-medium">7 - 9 Weeks</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 font-semibold">
+                Wandsworth &amp; Battersea
+              </td>
+<td class="py-4 px-6 text-secondary">
+                Standard subterranean criteria; party wall engineer vetting required.
+              </td>
+<td class="py-4 px-6 text-secondary">
+                Expansive; rear wraparounds and mansards routinely lawful.
+              </td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-primary font-semibold">
+<span class="material-symbols-outlined text-sm">check_circle</span> Rapid Accord
+                </span>
+</td>
+<td class="py-4 px-6 text-right font-medium">5 - 7 Weeks</td>
+</tr>
+<!-- Row 4 -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 font-semibold">
+                Richmond upon Thames
+              </td>
+<td class="py-4 px-6 text-secondary">
+                Thames Water flood risk assessment required within 500m of river basin.
+              </td>
+<td class="py-4 px-6 text-secondary">
+                Balanced; Permitted Development available on detached residences.
+              </td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-primary font-semibold">
+<span class="material-symbols-outlined text-sm">check_circle</span> High Compliance
+                </span>
+</td>
+<td class="py-4 px-6 text-right font-medium">6 - 8 Weeks</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 font-semibold">
+                Camden &amp; Hampstead
+              </td>
+<td class="py-4 px-6 text-secondary">
+                Geological hydrology testing and tree protection orders (TPOs) strictly vetted.
+              </td>
+<td class="py-4 px-6 text-secondary">
+                Subject to Hampstead Garden Suburb Trust architectural veto.
+              </td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-primary font-semibold">
+<span class="material-symbols-outlined text-sm">check_circle</span> Trust Accredited
+                </span>
+</td>
+<td class="py-4 px-6 text-right font-medium">8 - 11 Weeks</td>
+</tr>
+<!-- Row 6 -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 font-semibold">
+                Hammersmith &amp; Fulham (LBHF)
+              </td>
+<td class="py-4 px-6 text-secondary">
+                Basement SPD enforced; party wall dispute resolution panel integration.
+              </td>
+<td class="py-4 px-6 text-secondary">
+                Strong support for pod conversions and rear kitchen pavilions.
+              </td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-primary font-semibold">
+<span class="material-symbols-outlined text-sm">check_circle</span> Direct Liaison
+                </span>
+</td>
+<td class="py-4 px-6 text-right font-medium">6 - 8 Weeks</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Compliance reassurance notice -->
+<div class="bg-surface-container p-6 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<span class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">shield</span>
+</span>
+<div>
+<div class="text-headline-sm font-headline-sm text-on-surface">Unsure of Your Borough's Permitted Limits?</div>
+<div class="text-body-sm font-body-sm text-secondary">Our chartered in-house planning consultants run complimentary pre-application property audits.</div>
+</div>
+</div>
+<a class="px-5 py-2.5 bg-on-surface text-surface text-label-lg font-label-lg rounded-lg hover:bg-inverse-surface transition-colors shrink-0" href="#feasibility-survey">
+          Request Planning Audit
+        </a>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 6. ACCREDITATIONS & INSTITUTIONAL TRUST STRIP                             -->
+<!-- ========================================================================= -->
+<section class="bg-slate-50 py-16 border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="text-center mb-8">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-outline">
+          Audited Statutory Accreditations &amp; Institutional Governance
+        </span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
+<!-- FMB -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm text-center flex flex-col items-center justify-center gap-1.5 border border-slate-200 bg-white">
+<span class="material-symbols-outlined text-primary text-3xl">domain_verification</span>
+<span class="text-headline-sm font-headline-sm text-on-surface text-[15px]">FMB Master Builder</span>
+<span class="text-label-sm font-label-sm text-outline">Licence #88412</span>
+</div>
+<!-- TrustMark -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm text-center flex flex-col items-center justify-center gap-1.5 border border-slate-200 bg-white">
+<span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
+<span class="text-headline-sm font-headline-sm text-on-surface text-[15px]">TrustMark Govt</span>
+<span class="text-label-sm font-label-sm text-outline">Approved Standards</span>
+</div>
+<!-- Gas Safe -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm text-center flex flex-col items-center justify-center gap-1.5 border border-slate-200 bg-white">
+<span class="material-symbols-outlined text-primary text-3xl">mode_heat</span>
+<span class="text-headline-sm font-headline-sm text-on-surface text-[15px]">Gas Safe Register</span>
+<span class="text-label-sm font-label-sm text-outline">Certified Direct #64291</span>
+</div>
+<!-- NICEIC -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm text-center flex flex-col items-center justify-center gap-1.5 border border-slate-200 bg-white">
+<span class="material-symbols-outlined text-primary text-3xl">bolt</span>
+<span class="text-headline-sm font-headline-sm text-on-surface text-[15px]">NICEIC Platinum</span>
+<span class="text-label-sm font-label-sm text-outline">Approved Contractor</span>
+</div>
+<!-- Considerate Constructors -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm text-center flex flex-col items-center justify-center gap-1.5 border border-slate-200 bg-white">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+<span class="text-headline-sm font-headline-sm text-on-surface text-[15px]">Considerate Scheme</span>
+<span class="text-label-sm font-label-sm text-outline">Exemplary Clean Sites</span>
+</div>
+<!-- £20M Insurance -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm text-center flex flex-col items-center justify-center gap-1.5 border border-slate-200 bg-white">
+<span class="material-symbols-outlined text-primary text-3xl">assured_workload</span>
+<span class="text-headline-sm font-headline-sm text-on-surface text-[15px]">£20M All-Risks</span>
+<span class="text-label-sm font-label-sm text-outline">Full Indemnity Covered</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 7. DIRECT BOROUGH FEASIBILITY CONSULTATION FORM (Dark Theme, #0b1120)     -->
+<!-- ========================================================================= -->
+<section class="bg-[#0b1120] text-slate-100 py-20 lg:py-28 relative" id="feasibility-survey">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Contact context & SLA guarantees -->
+<div class="lg:col-span-5 space-y-8">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 text-primary-fixed font-label-sm text-label-sm uppercase tracking-widest font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
+<span class="">Direct Principal Inquiry</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-primary tracking-tight">
+              Request Your Borough Feasibility Site Survey
+            </h2>
+<p class="text-body-md font-body-md text-surface-container-high leading-relaxed">
+              Every site visit is executed by an experienced Senior Quantity Surveyor and Resident Structural Engineer to assess access, conservation guidelines, party walls, and budget scope.
+            </p>
+</div>
+<!-- Direct Dispatch Credentials -->
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-3.5 bg-surface-container-highest/10 p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary-fixed text-xl shrink-0 mt-0.5">timer</span>
+<div>
+<div class="text-headline-sm font-headline-sm text-on-primary text-[16px]">Response Guarantee SLA</div>
+<div class="text-body-sm font-body-sm text-outline-variant">A Senior Estimator contacts you within 4 business hours with initial borough guidance.</div>
+</div>
+</div>
+<div class="flex items-start gap-3.5 bg-surface-container-highest/10 p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary-fixed text-xl shrink-0 mt-0.5">location_on</span>
+<div>
+<div class="text-headline-sm font-headline-sm text-on-primary text-[16px]">Mayfair Executive Office</div>
+<div class="text-body-sm font-body-sm text-outline-variant">42 Berkeley Square, Mayfair, London, W1J 5AW</div>
+</div>
+</div>
+<div class="flex items-start gap-3.5 bg-surface-container-highest/10 p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary-fixed text-xl shrink-0 mt-0.5">phone_in_talk</span>
+<div>
+<div class="text-headline-sm font-headline-sm text-on-primary text-[16px]">Direct Estimating Hotline</div>
+<div class="text-body-sm font-body-sm text-outline-variant">+44 (0) 20 7946 0192 (Mon - Sat: 07:30 - 18:30)</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Consultation Form -->
+<div class="lg:col-span-7 bg-slate-900/90 border border-slate-800 backdrop-blur-md p-6 sm:p-10 rounded-xl shadow-2xl">
+<form class="space-y-6" onsubmit="handleSurveySubmit(event)">
+<!-- Row 1: Postcode with dynamic detection label -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-outline-variant mb-1.5" for="form-postcode">
+                  Property Postcode *
+                </label>
+<input class="w-full h-11 px-3.5 bg-inverse-surface/80 text-on-primary rounded text-body-md font-body-md placeholder:text-outline focus:outline-none focus:bg-inverse-surface transition-all" id="form-postcode" name="postcode" oninput="handleFormPostcodeInput(this.value)" placeholder="e.g. SW3 4PB, W11 2EJ" required="" type="text">
+</div>
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-outline-variant mb-1.5" for="form-borough-detected">
+                  Assigned Borough Jurisdiction
+                </label>
+<input class="w-full h-11 px-3.5 bg-surface-container-highest/5 text-primary-fixed rounded text-body-md font-body-md cursor-not-allowed" id="form-borough-detected" name="borough" readonly="" type="text" value="Auto-Detected From Postcode">
+</div>
+</div>
+<!-- Row 2: Property Type & Architectural Scope -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-outline-variant mb-1.5" for="form-property-type">
+                  Property Classification *
+                </label>
+<select class="w-full h-11 px-3.5 bg-inverse-surface/80 text-on-primary rounded text-body-md font-body-md focus:outline-none focus:bg-inverse-surface transition-all" id="form-property-type" name="property_type" required="">
+<option disabled="" selected="" value="">Select property typology</option>
+<option value="grade-listed">Grade I / Grade II Listed Townhouse</option>
+<option value="victorian-terrace">Victorian / Edwardian Terraced</option>
+<option value="mews">Central London Mews Residence</option>
+<option value="lateral-apartment">Lateral Mansion Block / Penthouse</option>
+<option value="detached">Suburban Detached / Semi-Detached</option>
+<option value="commercial-conversion">Commercial to Residential Scheme</option>
+</select>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-outline-variant mb-1.5" for="form-scope">
+                  Intended Project Scope *
+                </label>
+<select class="w-full h-11 px-3.5 bg-inverse-surface/80 text-on-primary rounded text-body-md font-body-md focus:outline-none focus:bg-inverse-surface transition-all" id="form-scope" name="scope" required="">
+<option disabled="" selected="" value="">Select work specification</option>
+<option value="full-refurb">Full Architectural Refurbishment</option>
+<option value="basement">Subterranean Basement Excavation</option>
+<option value="extension">Rear / Side-Return Wraparound</option>
+<option value="loft">Mansard / L-Shaped Loft Conversion</option>
+<option value="structural-alteration">Major Structural Reconfiguration</option>
+<option value="turnkey">Complete Turnkey Design &amp; Build</option>
+</select>
+</div>
+</div>
+<!-- Row 3: Planning Status -->
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-outline-variant mb-1.5" for="form-planning">
+                Current Planning / Architectural Stage *
+              </label>
+<select class="w-full h-11 px-3.5 bg-inverse-surface/80 text-on-primary rounded text-body-md font-body-md focus:outline-none focus:bg-inverse-surface transition-all" id="form-planning" name="planning_status" required="">
+<option disabled="" selected="" value="">Select current planning standing</option>
+<option value="pre-planning">Pre-Planning (Require JSTM Feasibility &amp; Architect)</option>
+<option value="planning-granted">Full Planning Granted (Ready for Principal Tender)</option>
+<option value="permitted-development">Intending Permitted Development / Lawful Cert</option>
+<option value="tender-drawings">RIBA Stage 4 Construction Drawings Prepared</option>
+<option value="party-wall-stage">Party Wall Surveying Underway</option>
+</select>
+</div>
+<!-- Row 4: Client Contact Details -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-outline-variant mb-1.5" for="form-name">
+                  Full Name *
+                </label>
+<input class="w-full h-11 px-3.5 bg-inverse-surface/80 text-on-primary rounded text-body-md font-body-md placeholder:text-outline focus:outline-none focus:bg-inverse-surface transition-all" id="form-name" name="name" placeholder="e.g. Lord Edward Sterling" required="" type="text">
+</div>
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-outline-variant mb-1.5" for="form-phone">
+                  Telephone Contact *
+                </label>
+<input class="w-full h-11 px-3.5 bg-inverse-surface/80 text-on-primary rounded text-body-md font-body-md placeholder:text-outline focus:outline-none focus:bg-inverse-surface transition-all" id="form-phone" name="phone" placeholder="+44 7..." required="" type="tel">
+</div>
+</div>
+<!-- Email & Notes -->
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-outline-variant mb-1.5" for="form-email">
+                Email Address *
+              </label>
+<input class="w-full h-11 px-3.5 bg-inverse-surface/80 text-on-primary rounded text-body-md font-body-md placeholder:text-outline focus:outline-none focus:bg-inverse-surface transition-all" id="form-email" name="email" placeholder="client@residence.co.uk" required="" type="email">
+</div>
+<div>
+<label class="block text-label-sm font-label-sm uppercase tracking-wider text-outline-variant mb-1.5" for="form-notes">
+                Key Project Details &amp; Timescale
+              </label>
+<textarea class="w-full p-3.5 bg-inverse-surface/80 text-on-primary rounded text-body-md font-body-md placeholder:text-outline focus:outline-none focus:bg-inverse-surface transition-all" id="form-notes" name="notes" placeholder="Share any details regarding conservation officers, party walls, preferred start date, or gross internal area (GIA)..." rows="3"></textarea>
+</div>
+<!-- Submit Button & Confidentiality Promise -->
+<div class="space-y-3 pt-2">
+<button class="w-full h-12 bg-emerald-600 hover:bg-emerald-500 text-white text-label-lg font-label-lg rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg font-semibold" type="submit">
+<span class="">Submit Feasibility Inquiry to Senior Quantity Surveyor</span>
+<span class="material-symbols-outlined text-base">send</span>
+</button>
+<div class="flex items-center justify-center gap-2 text-label-sm font-label-sm text-outline-variant text-center">
+<span class="material-symbols-outlined text-sm text-primary-fixed">lock</span>
+<span class="">All project briefs treated under strict non-disclosure agreement (NDA). No third-party sharing.</span>
+</div>
+</div>
+<!-- Form Success Banner Container -->
+<div class="hidden p-4 rounded-lg bg-primary-container text-on-primary-container text-body-sm font-body-sm text-center" id="survey-form-feedback">
+              Thank you. Your borough feasibility dossier has been logged. Senior Quantity Surveyor dispatch will reach you within 4 business hours.
+            </div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- CLIENT-SIDE SCRIPT FOR INTERACTIVE LOGIC                                  -->
+<!-- ========================================================================= -->
+<script>
+    // 1. Postcode lookup logic
+    function checkPostcode() {
+      const input = document.getElementById('postcode-input').value.trim().toUpperCase();
+      const messageElem = document.getElementById('lookup-message');
+      
+      if (!input) {
+        messageElem.innerText = 'Please enter a valid London postal district (e.g. SW3, W11, SW1).';
+        return;
+      }
+
+      const rbkc = ['SW3', 'SW7', 'SW10', 'W8', 'W11', 'W14'];
+      const westminster = ['W1', 'SW1', 'NW8', 'WC2'];
+      const wandsworth = ['SW11', 'SW12', 'SW18', 'SW4'];
+      const richmond = ['TW9', 'TW10', 'KT1', 'KT2'];
+      const camden = ['NW3', 'NW1', 'N6'];
+      const hammersmith = ['W6', 'SW6'];
+
+      const prefix = input.split(' ')[0];
+
+      if (rbkc.some(code => prefix.startsWith(code))) {
+        messageElem.innerText = '✓ ' + prefix + ' Confirmed: Royal Borough of Kensington & Chelsea — Priority Rapid Site Survey Active.';
+      } else if (westminster.some(code => prefix.startsWith(code))) {
+        messageElem.innerText = '✓ ' + prefix + ' Confirmed: City of Westminster & Mayfair — Grosvenor & Cadogan Liaison Teams Active.';
+      } else if (wandsworth.some(code => prefix.startsWith(code))) {
+        messageElem.innerText = '✓ ' + prefix + ' Confirmed: Wandsworth & Battersea — Fast-Track Permitted Development Active.';
+      } else if (richmond.some(code => prefix.startsWith(code))) {
+        messageElem.innerText = '✓ ' + prefix + ' Confirmed: Richmond upon Thames & Kingston — Passivhaus & Flood Risk Teams Active.';
+      } else if (camden.some(code => prefix.startsWith(code))) {
+        messageElem.innerText = '✓ ' + prefix + ' Confirmed: Camden & Hampstead — Heritage Conservation Officer Liaison Active.';
+      } else if (hammersmith.some(code => prefix.startsWith(code))) {
+        messageElem.innerText = '✓ ' + prefix + ' Confirmed: Hammersmith & Fulham — Peterborough Estate Specialists Active.';
+      } else {
+        messageElem.innerText = '✓ ' + prefix + ' Confirmed: Greater London Coverage Active — Principal Contracting Teams Ready.';
+      }
+    }
+
+    // 2. Filter Tab Selection
+    function filterBoroughs(category) {
+      // Toggle button states
+      const buttons = document.querySelectorAll('.borough-tab');
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-borough') === category) {
+          btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+          btn.classList.add('bg-primary', 'text-on-primary');
+        } else {
+          btn.classList.remove('bg-primary', 'text-on-primary');
+          btn.classList.add('bg-surface-container-low', 'text-on-surface');
+        }
+      });
+
+      // Filter cards
+      const cards = document.querySelectorAll('.borough-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // 3. Form Postcode Auto-Detection
+    function handleFormPostcodeInput(val) {
+      const code = val.trim().toUpperCase();
+      const output = document.getElementById('form-borough-detected');
+      
+      if (code.startsWith('SW3') || code.startsWith('SW7') || code.startsWith('SW10') || code.startsWith('W8') || code.startsWith('W11') || code.startsWith('W14')) {
+        output.value = 'Royal Borough of Kensington & Chelsea (RBKC)';
+      } else if (code.startsWith('W1') || code.startsWith('SW1') || code.startsWith('NW8')) {
+        output.value = 'City of Westminster (Mayfair / Belgravia)';
+      } else if (code.startsWith('SW11') || code.startsWith('SW12') || code.startsWith('SW18') || code.startsWith('SW4')) {
+        output.value = 'London Borough of Wandsworth';
+      } else if (code.startsWith('TW9') || code.startsWith('TW10') || code.startsWith('KT1') || code.startsWith('KT2')) {
+        output.value = 'London Borough of Richmond upon Thames';
+      } else if (code.startsWith('NW3') || code.startsWith('NW1') || code.startsWith('N6')) {
+        output.value = 'London Borough of Camden / Hampstead';
+      } else if (code.startsWith('W6') || code.startsWith('SW6')) {
+        output.value = 'London Borough of Hammersmith & Fulham';
+      } else if (code.length >= 2) {
+        output.value = 'Greater London Borough Authority Verified';
+      } else {
+        output.value = 'Auto-Detected From Postcode';
+      }
+    }
+
+    // 4. Form Submission Mock
+    function handleSurveySubmit(e) {
+      e.preventDefault();
+      const feedback = document.getElementById('survey-form-feedback');
+      feedback.classList.remove('hidden');
+      e.target.reset();
+      document.getElementById('form-borough-detected').value = 'Auto-Detected From Postcode';
+      setTimeout(() => {
+        feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 100);
+    }
+  </script>
+</div></main>
+<!-- BEGIN: Footer -->
+<footer class="bg-[#060d17] border-t border-slate-800 text-slate-300 text-body-sm">
+<div class="max-w-7xl mx-auto px-margin py-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-desktop">
+<!-- Col 1: Brand & Bio -->
+<div class="lg:col-span-2 space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary">
+<i class="fa-solid fa-compass-drafting text-xl"></i>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="text-headline-sm font-headline-sm font-bold text-on-primary">JSTM</span>
+<span class="text-label-sm uppercase tracking-widest bg-primary-container text-on-primary-container px-1 py-0.5 rounded-lg font-bold">London</span>
+</div>
+<p class="text-label-sm uppercase tracking-wider text-outline-variant">Construction &amp; Refurbishment</p>
+</div>
+</div>
+<p class="text-outline-variant font-body-sm leading-relaxed pr-space-lg">
+            Premier construction, architectural remodeling, and high-specification property renovation across Greater London. Committed to structural precision, Passivhaus standards, and client peace of mind.
+          </p>
+<div class="flex items-center space-x-space-sm pt-space-xs">
+<a aria-label="LinkedIn" class="w-8 h-8 rounded-lg bg-surface-container-highest/10 flex items-center justify-center text-surface-container hover:text-primary-fixed transition-colors" href="#"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+<a aria-label="Instagram" class="w-8 h-8 rounded-lg bg-surface-container-highest/10 flex items-center justify-center text-surface-container hover:text-primary-fixed transition-colors" href="#"><i class="fa-brands fa-instagram text-xs"></i></a>
+<a aria-label="Houzz" class="w-8 h-8 rounded-lg bg-surface-container-highest/10 flex items-center justify-center text-surface-container hover:text-primary-fixed transition-colors" href="#"><i class="fa-brands fa-houzz text-xs"></i></a>
+<a aria-label="Facebook" class="w-8 h-8 rounded-lg bg-surface-container-highest/10 flex items-center justify-center text-surface-container hover:text-primary-fixed transition-colors" href="#"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+</div>
+</div>
+<!-- Col 2: Services -->
+<div class="space-y-space-sm">
+<h4 class="text-label-lg font-headline-sm text-on-primary uppercase tracking-wider font-semibold">Our Services</h4>
+<ul class="space-y-space-xs font-body-sm text-outline-variant">
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">House Extensions</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Loft Conversions</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Full Refurbishments</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Kitchen Renovations</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Roofing &amp; Structural</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Flooring &amp; Tiling</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Painting &amp; Decorating</a></li>
+</ul>
+</div>
+<!-- Col 3: London Boroughs Covered -->
+<div class="space-y-space-sm">
+<h4 class="text-label-lg font-headline-sm text-on-primary uppercase tracking-wider font-semibold">London Coverage</h4>
+<ul class="space-y-space-xs font-body-sm text-outline-variant">
+<li class=""><a class="hover:text-primary-fixed transition-colors" data-path="areas-we-cover" href="#">Kensington &amp; Chelsea</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" data-path="areas-we-cover" href="#">Westminster &amp; Mayfair</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" data-path="areas-we-cover" href="#">Camden &amp; Hampstead</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" data-path="areas-we-cover" href="#">Richmond &amp; Kingston</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" data-path="areas-we-cover" href="#">Wandsworth &amp; Battersea</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" data-path="areas-we-cover" href="#">Islington &amp; Highbury</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" data-path="areas-we-cover" href="#">View All 32 Boroughs</a></li>
+</ul>
+</div>
+<!-- Col 4: Quick Links & Guide -->
+<div class="space-y-space-sm">
+<h4 class="text-label-lg font-headline-sm text-on-primary uppercase tracking-wider font-semibold">Company</h4>
+<ul class="space-y-space-xs font-body-sm text-outline-variant">
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">About JSTM</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Our Work Process</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">London Case Studies</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Cost Estimator Guide</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Accreditations</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Book Site Survey</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Legal -->
+<div class="mt-space-xl pt-space-lg flex flex-col sm:flex-row justify-between items-center gap-4 text-label-sm text-outline-variant">
+<p class="">© 2026 JSTM Construction London Ltd. All Rights Reserved. Registered in England &amp; Wales.</p>
+<div class="flex space-x-gutter">
+<a class="hover:text-surface-container transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-surface-container transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-surface-container transition-colors" href="#">Building Control Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+
+
+</body></html>
