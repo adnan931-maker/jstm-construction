@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 // ─── Gallery Data ──────────────────────────────────────────────────────────────
 const slides = [
@@ -171,23 +172,23 @@ export default function PortfolioPage() {
           </div>
           <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px)", backgroundSize: "36px 36px" }} />
           <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center text-center space-y-3 sm:space-y-4">
-            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full border shadow-lg" style={{ backgroundColor: "rgba(5,150,105,0.15)", borderColor: "rgba(16,185,129,0.4)" }}>
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full border shadow-lg animate-fade-in-up" style={{ backgroundColor: "rgba(5,150,105,0.15)", borderColor: "rgba(16,185,129,0.4)" }}>
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               <span className="text-[10px] sm:text-[11px] font-mono uppercase tracking-widest font-semibold text-emerald-400">OUR RECENT WORK</span>
             </div>
-            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white max-w-4xl leading-tight">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white max-w-4xl leading-tight animate-fade-in-up [animation-delay:150ms]">
               Our Project Portfolio &amp; Completed Work
             </h1>
-            <p className="max-w-2xl text-slate-300 text-xs sm:text-base leading-relaxed">
+            <p className="max-w-2xl text-slate-300 text-xs sm:text-base leading-relaxed animate-fade-in-up [animation-delay:300ms]">
               Browse photos of our completed house extensions, loft conversions, and full home refurbishments across London.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 pt-2 sm:pt-3 text-[11px] sm:text-xs text-slate-400">
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 pt-2 sm:pt-3 text-[11px] sm:text-xs text-slate-400 animate-fade-in-up [animation-delay:450ms]">
               {[
                 { icon: "verified", label: "FMB Master Builder Certified" },
                 { icon: "photo_library", label: "16 Featured Project Photos" },
                 { icon: "location_on", label: "All 32 London Boroughs" },
               ].map((s) => (
-                <div key={s.label} className="flex items-center gap-1.5 sm:gap-2">
+                <div key={s.label} className="flex items-center gap-1.5 sm:gap-2 hover:text-emerald-400 transition-colors">
                   <span className="material-symbols-outlined text-emerald-400 text-sm sm:text-base">{s.icon}</span>
                   <span>{s.label}</span>
                 </div>
@@ -442,12 +443,14 @@ export default function PortfolioPage() {
               { value: "10yr", label: "Workmanship Guarantee", icon: "verified_user" },
               { value: "32", label: "London Boroughs Served", icon: "location_city" },
               { value: "FMB", label: "Federation of Master Builders", icon: "workspace_premium" },
-            ].map((stat) => (
-              <div key={stat.label} className="flex flex-col items-center text-center gap-1.5 sm:gap-2 p-4 sm:p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-emerald-200 hover:shadow-md transition-all duration-300">
-                <span className="material-symbols-outlined text-2xl sm:text-3xl" style={{ color: "#059669" }}>{stat.icon}</span>
-                <span className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">{stat.value}</span>
-                <span className="text-[11px] sm:text-xs font-medium text-slate-500">{stat.label}</span>
-              </div>
+            ].map((stat, idx) => (
+              <AnimateOnScroll key={stat.label} direction="up" delay={idx * 100}>
+                <div className="flex flex-col items-center text-center gap-1.5 sm:gap-2 p-4 sm:p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-emerald-400/50 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group h-full">
+                  <span className="material-symbols-outlined text-2xl sm:text-3xl group-hover:scale-110 transition-transform duration-300" style={{ color: "#059669" }}>{stat.icon}</span>
+                  <span className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight group-hover:text-emerald-800 transition-colors">{stat.value}</span>
+                  <span className="text-[11px] sm:text-xs font-medium text-slate-500">{stat.label}</span>
+                </div>
+              </AnimateOnScroll>
             ))}
           </div>
         </section>
@@ -455,37 +458,39 @@ export default function PortfolioPage() {
         {/* CTA BANNER */}
         <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden" style={{ backgroundColor: "#042f24" }}>
           <div className="absolute inset-0 pointer-events-none opacity-10" style={{ backgroundImage: "radial-gradient(rgba(52,211,153,0.5) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
-          <div className="relative max-w-3xl mx-auto text-center space-y-4 sm:space-y-6">
-            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full border text-emerald-400 text-[11px] sm:text-xs font-semibold uppercase tracking-widest" style={{ backgroundColor: "rgba(5,150,105,0.2)", borderColor: "rgba(5,150,105,0.4)" }}>
-              <span className="material-symbols-outlined text-xs sm:text-sm">handshake</span>
-              Ready to Start?
+          <AnimateOnScroll direction="up">
+            <div className="relative max-w-3xl mx-auto text-center space-y-4 sm:space-y-6">
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full border text-emerald-400 text-[11px] sm:text-xs font-semibold uppercase tracking-widest" style={{ backgroundColor: "rgba(5,150,105,0.2)", borderColor: "rgba(5,150,105,0.4)" }}>
+                <span className="material-symbols-outlined text-xs sm:text-sm">handshake</span>
+                Ready to Start?
+              </div>
+              <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight">
+                Ready to Start Your Building Project?
+              </h2>
+              <p className="text-xs sm:text-sm md:text-base leading-relaxed max-w-xl mx-auto" style={{ color: "rgba(209,250,229,0.8)" }}>
+                From house extensions and loft conversions to full home renovations — get friendly advice and a free, fixed quote from trusted London builders.
+              </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-1 sm:pt-2">
+                <Link href="/contact" id="portfolio-cta-quote"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-7 sm:py-3.5 rounded-xl font-bold text-xs sm:text-sm shadow-lg transition-all duration-200 hover:-translate-y-0.5 text-white hover:shadow-emerald-900/50"
+                  style={{ backgroundColor: "#10b981" }}>
+                  <span className="material-symbols-outlined text-sm sm:text-base">mail</span>
+                  Get Free Quote
+                </Link>
+                <a href="tel:02035762228" id="portfolio-cta-call"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-7 sm:py-3.5 rounded-xl border font-semibold text-xs sm:text-sm transition-all duration-200 text-emerald-300 hover:text-white hover:-translate-y-0.5"
+                  style={{ borderColor: "rgba(5,150,105,0.5)" }}>
+                  <span className="material-symbols-outlined text-sm sm:text-base">call</span>
+                  020 3576 2228
+                </a>
+                <a href="https://wa.me/447418095006" target="_blank" rel="noopener noreferrer" id="portfolio-cta-whatsapp"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-7 sm:py-3.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 text-white bg-emerald-600 hover:bg-emerald-500 shadow-md hover:-translate-y-0.5">
+                  <i className="fa-brands fa-whatsapp text-base sm:text-lg"></i>
+                  +44 7418 095006
+                </a>
+              </div>
             </div>
-            <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight">
-              Ready to Start Your Building Project?
-            </h2>
-            <p className="text-xs sm:text-sm md:text-base leading-relaxed max-w-xl mx-auto" style={{ color: "rgba(209,250,229,0.8)" }}>
-              From house extensions and loft conversions to full home renovations — get friendly advice and a free, fixed quote from trusted London builders.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-1 sm:pt-2">
-              <Link href="/contact" id="portfolio-cta-quote"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-7 sm:py-3.5 rounded-xl font-bold text-xs sm:text-sm shadow-lg transition-all duration-200 hover:-translate-y-0.5 text-white"
-                style={{ backgroundColor: "#10b981" }}>
-                <span className="material-symbols-outlined text-sm sm:text-base">mail</span>
-                Get Free Quote
-              </Link>
-              <a href="tel:02035762228" id="portfolio-cta-call"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-7 sm:py-3.5 rounded-xl border font-semibold text-xs sm:text-sm transition-all duration-200 text-emerald-300 hover:text-white"
-                style={{ borderColor: "rgba(5,150,105,0.5)" }}>
-                <span className="material-symbols-outlined text-sm sm:text-base">call</span>
-                020 3576 2228
-              </a>
-              <a href="https://wa.me/447418095006" target="_blank" rel="noopener noreferrer" id="portfolio-cta-whatsapp"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-7 sm:py-3.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 text-white bg-emerald-600 hover:bg-emerald-500 shadow-md">
-                <i className="fa-brands fa-whatsapp text-base sm:text-lg"></i>
-                +44 7418 095006
-              </a>
-            </div>
-          </div>
+          </AnimateOnScroll>
         </section>
       </main>
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -175,53 +176,26 @@ export default function ContactPage() {
 
             {/* Metric Highlights Cards (Deep Slate Cards) */}
             <div className="mt-8 sm:mt-12 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-              <div className="bg-slate-900/90 rounded-xl p-4 sm:p-5 border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/40 transition-colors">
-                <div className="text-xl sm:text-2xl font-extrabold text-emerald-400 font-heading">
-                  &lt; 24hr
-                </div>
-                <div className="text-sm sm:text-base text-white mt-1 font-semibold leading-snug">
-                  Response Guarantee
-                </div>
-                <p className="text-[11px] sm:text-xs text-slate-400 mt-1.5 leading-relaxed hidden sm:block">
-                  Prompt enquiry response and expert review of your project drawings and ideas.
-                </p>
-              </div>
-
-              <div className="bg-slate-900/90 rounded-xl p-4 sm:p-5 border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/40 transition-colors">
-                <div className="text-xl sm:text-2xl font-extrabold text-emerald-400 font-heading">
-                  1-on-1
-                </div>
-                <div className="text-sm sm:text-base text-white mt-1 font-semibold leading-snug">
-                  Direct Communication
-                </div>
-                <p className="text-[11px] sm:text-xs text-slate-400 mt-1.5 leading-relaxed hidden sm:block">
-                  You will have a dedicated project manager overseeing your build from start to finish.
-                </p>
-              </div>
-
-              <div className="bg-slate-900/90 rounded-xl p-4 sm:p-5 border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/40 transition-colors">
-                <div className="text-xl sm:text-2xl font-extrabold text-emerald-400 font-heading">
-                  Zero Fee
-                </div>
-                <div className="text-sm sm:text-base text-white mt-1 font-semibold leading-snug">
-                  Site Survey &amp; Quote
-                </div>
-                <p className="text-[11px] sm:text-xs text-slate-400 mt-1.5 leading-relaxed hidden sm:block">
-                  Free, no-obligation property visit and detailed, itemised fixed-price quotation.
-                </p>
-              </div>
-
-              <div className="bg-slate-900/90 rounded-xl p-4 sm:p-5 border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/40 transition-colors">
-                <div className="text-xl sm:text-2xl font-extrabold text-emerald-400 font-heading">
-                  Full Privacy
-                </div>
-                <div className="text-sm sm:text-base text-white mt-1 font-semibold leading-snug">
-                  Strict Confidentiality
-                </div>
-                <p className="text-[11px] sm:text-xs text-slate-400 mt-1.5 leading-relaxed hidden sm:block">
-                  Your drawings, contact information, and property details remain completely private.
-                </p>
-              </div>
+              {[
+                { val: "< 24hr", title: "Response Guarantee", desc: "Prompt enquiry response and expert review of your project drawings and ideas." },
+                { val: "1-on-1", title: "Direct Communication", desc: "You will have a dedicated project manager overseeing your build from start to finish." },
+                { val: "Zero Fee", title: "Site Survey & Quote", desc: "Free, no-obligation property visit and detailed, itemised fixed-price quotation." },
+                { val: "Full Privacy", title: "Strict Confidentiality", desc: "Your drawings, contact information, and property details remain completely private." },
+              ].map((m, idx) => (
+                <AnimateOnScroll key={m.title} direction="up" delay={idx * 100}>
+                  <div className="bg-slate-900/90 rounded-xl p-4 sm:p-5 border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/50 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 h-full group">
+                    <div className="text-xl sm:text-2xl font-extrabold text-emerald-400 font-heading group-hover:scale-105 transition-transform origin-left">
+                      {m.val}
+                    </div>
+                    <div className="text-sm sm:text-base text-white mt-1 font-semibold leading-snug group-hover:text-emerald-300 transition-colors">
+                      {m.title}
+                    </div>
+                    <p className="text-[11px] sm:text-xs text-slate-400 mt-1.5 leading-relaxed hidden sm:block">
+                      {m.desc}
+                    </p>
+                  </div>
+                </AnimateOnScroll>
+              ))}
             </div>
           </div>
         </section>
@@ -231,7 +205,7 @@ export default function ContactPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
               {/* LEFT COLUMN: Executive Consultation Hub & Logistics (5 cols) */}
-              <div className="lg:col-span-5 flex flex-col justify-between space-y-4 sm:space-y-5">
+              <AnimateOnScroll direction="left" className="lg:col-span-5 flex flex-col justify-between space-y-4 sm:space-y-5">
                 <div>
                   <span className="text-[11px] sm:text-xs font-bold tracking-wider uppercase text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200 inline-block">
                     Our Office
@@ -401,10 +375,10 @@ export default function ContactPage() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </AnimateOnScroll>
 
               {/* RIGHT COLUMN: High-Density Project Intake & Tender Form */}
-              <div className="lg:col-span-7 flex flex-col">
+              <AnimateOnScroll direction="right" delay={150} className="lg:col-span-7 flex flex-col">
                 <div className="bg-white text-slate-900 rounded-2xl p-5 sm:p-8 lg:p-10 border border-slate-200 shadow-xl relative overflow-hidden flex-1 flex flex-col justify-between">
                   {/* Top Emerald Accent Line */}
                   <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-emerald-600 via-emerald-400 to-emerald-700" />
@@ -714,7 +688,7 @@ export default function ContactPage() {
                     </div>
                   )}
                 </div>
-              </div>
+              </AnimateOnScroll>
             </div>
           </div>
         </section>
@@ -723,17 +697,19 @@ export default function ContactPage() {
         {/* SECTION 4: Light FREQUENTLY ASKED QUESTIONS */}
         <section className="bg-slate-50/70 text-slate-900 py-10 sm:py-16 lg:py-24 border-b border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-14">
-              <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200 inline-block">
-                FREQUENTLY ASKED QUESTIONS
-              </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight font-heading">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-                Here are answers to the most common questions about our quotation process, contracts, and how we manage projects.
-              </p>
-            </div>
+            <AnimateOnScroll direction="up">
+              <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-14">
+                <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200 inline-block">
+                  FREQUENTLY ASKED QUESTIONS
+                </span>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight font-heading">
+                  Frequently Asked Questions
+                </h2>
+                <p className="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+                  Here are answers to the most common questions about our quotation process, contracts, and how we manage projects.
+                </p>
+              </div>
+            </AnimateOnScroll>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {/* FAQ 1 */}

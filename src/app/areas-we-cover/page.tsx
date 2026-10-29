@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const H1_STYLE = { fontFamily: "'Plus Jakarta Sans', sans-serif" };
 
@@ -266,7 +267,7 @@ export default function AreasWeCoverPage() {
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6 sm:space-y-8">
             {/* Breadcrumb and Authority Badge */}
-            <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4">
+            <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4 animate-fade-in-up">
               <nav className="flex items-center space-x-2 text-[11px] sm:text-xs text-slate-400 font-medium">
                 <Link className="hover:text-emerald-400 transition-colors flex items-center gap-1" href="/">
                   <span className="material-symbols-outlined text-[14px]">home</span> Home
@@ -285,20 +286,20 @@ export default function AreasWeCoverPage() {
             <div className="max-w-4xl space-y-4 sm:space-y-6">
               <h1
                 style={H1_STYLE}
-                className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-white"
+                className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-white animate-fade-in-up [animation-delay:150ms]"
               >
                 House Extensions, Lofts &amp; Renovations Across{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-200">
                   London &amp; Surrey
                 </span>
               </h1>
-              <p className="text-xs sm:text-base lg:text-lg text-slate-300 leading-relaxed font-light max-w-3xl">
+              <p className="text-xs sm:text-base lg:text-lg text-slate-300 leading-relaxed font-light max-w-3xl animate-fade-in-up [animation-delay:300ms]">
                 Experienced London builders who understand local council planning rules, conservation guidelines, and building regulations inside out. From Kensington to Wandsworth and beyond.
               </p>
             </div>
 
             {/* Quick Interactive Postcode Feasibility Checker */}
-            <div className="max-w-2xl bg-[#0f172a] p-3.5 sm:p-5 rounded-2xl border border-slate-800 shadow-xl space-y-3">
+            <div className="max-w-2xl bg-[#0f172a] p-3.5 sm:p-5 rounded-2xl border border-slate-800 shadow-xl space-y-3 animate-fade-in-up [animation-delay:450ms]">
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3">
                 <div className="relative flex-1">
                   <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-emerald-400">
@@ -314,7 +315,7 @@ export default function AreasWeCoverPage() {
                 </div>
                 <a
                   href="#feasibility-survey"
-                  className="px-5 sm:px-6 py-2.5 sm:py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl font-semibold text-xs sm:text-sm transition-all duration-150 flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(5,150,105,0.4)]"
+                  className="px-5 sm:px-6 py-2.5 sm:py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl font-semibold text-xs sm:text-sm transition-all duration-150 flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(5,150,105,0.4)] hover:shadow-[0_6px_20px_rgba(5,150,105,0.6)]"
                 >
                   <span>Check Postcode</span>
                   <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
@@ -329,24 +330,26 @@ export default function AreasWeCoverPage() {
             </div>
 
             {/* Quick Stats Grid */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4 pt-2 sm:pt-4">
-              <div className="bg-[#0f172a]/90 border border-slate-800 p-3.5 sm:p-5 rounded-xl">
-                <div style={H1_STYLE} className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">6 Prime</div>
-                <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Specialist Boroughs</p>
+            <AnimateOnScroll direction="up" delay={200} className="w-full">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4 pt-2 sm:pt-4">
+                <div className="bg-[#0f172a]/90 border border-slate-800 p-3.5 sm:p-5 rounded-xl hover:border-emerald-500/40 hover:-translate-y-0.5 transition-all duration-200">
+                  <div style={H1_STYLE} className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">6 Prime</div>
+                  <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Specialist Boroughs</p>
+                </div>
+                <div className="bg-[#0f172a]/90 border border-slate-800 p-3.5 sm:p-5 rounded-xl hover:border-emerald-500/40 hover:-translate-y-0.5 transition-all duration-200">
+                  <div style={H1_STYLE} className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">32 Boroughs</div>
+                  <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Covering All London & Surrey</p>
+                </div>
+                <div className="bg-[#0f172a]/90 border border-slate-800 p-3.5 sm:p-5 rounded-xl hover:border-emerald-500/40 hover:-translate-y-0.5 transition-all duration-200">
+                  <div style={H1_STYLE} className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">100%</div>
+                  <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Building Regulations Compliant</p>
+                </div>
+                <div className="bg-[#0f172a]/90 border border-slate-800 p-3.5 sm:p-5 rounded-xl hover:border-emerald-500/40 hover:-translate-y-0.5 transition-all duration-200">
+                  <div style={H1_STYLE} className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">4 Hours</div>
+                  <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Fast Quote Response</p>
+                </div>
               </div>
-              <div className="bg-[#0f172a]/90 border border-slate-800 p-3.5 sm:p-5 rounded-xl">
-                <div style={H1_STYLE} className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">32 Boroughs</div>
-                <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Covering All London & Surrey</p>
-              </div>
-              <div className="bg-[#0f172a]/90 border border-slate-800 p-3.5 sm:p-5 rounded-xl">
-                <div style={H1_STYLE} className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">100%</div>
-                <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Building Regulations Compliant</p>
-              </div>
-              <div className="bg-[#0f172a]/90 border border-slate-800 p-3.5 sm:p-5 rounded-xl">
-                <div style={H1_STYLE} className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">4 Hours</div>
-                <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Fast Quote Response</p>
-              </div>
-            </div>
+            </AnimateOnScroll>
           </div>
         </section>
 
@@ -383,18 +386,20 @@ export default function AreasWeCoverPage() {
         {/* 3. FEATURED PRIME BOROUGH DOSSIERS */}
         <section className="bg-[#f8fafc] py-12 sm:py-20 lg:py-28 border-b border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-16">
-            <div className="max-w-3xl space-y-2.5 sm:space-y-3">
-              <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs">
-                <span className="w-2 h-2 rounded-full bg-emerald-600" />
-                <span>LOCAL BOROUGH KNOWLEDGE</span>
+            <AnimateOnScroll direction="up">
+              <div className="max-w-3xl space-y-2.5 sm:space-y-3">
+                <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs">
+                  <span className="w-2 h-2 rounded-full bg-emerald-600" />
+                  <span>LOCAL BOROUGH KNOWLEDGE</span>
+                </div>
+                <h2 style={H1_STYLE} className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
+                  Areas We Regularly Work In
+                </h2>
+                <p className="text-slate-600 text-xs sm:text-sm lg:text-base leading-relaxed">
+                  Every London council has its own planning rules, conservation guidelines, and parking restrictions. Here is an overview of how we deliver successful projects across our main working areas.
+                </p>
               </div>
-              <h2 style={H1_STYLE} className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
-                Areas We Regularly Work In
-              </h2>
-              <p className="text-slate-600 text-xs sm:text-sm lg:text-base leading-relaxed">
-                Every London council has its own planning rules, conservation guidelines, and parking restrictions. Here is an overview of how we deliver successful projects across our main working areas.
-              </p>
-            </div>
+            </AnimateOnScroll>
 
             {/* Dossier Cards Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
