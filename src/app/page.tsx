@@ -62,7 +62,7 @@ export default function HomePage() {
                   Built With Strength, Precision &amp; <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-200">Craftsmanship</span>
                 </h1>
                 <p className="text-xs sm:text-base lg:text-lg text-slate-300 leading-relaxed max-w-2xl font-light">
-                  🪜 Extensions &bull; Renovations &bull; Bathroom &bull; Kitchen. 🏡 Quality workmanship and reliable service for premier London residential transformations.
+                  Quality home extensions, renovations, and property services across London. From initial design to completion, we deliver exceptional craftsmanship on time and on budget.
                 </p>
                 {/*  Hero Action Buttons  */}
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
@@ -81,8 +81,8 @@ export default function HomePage() {
                       <i className="fa-solid fa-leaf text-sm sm:text-base"></i>
                     </div>
                     <div>
-                      <h4 className="text-[11px] sm:text-xs uppercase font-bold text-slate-200">01 Sustainable</h4>
-                      <p className="text-[10px] sm:text-xs text-slate-400">Passivhaus Standards</p>
+                      <h4 className="text-[11px] sm:text-xs uppercase font-bold text-slate-200">01 Eco-Friendly</h4>
+                      <p className="text-[10px] sm:text-xs text-slate-400">Energy Efficient</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-2.5 sm:gap-3">
@@ -116,7 +116,7 @@ export default function HomePage() {
                   <div className="absolute -top-3 -left-3 sm:-top-5 sm:-left-5 bg-emerald-600 text-white p-3 sm:p-4 rounded-xl shadow-xl flex items-center gap-2.5 sm:gap-3 border border-emerald-400/30">
                     <div className="text-2xl sm:text-3xl font-extrabold font-heading">15+</div>
                     <div className="text-[10px] sm:text-xs font-semibold leading-tight uppercase tracking-wider">
-                      Years of<br />London Craft
+                      Years of<br />Experience
                     </div>
                   </div>
                 </div>
@@ -136,7 +136,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h3 className="text-sm sm:text-base font-bold text-white font-heading">Quality Workmanship</h3>
-                  <p className="text-xs text-slate-400 mt-1 leading-relaxed">Federation of Master Builders (FMB) audited standards with precision finish on every detail.</p>
+                  <p className="text-xs text-slate-400 mt-1 leading-relaxed">Federation of Master Builders (FMB) audited standards with high-quality finishes on every project.</p>
                 </div>
               </div>
               {/*  Highlight Item 2  */}
@@ -146,7 +146,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h3 className="text-sm sm:text-base font-bold text-white font-heading">Dedicated Project Manager</h3>
-                  <p className="text-xs text-slate-400 mt-1 leading-relaxed">Single direct point of contact with weekly scheduled client walkthroughs &amp; live reports.</p>
+                  <p className="text-xs text-slate-400 mt-1 leading-relaxed">Your direct point of contact with regular weekly updates and clear communication throughout.</p>
                 </div>
               </div>
               {/*  Highlight Item 3  */}
@@ -156,7 +156,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h3 className="text-sm sm:text-base font-bold text-white font-heading">Certified London Trades</h3>
-                  <p className="text-xs text-slate-400 mt-1 leading-relaxed">CSCS, Gas Safe registered, and NICEIC approved specialists with £5M liability cover.</p>
+                  <p className="text-xs text-slate-400 mt-1 leading-relaxed">Qualified Gas Safe and NICEIC approved tradespeople backed by £5M public liability insurance.</p>
                 </div>
               </div>
             </div>
@@ -188,10 +188,10 @@ export default function HomePage() {
                   About JSTM Construction London
                 </div>
                 <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                  London’s Trusted Structural Refurbishment &amp; Building Specialists
+                  Trusted London Builders &amp; Home Renovation Specialists
                 </h2>
                 <p className="text-slate-600 leading-relaxed text-xs sm:text-sm lg:text-base">
-                  Founded on principles of uncompromising precision and transparent communication, JSTM Construction has transformed properties across London—from heritage period conversions in Kensington and Islington to high-end contemporary open-plan reconfigurations in Wandsworth and Richmond.
+                  With over 15 years of building experience, JSTM Construction helps London homeowners create beautiful, practical spaces. Whether you need a ground-floor extension, a loft conversion, or a full house refurbishment, we deliver quality workmanship with transparent pricing and clear communication.
                 </p>
                 {/*  Nav Tabs Mimic  */}
                 <div className="border-b border-slate-200">
@@ -202,25 +202,25 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed italic bg-emerald-50/70 p-3.5 sm:p-4 rounded-lg border-l-4 border-emerald-600">
-                  "Our vision is to provide London property owners with calm, predictable construction deliveries that exceed aesthetic aspirations and enhance property market value."
+                  "Our goal is straightforward: deliver top-quality building work without the stress. We keep you updated, stick to agreed budgets, and build spaces your family will enjoy for years to come."
                 </p>
                 {/*  Bullet Checklist  */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 pt-2">
                   <div className="flex items-center space-x-2.5 text-xs sm:text-sm font-medium text-slate-800">
                     <i className="fa-solid fa-circle-check text-emerald-600"></i>
-                    <span>London Borough Planning Navigators</span>
+                    <span>Planning Permission &amp; Building Control Guidance</span>
                   </div>
                   <div className="flex items-center space-x-2.5 text-xs sm:text-sm font-medium text-slate-800">
                     <i className="fa-solid fa-circle-check text-emerald-600"></i>
-                    <span>Fixed Price Contracts &amp; Timelines</span>
+                    <span>Clear, Fixed-Price Quotes &amp; Agreed Schedules</span>
                   </div>
                   <div className="flex items-center space-x-2.5 text-xs sm:text-sm font-medium text-slate-800">
                     <i className="fa-solid fa-circle-check text-emerald-600"></i>
-                    <span>Anti-Competitive Transparent Quotes</span>
+                    <span>Honest, Transparent Pricing with No Hidden Extras</span>
                   </div>
                   <div className="flex items-center space-x-2.5 text-xs sm:text-sm font-medium text-slate-800">
                     <i className="fa-solid fa-circle-check text-emerald-600"></i>
-                    <span>Dedicated Resident Site Manager</span>
+                    <span>Dedicated Project Manager on Every Build</span>
                   </div>
                 </div>
                 <div className="pt-3 sm:pt-4 flex items-center gap-6">
@@ -230,7 +230,7 @@ export default function HomePage() {
                   </a>
                   <div className="flex items-center space-x-2.5 sm:space-x-3">
                     <div className="text-xl sm:text-2xl font-black text-emerald-700 font-heading">25+</div>
-                    <div className="text-[10px] sm:text-xs font-semibold text-slate-500 uppercase leading-tight">Master Craft<br />Tradesmen</div>
+                    <div className="text-[10px] sm:text-xs font-semibold text-slate-500 uppercase leading-tight">Skilled London<br />Tradesmen</div>
                   </div>
                 </div>
               </div>
@@ -249,10 +249,10 @@ export default function HomePage() {
                 <span className="w-4 h-0.5 bg-emerald-600"></span>
               </div>
               <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading">
-                Innovative Design &amp; Reliable London Construction
+                Complete Building Services Across London
               </h2>
               <p className="text-slate-600 mt-2.5 sm:mt-4 text-xs sm:text-sm lg:text-base">
-                Comprehensive building services tailored to residential and commercial properties across London. From planning sign-off to bespoke architectural finishes.
+                From house extensions and loft conversions to full house refurbishments, we provide complete, reliable building solutions with guaranteed quality.
               </p>
             </div>
             {/*  8 Core Services Grid  */}
@@ -267,11 +267,11 @@ export default function HomePage() {
                     House Extensions
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Rear, side-return, and wrap-around extensions maximizing footprint in Victorian, Edwardian, and modern London homes.
+                    Rear, side-return, and wrap-around extensions that create bright, spacious open-plan living for your home.
                   </p>
                   <ul className="text-xs text-slate-500 space-y-2 mb-6 border-t border-slate-100 pt-3">
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Crittall &amp; bifold door integration</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Structural steel installation</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Bi-fold, sliding &amp; Crittall doors</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Structural steel beams &amp; foundations</li>
                   </ul>
                 </div>
                 <a className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-emerald-700 hover:text-emerald-800" href="#contact">
@@ -289,11 +289,11 @@ export default function HomePage() {
                     Loft Conversions
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Transform unused attic space into luxury master bedrooms, en-suites, and bespoke skyline home offices.
+                    Turn unused attic space into an extra master bedroom, en-suite bathroom, or a comfortable home office.
                   </p>
                   <ul className="text-xs text-slate-500 space-y-2 mb-6 border-t border-slate-100 pt-3">
                     <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Mansard, Dormer &amp; Velux setups</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Full Party Wall coordination</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Party Wall &amp; Building Control support</li>
                   </ul>
                 </div>
                 <a className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-emerald-700 hover:text-emerald-800" href="#contact">
@@ -311,11 +311,11 @@ export default function HomePage() {
                     Full Refurbishments
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    End-to-end structural remodeling, wall removals, MEP services modernization, and heritage restoration.
+                    Complete home makeovers, including wall removals, layout redesign, new electrical wiring, and plumbing.
                   </p>
                   <ul className="text-xs text-slate-500 space-y-2 mb-6 border-t border-slate-100 pt-3">
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Turnkey interior overhaul</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Soundproofing &amp; insulation boost</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Complete interior &amp; exterior overhaul</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Energy-efficient insulation &amp; soundproofing</li>
                   </ul>
                 </div>
                 <a className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-emerald-700 hover:text-emerald-800" href="#contact">
@@ -333,11 +333,11 @@ export default function HomePage() {
                     Kitchens &amp; Bathrooms
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Luxury custom fitted kitchens, wet rooms, spa bathrooms, and tailored quartz &amp; stone worktops.
+                    Modern fitted kitchens, luxury family bathrooms, walk-in wet rooms, and premium stone worktops.
                   </p>
                   <ul className="text-xs text-slate-500 space-y-2 mb-6 border-t border-slate-100 pt-3">
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Bespoke German/British cabinetry</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Microcement &amp; wet room systems</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Custom kitchen units &amp; breakfast bars</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Walk-in showers &amp; waterproof wet rooms</li>
                   </ul>
                 </div>
                 <a className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-emerald-700 hover:text-emerald-800" href="#contact">
@@ -355,10 +355,10 @@ export default function HomePage() {
                     Roofing &amp; Structural
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Pitched slate re-roofing, high-performance flat roofs (GRP/EPDM), chimney repairs, and RSJ steel insertions.
+                    Pitched slate and tile roofs, GRP flat roofing, chimney repairs, and load-bearing steel beam installations.
                   </p>
                   <ul className="text-xs text-slate-500 space-y-2 mb-6 border-t border-slate-100 pt-3">
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Structural engineering calcs</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Structural engineer calculations &amp; drawings</li>
                     <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> 20-year flat roof warranties</li>
                   </ul>
                 </div>
@@ -377,10 +377,10 @@ export default function HomePage() {
                     Flooring &amp; Tiling
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Engineered herringbone hardwood, large-format porcelain, marble tiling, and underfloor heating integrations.
+                    Hardwood engineered flooring, herringbone parquet, porcelain tiling, and energy-efficient underfloor heating.
                   </p>
                   <ul className="text-xs text-slate-500 space-y-2 mb-6 border-t border-slate-100 pt-3">
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Laser-level subfloor preparation</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Level subfloor screed &amp; prep</li>
                     <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Wet &amp; electric UFH systems</li>
                   </ul>
                 </div>
@@ -399,7 +399,7 @@ export default function HomePage() {
                     Painting &amp; Decorating
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Pristine interior spray plastering, Farrow &amp; Ball heritage coatings, external masonry, and woodwork preservation.
+                    Interior and exterior painting, smooth plastering, quality decorative finishes, and woodwork restoration.
                   </p>
                   <ul className="text-xs text-slate-500 space-y-2 mb-6 border-t border-slate-100 pt-3">
                     <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Dustless sanding preparation</li>
@@ -421,7 +421,7 @@ export default function HomePage() {
                     General Building &amp; Joinery
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Foundations, masonry, garden studios, bespoke fitted wardrobes, custom alcove shelving, and internal doors.
+                    Brickwork, foundations, garden rooms, bespoke fitted wardrobes, alcove shelving, and internal doors.
                   </p>
                   <ul className="text-xs text-slate-500 space-y-2 mb-6 border-t border-slate-100 pt-3">
                     <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> London brick matching</li>
@@ -436,8 +436,8 @@ export default function HomePage() {
             </div>
             <div className="mt-12 text-center">
               <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                Need a tailored structural package or architectural collaboration?
-                <a className="text-emerald-700 font-bold underline ml-1 hover:text-emerald-800" href="#contact">Speak directly with our senior site director →</a>
+                Need advice on your upcoming project?
+                <a className="text-emerald-700 font-bold underline ml-1 hover:text-emerald-800" href="#contact">Speak directly with our building team →</a>
               </p>
             </div>
           </div>
@@ -449,12 +449,12 @@ export default function HomePage() {
             <div className="bg-gradient-to-r from-emerald-950 via-charcoal-900 to-charcoal-950 rounded-2xl p-6 sm:p-12 border border-emerald-800/40 shadow-2xl">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-7">
-                  <span className="text-emerald-400 font-semibold text-[11px] sm:text-xs uppercase tracking-wider">Fast-Track Feasibility</span>
+                  <span className="text-emerald-400 font-semibold text-[11px] sm:text-xs uppercase tracking-wider">Free Consultation &amp; Advice</span>
                   <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white mt-1 font-heading">
                     Have a London Project in Mind? Let’s Talk.
                   </h3>
                   <p className="text-slate-300 text-xs sm:text-sm mt-2 max-w-xl">
-                    Get an initial desktop assessment of your property's development potential and estimated budget ranges within 24 business hours.
+                    Get straightforward advice and an estimated budget guide for your project within 24 hours. No obligation.
                   </p>
                   {/*  Quick Enquiry Form  */}
                   <form className="mt-5 sm:mt-6 flex flex-col sm:flex-row gap-3 max-w-lg" onSubmit={(e) => { e.preventDefault(); alert("Form submitted successfully! A JSTM project surveyor will contact you shortly."); }}>
@@ -480,7 +480,7 @@ export default function HomePage() {
                         <i className="fa-brands fa-whatsapp text-sm sm:text-lg"></i> +44 7418 095006
                       </a>
                     </div>
-                    <p className="text-[11px] sm:text-xs text-slate-400">Quality workmanship &bull; Fast project consultation</p>
+                    <p className="text-[11px] sm:text-xs text-slate-400">Free advice &bull; Fast response &bull; No obligation</p>
                   </div>
                 </div>
               </div>
@@ -498,14 +498,14 @@ export default function HomePage() {
                   Methodical Execution
                 </div>
                 <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading">
-                  Our 4-Stage London Work Process
+                  Our Simple 4-Step Building Process
                 </h2>
                 <p className="text-slate-600 text-xs sm:text-sm lg:text-base mt-2 sm:mt-3">
-                  Rigorous governance from first conceptual sketches through structural sign-off, protecting your investment and timeline.
+                  We manage your build carefully from first consultation to final inspection, keeping your project on time and on budget.
                 </p>
               </div>
               <a className="inline-flex items-center font-bold text-xs sm:text-sm text-emerald-700 hover:text-emerald-800" href="#contact">
-                <span>View Full Technical Protocols</span>
+                <span>Book a Free Site Survey</span>
                 <i className="fa-solid fa-arrow-right ml-2 text-xs"></i>
               </a>
             </div>
@@ -519,7 +519,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Planning &amp; Feasibility</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Comprehensive property survey, structural viability check, London borough planning &amp; Party Wall appraisal.
+                  We visit your property to discuss your ideas, assess structural feasibility, and advise on planning rules.
                 </p>
               </div>
               {/*  Step 2  */}
@@ -530,7 +530,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Design &amp; Engineering</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Full architectural specification, structural calculations, Building Control submissions &amp; procurement planning.
+                  Detailed architectural drawings, structural engineer calculations, and building regulations submissions.
                 </p>
               </div>
               {/*  Step 3  */}
@@ -539,9 +539,9 @@ export default function HomePage() {
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-lg sm:text-xl mb-4 sm:mb-6">
                   <i className="fa-solid fa-helmet-safety"></i>
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Precision Execution</h3>
+                <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Construction &amp; Build</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  On-site craftsmanship led by your Dedicated Site Manager, weekly scheduled milestones, and clean dust-contained sites.
+                  Skilled tradesmen working on-site, managed daily by your project manager with clean workspaces and weekly updates.
                 </p>
               </div>
               {/*  Step 4  */}
@@ -550,9 +550,9 @@ export default function HomePage() {
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-lg sm:text-xl mb-4 sm:mb-6">
                   <i className="fa-solid fa-key"></i>
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Snag-Free Handover</h3>
+                <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Final Inspection &amp; Handover</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Zero-tolerance snagging audit, Building Regulations completion certificate, operations manual &amp; 10-year warranty pack.
+                  Detailed quality inspection, Building Control completion certificate, and your 10-year warranty guarantee pack.
                 </p>
               </div>
             </div>
@@ -601,7 +601,7 @@ export default function HomePage() {
                 Your Trusted London Construction Partner
               </h2>
               <p className="text-slate-400 text-xs sm:text-sm lg:text-base mt-2 sm:mt-3">
-                We reject the typical compromises of the domestic construction industry: no missing timelines, no uncommunicated extras, and no subpar subcontractors.
+                We take the hassle out of building work: clear pricing with no hidden surprises, agreed completion dates, and certified builders you can trust.
               </p>
             </div>
             <div className="bg-charcoal-900 rounded-3xl p-5 sm:p-10 border border-slate-800 shadow-2xl">
@@ -618,18 +618,18 @@ export default function HomePage() {
                 {/*  Content Checklist Right  */}
                 <div className="lg:col-span-6 space-y-4 sm:space-y-6">
                   <div className="inline-block px-3 py-1 rounded-md bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] sm:text-xs font-bold uppercase">
-                    Expert Quality &amp; Governance
+                    Trusted &amp; Fully Insured
                   </div>
                   <h3 className="text-lg sm:text-2xl lg:text-3xl font-extrabold text-white font-heading">
-                    We safeguard your investment from foundations to finishes.
+                    We take care of your home from foundations to finishes.
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    Every project is covered by our comprehensive all-risks contractor insurance, dedicated structural engineering sign-offs, and an unshakeable commitment to tidy, considerate London operations.
+                    Every project is fully covered by our comprehensive liability insurance, signed off to UK building standards, and delivered by tidy, considerate tradespeople.
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-xs sm:text-sm text-slate-200">
                     <div className="flex items-center gap-2.5">
                       <i className="fa-solid fa-square-check text-emerald-400 text-sm sm:text-base"></i>
-                      <span>Fixed Timeline Commitments</span>
+                      <span>Agreed Timelines &amp; Completion Dates</span>
                     </div>
                     <div className="flex items-center gap-2.5">
                       <i className="fa-solid fa-square-check text-emerald-400 text-sm sm:text-base"></i>
@@ -637,7 +637,7 @@ export default function HomePage() {
                     </div>
                     <div className="flex items-center gap-2.5">
                       <i className="fa-solid fa-square-check text-emerald-400 text-sm sm:text-base"></i>
-                      <span>Transparent Itemized Accounting</span>
+                      <span>Transparent, Itemized Quotations</span>
                     </div>
                     <div className="flex items-center gap-2.5">
                       <i className="fa-solid fa-square-check text-emerald-400 text-sm sm:text-base"></i>
@@ -646,7 +646,7 @@ export default function HomePage() {
                   </div>
                   <div className="pt-3 sm:pt-4 border-t border-slate-800 flex items-center gap-4">
                     <a className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm transition-all shadow-lg shadow-emerald-950" href="#contact">
-                      Book Initial Feasibility Call
+                      Book a Free Site Survey
                     </a>
                   </div>
                 </div>
@@ -664,7 +664,7 @@ export default function HomePage() {
               </div>
               <div className="bg-charcoal-900 p-4 sm:p-6 rounded-2xl border border-slate-800 text-center">
                 <div className="text-2xl sm:text-4xl font-extrabold text-white font-heading">15+</div>
-                <p className="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 mt-1 font-semibold">Years Service</p>
+                <p className="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 mt-1 font-semibold">Years Experience</p>
               </div>
               <div className="bg-charcoal-900 p-4 sm:p-6 rounded-2xl border border-slate-800 text-center">
                 <div className="text-2xl sm:text-4xl font-extrabold text-white font-heading">100%</div>
@@ -680,14 +680,14 @@ export default function HomePage() {
             <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
               <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">
                 <span className="w-4 h-0.5 bg-emerald-600"></span>
-                Our Project Excellence
+                Recent Projects
                 <span className="w-4 h-0.5 bg-emerald-600"></span>
               </div>
               <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading">
                 Recent Transformations Across London
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm lg:text-base mt-2 sm:mt-3">
-                Explore our architectural extensions, mansard lofts, and turnkey Victorian renovations across London boroughs.
+                Take a look at some of our completed home extensions, loft conversions, and full house renovations across London.
               </p>
             </div>
             {/*  Filter Buttons  */}
@@ -711,7 +711,7 @@ export default function HomePage() {
                     Kensington Edwardian Townhouse
                   </h3>
                   <p className="text-xs text-slate-500 mt-2 line-clamp-2">
-                    Complete 4-storey structural remodeling, Passivhaus thermal envelope insulation, and custom oak herringbone parquetry.
+                    Complete 4-storey townhouse renovation, modern insulation, open-plan kitchen, and bespoke herringbone wood flooring.
                   </p>
                   <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
                     <span className="font-medium text-slate-700">Duration: 22 Weeks</span>
@@ -730,7 +730,7 @@ export default function HomePage() {
                     Richmond Skyline Mansard Loft
                   </h3>
                   <p className="text-xs text-slate-500 mt-2 line-clamp-2">
-                    Added two double bedrooms and a microcement wet room with bespoke Juliet balconies overlooking the Thames terrace.
+                    Created two spacious double bedrooms and a luxury walk-in shower room with custom Juliet balconies.
                   </p>
                   <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
                     <span className="font-medium text-slate-700">Duration: 9 Weeks</span>
@@ -749,7 +749,7 @@ export default function HomePage() {
                     Wandsworth Open-Plan Living
                   </h3>
                   <p className="text-xs text-slate-500 mt-2 line-clamp-2">
-                    Wrap-around ground floor extension featuring flush threshold structural glass, steel goalpost frame, and polished concrete.
+                    Wrap-around ground floor extension with large sliding glass doors, rooflights, and a bright new family kitchen.
                   </p>
                   <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
                     <span className="font-medium text-slate-700">Duration: 14 Weeks</span>
@@ -773,14 +773,14 @@ export default function HomePage() {
             <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
               <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">
                 <span className="w-4 h-0.5 bg-emerald-600"></span>
-                Transparent London Estimates
+                Cost Guide
                 <span className="w-4 h-0.5 bg-emerald-600"></span>
               </div>
               <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading">
-                Fixed Scope Building Packages
+                Clear &amp; Transparent Pricing Guide
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm lg:text-base mt-2 sm:mt-3">
-                Every home is bespoke, but our standard packages provide a clear financial foundation without unexpected surprises.
+                Every home is unique, but our guide prices give you a realistic idea of costs before we provide a free, itemized quote.
               </p>
             </div>
             {/*  3 Tier Pricing Cards (Reflecting Reference Sequence)  */}
@@ -790,21 +790,21 @@ export default function HomePage() {
                 <div>
                   <span className="text-[10px] sm:text-xs uppercase font-extrabold tracking-wider text-slate-400">Package 01</span>
                   <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mt-1">Room / Floor Refurbishment</h3>
-                  <p className="text-xs text-slate-500 mt-1.5 sm:mt-2">Targeted luxury upgrade for apartments or single-floor properties.</p>
+                  <p className="text-xs text-slate-500 mt-1.5 sm:mt-2">High-quality upgrade for single rooms, bathrooms, or full apartment floors.</p>
                   <div className="mt-5 mb-5 sm:mt-6 sm:mb-6 pb-5 sm:pb-6 border-b border-slate-100">
                     <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 font-heading">£18,500+</span>
-                    <span className="text-[11px] sm:text-xs text-slate-500 block mt-1">Starting baseline guide / ex VAT</span>
+                    <span className="text-[11px] sm:text-xs text-slate-500 block mt-1">Guide price (excl. VAT)</span>
                   </div>
                   <ul className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm text-slate-600 mb-6 sm:mb-8">
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Full strip-out &amp; waste clearance</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Electrical 1st &amp; 2nd fix certification</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Full strip-out &amp; rubbish removal</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> New wiring &amp; NICEIC electrical certificate</li>
                     <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Premium plastering &amp; decorating</li>
                     <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Engineered flooring installation</li>
                     <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> 5-Year Craftsmanship Guarantee</li>
                   </ul>
                 </div>
                 <a className="w-full py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors" href="#contact">
-                  Request Specific Quote
+                  Request a Free Quote
                 </a>
               </div>
               {/*  Package 2: Extension & Loft (Featured)  */}
@@ -815,16 +815,16 @@ export default function HomePage() {
                 <div>
                   <span className="text-[10px] sm:text-xs uppercase font-extrabold tracking-wider text-emerald-400">Package 02</span>
                   <h3 className="text-lg sm:text-xl font-bold text-white font-heading mt-1">Extension / Loft Conversion</h3>
-                  <p className="text-xs text-slate-300 mt-1.5 sm:mt-2">Comprehensive structural extension or full dormer conversion.</p>
+                  <p className="text-xs text-slate-300 mt-1.5 sm:mt-2">Rear or side-return extension, or a full dormer loft conversion.</p>
                   <div className="mt-5 mb-5 sm:mt-6 sm:mb-6 pb-5 sm:pb-6 border-b border-slate-800">
                     <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-emerald-400 font-heading">£55,000+</span>
-                    <span className="text-[11px] sm:text-xs text-slate-400 block mt-1">Starting baseline guide / ex VAT</span>
+                    <span className="text-[11px] sm:text-xs text-slate-400 block mt-1">Guide price (excl. VAT)</span>
                   </div>
                   <ul className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm text-slate-300 mb-6 sm:mb-8">
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Structural steel design &amp; installation</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Building Regulations &amp; Planning handling</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Architectural glazing &amp; flat roofing</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> High-spec insulation &amp; UFH setup</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Structural steel installation &amp; foundations</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Building Regulations &amp; planning support</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Bi-fold doors, rooflights &amp; flat roofing</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Energy-efficient insulation &amp; underfloor heating</li>
                     <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> 10-Year Insurance-Backed Guarantee</li>
                   </ul>
                 </div>
@@ -836,22 +836,22 @@ export default function HomePage() {
               <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
                 <div>
                   <span className="text-[10px] sm:text-xs uppercase font-extrabold tracking-wider text-slate-400">Package 03</span>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mt-1">Turnkey Architectural Build</h3>
-                  <p className="text-xs text-slate-500 mt-1.5 sm:mt-2">Complete townhouse transformation from bare brick to high finishes.</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mt-1">Complete House Renovation</h3>
+                  <p className="text-xs text-slate-500 mt-1.5 sm:mt-2">Full house transformation from bare brick to premium painted finishes.</p>
                   <div className="mt-5 mb-5 sm:mt-6 sm:mb-6 pb-5 sm:pb-6 border-b border-slate-100">
                     <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 font-heading">£120,000+</span>
-                    <span className="text-[11px] sm:text-xs text-slate-500 block mt-1">Starting baseline guide / ex VAT</span>
+                    <span className="text-[11px] sm:text-xs text-slate-500 block mt-1">Guide price (excl. VAT)</span>
                   </div>
                   <ul className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm text-slate-600 mb-6 sm:mb-8">
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Complete structural reconfiguration</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Custom kitchen &amp; luxury bathrooms</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Smart home MEP &amp; HVAC integration</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Full layout redesign &amp; wall removals</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> New fitted kitchen &amp; luxury bathrooms</li>
+                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Complete new heating, plumbing &amp; electrics</li>
                     <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Full-time on-site Project Director</li>
                     <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> 10-Year Structural Guarantee</li>
                   </ul>
                 </div>
                 <a className="w-full py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors" href="#contact">
-                  Schedule Director Consultation
+                  Book a Consultation
                 </a>
               </div>
             </div>
@@ -888,7 +888,7 @@ export default function HomePage() {
                   <i className="fa-solid fa-star"></i>
                 </div>
                 <blockquote className="text-sm sm:text-xl lg:text-2xl text-slate-200 font-light italic leading-relaxed">
-                  "JSTM Construction carried out our rear kitchen extension and loft conversion in Fulham. Their transparency on cost was unprecedented in London construction—delivered two weeks ahead of schedule with flawless joinery."
+                  "JSTM Construction carried out our rear kitchen extension and loft conversion in Fulham. Their pricing was completely transparent from start to finish. They finished two weeks ahead of schedule and the quality of the finish is outstanding."
                 </blockquote>
                 <div>
                   <h4 className="text-base sm:text-lg font-bold text-white font-heading">Dr. Julian &amp; Sarah Thorne</h4>
@@ -917,10 +917,10 @@ export default function HomePage() {
               <div className="lg:col-span-7 bg-charcoal-900 text-white rounded-3xl p-6 sm:p-12 border border-slate-800 shadow-2xl">
                 <span className="text-emerald-400 font-bold uppercase tracking-wider text-[11px] sm:text-xs">Direct Consultation</span>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white mt-1 font-heading">
-                  Have Questions or Need a Free London Survey?
+                  Book a Free Site Survey &amp; Quote
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-400 mt-2 mb-6 sm:mb-8">
-                  Fill in your property details below. Our technical estimator will review your requirements and respond within 24 hours.
+                  Tell us about your project below. Our team will review your requirements and get back to you within 24 hours with free, friendly advice.
                 </p>
                 <form className="space-y-3.5 sm:space-y-4" onSubmit={(e) => { e.preventDefault(); alert("Form submitted successfully! A JSTM project surveyor will contact you shortly."); }}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
@@ -957,11 +957,11 @@ export default function HomePage() {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1">Project Scope &amp; Timing</label>
-                    <textarea className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="Briefly outline your property type (e.g. Victorian terrace) and approximate timeline..." rows={4}></textarea>
+                    <label className="block text-xs font-semibold text-slate-300 mb-1">Tell Us About Your Project</label>
+                    <textarea className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="Tell us about your property (e.g. Victorian terrace, semi-detached), what work you need, and your target start date..." rows={4}></textarea>
                   </div>
                   <button className="w-full py-3 sm:py-4 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 shadow-xl shadow-emerald-950 flex items-center justify-center gap-2" type="submit">
-                    <span>Submit Survey Request</span>
+                    <span>Request Free Survey &amp; Quote</span>
                     <i className="fa-solid fa-arrow-right text-xs"></i>
                   </button>
                 </form>
@@ -974,10 +974,10 @@ export default function HomePage() {
                     Let’s Work Together
                   </div>
                   <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 font-heading">
-                    London Head Office &amp; Operations Center
+                    Our London Office &amp; Operations
                   </h2>
                   <p className="text-slate-600 text-xs sm:text-sm mt-2 sm:mt-3 leading-relaxed">
-                    Contact our surveyors directly or visit by appointment. We coordinate sites daily across North, South, East, West, and Central London.
+                    Call or message us directly to discuss your project. We manage residential building projects across all London boroughs daily.
                   </p>
                   {/*  Office Details Card  */}
                   <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-5">
@@ -998,7 +998,7 @@ export default function HomePage() {
                       <div>
                         <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-400">WhatsApp Instant Chat</h4>
                         <a className="text-base sm:text-lg font-bold text-emerald-600 hover:text-emerald-700 font-heading block" href="https://wa.me/447418095006" target="_blank" rel="noopener noreferrer">+44 7418 095006</a>
-                        <p className="text-[11px] sm:text-xs text-slate-500">Fast photo &amp; architectural drawings consultation</p>
+                        <p className="text-[11px] sm:text-xs text-slate-500">Send photos or plans on WhatsApp for a quick chat</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3 sm:gap-4">
@@ -1017,16 +1017,16 @@ export default function HomePage() {
                         <i className="fa-solid fa-envelope"></i>
                       </div>
                       <div>
-                        <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-400">Electronic Enquiries</h4>
+                        <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-400">Email Us</h4>
                         <a className="text-sm sm:text-base font-bold text-slate-900 hover:text-emerald-700 font-heading" href="mailto:info@jstmconstruction.com">info@jstmconstruction.com</a>
-                        <p className="text-[11px] sm:text-xs text-slate-500">Fast quote and architectural consultation response</p>
+                        <p className="text-[11px] sm:text-xs text-slate-500">We reply to all email enquiries within 24 hours</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 {/*  Boroughs Grid  */}
                 <div className="p-4 sm:p-6 rounded-2xl bg-slate-50 border border-slate-200">
-                  <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-700 tracking-wider mb-1.5 sm:mb-2">Prime Coverage Areas:</h4>
+                  <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-700 tracking-wider mb-1.5 sm:mb-2">Key Areas We Cover Across London:</h4>
                   <p className="text-[11px] sm:text-xs text-slate-500 leading-relaxed">
                     Kensington &amp; Chelsea, Westminster, Hammersmith &amp; Fulham, Wandsworth, Richmond, Islington, Camden, Southwark, Lambeth, Greenwich, Wimbledon, and Hampstead.
                   </p>
