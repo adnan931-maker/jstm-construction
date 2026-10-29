@@ -71,8 +71,21 @@ export default function ServicesPage() {
 
           {/* HERO */}
           <div className="relative w-full bg-[#0b1120] overflow-hidden border-b border-slate-800/80">
-            <div className="absolute top-0 right-1/4 w-[700px] h-[700px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none" />
-            <div className="absolute top-80 left-10 w-[550px] h-[550px] bg-sky-500/5 rounded-full blur-[100px] pointer-events-none" />
+            {/* Hero Background Image */}
+            <div className="absolute inset-0 z-0 overflow-hidden">
+              <Image
+                src="/assets/images/wandsworth_wrap_around_extension.jpg"
+                alt="London residential extension and construction by JSTM Construction"
+                fill
+                className="object-cover object-center opacity-20"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#0b1120]/95 via-[#0b1120]/80 to-[#0b1120]/90" />
+            </div>
+
+            {/* Atmospheric Ambient Glows */}
+            <div className="absolute top-0 right-1/4 w-[700px] h-[700px] bg-emerald-500/8 rounded-full blur-[120px] pointer-events-none z-0" />
+            <div className="absolute top-80 left-10 w-[550px] h-[550px] bg-sky-500/5 rounded-full blur-[100px] pointer-events-none z-0" />
             <section className="relative z-10 max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12 pt-8 sm:pt-10 pb-12 sm:pb-16">
               <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4 mb-6 sm:mb-8">
                 <nav className="flex items-center gap-2 text-[10px] sm:text-[11px] font-semibold tracking-wider text-slate-400">
@@ -89,13 +102,21 @@ export default function ServicesPage() {
                   <h1 style={H1_STYLE} className="text-[26px] sm:text-[38px] md:text-[48px] lg:text-[56px] leading-[1.15] sm:leading-[1.1] lg:leading-[64px] tracking-[-0.03em] font-bold text-white">High-Quality Building, Renovation &amp; Extension Services in London</h1>
                   <p className="text-[14px] sm:text-[16px] md:text-[18px] leading-relaxed text-slate-300 max-w-3xl">From house extensions and loft conversions to complete home renovations and structural works. We deliver exceptional craftsmanship, fixed-price quotes, and reliable service across London.</p>
                 </div>
-                <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-2.5 sm:gap-3 justify-end">
-                  <a href="#book-survey" className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-[13px] sm:text-[14px] font-semibold px-5 py-3 sm:px-6 sm:py-4 rounded-lg shadow-[0_4px_20px_rgba(5,150,105,0.4)] transition-all duration-150 text-center">
-                    <span className="material-symbols-outlined text-[18px] sm:text-[20px]">calendar_today</span><span>Book a Free Site Survey</span>
+                <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-end">
+                  <a
+                    href="#book-survey"
+                    className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white no-underline text-[13px] sm:text-[14px] font-semibold px-5 py-3 sm:px-6 sm:py-4 rounded-xl shadow-[0_4px_20px_rgba(5,150,105,0.4)] hover:shadow-[0_6px_24px_rgba(5,150,105,0.55)] transition-all duration-200 group text-center"
+                  >
+                    <span className="material-symbols-outlined text-[18px] sm:text-[20px]">calendar_today</span>
+                    <span>Book a Free Site Survey</span>
                   </a>
-                  <button type="button" onClick={() => alert("Downloading JSTM Services & Specifications Guide (PDF) - 2025 Edition")} className="inline-flex items-center justify-center gap-2 bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 text-[13px] sm:text-[14px] font-semibold px-5 py-3 sm:px-6 sm:py-3.5 rounded-lg transition-all duration-150 text-center">
-                    <span className="material-symbols-outlined text-[18px] sm:text-[20px] text-emerald-400">download</span><span>Download Services &amp; Pricing Guide (PDF)</span>
-                  </button>
+                  <a
+                    href="/portfolio"
+                    className="inline-flex items-center justify-center gap-2 bg-slate-800/70 hover:bg-slate-700/80 active:bg-slate-900 text-slate-200 hover:text-white no-underline border border-slate-700/60 hover:border-slate-500/60 text-[13px] sm:text-[14px] font-medium px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl transition-all duration-200 text-center group"
+                  >
+                    <span className="material-symbols-outlined text-[18px] sm:text-[20px] text-emerald-400">photo_library</span>
+                    <span>View Completed Projects</span>
+                  </a>
                 </div>
               </div>
               <div className="w-full bg-[#0f172a] border border-slate-800 rounded-xl shadow-xl p-4 sm:p-6 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
