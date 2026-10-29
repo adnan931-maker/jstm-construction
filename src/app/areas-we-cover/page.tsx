@@ -35,115 +35,115 @@ const BOROUGH_DOSSIERS: BoroughDossier[] = [
     id: "rbkc",
     category: "rbkc",
     name: "Royal Borough of Kensington & Chelsea",
-    sub: "RBKC Code of Construction Practice Certified",
+    sub: "Expert Builders in Kensington & Chelsea",
     postcodes: "SW3, SW7, SW10, W8, W11, W14",
     delivered: "140+ Delivered",
     image: "/assets/images/areas/kensington_chelsea.jpg",
     alt: "Victorian stucco-fronted luxury townhouse in Kensington, London, with modern bronze Crittall rear extension",
-    description: "Specialized in Grade II listed restorations, subterranean basement dig-outs compliant with the stringent RBKC Basements SPD, and intricate structural underpinning on constrained mews streets.",
+    description: "Specialised in Grade II listed restorations, basement conversions, and structural alterations in historic townhouses and mews properties.",
     metric1Label: "Approval Rate",
-    metric1Val: "100% Planning Rapport",
+    metric1Val: "Strong Council Track Record",
     metric2Label: "Lead Time",
-    metric2Val: "4–6 Weeks Pre-Commencement",
+    metric2Val: "Typically 4–6 Weeks",
     streets: "The Boltons, Sloane Square, Holland Park, Chelsea Embankment",
-    competencies: ["Grade II Conservation", "Silent Acoustic Piling", "Heritage Lime Plastering", "Party Wall Awards"],
-    ctaLabel: "Request RBKC Site Survey",
-    leadTime: "Lead Foreman On-Call",
+    competencies: ["Grade II Listed Buildings", "Quiet Underpinning & Piling", "Heritage Lime Plastering", "Party Wall Agreements"],
+    ctaLabel: "Book Kensington Site Visit",
+    leadTime: "Dedicated Site Manager",
   },
   {
     id: "westminster",
     category: "westminster",
     name: "City of Westminster & Mayfair",
-    sub: "Grosvenor & Crown Estate Approval Accordance",
+    sub: "Experienced with Mayfair & Belgravia Estates",
     postcodes: "W1, SW1, NW8, WC2",
     delivered: "95+ Delivered",
     image: "/assets/images/areas/westminster_mayfair.jpg",
     alt: "Luxurious Mayfair penthouse interior refurbishment featuring dark timber parquet herringbone flooring and bronze accents",
-    description: "Flawless turnkey transformations across Grosvenor Square, Belgravia mews houses, and Marylebone apartments. Complete acoustic decoupling and dedicated liaison with historic land estates.",
+    description: "High-spec refurbishments across Mayfair, Belgravia, and Marylebone apartments. We coordinate smoothly with major London estates, manage council access permits, and soundproof to the highest standard.",
     metric1Label: "Estate Approvals",
-    metric1Val: "Grosvenor & Portman Vetted",
-    metric2Label: "Access Logistics",
-    metric2Val: "Red Route & Westminster Bay Managed",
+    metric1Val: "Experienced with London Estates",
+    metric2Label: "Parking & Permits",
+    metric2Val: "Council Bays & TfL Permits Managed",
     streets: "Mount Street, Eaton Square, Chester Square, Berkeley Square",
-    competencies: ["Turnkey Penthouse Refurbishment", "Acoustic Floor Decoupling", "Historic Woodwork Restoration", "Estate Landlord Licenses"],
-    ctaLabel: "Request Westminster Survey",
-    leadTime: "Dedicated Resident PM",
+    competencies: ["Full Apartment Refurbishment", "Acoustic Soundproofing", "Bespoke Joinery & Restorations", "Freeholder & Estate Licences"],
+    ctaLabel: "Book Westminster Site Visit",
+    leadTime: "Dedicated Project Manager",
   },
   {
     id: "wandsworth",
     category: "wandsworth",
     name: "Wandsworth, Battersea & Clapham",
-    sub: "Subterranean & Large Footprint Domestic Experts",
+    sub: "Family Home Extensions & Loft Conversions",
     postcodes: "SW11, SW12, SW18, SW4",
     delivered: "80+ Delivered",
     image: "/assets/images/areas/wandsworth_battersea.jpg",
     alt: "Modern double-height glass kitchen pavilion in a Victorian terraced family residence in Battersea",
-    description: "Master builders for expansive Victorian terraced homes around Wandsworth Common, Battersea Park, and the Nightingale Triangle. Double-storey rear glass wraps, mansards, and garden pavilions.",
+    description: "Experienced builders for Victorian terraced homes around Wandsworth Common, Battersea Park, and Clapham. Specialists in open-plan rear extensions, glass side-returns, and mansard lofts.",
     metric1Label: "Typical Scale",
-    metric1Val: "Family Home Transformations",
-    metric2Label: "Planning Scope",
-    metric2Val: "Lawful Development Certs",
+    metric1Val: "Extensions & Full Refurbishments",
+    metric2Label: "Planning Route",
+    metric2Val: "Permitted Development & Full Planning",
     streets: "Nightingale Triangle, Spencer Park, Wandsworth Common, Prince of Wales Drive",
-    competencies: ["Side-Return Glazing", "L-Shaped Mansard Dormers", "Underfloor Radiant Screed", "Basement Playrooms"],
-    ctaLabel: "Request Wandsworth Survey",
-    leadTime: "Fast Site Deployment",
+    competencies: ["Side-Return Extensions", "Mansard & Dormer Lofts", "Underfloor Heating", "Basement Conversions"],
+    ctaLabel: "Book Wandsworth Site Visit",
+    leadTime: "Fast Site Survey",
   },
   {
     id: "richmond",
     category: "richmond",
     name: "Richmond upon Thames & Kingston",
-    sub: "Thames Water & Conservation Zone Specialists",
+    sub: "Riverside & Conservation Area Specialists",
     postcodes: "TW9, TW10, KT1, KT2",
     delivered: "60+ Delivered",
     image: "/assets/images/areas/richmond_upon_thames.jpg",
     alt: "Detached riverside luxury family home in Richmond upon Thames showcasing zinc clad architectural roof extension",
-    description: "Specialists in flood-risk mitigation engineering, green-belt architectural integration, standing seam zinc roofs, and Passivhaus thermal envelope retrofits.",
+    description: "Experienced with riverside homes and conservation properties across Richmond and Kingston. Specialists in zinc-clad loft conversions, water management, and energy-efficient building.",
     metric1Label: "Water Authority",
-    metric1Val: "Thames Water Build-Over Approved",
-    metric2Label: "Green Standard",
-    metric2Val: "Passivhaus EnerPHit Capable",
+    metric1Val: "Thames Water Build-Over Agreements",
+    metric2Label: "Energy Efficiency",
+    metric2Val: "High-Performance Insulation & Heat Pumps",
     streets: "Richmond Hill, St Margarets, Ham Common, Petersham Road",
-    competencies: ["Standing Seam Zinc Lofts", "Waterproof Tanking", "Timber Glulam Beams", "Air-Source Heat Pumps"],
-    ctaLabel: "Request Richmond Survey",
-    leadTime: "Environmental Team Assigned",
+    competencies: ["Zinc Clad Lofts", "Waterproofing & Tanking", "Glulam & Steel Beams", "Heat Pumps & Eco Heating"],
+    ctaLabel: "Book Richmond Site Visit",
+    leadTime: "Site Survey Available",
   },
   {
     id: "camden",
     category: "camden",
     name: "Camden, Hampstead & Highgate",
-    sub: "Hampstead Garden Suburb Trust Accordance",
+    sub: "Heritage Renovations in Camden & Hampstead",
     postcodes: "NW3, NW1, N6",
     delivered: "42+ Delivered",
     image: "/assets/images/areas/camden_hampstead.jpg",
     alt: "Grand Georgian red-brick residence in Hampstead undergoing meticulous architectural restoration",
-    description: "Pristine red-brick Georgian restoration, deep Heath-adjacent foundation underpinning, and delicate tree-root preservation architecture.",
-    metric1Label: "Conservation Liaison",
-    metric1Val: "HGS Trust & Highgate Society",
-    metric2Label: "Geotechnical Protocol",
-    metric2Val: "London Clay Deep Underpinning",
+    description: "Careful Georgian and Victorian restorations, structural chimney removals, underpinning, and basement work near Hampstead Heath and Highgate.",
+    metric1Label: "Heritage Guidance",
+    metric1Val: "Local Conservation & Trust Guidelines",
+    metric2Label: "Structural Work",
+    metric2Val: "Foundations & Steelwork Shoring",
     streets: "Well Walk, Church Row, Highgate West Hill, Primrose Hill Road",
-    competencies: ["Tuck Pointing Masonry", "Deep RSJ Basement Shoring", "Handcrafted Sash Windows", "Tree Root Protection Substructures"],
-    ctaLabel: "Request Camden Survey",
-    leadTime: "Historic Masonry Team",
+    competencies: ["Period Brickwork & Pointing", "Steel Beam RSJ Installation", "Timber Sash Windows", "Foundations & Underpinning"],
+    ctaLabel: "Book Camden Site Visit",
+    leadTime: "Heritage Craftsmen",
   },
   {
     id: "hammersmith",
     category: "hammersmith",
     name: "Hammersmith & Fulham",
-    sub: "Peterborough Estate & Conservation Zones",
+    sub: "House Extensions & Renovations in Fulham",
     postcodes: "SW6, W6, W12",
     delivered: "75+ Delivered",
     image: "/assets/images/areas/hammersmith_fulham.jpg",
     alt: "Renovated Lion House in Peterborough Estate, Fulham, displaying refined architectural brickwork",
-    description: "Specialists in iconic Fulham 'Lion Houses', bespoke pod conversions, structural chimney breast removal, and modern architectural rear open-plan living extensions.",
-    metric1Label: "Estate Precedents",
-    metric1Val: "Lion House Structural Specialists",
-    metric2Label: "Council Pre-App",
-    metric2Val: "LBHF Protocol Certified",
+    description: "Specialists in Fulham 'Lion Houses', bespoke pod lofts, structural alterations, and modern kitchen extensions with steel doors.",
+    metric1Label: "House Styles",
+    metric1Val: "Period Terraces & Lion Houses",
+    metric2Label: "Local Council",
+    metric2Val: "Hammersmith & Fulham Council Liaison",
     streets: "Peterborough Estate, Hurlingham Road, Parsons Green, Brook Green",
-    competencies: ["Lion House Pod Conversions", "Crittall Steel Openings", "Acoustic Party Wall Upgrades", "Turnkey Luxury Kitchens"],
-    ctaLabel: "Request Fulham Survey",
-    leadTime: "Resident Site Team",
+    competencies: ["Fulham Pod Lofts", "Crittall-Style Steel Doors", "Party Wall Soundproofing", "Modern Open-Plan Kitchens"],
+    ctaLabel: "Book Fulham Site Visit",
+    leadTime: "Local Site Team",
   },
 ];
 
@@ -157,44 +157,44 @@ const ALL_32_BOROUGHS = [
 const NUANCE_MATRIX = [
   {
     borough: "Kensington & Chelsea (RBKC)",
-    excavation: "Strict single-storey constraint; 50% garden max; CoCP Level 1 audits.",
-    pd: "Heavily restricted via Article 4 directions in 70% of conservation zones.",
-    rapport: "Established 15+ Yrs",
+    excavation: "Strict rules on depth and garden size; Construction Code audits apply.",
+    pd: "Article 4 restrictions apply in many conservation areas.",
+    rapport: "15+ Years Working with RBKC",
     timeline: "8 - 10 Weeks",
   },
   {
     borough: "City of Westminster (WCC)",
-    excavation: "Subterranean SPD compliant; structural method statement (SMS) mandatory.",
-    pd: "Restricted in Grosvenor, Howard de Walden, and Crown Estate enclaves.",
-    rapport: "Direct Liaison",
+    excavation: "Detailed structural method statements required.",
+    pd: "Estate licences required on private estates.",
+    rapport: "Regular Council Liaison",
     timeline: "7 - 9 Weeks",
   },
   {
     borough: "Wandsworth & Battersea",
-    excavation: "Standard subterranean criteria; party wall engineer vetting required.",
-    pd: "Expansive; rear wraparounds and mansards routinely lawful.",
-    rapport: "Rapid Accord",
+    excavation: "Standard basement criteria; party wall surveyor agreements required.",
+    pd: "Broad scope; rear extensions and loft dormers frequently permitted.",
+    rapport: "Prompt Decisions",
     timeline: "5 - 7 Weeks",
   },
   {
     borough: "Richmond upon Thames",
-    excavation: "Thames Water flood risk assessment required within 500m of river basin.",
-    pd: "Balanced; Permitted Development available on detached residences.",
-    rapport: "High Compliance",
+    excavation: "Flood risk checks near the Thames; sensitive green spaces protected.",
+    pd: "Good scope for detached and semi-detached homes.",
+    rapport: "High Approval Rate",
     timeline: "6 - 8 Weeks",
   },
   {
     borough: "Camden & Hampstead",
-    excavation: "Geological hydrology testing and tree protection orders (TPOs) strictly vetted.",
-    pd: "Subject to Hampstead Garden Suburb Trust architectural veto.",
-    rapport: "Trust Accredited",
+    excavation: "Hydrology tests and tree protection orders often required near the Heath.",
+    pd: "Subject to Hampstead Garden Suburb Trust rules where applicable.",
+    rapport: "Heritage Approved",
     timeline: "8 - 11 Weeks",
   },
   {
     borough: "Hammersmith & Fulham (LBHF)",
-    excavation: "Basement SPD enforced; party wall dispute resolution panel integration.",
-    pd: "Strong support for pod conversions and rear kitchen pavilions.",
-    rapport: "Direct Liaison",
+    excavation: "Basement policy applies; party wall agreements required.",
+    pd: "Strong support for pod lofts and rear kitchen extensions.",
+    rapport: "Regular Council Liaison",
     timeline: "6 - 8 Weeks",
   },
 ];
@@ -277,7 +277,7 @@ export default function AreasWeCoverPage() {
 
               <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-slate-900/90 border border-emerald-500/30 text-emerald-300 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-semibold uppercase tracking-wider shadow-inner">
                 <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]" />
-                <span>GREATER LONDON REGULATORY MATRIX</span>
+                <span>GREATER LONDON & SURREY COVERAGE</span>
               </div>
             </div>
 
@@ -287,14 +287,13 @@ export default function AreasWeCoverPage() {
                 style={H1_STYLE}
                 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-white"
               >
-                Prime Central London &amp;{" "}
+                House Extensions, Lofts &amp; Renovations Across{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-200">
-                  Home Counties
-                </span>{" "}
-                Architectural Coverage
+                  London &amp; Surrey
+                </span>
               </h1>
               <p className="text-xs sm:text-base lg:text-lg text-slate-300 leading-relaxed font-light max-w-3xl">
-                Deep institutional mastery of local planning policies, conservation area Article 4 directions, subterranean guidelines, and party wall logistics across London’s prime residential enclaves.
+                Experienced London builders who understand local council planning rules, conservation guidelines, and building regulations inside out. From Kensington to Wandsworth and beyond.
               </p>
             </div>
 
@@ -317,14 +316,14 @@ export default function AreasWeCoverPage() {
                   href="#feasibility-survey"
                   className="px-5 sm:px-6 py-2.5 sm:py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl font-semibold text-xs sm:text-sm transition-all duration-150 flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(5,150,105,0.4)]"
                 >
-                  <span>Check Clearance</span>
+                  <span>Check Postcode</span>
                   <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
                 </a>
               </div>
               {postcodeCheck.trim() && (
                 <div className="text-[11px] sm:text-xs text-emerald-400 font-medium flex items-center gap-1.5 pl-1">
                   <span className="material-symbols-outlined text-[16px]">verified</span>
-                  <span>Jurisdiction: {detectedBorough}</span>
+                  <span>Area: {detectedBorough}</span>
                 </div>
               )}
             </div>
@@ -333,19 +332,19 @@ export default function AreasWeCoverPage() {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4 pt-2 sm:pt-4">
               <div className="bg-[#0f172a]/90 border border-slate-800 p-3.5 sm:p-5 rounded-xl">
                 <div style={H1_STYLE} className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">6 Prime</div>
-                <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Flagship Focus Boroughs</p>
+                <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Specialist Boroughs</p>
               </div>
               <div className="bg-[#0f172a]/90 border border-slate-800 p-3.5 sm:p-5 rounded-xl">
                 <div style={H1_STYLE} className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">32 Boroughs</div>
-                <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Greater London Coverage</p>
+                <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Covering All London & Surrey</p>
               </div>
               <div className="bg-[#0f172a]/90 border border-slate-800 p-3.5 sm:p-5 rounded-xl">
                 <div style={H1_STYLE} className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">100%</div>
-                <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Planning Approval Record</p>
+                <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Building Regulations Compliant</p>
               </div>
               <div className="bg-[#0f172a]/90 border border-slate-800 p-3.5 sm:p-5 rounded-xl">
                 <div style={H1_STYLE} className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white">4 Hours</div>
-                <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Director Response SLA</p>
+                <p className="text-[10px] sm:text-xs text-slate-400 mt-1 uppercase font-semibold">Fast Quote Response</p>
               </div>
             </div>
           </div>
@@ -387,13 +386,13 @@ export default function AreasWeCoverPage() {
             <div className="max-w-3xl space-y-2.5 sm:space-y-3">
               <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs">
                 <span className="w-2 h-2 rounded-full bg-emerald-600" />
-                <span>Bespoke Territorial Expertise</span>
+                <span>LOCAL BOROUGH KNOWLEDGE</span>
               </div>
               <h2 style={H1_STYLE} className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
-                Comprehensive Regional Dossiers
+                Areas We Regularly Work In
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm lg:text-base leading-relaxed">
-                Every London Borough operates under distinct statutory constraints, architectural precedents, and building control frameworks. Here is how our engineering teams navigate each prime enclave.
+                Every London council has its own planning rules, conservation guidelines, and parking restrictions. Here is an overview of how we deliver successful projects across our main working areas.
               </p>
             </div>
 
@@ -452,7 +451,7 @@ export default function AreasWeCoverPage() {
                         </div>
                         <div className="col-span-2 pt-2 border-t border-slate-200">
                           <span className="text-slate-400 block uppercase font-semibold text-[9px] sm:text-[10px]">
-                            Frequent Streets Handled
+                            Recent Streets & Areas
                           </span>
                           <span className="text-slate-800 font-medium text-xs sm:text-sm">{b.streets}</span>
                         </div>
@@ -491,20 +490,20 @@ export default function AreasWeCoverPage() {
               ))}
             </div>
 
-            {/* Complete London 32-Borough Directory */}
+            {/* Covering All 32 London Boroughs & Surrey */}
             <div className="bg-white p-5 sm:p-8 lg:p-10 rounded-2xl border border-slate-200 shadow-sm space-y-5 sm:space-y-6">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
                 <div>
                   <h3 style={H1_STYLE} className="text-xl sm:text-2xl font-bold text-slate-900">
-                    Complete London 32-Borough Directory
+                    Covering All 32 London Boroughs & Surrey
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-500 mt-1">
-                    Licensed, insured, and actively operating across every administrative borough in Greater London.
+                    Fully insured and experienced builders working across Greater London and surrounding Home Counties.
                   </p>
                 </div>
                 <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-lg border border-emerald-200 self-start sm:self-auto">
                   <span className="w-2 h-2 rounded-full bg-emerald-600" />
-                  <span>32/32 Active Jurisdictions</span>
+                  <span>Full Greater London Coverage</span>
                 </div>
               </div>
 
@@ -530,18 +529,18 @@ export default function AreasWeCoverPage() {
               <div className="max-w-3xl space-y-2.5 sm:space-y-3">
                 <div className="inline-flex items-center gap-2 text-emerald-400 font-bold uppercase tracking-wider text-[11px] sm:text-xs">
                   <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                  <span>Unrivalled Municipal Logistics</span>
+                  <span>PROFESSIONAL SITE MANAGEMENT</span>
                 </div>
                 <h2 style={H1_STYLE} className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white">
-                  Strategic Central London Logistics Hub &amp; Site Orchestration
+                  Smooth Project Management &amp; Clean, Organised Sites
                 </h2>
                 <p className="text-slate-300 text-xs sm:text-sm lg:text-base leading-relaxed font-light">
-                  Delivering premier renovations in high-density London settings demands acute site logistics: rapid parking bay suspensions, acoustic baffles, and considerately managed delivery corridors.
+                  Building in London requires careful planning. We take care of parking bay suspensions, skip permits, neighbour considerations, and delivery schedules so your project runs smoothly.
                 </p>
               </div>
 
               <div className="bg-[#0f172a] p-4 sm:p-6 rounded-2xl border border-slate-800 shadow-xl shrink-0">
-                <div className="text-[11px] sm:text-xs uppercase tracking-wider text-slate-400 font-semibold">Operations Headquarters</div>
+                <div className="text-[11px] sm:text-xs uppercase tracking-wider text-slate-400 font-semibold">Main Office & Workshop</div>
                 <div style={H1_STYLE} className="text-lg sm:text-xl font-bold text-emerald-400 mt-1">Vista Centre, Suite A204</div>
                 <div className="text-xs text-slate-300">50 Salisbury Rd, Cranford, Hounslow TW4 6JQ</div>
               </div>
@@ -564,7 +563,7 @@ export default function AreasWeCoverPage() {
                 <div className="relative z-10 m-3 sm:m-6 p-4 sm:p-6 rounded-xl bg-[#0b1120]/95 border border-slate-800 backdrop-blur-md space-y-3 sm:space-y-4 shadow-xl">
                   <div className="flex items-center justify-between">
                     <span className="text-[11px] sm:text-xs uppercase tracking-widest text-emerald-400 font-bold">
-                      Live Fleet &amp; Site Dispatch
+                      Site Management &amp; Support
                     </span>
                     <span className="flex items-center gap-1.5 text-[11px] sm:text-xs text-slate-300">
                       <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400 animate-ping" />
@@ -574,15 +573,15 @@ export default function AreasWeCoverPage() {
                   <div className="grid grid-cols-3 gap-2 text-center text-xs">
                     <div className="bg-[#0f172a] p-2.5 sm:p-3 rounded-lg border border-slate-800">
                       <span className="block text-base sm:text-lg font-bold text-white">18m</span>
-                      <span className="text-slate-400 text-[9px] sm:text-[10px]">Avg Response</span>
+                      <span className="text-slate-400 text-[9px] sm:text-[10px]">Average Callout</span>
                     </div>
                     <div className="bg-[#0f172a] p-2.5 sm:p-3 rounded-lg border border-slate-800">
                       <span className="block text-base sm:text-lg font-bold text-white">100%</span>
-                      <span className="text-slate-400 text-[9px] sm:text-[10px]">Euro 6 Clean</span>
+                      <span className="text-slate-400 text-[9px] sm:text-[10px]">Clean Fleet</span>
                     </div>
                     <div className="bg-[#0f172a] p-2.5 sm:p-3 rounded-lg border border-slate-800">
                       <span className="block text-base sm:text-lg font-bold text-white">Zero</span>
-                      <span className="text-slate-400 text-[9px] sm:text-[10px]">Delay Metric</span>
+                      <span className="text-slate-400 text-[9px] sm:text-[10px]">Project Delays</span>
                     </div>
                   </div>
                 </div>
@@ -594,26 +593,26 @@ export default function AreasWeCoverPage() {
                   {
                     icon: "local_parking",
                     num: "1",
-                    title: "Bay Suspensions Managed",
-                    body: "We process all residential parking suspensions, TfL Red Route clearances, and crane lift permits directly with borough transport offices—zero client administration.",
+                    title: "Parking & Skip Permits Managed",
+                    body: "We arrange parking bay suspensions, skip permits, and delivery access directly with your local council, taking the hassle away from you.",
                   },
                   {
                     icon: "volume_off",
                     num: "2",
-                    title: "Considerate Constructors",
-                    body: "Acoustic curtains, dust extraction manifolds, and strict working hour accords ensure harmonious relations with neighbouring properties and residents' associations.",
+                    title: "Polite & Considerate Builders",
+                    body: "We keep work sites clean and tidy, use dust extraction, and stick strictly to permitted working hours to keep your neighbours happy.",
                   },
                   {
                     icon: "engineering",
                     num: "3",
-                    title: "Dedicated Resident Directors",
-                    body: "Every prime contract features an on-site resident manager with chartered qualifications, guaranteeing daily oversight and continuous quality control.",
+                    title: "Dedicated Site Manager",
+                    body: "Every project is supervised by an experienced site manager who is on-site daily to inspect quality and answer your questions.",
                   },
                   {
                     icon: "handshake",
                     num: "4",
-                    title: "Pre-Packaged Party Wall Care",
-                    body: "Chartered surveyors on retainer handle Schedules of Condition and Party Wall Awards with adjoining owners before ground is broken, preventing legal bottlenecks.",
+                    title: "Party Wall & Building Control",
+                    body: "We work alongside qualified party wall surveyors and local building control inspectors from day one, keeping everything fully compliant.",
                   },
                 ].map((g) => (
                   <div
@@ -644,13 +643,13 @@ export default function AreasWeCoverPage() {
             <div className="max-w-3xl space-y-2.5 sm:space-y-3">
               <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs">
                 <span className="w-2 h-2 rounded-full bg-emerald-600" />
-                <span>Regulatory Intelligence</span>
+                <span>PLANNING & BUILDING ADVICE</span>
               </div>
               <h2 style={H1_STYLE} className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
-                Borough Planning &amp; Conservation Nuance Matrix
+                Planning Permission &amp; Approval Guidelines by Borough
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm lg:text-base leading-relaxed">
-                Statutory standards vary greatly across London&apos;s prime councils. Review our track records and clearance timelines for each prominent local authority.
+                Planning rules and approval times vary across London councils. Here is a quick guide to what to expect in key boroughs.
               </p>
             </div>
 
@@ -658,11 +657,11 @@ export default function AreasWeCoverPage() {
               <table className="w-full text-left text-xs sm:text-sm">
                 <thead className="bg-slate-100 text-slate-800 uppercase tracking-wider text-[10px] sm:text-[11px] font-bold border-b border-slate-200 whitespace-nowrap">
                   <tr>
-                    <th className="py-3 sm:py-4 px-4 sm:px-6">Borough Jurisdiction</th>
-                    <th className="py-3 sm:py-4 px-4 sm:px-6">Basement / Excavation Policy</th>
+                    <th className="py-3 sm:py-4 px-4 sm:px-6">Borough / Area</th>
+                    <th className="py-3 sm:py-4 px-4 sm:px-6">Basement &amp; Excavation Rules</th>
                     <th className="py-3 sm:py-4 px-4 sm:px-6">Permitted Development Scope</th>
-                    <th className="py-3 sm:py-4 px-4 sm:px-6">Conservation Officer Rapport</th>
-                    <th className="py-3 sm:py-4 px-4 sm:px-6 text-right">Avg. Approval Period</th>
+                    <th className="py-3 sm:py-4 px-4 sm:px-6">Planning Experience</th>
+                    <th className="py-3 sm:py-4 px-4 sm:px-6 text-right">Typical Decision Time</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100 text-slate-700">
@@ -694,10 +693,10 @@ export default function AreasWeCoverPage() {
                 </div>
                 <div>
                   <div style={H1_STYLE} className="text-base sm:text-lg font-bold text-slate-900">
-                    Unsure of Your Borough&apos;s Permitted Limits?
+                    Need Advice on Planning Permission or Permitted Development?
                   </div>
                   <div className="text-xs sm:text-sm text-slate-500 mt-0.5">
-                    Our chartered in-house planning consultants run complimentary pre-application property audits.
+                    We can review your property, explain what you can build under Permitted Development, and help with council planning applications.
                   </div>
                 </div>
               </div>
@@ -705,7 +704,7 @@ export default function AreasWeCoverPage() {
                 className="w-full sm:w-auto text-center px-6 py-3 sm:py-3.5 bg-slate-900 text-white font-semibold text-xs uppercase tracking-wider rounded-xl hover:bg-slate-800 transition-colors shrink-0 shadow-md"
                 href="#feasibility-survey"
               >
-                Request Planning Audit
+                Ask About Planning
               </a>
             </div>
           </div>
@@ -733,7 +732,7 @@ export default function AreasWeCoverPage() {
               </span>
               <span className="flex items-center gap-1.5 sm:gap-2 text-white">
                 <span className="material-symbols-outlined text-emerald-400 text-[18px] sm:text-[20px]">balance</span>
-                Considerate Constructors Scheme
+                Polite & Considerate Builders Scheme
               </span>
               <span className="flex items-center gap-1.5 sm:gap-2 text-emerald-400">
                 <span className="material-symbols-outlined text-[18px] sm:text-[20px]">policy</span>
@@ -751,13 +750,13 @@ export default function AreasWeCoverPage() {
               <div className="lg:col-span-5 space-y-6 sm:space-y-8">
                 <div>
                   <span className="text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs">
-                    Direct Feasibility Protocol
+                    FREE SITE SURVEY & CONSULTATION
                   </span>
                   <h2 style={H1_STYLE} className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-2">
-                    Request Your Borough Feasibility Site Survey
+                    Book a Free Site Survey & Fixed-Price Quote
                   </h2>
                   <p className="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
-                    Prior to any contractual commitment, a JSTM Site Director visits your property to evaluate Party Wall vulnerabilities, Thames Water conduits, structural span constraints, and planning clearances.
+                    Before you make any commitment, we visit your home to assess your property, discuss your ideas, check structural requirements, and provide a clear, itemised fixed-price quote.
                   </p>
                 </div>
 
@@ -784,7 +783,7 @@ export default function AreasWeCoverPage() {
                       <a href="https://wa.me/447418095006" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base font-bold text-emerald-600 hover:text-emerald-700 transition-colors">
                         +44 7418 095006
                       </a>
-                      <p className="text-[11px] sm:text-xs text-slate-500">Message directly for swift drawings review</p>
+                      <p className="text-[11px] sm:text-xs text-slate-500">Send drawings or photos for a quick response</p>
                     </div>
                   </div>
 
@@ -797,7 +796,7 @@ export default function AreasWeCoverPage() {
                       <a href="mailto:info@jstmconstruction.com" className="text-xs sm:text-sm font-bold text-slate-900 hover:text-emerald-700 transition-colors">
                         info@jstmconstruction.com
                       </a>
-                      <p className="text-[11px] sm:text-xs text-slate-500">Drawings &amp; tenders reviewed within 24 hours</p>
+                      <p className="text-[11px] sm:text-xs text-slate-500">Drawings and tender packs reviewed within 24 hours</p>
                     </div>
                   </div>
 
@@ -806,9 +805,9 @@ export default function AreasWeCoverPage() {
                       <span className="material-symbols-outlined text-[18px] sm:text-[20px]">verified</span>
                     </div>
                     <div>
-                      <div className="text-[10px] sm:text-xs uppercase font-bold text-slate-400">Zero Obligation Feasibility</div>
-                      <p className="text-xs sm:text-sm font-bold text-slate-900">Comprehensive Pre-Commencement Dossier</p>
-                      <p className="text-[11px] sm:text-xs text-slate-500">Fully itemized Bill of Quantities &amp; Schedule</p>
+                      <div className="text-[10px] sm:text-xs uppercase font-bold text-slate-400">Free, No-Obligation Consultation</div>
+                      <p className="text-xs sm:text-sm font-bold text-slate-900">Detailed Fixed-Price Quotation</p>
+                      <p className="text-[11px] sm:text-xs text-slate-500">Fully itemised breakdown of works and timeline</p>
                     </div>
                   </div>
                 </div>
@@ -818,10 +817,10 @@ export default function AreasWeCoverPage() {
               <div className="lg:col-span-7">
                 <div className="bg-[#0f172a] text-white p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-slate-800 shadow-2xl">
                   <h3 style={H1_STYLE} className="text-xl sm:text-2xl font-bold text-white mb-1">
-                    Book On-Site Architectural Inspection
+                    Request Your Free Site Visit
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-400 mb-6 sm:mb-8">
-                    Complete your project coordinates. Our Mayfair engineering desk will match your address to its statutory borough protocol.
+                    Fill in your details below and a member of our team will contact you within 24 hours to arrange a convenient site visit.
                   </p>
 
                   <form className="space-y-4" onSubmit={handleSubmit}>
@@ -833,7 +832,7 @@ export default function AreasWeCoverPage() {
                         <input
                           id="awc-name"
                           className="w-full bg-[#1e293b] border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none transition-colors"
-                          placeholder="Lord Julian Davies"
+                          placeholder="John Smith"
                           required
                           type="text"
                           value={formData.name}
@@ -867,7 +866,7 @@ export default function AreasWeCoverPage() {
                         <input
                           id="awc-email"
                           className="w-full bg-[#1e293b] border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none transition-colors"
-                          placeholder="client@estate.com"
+                          placeholder="john.smith@example.co.uk"
                           required
                           type="email"
                           value={formData.email}
@@ -881,7 +880,7 @@ export default function AreasWeCoverPage() {
                         <input
                           id="awc-phone"
                           className="w-full bg-[#1e293b] border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none transition-colors"
-                          placeholder="+44 7..."
+                          placeholder="07123 456789"
                           required
                           type="tel"
                           value={formData.phone}
@@ -892,7 +891,7 @@ export default function AreasWeCoverPage() {
 
                     <div>
                       <label htmlFor="awc-detected" className="block text-xs font-semibold text-slate-300 mb-1">
-                        Detected London Borough Authority
+                        Detected Borough / Council
                       </label>
                       <input
                         id="awc-detected"
@@ -904,7 +903,7 @@ export default function AreasWeCoverPage() {
 
                     <div>
                       <label htmlFor="awc-scope" className="block text-xs font-semibold text-slate-300 mb-1">
-                        Proposed Construction Specialism *
+                        Type of Project *
                       </label>
                       <select
                         id="awc-scope"
@@ -913,24 +912,24 @@ export default function AreasWeCoverPage() {
                         onChange={(e) => setFormData({ ...formData, scope: e.target.value })}
                         className="w-full bg-[#1e293b] border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none transition-colors"
                       >
-                        <option value="" disabled>Select Proposed Specialism</option>
-                        <option value="rbkc-listed">Grade II Listed Victorian/Georgian Refurbishment</option>
-                        <option value="basement">Subterranean Basement Excavation &amp; Underpinning</option>
-                        <option value="extension">Architectural Rear / Side-Return Glass Extension</option>
-                        <option value="loft">Mansard / Dormer Loft Sky Suite</option>
-                        <option value="whole-house">Complete Turnkey Whole-House Renovation</option>
+                        <option value="" disabled>Select Project Type</option>
+                        <option value="rbkc-listed">Period &amp; Listed Property Renovation</option>
+                        <option value="basement">Basement Conversion &amp; Underpinning</option>
+                        <option value="extension">House Extension (Rear / Side-Return / Wrap-Around)</option>
+                        <option value="loft">Loft Conversion (Dormer / Mansard / Velux)</option>
+                        <option value="whole-house">Complete House Renovation &amp; Refurbishment</option>
                       </select>
                     </div>
 
                     <div>
                       <label htmlFor="awc-notes" className="block text-xs font-semibold text-slate-300 mb-1">
-                        Project Scope &amp; Target Start Date
+                        Project Details &amp; Ideal Start Date
                       </label>
                       <textarea
                         id="awc-notes"
                         rows={3}
                         className="w-full bg-[#1e293b] border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none resize-none transition-colors"
-                        placeholder="Briefly state conservation area status, architect drawings readiness, and target start timescale..."
+                        placeholder="Tell us about your project, whether you have architectural drawings ready, and your target start date..."
                         value={formData.notes}
                         onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                       />
@@ -941,17 +940,17 @@ export default function AreasWeCoverPage() {
                       className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 sm:py-4 rounded-xl shadow-[0_4px_20px_rgba(5,150,105,0.4)] transition-all text-xs sm:text-sm flex items-center justify-center gap-2"
                     >
                       <span className="material-symbols-outlined text-[18px] sm:text-[20px]">calendar_month</span>
-                      <span>Request Borough Feasibility Site Survey</span>
+                      <span>Book Free Site Survey</span>
                     </button>
 
                     {formSubmitted && (
                       <div className="p-4 rounded-xl bg-emerald-950/80 border border-emerald-500/40 text-emerald-200 text-xs sm:text-sm text-center animate-fadeIn">
-                        Thank you. Your borough site survey request has been received. Our Mayfair engineering desk will match your coordinates and contact you within 4 business hours.
+                        Thank you. We have received your request. A member of our team will review your details and contact you shortly to arrange your site visit.
                       </div>
                     )}
 
                     <p className="text-[10px] sm:text-[11px] text-slate-400 text-center">
-                      Strict Professional Non-Disclosure: Architectural drawings &amp; property locations protected under professional NDA.
+                      Your Privacy Matters: We keep all project drawings, contact details, and property information strictly confidential.
                     </p>
                   </form>
                 </div>
