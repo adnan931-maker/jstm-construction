@@ -11,31 +11,31 @@ const INPUT_CLS = "w-full bg-slate-950 border border-slate-800 text-white px-3.5
 
 const METRICS = [
   { val: "16", suffix: "+", title: "Years of Excellence", desc: "Continuous prime London operations since 2008" },
-  { val: "450", suffix: "+", title: "Prime Homes Delivered", desc: "Grade II listed, basements & private estates" },
-  { val: "£20M", suffix: "", title: "All-Risk Insured", desc: "Institutional PI & Public Liability coverage" },
-  { val: "99.2", suffix: "%", title: "On-Time Handover", desc: "Strict critical-path JCT programme adherence" },
+  { val: "450", suffix: "+", title: "Homes Delivered", desc: "Extensions, renovations & period homes" },
+  { val: "£20M", suffix: "", title: "Fully Insured", desc: "Comprehensive public & employer liability" },
+  { val: "99.2", suffix: "%", title: "On-Time Completion", desc: "Projects delivered on agreed schedule" },
 ];
 
 const COMMITMENTS = [
   {
     icon: "receipt_long",
     title: "Zero Hidden Variations",
-    desc: "Fixed-price JCT Minor Works frameworks with full BoQ transparency. Every nut, bolt, and finish line is committed before ground is broken.",
+    desc: "Detailed, fixed-price quotes with full cost transparency. Every item is agreed before we start, so there are no unexpected extras.",
   },
   {
     icon: "person_pin_circle",
-    title: "Dedicated Site Director",
-    desc: "A full-time resident project manager stationed on-site daily. Never split across multiple regional projects, always directly reachable.",
+    title: "Dedicated Site Manager",
+    desc: "A dedicated project manager on-site throughout your build. Your single point of contact, always available to keep you updated.",
   },
   {
     icon: "architecture",
     title: "Architectural Collaboration",
-    desc: "Seamless coordination with chartered RIBA architects, structural consultants, and interior ateliers for zero translation errors.",
+    desc: "We work closely with your architect, structural engineer, and interior designer to build your plans with complete accuracy.",
   },
   {
     icon: "shield_with_heart",
-    title: "10-Year Insurance Warranty",
-    desc: "Independent insurance-backed protection backed by FMB and QANW, providing unshakeable long-term reassurance for legacy assets.",
+    title: "10-Year Work Guarantee",
+    desc: "Insurance-backed warranty supported by the Federation of Master Builders (FMB), giving you lasting peace of mind.",
   },
 ];
 
@@ -43,34 +43,34 @@ const PROTOCOLS = [
   {
     num: "01",
     icon: "security",
-    title: "CDM 2015 Governance",
-    desc: "Strict Principal Contractor statutory health & safety compliance on every domestic and commercial project. Independent weekly audits and rigorous hazardous materials handling.",
+    title: "Strict Health & Safety",
+    desc: "Full compliance with UK building safety standards on every project. Clean, safe, and organized worksites from start to finish.",
     footerLabel: "HSE Status",
-    footerVal: "100% Spotless Record",
+    footerVal: "Spotless Safety Record",
   },
   {
     num: "02",
     icon: "handyman",
     title: "In-House Specialist Trades",
-    desc: "We do not outsource critical craftsmanship. Our teams comprise certified heritage stone masons, Gas Safe registered engineers, and NICEIC platinum qualified technicians.",
+    desc: "We employ qualified, experienced tradespeople including Gas Safe heating engineers, NICEIC certified electricians, and master carpenters.",
     footerLabel: "Certification",
-    footerVal: "Directly Employed",
+    footerVal: "Certified Tradespeople",
   },
   {
     num: "03",
     icon: "view_in_ar",
-    title: "Weekly 3D Audits",
-    desc: "High-resolution photographic registers and immersive 3D Matterport lidar scans delivered weekly to clients and architectural partners via our private client portal.",
+    title: "Regular Progress Updates",
+    desc: "Regular photo updates, progress reports, and site walkthroughs so you always know exactly how your build is progressing.",
     footerLabel: "Transparency",
-    footerVal: "Cloud Portal Access",
+    footerVal: "Clear Communication",
   },
   {
     num: "04",
     icon: "task_alt",
     title: "Snag-Free Handover",
-    desc: "An exhaustive two-tier pre-completion protocol. Our independent quality manager conducts a 140-point technical review 14 days prior to formal client key handover.",
+    desc: "A thorough quality inspection before handover to ensure every detail meets our high standards before you move back in.",
     footerLabel: "Tolerance",
-    footerVal: "Zero-Defect Goal",
+    footerVal: "High Quality Finish",
   },
 ];
 
@@ -81,7 +81,7 @@ const LEADERSHIP = [
     badge: "Fellow FMB",
     tagLabel: "Experience",
     tagVal: "24+ Years",
-    desc: "Over 24 years directing super-prime residential refurbishments and bespoke basement constructions throughout Kensington, Belgravia, and Knightsbridge.",
+    desc: "Over 24 years of experience leading high-end residential renovations, house extensions, and bespoke builds across London.",
     image: "/assets/images/about/julian_davies.jpg",
   },
   {
@@ -90,7 +90,7 @@ const LEADERSHIP = [
     badge: "MIStructE",
     tagLabel: "Specialism",
     tagVal: "Underpinning & Steels",
-    desc: "Chartered Structural Engineer specializing in period subterranean underpinning, party wall engineering, and complex cantilever steel installations.",
+    desc: "Chartered Structural Engineer specializing in structural steelwork, foundations, party wall matters, and load-bearing alterations.",
     image: "/assets/images/about/marcus_sterling.jpg",
   },
   {
@@ -99,7 +99,7 @@ const LEADERSHIP = [
     badge: "ARB / RIBA",
     tagLabel: "Heritage Expert",
     tagVal: "Listed Consents",
-    desc: "Former senior associate at an award-winning Westminster studio. Expert navigator of Royal Borough of Kensington & Chelsea conservation area regulations.",
+    desc: "Experienced architect with extensive knowledge navigating London planning permissions, building control, and conservation areas.",
     image: "/assets/images/about/elena_rostova.jpg",
   },
   {
@@ -108,17 +108,17 @@ const LEADERSHIP = [
     badge: "Master Guild",
     tagLabel: "Fabrication",
     tagVal: "Bespoke Millwork",
-    desc: "Leading our dedicated bespoke joinery workshop, creating custom book-matched veneers, architectural staircases, and museum-grade cabinetry for our clients.",
+    desc: "Leads our custom joinery team, crafting bespoke fitted wardrobes, staircases, kitchen cabinetry, and custom woodwork.",
     image: "/assets/images/about/david_chen.jpg",
   },
 ];
 
 const ACCREDITATIONS = [
-  { icon: "home_work", title: "FMB Master Builder", sub: "Licence #88412", desc: "Strictly Vetted & Inspected" },
-  { icon: "verified_user", title: "TrustMark Accredited", sub: "Govt Endorsed Quality", desc: "Trading Standards Audited" },
-  { icon: "local_fire_department", title: "Gas Safe Register", sub: "Verified Engineers", desc: "Commercial & Domestic" },
-  { icon: "bolt", title: "NICEIC Platinum", sub: "Approved Contractor", desc: "Full Building Sign-Off" },
-  { icon: "balance", title: "Considerate Scheme", sub: "Mayfair & Belgravia", desc: "Quiet Site Protocols" },
+  { icon: "home_work", title: "FMB Master Builder", sub: "Licence #88412", desc: "Vetted & Inspected Builders" },
+  { icon: "verified_user", title: "TrustMark Accredited", sub: "Govt Endorsed Quality", desc: "Government Endorsed Quality" },
+  { icon: "local_fire_department", title: "Gas Safe Register", sub: "Verified Engineers", desc: "Certified Heating & Gas" },
+  { icon: "bolt", title: "NICEIC Platinum", sub: "Approved Contractor", desc: "Certified Electrical Works" },
+  { icon: "balance", title: "Considerate Scheme", sub: "London Wide", desc: "Clean & Respectful Sites" },
 ];
 
 export default function AboutUsPage() {
@@ -172,7 +172,7 @@ export default function AboutUsPage() {
               <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-slate-900/90 border border-emerald-500/30 text-emerald-300 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-lg shadow-sm mb-4 sm:mb-6">
                 <span className="material-symbols-outlined text-[14px] sm:text-[16px] text-emerald-400">verified</span>
                 <span className="text-[10px] sm:text-[11px] tracking-wider uppercase font-semibold">
-                  EST. 2008 • LONDON&apos;S PREMIER PRINCIPAL CONTRACTOR
+                  EST. 2008 • TRUSTED LONDON RESIDENTIAL BUILDERS
                 </span>
               </div>
 
@@ -183,13 +183,13 @@ export default function AboutUsPage() {
                     style={H1_STYLE}
                     className="text-[26px] sm:text-[38px] md:text-[48px] lg:text-[56px] leading-[1.12] sm:leading-[1.08] tracking-[-0.03em] font-bold text-white"
                   >
-                    Master Craftsmanship, Structural Rigour &amp;{" "}
+                    Exceptional Craftsmanship, Honest Service &amp;{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-200">
-                      Uncompromising Integrity.
+                      Quality You Can Trust.
                     </span>
                   </h1>
                   <p className="text-[14px] sm:text-[16px] md:text-[18px] text-slate-300 max-w-2xl leading-relaxed">
-                    Founded on the principle of transparent, architect-led prime construction, JSTM Construction has delivered over 450 luxury residences, structural extensions, and period restorations across Kensington, Chelsea, Mayfair, Wandsworth, and Richmond.
+                    With over 15 years of experience, JSTM Construction delivers high-quality house extensions, renovations, and architectural builds across London. We take pride in clear communication, honest pricing, and outstanding finishes.
                   </p>
                 </div>
 
@@ -198,7 +198,7 @@ export default function AboutUsPage() {
                     href="#consultation-booking"
                     className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-[13px] sm:text-[14px] px-5 py-3 sm:px-6 sm:py-4 rounded-xl shadow-[0_4px_20px_rgba(5,150,105,0.4)] transition-all duration-150 font-semibold group text-center"
                   >
-                    <span>Schedule Director Consultation</span>
+                    <span>Book a Free Site Survey</span>
                     <span className="material-symbols-outlined text-[16px] sm:text-[18px] group-hover:translate-x-1 transition-transform">
                       arrow_forward
                     </span>
@@ -209,7 +209,7 @@ export default function AboutUsPage() {
                     className="inline-flex items-center justify-center gap-2 bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 text-[13px] sm:text-[14px] px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl transition-all duration-150 font-medium text-center"
                   >
                     <span className="material-symbols-outlined text-[16px] sm:text-[18px] text-emerald-400">download_for_offline</span>
-                    <span>Download Company Prospectus (PDF)</span>
+                    <span>Download Company Brochure (PDF)</span>
                   </button>
                 </div>
               </div>
@@ -243,7 +243,7 @@ export default function AboutUsPage() {
                   OUR HERITAGE &amp; APPROACH
                 </span>
                 <h2 style={H1_STYLE} className="text-[22px] sm:text-[32px] md:text-[42px] leading-[1.2] sm:leading-[1.15] tracking-tight text-slate-900 font-bold">
-                  Redefining Prime Residential Contracting in Central London
+                  Building Beautiful London Homes With Care &amp; Precision
                 </h2>
               </div>
 
@@ -251,20 +251,20 @@ export default function AboutUsPage() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mb-10 sm:mb-16">
                 <div className="lg:col-span-7 space-y-3.5 sm:space-y-4 text-slate-600 text-[13px] sm:text-[15px] leading-relaxed">
                   <p className="text-[15px] sm:text-[17px] text-slate-900 font-medium leading-relaxed">
-                    JSTM Construction was established in Mayfair by chartered structural engineers and senior site directors who identified a persistent fracture in high-end UK building contracting: architectural visions compromised by fragmented execution.
+                    JSTM Construction was founded with a clear goal: to make home building and renovation a positive, transparent experience for London homeowners.
                   </p>
                   <p>
-                    For years, prime residential clients across Mayfair, Kensington, and Chelsea had grown accustomed to the typical industry compromises—opaque scope variations, unaccountable sub-contracted management, and project schedules that slipped without accountability. JSTM was structured from day one as the structural antidote.
+                    Too often, building projects suffer from unexpected cost increases, poor communication, and missed deadlines. We do things differently. We provide clear, itemized quotes from day one, set realistic schedules, and stand behind our work with a 10-year guarantee.
                   </p>
                   <p>
-                    We operate under clear, binding JCT Minor Works and Standard Building contracts with exhaustive Bills of Quantities (BoQs). Every single scheme is spearheaded by an experienced full-time site director stationed on your premises every working day, ensuring complete fidelity to architectural drawings and RIBA Plan of Work stages.
+                    Every project is managed on-site by an experienced project manager who coordinates all trades, keeps you informed with regular updates, and ensures work is carried out to the highest standard.
                   </p>
 
                   {/* Engineering Quote Metric Bar */}
                   <div className="bg-white border border-slate-200 p-4 sm:p-5 rounded-xl space-y-2 shadow-sm mt-4">
                     <div className="flex items-center justify-between text-slate-900 text-[13px] sm:text-[14px]">
-                      <span className="font-semibold">Architectural Delivery Index</span>
-                      <span className="text-emerald-700 font-bold">100% RIBA Compliance</span>
+                      <span className="font-semibold">Quality &amp; Building Standards</span>
+                      <span className="text-emerald-700 font-bold">100% Guaranteed</span>
                     </div>
                     <div className="w-full bg-slate-200 h-2.5 rounded-full overflow-hidden">
                       <div className="bg-emerald-600 h-full rounded-full w-full" />
@@ -295,7 +295,7 @@ export default function AboutUsPage() {
                         </span>
                       </div>
                       <p className="text-[12px] sm:text-[13px] text-slate-200 italic mb-2 leading-relaxed">
-                        &ldquo;We believe building your dream home shouldn&apos;t be a test of endurance. We bring quiet order, forensic precision, and white-glove respect to every square metre.&rdquo;
+                        &ldquo;Building or extending your home should be exciting, not stressful. We treat every property with the utmost care, communicate openly, and deliver work we are truly proud of.&rdquo;
                       </p>
                       <div className="flex items-center justify-between text-[11px] sm:text-[12px] pt-2 border-t border-slate-800 text-slate-400">
                         <span className="font-semibold text-slate-200">Julian Davies</span>
@@ -331,14 +331,14 @@ export default function AboutUsPage() {
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-14 gap-4 sm:gap-6">
                 <div>
                   <span className="text-[10px] sm:text-[11px] uppercase tracking-widest text-emerald-400 font-semibold block mb-1.5 sm:mb-2">
-                    HOW WE GOVERN EVERY BUILD
+                    OUR QUALITY STANDARDS
                   </span>
                   <h2 style={H1_STYLE} className="text-[22px] sm:text-[32px] md:text-[42px] font-bold text-white tracking-tight leading-[1.2]">
-                    The JSTM Quality &amp; Safety Protocol
+                    How We Deliver Quality on Every Build
                   </h2>
                 </div>
                 <p className="text-[13px] sm:text-[15px] text-slate-300 max-w-md leading-relaxed">
-                  Standardised procedures engineered to eliminate variance, safeguarding heritage building fabric and client capital.
+                  We follow clear, proven building standards to ensure your home is safe, structurally sound, and beautifully finished.
                 </p>
               </div>
 
@@ -377,13 +377,13 @@ export default function AboutUsPage() {
             <div className="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12">
               <div className="max-w-3xl mb-8 sm:mb-12">
                 <span className="text-[10px] sm:text-[11px] uppercase tracking-widest font-bold text-emerald-700 block mb-1.5 sm:mb-2">
-                  EXECUTIVE LEADERSHIP
+                  OUR EXPERIENCED TEAM
                 </span>
                 <h2 style={H1_STYLE} className="text-[22px] sm:text-[32px] md:text-[42px] font-bold text-slate-900 tracking-tight leading-[1.2]">
-                  Led by Master Builders &amp; Chartered Engineers
+                  Meet Our Leadership &amp; Building Team
                 </h2>
                 <p className="text-[13px] sm:text-[15px] text-slate-600 mt-2 leading-relaxed">
-                  Each member of our operational board brings direct on-site mastery, institutional accreditations, and decades of prime central London residential experience.
+                  Our directors and senior managers have decades of combined construction experience across London, bringing practical expertise to every project.
                 </p>
               </div>
 
@@ -431,10 +431,10 @@ export default function AboutUsPage() {
                   INDUSTRY STANDARDS &amp; AFFILIATIONS
                 </span>
                 <h2 style={H1_STYLE} className="text-[22px] sm:text-[32px] md:text-[42px] font-bold text-white tracking-tight leading-[1.2]">
-                  Endorsed by the UK&apos;s Most Stringent Regulatory Bodies
+                  Certified by Leading UK Building &amp; Safety Bodies
                 </h2>
                 <p className="text-[13px] sm:text-[15px] text-slate-300 mt-2 leading-relaxed">
-                  Rigorous independent audits inspect our site management, solvency, technical competency, and customer transparency annually.
+                  We are proud members of respected industry associations, ensuring all our work complies with the highest UK standards.
                 </p>
               </div>
 
@@ -476,7 +476,7 @@ export default function AboutUsPage() {
                       </span>
                     </div>
                     <p className="text-[12px] sm:text-[13px] text-slate-300 mt-0.5">
-                      Based on 142+ validated prime London homeowner and architect reviews
+                      Based on 140+ verified London homeowner and client reviews
                     </p>
                   </div>
                 </div>
@@ -496,7 +496,7 @@ export default function AboutUsPage() {
             </div>
           </section>
 
-          {/* SECTION 6: DIRECT BOARD ENGAGEMENT (CONSULTATION FORM) */}
+          {/* SECTION 6: START YOUR PROJECT (CONSULTATION FORM) */}
           <section id="consultation-booking" className="w-full bg-[#0b1120] text-white py-14 sm:py-24 border-b border-slate-800">
             <div className="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
@@ -506,10 +506,10 @@ export default function AboutUsPage() {
                       DIRECT BOARD ENGAGEMENT
                     </span>
                     <h2 style={H1_STYLE} className="text-[22px] sm:text-[32px] md:text-[42px] leading-[1.2] sm:leading-[1.12] font-bold text-white tracking-tight">
-                      Initiate Your London Project Consultation
+                      Book a Free Consultation &amp; Site Visit
                     </h2>
                     <p className="text-[13px] sm:text-[15px] text-slate-300 mt-2 sm:mt-3 leading-relaxed">
-                      Every prospective scheme receives a complimentary desktop feasibility assessment and initial consultation led directly by a JSTM Director.
+                      Speak directly with our team about your project ideas. We offer free site surveys, budget advice, and friendly guidance.
                     </p>
                   </div>
 
@@ -582,9 +582,9 @@ export default function AboutUsPage() {
                 {/* Right: Interactive Consultation Form */}
                 <div className="lg:col-span-7">
                   <div className="bg-[#0f172a] border border-slate-800 rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl">
-                    <h3 className="text-[18px] sm:text-[20px] font-bold text-white mb-1">Schedule Feasibility Meeting</h3>
+                    <h3 className="text-[18px] sm:text-[20px] font-bold text-white mb-1">Request a Free Consultation</h3>
                     <p className="text-[13px] sm:text-[14px] text-slate-400 mb-5 sm:mb-6">
-                      Provide project details below to reserve an appointment with Julian Davies or Marcus Sterling.
+                      Share a few details about your project and we will contact you within 24 hours.
                     </p>
 
                     <form className="space-y-3.5 sm:space-y-4" onSubmit={handleSubmit}>
@@ -596,7 +596,7 @@ export default function AboutUsPage() {
                           <input
                             id="abt-name"
                             className={INPUT_CLS}
-                            placeholder="e.g. Lord Julian Davies"
+                            placeholder="e.g. James Smith"
                             required
                             type="text"
                             value={formData.name}
@@ -610,7 +610,7 @@ export default function AboutUsPage() {
                           <input
                             id="abt-postcode"
                             className={INPUT_CLS}
-                            placeholder="e.g. SW3, SW1X, W1J, W8..."
+                            placeholder="e.g. SW3, W8, TW9, SW18..."
                             required
                             type="text"
                             value={formData.postcode}
@@ -627,7 +627,7 @@ export default function AboutUsPage() {
                           <input
                             id="abt-email"
                             className={INPUT_CLS}
-                            placeholder="client@estate.com"
+                            placeholder="name@example.com"
                             required
                             type="email"
                             value={formData.email}
@@ -662,11 +662,11 @@ export default function AboutUsPage() {
                           onChange={(e) => setFormData({ ...formData, classification: e.target.value })}
                         >
                           <option value="" disabled>Select Proposed Scope</option>
-                          <option value="prime-refurb">Full Prime Residential Refurbishment (£350k - £3M+)</option>
-                          <option value="basement">Architectural Basement Excavation &amp; Substructure</option>
-                          <option value="extension">Heritage Structural Extension &amp; Loft Conversion</option>
-                          <option value="commercial">Super-Prime Commercial &amp; Atelier Fit-Out</option>
-                          <option value="architectural-tender">RIBA Practice Tender &amp; BoQ Procurement</option>
+                          <option value="full-refurb">Full House Refurbishment &amp; Renovation</option>
+                          <option value="extension">House Extension (Rear / Side / Wraparound)</option>
+                          <option value="loft">Loft Conversion (Dormer / Mansard / Velux)</option>
+                          <option value="kitchen-bath">Kitchen &amp; Bathroom Refurbishment</option>
+                          <option value="structural">Structural Alterations &amp; Steelwork</option>
                         </select>
                       </div>
 
@@ -677,7 +677,7 @@ export default function AboutUsPage() {
                         <textarea
                           id="abt-scope"
                           className={`${INPUT_CLS} resize-none`}
-                          placeholder="Briefly outline property details (e.g., Grade II status, planning permission secured, estimated start date)..."
+                          placeholder="Tell us about your property, what you want to achieve, and your ideal timeline..."
                           rows={3}
                           value={formData.scope}
                           onChange={(e) => setFormData({ ...formData, scope: e.target.value })}
@@ -689,17 +689,17 @@ export default function AboutUsPage() {
                         type="submit"
                       >
                         <span className="material-symbols-outlined text-[18px] sm:text-[20px]">calendar_month</span>
-                        <span>Request Formal Director Consultation</span>
+                        <span>Book a Free Consultation</span>
                       </button>
 
                       {formSubmitted && (
                         <div className="p-3.5 sm:p-4 rounded-xl bg-emerald-950/80 border border-emerald-500/40 text-emerald-200 text-[12px] sm:text-[13px] text-center animate-fadeIn">
-                          Thank you. Your consultation request has been routed directly to Julian Davies&apos; executive office. A director will contact you within 4 business hours.
+                          Thank you. We have received your project details. A senior member of our team will contact you within 4 business hours to discuss your project.
                         </div>
                       )}
 
                       <p className="text-[10px] sm:text-[11px] text-slate-400 text-center">
-                        Strict Non-Disclosure Guarantee: All architectural drawings and site locations are protected under professional NDA.
+                        Privacy Guaranteed: Your details and project plans are kept strictly confidential.
                       </p>
                     </form>
                   </div>
