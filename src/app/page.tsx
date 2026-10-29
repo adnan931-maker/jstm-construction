@@ -213,22 +213,45 @@ export default function HomePage() {
               </div>
               {/*  Hero Visual Grid / Image Composition  */}
               <div className="lg:col-span-5 relative animate-fade-in-up [animation-delay:350ms]">
-                <div className="relative mx-auto max-w-md lg:max-w-none">
-                  <div className="relative overflow-hidden rounded-2xl border-2 border-emerald-600/30 shadow-2xl shadow-emerald-950/50 bg-slate-900">
-                    <img alt="JSTM Construction site directors reviewing architectural drawings on a London renovation project" className="w-full h-[320px] sm:h-[460px] object-cover" src="/assets/images/director_reviewing_drawings.jpg" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/20 to-transparent"></div>
-                    <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 p-3 sm:p-4 rounded-xl bg-charcoal-900/90 backdrop-blur-md border border-slate-700/80 text-white">
+                <div className="relative mx-auto max-w-md lg:max-w-none group cursor-pointer">
+                  {/* Subtle Ambient Glow Behind Card */}
+                  <div className="absolute -inset-1.5 bg-gradient-to-r from-emerald-600/30 to-teal-500/20 rounded-3xl blur-xl opacity-50 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 pointer-events-none" />
+
+                  {/* Main Image Frame with 3D Depth & Hover Lift */}
+                  <div className="relative overflow-hidden rounded-2xl border-2 border-emerald-600/30 group-hover:border-emerald-400/80 shadow-2xl shadow-emerald-950/60 group-hover:shadow-[0_25px_60px_-15px_rgba(5,150,105,0.45)] group-hover:-translate-y-2 bg-slate-900 transition-all duration-500 ease-out">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      alt="JSTM Construction site directors reviewing architectural drawings on a London renovation project"
+                      className="w-full h-[320px] sm:h-[460px] object-cover group-hover:scale-108 group-hover:rotate-[0.5deg] transition-all duration-700 ease-out will-change-transform"
+                      src="/assets/images/director_reviewing_drawings.jpg"
+                    />
+
+                    {/* Gradient Depth Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/20 to-transparent group-hover:opacity-85 transition-opacity duration-500 pointer-events-none" />
+
+                    {/* Architectural Glass Light Sweep / Shimmer on Hover */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent -translate-x-[150%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-in-out pointer-events-none" />
+
+                    {/* Live Project Site Glass HUD Card */}
+                    <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 p-3.5 sm:p-4 rounded-xl bg-charcoal-900/90 group-hover:bg-charcoal-900/95 backdrop-blur-md border border-slate-700/80 group-hover:border-emerald-500/60 group-hover:-translate-y-1 text-white shadow-lg transition-all duration-300">
                       <div className="flex items-center justify-between mb-1.5">
-                        <span className="text-[10px] sm:text-xs font-semibold text-emerald-400 uppercase tracking-wider">Live Kensington Site</span>
+                        <span className="text-[10px] sm:text-xs font-semibold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+                          <span className="material-symbols-outlined text-[14px]">location_on</span>
+                          Live Kensington Site
+                        </span>
                         <span className="flex items-center text-[10px] sm:text-xs text-emerald-300 font-mono">
-                          <span className="w-2 h-2 rounded-full bg-emerald-500 mr-1.5 animate-ping"></span> Phase 3 Finishing
+                          <span className="w-2 h-2 rounded-full bg-emerald-500 mr-1.5 animate-ping" />
+                          Phase 3 Finishing
                         </span>
                       </div>
-                      <p className="text-xs sm:text-sm font-medium text-slate-200">Victorian Townhouse Full Refurbishment &amp; Glass Extension</p>
+                      <p className="text-xs sm:text-sm font-medium text-slate-200 group-hover:text-white transition-colors">
+                        Victorian Townhouse Full Refurbishment &amp; Glass Extension
+                      </p>
                     </div>
                   </div>
-                  {/*  Floating Experience Pill  */}
-                  <div className="absolute -top-3 -left-3 sm:-top-5 sm:-left-5 bg-emerald-600 text-white p-3 sm:p-4 rounded-xl shadow-xl flex items-center gap-2.5 sm:gap-3 border border-emerald-400/30 animate-float">
+
+                  {/* Floating Experience Pill with Interactive Scale on Card Hover */}
+                  <div className="absolute -top-3 -left-3 sm:-top-5 sm:-left-5 bg-emerald-600 text-white p-3 sm:p-4 rounded-xl shadow-xl flex items-center gap-2.5 sm:gap-3 border border-emerald-400/40 animate-float group-hover:scale-110 group-hover:shadow-[0_12px_28px_rgba(5,150,105,0.65)] group-hover:border-emerald-300 transition-all duration-300">
                     <div className="text-2xl sm:text-3xl font-extrabold font-heading">15+</div>
                     <div className="text-[10px] sm:text-xs font-semibold leading-tight uppercase tracking-wider">
                       Years of<br />Experience
