@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import TopProgressBar from "@/components/TopProgressBar";
+import TopLoadingBar from "@/components/TopLoadingBar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -59,7 +59,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased min-h-screen selection:bg-emerald-500 selection:text-white">
-        <TopProgressBar />
+        <TopLoadingBar />
         {children}
       </body>
     </html>
