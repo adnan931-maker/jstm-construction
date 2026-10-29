@@ -7,7 +7,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const H1_STYLE = { fontFamily: "'Plus Jakarta Sans', sans-serif" };
-const INPUT_CLS = "w-full bg-slate-950 border border-slate-800 text-white px-3.5 py-2.5 rounded-lg text-[15px] focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors placeholder:text-slate-500";
+const INPUT_CLS = "w-full h-11 sm:h-12 bg-slate-950 border border-slate-800 text-white px-3.5 sm:px-4 rounded-xl text-xs sm:text-sm focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors placeholder:text-slate-500";
+const SELECT_CLS = "w-full h-11 sm:h-12 bg-slate-950 border border-slate-800 text-white px-3.5 sm:px-4 pr-10 rounded-xl text-xs sm:text-sm focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2334d399%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:18px_18px] bg-[right_14px_center] bg-no-repeat cursor-pointer";
 
 const METRICS = [
   { val: "16", suffix: "+", title: "Years of Excellence", desc: "Continuous prime London operations since 2008" },
@@ -508,42 +509,42 @@ export default function AboutUsPage() {
           </section>
 
           {/* SECTION 6: START YOUR PROJECT (CONSULTATION FORM) */}
-          <section id="consultation-booking" className="w-full bg-[#0b1120] text-white py-14 sm:py-24 border-b border-slate-800">
+          <section id="consultation-booking" className="w-full bg-[#0b1120] text-white py-12 sm:py-20 border-b border-slate-800">
             <div className="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
-                <div className="lg:col-span-5 space-y-6 sm:space-y-8">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+                <div className="lg:col-span-5 flex flex-col justify-between space-y-4 sm:space-y-5">
                   <div>
                     <span className="text-[10px] sm:text-[11px] uppercase tracking-widest text-emerald-400 font-semibold block mb-1.5 sm:mb-2">
                       DIRECT BOARD ENGAGEMENT
                     </span>
-                    <h2 style={H1_STYLE} className="text-[22px] sm:text-[32px] md:text-[42px] leading-[1.2] sm:leading-[1.12] font-bold text-white tracking-tight">
+                    <h2 style={H1_STYLE} className="text-[22px] sm:text-[32px] md:text-[38px] leading-[1.2] sm:leading-[1.12] font-bold text-white tracking-tight">
                       Book a Free Consultation &amp; Site Visit
                     </h2>
-                    <p className="text-[13px] sm:text-[15px] text-slate-300 mt-2 sm:mt-3 leading-relaxed">
+                    <p className="text-[13px] sm:text-[14px] text-slate-300 mt-2 sm:mt-2.5 leading-relaxed">
                       Speak directly with our team about your project ideas. We offer free site surveys, budget advice, and friendly guidance.
                     </p>
                   </div>
 
                   {/* Contact Details Cards */}
-                  <div className="space-y-3 sm:space-y-4">
-                    <div className="bg-[#0f172a] border border-slate-800 p-4 sm:p-5 rounded-xl flex items-start gap-3 sm:gap-4">
+                  <div className="space-y-3 flex-1 flex flex-col justify-between">
+                    <div className="bg-[#0f172a] border border-slate-800 p-3.5 sm:p-4 rounded-xl flex items-start gap-3 sm:gap-3.5 hover:border-slate-700 transition-colors">
                       <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
                         <span className="material-symbols-outlined text-[19px] sm:text-[22px]">location_on</span>
                       </div>
-                      <div>
-                        <h3 className="text-[14px] sm:text-[15px] font-bold text-white">Registered Headquarters</h3>
-                        <p className="text-[12px] sm:text-[13px] text-slate-300">JST Construction Suite A204, 2nd Floor Vista Centre</p>
-                        <p className="text-[12px] sm:text-[13px] text-slate-300">50 Salisbury Road, Cranford, Hounslow TW4 6JQ, UK</p>
-                        <p className="text-[11px] sm:text-[12px] text-emerald-400 mt-1">Available for in-person architectural consultations</p>
+                      <div className="space-y-0.5">
+                        <h3 className="text-[13px] sm:text-[14px] font-bold text-white">Registered Headquarters</h3>
+                        <p className="text-[12px] sm:text-[13px] text-slate-300">JSTM Construction • Suite A204, 2nd Floor, Vista Centre</p>
+                        <p className="text-[11px] sm:text-[12px] text-slate-400">50 Salisbury Road, Cranford, Hounslow TW4 6JQ, UK</p>
+                        <p className="text-[10px] sm:text-[11px] text-emerald-400 pt-0.5">Available for in-person architectural consultations</p>
                       </div>
                     </div>
 
-                    <div className="bg-[#0f172a] border border-slate-800 p-4 sm:p-5 rounded-xl flex items-start gap-3 sm:gap-4">
+                    <div className="bg-[#0f172a] border border-slate-800 p-3.5 sm:p-4 rounded-xl flex items-start gap-3 sm:gap-3.5 hover:border-slate-700 transition-colors">
                       <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
                         <span className="material-symbols-outlined text-[19px] sm:text-[22px]">call</span>
                       </div>
-                      <div>
-                        <h3 className="text-[14px] sm:text-[15px] font-bold text-white">Direct Landline</h3>
+                      <div className="space-y-0.5">
+                        <h3 className="text-[13px] sm:text-[14px] font-bold text-white">Direct Landline</h3>
                         <a
                           className="text-[13px] sm:text-[14px] font-semibold text-slate-200 hover:text-emerald-400 transition-colors block"
                           href="tel:02035762228"
@@ -554,12 +555,12 @@ export default function AboutUsPage() {
                       </div>
                     </div>
 
-                    <div className="bg-[#0f172a] border border-slate-800 p-4 sm:p-5 rounded-xl flex items-start gap-3 sm:gap-4">
+                    <div className="bg-[#0f172a] border border-slate-800 p-3.5 sm:p-4 rounded-xl flex items-start gap-3 sm:gap-3.5 hover:border-slate-700 transition-colors">
                       <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
                         <i className="fa-brands fa-whatsapp text-[18px] sm:text-[20px]"></i>
                       </div>
-                      <div>
-                        <h3 className="text-[14px] sm:text-[15px] font-bold text-white">WhatsApp Direct</h3>
+                      <div className="space-y-0.5">
+                        <h3 className="text-[13px] sm:text-[14px] font-bold text-white">WhatsApp Direct</h3>
                         <a
                           className="text-[13px] sm:text-[14px] font-bold text-emerald-400 hover:text-emerald-300 transition-colors block"
                           href="https://wa.me/447418095006"
@@ -572,12 +573,12 @@ export default function AboutUsPage() {
                       </div>
                     </div>
 
-                    <div className="bg-[#0f172a] border border-slate-800 p-4 sm:p-5 rounded-xl flex items-start gap-3 sm:gap-4">
+                    <div className="bg-[#0f172a] border border-slate-800 p-3.5 sm:p-4 rounded-xl flex items-start gap-3 sm:gap-3.5 hover:border-slate-700 transition-colors">
                       <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
                         <span className="material-symbols-outlined text-[19px] sm:text-[22px]">mail</span>
                       </div>
-                      <div>
-                        <h3 className="text-[14px] sm:text-[15px] font-bold text-white">Email Enquiries</h3>
+                      <div className="space-y-0.5">
+                        <h3 className="text-[13px] sm:text-[14px] font-bold text-white">Email Enquiries</h3>
                         <a
                           href="mailto:info@jstmconstruction.com"
                           className="text-[13px] sm:text-[14px] text-slate-200 hover:text-emerald-400 transition-colors block"
@@ -591,127 +592,133 @@ export default function AboutUsPage() {
                 </div>
 
                 {/* Right: Interactive Consultation Form */}
-                <div className="lg:col-span-7">
-                  <div className="bg-[#0f172a] border border-slate-800 rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl">
-                    <h3 className="text-[18px] sm:text-[20px] font-bold text-white mb-1">Request a Free Consultation</h3>
-                    <p className="text-[13px] sm:text-[14px] text-slate-400 mb-5 sm:mb-6">
-                      Share a few details about your project and we will contact you within 24 hours.
-                    </p>
-
-                    <form className="space-y-3.5 sm:space-y-4" onSubmit={handleSubmit}>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                        <div className="space-y-1">
-                          <label htmlFor="abt-name" className="text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider block">
-                            Full Name *
-                          </label>
-                          <input
-                            id="abt-name"
-                            className={INPUT_CLS}
-                            placeholder="e.g. James Smith"
-                            required
-                            type="text"
-                            value={formData.name}
-                            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                          />
-                        </div>
-                        <div className="space-y-1">
-                          <label htmlFor="abt-postcode" className="text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider block">
-                            London Postcode *
-                          </label>
-                          <input
-                            id="abt-postcode"
-                            className={INPUT_CLS}
-                            placeholder="e.g. SW3, W8, TW9, SW18..."
-                            required
-                            type="text"
-                            value={formData.postcode}
-                            onChange={(e) => setFormData({ ...formData, postcode: e.target.value })}
-                          />
-                        </div>
-                      </div>
-
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                        <div className="space-y-1">
-                          <label htmlFor="abt-email" className="text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider block">
-                            Email Address *
-                          </label>
-                          <input
-                            id="abt-email"
-                            className={INPUT_CLS}
-                            placeholder="name@example.com"
-                            required
-                            type="email"
-                            value={formData.email}
-                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          />
-                        </div>
-                        <div className="space-y-1">
-                          <label htmlFor="abt-phone" className="text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider block">
-                            Telephone *
-                          </label>
-                          <input
-                            id="abt-phone"
-                            className={INPUT_CLS}
-                            placeholder="+44 7..."
-                            required
-                            type="tel"
-                            value={formData.phone}
-                            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          />
-                        </div>
-                      </div>
-
-                      <div className="space-y-1">
-                        <label htmlFor="abt-class" className="text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider block">
-                          Project Classification *
-                        </label>
-                        <select
-                          id="abt-class"
-                          className={INPUT_CLS}
-                          required
-                          value={formData.classification}
-                          onChange={(e) => setFormData({ ...formData, classification: e.target.value })}
-                        >
-                          <option value="" disabled>Select Proposed Scope</option>
-                          <option value="full-refurb">Full House Refurbishment &amp; Renovation</option>
-                          <option value="extension">House Extension (Rear / Side / Wraparound)</option>
-                          <option value="loft">Loft Conversion (Dormer / Mansard / Velux)</option>
-                          <option value="kitchen-bath">Kitchen &amp; Bathroom Refurbishment</option>
-                          <option value="structural">Structural Alterations &amp; Steelwork</option>
-                        </select>
-                      </div>
-
-                      <div className="space-y-1">
-                        <label htmlFor="abt-scope" className="text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider block">
-                          Project Scope &amp; Target Timeline
-                        </label>
-                        <textarea
-                          id="abt-scope"
-                          className={`${INPUT_CLS} resize-none`}
-                          placeholder="Tell us about your property, what you want to achieve, and your ideal timeline..."
-                          rows={3}
-                          value={formData.scope}
-                          onChange={(e) => setFormData({ ...formData, scope: e.target.value })}
-                        />
-                      </div>
-
-                      <button
-                        className="w-full bg-emerald-600 hover:bg-emerald-500 text-white py-3.5 sm:py-4 rounded-xl text-[13px] sm:text-[14px] font-semibold tracking-wide shadow-[0_4px_20px_rgba(5,150,105,0.4)] flex items-center justify-center gap-2 transition-all duration-150"
-                        type="submit"
-                      >
-                        <span className="material-symbols-outlined text-[18px] sm:text-[20px]">calendar_month</span>
-                        <span>Book a Free Consultation</span>
-                      </button>
-
-                      {formSubmitted && (
-                        <div className="p-3.5 sm:p-4 rounded-xl bg-emerald-950/80 border border-emerald-500/40 text-emerald-200 text-[12px] sm:text-[13px] text-center animate-fadeIn">
-                          Thank you. We have received your project details. A senior member of our team will contact you within 4 business hours to discuss your project.
-                        </div>
-                      )}
-
-                      <p className="text-[10px] sm:text-[11px] text-slate-400 text-center">
-                        Privacy Guaranteed: Your details and project plans are kept strictly confidential.
+                <div className="lg:col-span-7 flex flex-col">
+                  <div className="bg-[#0f172a] border border-slate-800 rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl flex-1 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-[18px] sm:text-[20px] font-bold text-white mb-1">Request a Free Consultation</h3>
+                      <p className="text-[13px] sm:text-[14px] text-slate-400 mb-5 sm:mb-6">
+                        Share a few details about your project and we will contact you within 24 hours.
                       </p>
+                    </div>
+
+                    <form className="space-y-3.5 sm:space-y-4 flex-1 flex flex-col justify-between" onSubmit={handleSubmit}>
+                      <div className="space-y-3 sm:space-y-3.5">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                          <div className="space-y-1.5">
+                            <label htmlFor="abt-name" className="text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider block">
+                              Full Name *
+                            </label>
+                            <input
+                              id="abt-name"
+                              className={INPUT_CLS}
+                              placeholder="e.g. James Smith"
+                              required
+                              type="text"
+                              value={formData.name}
+                              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                            />
+                          </div>
+                          <div className="space-y-1.5">
+                            <label htmlFor="abt-postcode" className="text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider block">
+                              London Postcode *
+                            </label>
+                            <input
+                              id="abt-postcode"
+                              className={INPUT_CLS}
+                              placeholder="e.g. SW3, W8, TW9, SW18..."
+                              required
+                              type="text"
+                              value={formData.postcode}
+                              onChange={(e) => setFormData({ ...formData, postcode: e.target.value })}
+                            />
+                          </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                          <div className="space-y-1.5">
+                            <label htmlFor="abt-email" className="text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider block">
+                              Email Address *
+                            </label>
+                            <input
+                              id="abt-email"
+                              className={INPUT_CLS}
+                              placeholder="name@example.com"
+                              required
+                              type="email"
+                              value={formData.email}
+                              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                            />
+                          </div>
+                          <div className="space-y-1.5">
+                            <label htmlFor="abt-phone" className="text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider block">
+                              Telephone *
+                            </label>
+                            <input
+                              id="abt-phone"
+                              className={INPUT_CLS}
+                              placeholder="+44 7..."
+                              required
+                              type="tel"
+                              value={formData.phone}
+                              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                            />
+                          </div>
+                        </div>
+
+                        <div className="space-y-1.5">
+                          <label htmlFor="abt-class" className="text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider block">
+                            Project Classification *
+                          </label>
+                          <select
+                            id="abt-class"
+                            className={SELECT_CLS}
+                            required
+                            value={formData.classification}
+                            onChange={(e) => setFormData({ ...formData, classification: e.target.value })}
+                          >
+                            <option value="" disabled>Select Proposed Scope</option>
+                            <option value="full-refurb">Full House Refurbishment &amp; Renovation</option>
+                            <option value="extension">House Extension (Rear / Side / Wraparound)</option>
+                            <option value="loft">Loft Conversion (Dormer / Mansard / Velux)</option>
+                            <option value="kitchen-bath">Kitchen &amp; Bathroom Refurbishment</option>
+                            <option value="structural">Structural Alterations &amp; Steelwork</option>
+                          </select>
+                        </div>
+
+                        <div className="space-y-1.5">
+                          <label htmlFor="abt-scope" className="text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider block">
+                            Project Scope &amp; Target Timeline
+                          </label>
+                          <textarea
+                            id="abt-scope"
+                            className={`${INPUT_CLS} h-auto py-2.5 sm:py-3 resize-none`}
+                            placeholder="Tell us about your property, what you want to achieve, and your ideal timeline..."
+                            rows={3}
+                            value={formData.scope}
+                            onChange={(e) => setFormData({ ...formData, scope: e.target.value })}
+                          />
+                        </div>
+                      </div>
+
+                      <div className="pt-2 space-y-2.5">
+                        <button
+                          className="w-full bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white py-3.5 sm:py-4 rounded-xl text-[13px] sm:text-[14px] font-semibold tracking-wide shadow-[0_4px_20px_rgba(5,150,105,0.4)] hover:shadow-[0_6px_24px_rgba(5,150,105,0.55)] flex items-center justify-center gap-2 transition-all duration-200"
+                          type="submit"
+                        >
+                          <span className="material-symbols-outlined text-[18px] sm:text-[20px]">calendar_month</span>
+                          <span>Book a Free Consultation</span>
+                        </button>
+
+                        {formSubmitted && (
+                          <div className="p-3.5 sm:p-4 rounded-xl bg-emerald-950/80 border border-emerald-500/40 text-emerald-200 text-[12px] sm:text-[13px] text-center animate-fadeIn">
+                            Thank you. We have received your project details. A senior member of our team will contact you within 4 business hours to discuss your project.
+                          </div>
+                        )}
+
+                        <p className="text-[10px] sm:text-[11px] text-slate-400 text-center">
+                          Privacy Guaranteed: Your details and project plans are kept strictly confidential.
+                        </p>
+                      </div>
                     </form>
                   </div>
                 </div>
