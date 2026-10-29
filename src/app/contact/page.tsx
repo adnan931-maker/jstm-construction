@@ -106,22 +106,20 @@ export default function ContactPage() {
               <span className="h-4 w-px bg-slate-700/60 hidden sm:block" />
               <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-slate-900/80 backdrop-blur-md px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-semibold tracking-wider uppercase text-emerald-400 border border-emerald-500/30 shadow-sm">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span>DIRECT DIRECTOR ENGAGEMENT • MAYFAIR HQ</span>
+                <span>GET IN TOUCH • FAST RESPONSE</span>
               </div>
             </div>
 
             {/* Main Headline with Typographic Rhythm */}
             <div className="max-w-4xl space-y-4 sm:space-y-6">
               <h1 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-white font-heading leading-tight">
-                Let&apos;s Discuss Your{" "}
+                Get in Touch For a Free Consultation &amp;{" "}
                 <span className="text-emerald-400 underline decoration-emerald-500/40 decoration-2 underline-offset-4 sm:underline-offset-8">
-                  Prime London Residential
-                </span>{" "}
-                Project
+                  Fixed-Price Quote
+                </span>
               </h1>
               <p className="text-sm sm:text-lg lg:text-xl text-slate-300 max-w-3xl leading-relaxed font-normal">
-                🛠️ Professional Building &amp; Property Services &bull; 🪜 Extensions, Renovations, Bathroom, Kitchen.
-                🏡 Quality workmanship &amp; reliable service across all 32 London Boroughs.
+                High-quality house extensions, loft conversions, and complete home renovations across London and Surrey. Speak directly with our team to discuss your project.
               </p>
             </div>
 
@@ -185,7 +183,7 @@ export default function ContactPage() {
                   Response Guarantee
                 </div>
                 <p className="text-[11px] sm:text-xs text-slate-400 mt-1.5 leading-relaxed hidden sm:block">
-                  Guaranteed acknowledgment and dedicated lead QS allocation for tender dossiers.
+                  Prompt enquiry response and expert review of your project drawings and ideas.
                 </p>
               </div>
 
@@ -194,10 +192,10 @@ export default function ContactPage() {
                   1-on-1
                 </div>
                 <div className="text-sm sm:text-base text-white mt-1 font-semibold leading-snug">
-                  Direct Access to Directors
+                  Direct Communication
                 </div>
                 <p className="text-[11px] sm:text-xs text-slate-400 mt-1.5 leading-relaxed hidden sm:block">
-                  Personal architectural liaison without layers of junior account intermediaries.
+                  You will have a dedicated project manager overseeing your build from start to finish.
                 </p>
               </div>
 
@@ -206,22 +204,22 @@ export default function ContactPage() {
                   Zero Fee
                 </div>
                 <div className="text-sm sm:text-base text-white mt-1 font-semibold leading-snug">
-                  Site Walkthrough &amp; Appraisal
+                  Site Survey &amp; Quote
                 </div>
                 <p className="text-[11px] sm:text-xs text-slate-400 mt-1.5 leading-relaxed hidden sm:block">
-                  Complimentary structural viability assessment prior to preliminary pricing commitments.
+                  Free, no-obligation property visit and detailed, itemised fixed-price quotation.
                 </p>
               </div>
 
               <div className="bg-slate-900/90 rounded-xl p-4 sm:p-5 border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/40 transition-colors">
                 <div className="text-xl sm:text-2xl font-extrabold text-emerald-400 font-heading">
-                  Strict NDA
+                  Full Privacy
                 </div>
                 <div className="text-sm sm:text-base text-white mt-1 font-semibold leading-snug">
-                  Discretion for Prime Estates
+                  Strict Confidentiality
                 </div>
                 <p className="text-[11px] sm:text-xs text-slate-400 mt-1.5 leading-relaxed hidden sm:block">
-                  Institutional confidentiality standard across Grosvenor, Crown, and Cadogan footprints.
+                  Your drawings, contact information, and property details remain completely private.
                 </p>
               </div>
             </div>
@@ -236,13 +234,13 @@ export default function ContactPage() {
               <div className="lg:col-span-5 space-y-5 sm:space-y-8">
                 <div>
                   <span className="text-[11px] sm:text-xs font-bold tracking-wider uppercase text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200 inline-block">
-                    London Headquarters
+                    Our Office
                   </span>
                   <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3 tracking-tight font-heading">
-                    JST Construction Operations &amp; Consultation Suite
+                    Contact JSTM Construction
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-                    We welcome clients, project architects, and homeowners for confidential specification reviews, project estimations, and architectural surveys.
+                    We are here to answer your questions, arrange site visits, review drawings, and provide clear quotations.
                   </p>
                 </div>
 
@@ -277,7 +275,7 @@ export default function ContactPage() {
                     </div>
                     <div className="space-y-2 w-full">
                       <span className="text-[10px] sm:text-xs text-slate-500 uppercase font-bold tracking-wider">
-                        Direct Lines
+                        Call or Message Us
                       </span>
                       <div className="flex justify-between items-center text-xs sm:text-sm">
                         <span className="text-slate-600 font-medium">Landline:</span>
@@ -309,10 +307,10 @@ export default function ContactPage() {
                     </div>
                     <div className="space-y-2 w-full">
                       <span className="text-[10px] sm:text-xs text-slate-500 uppercase font-bold tracking-wider">
-                        Direct Email
+                        Email Us
                       </span>
                       <div className="flex flex-col text-xs sm:text-sm">
-                        <span className="text-slate-500 text-[11px] sm:text-xs">General Enquiries &amp; Tenders:</span>
+                        <span className="text-slate-500 text-[11px] sm:text-xs">General Enquiries &amp; Drawings:</span>
                         <a
                           className="font-bold text-emerald-700 hover:underline"
                           href="mailto:info@jstmconstruction.com"
@@ -321,7 +319,7 @@ export default function ContactPage() {
                         </a>
                       </div>
                       <p className="text-[11px] sm:text-xs text-slate-500 pt-1">
-                        Drawings, Bills of Quantities &amp; quotations reviewed within 24 hours.
+                        Send your plans or photos for a clear quote within 24 hours.
                       </p>
                     </div>
                   </div>
@@ -333,14 +331,13 @@ export default function ContactPage() {
                     </div>
                     <div className="space-y-1">
                       <span className="text-[10px] sm:text-xs text-slate-500 uppercase font-bold tracking-wider">
-                        Operational Framework
+                        Working Hours
                       </span>
                       <div className="text-sm sm:text-base text-slate-900 font-bold">
-                        Consultation Hours: 07:30 – 18:30 Mon – Sat
+                        Office Hours: Mon - Sat 07:30 - 18:30
                       </div>
                       <p className="text-[11px] sm:text-xs text-slate-600 leading-snug">
-                        Site Operations adhere strictly to London Considerate Constructors Scheme
-                        &amp; Local Council Quiet Working Directives (08:00 – 17:00).
+                        Our sites operate strictly within standard local council working hours (08:00 – 17:00) with clean and considerate conduct.
                       </p>
                     </div>
                   </div>
@@ -354,7 +351,7 @@ export default function ContactPage() {
                         near_me
                       </span>
                       <span className="text-xs sm:text-sm text-slate-900 font-bold">
-                        Transit &amp; Office Access
+                        Location &amp; Access
                       </span>
                     </div>
                     <span className="text-[11px] sm:text-xs text-slate-500">Hounslow &bull; Greater London</span>
@@ -392,13 +389,13 @@ export default function ContactPage() {
                       <span className="material-symbols-outlined text-sm text-emerald-700">
                         local_parking
                       </span>
-                      <span className="font-medium">Euro 6 Logistics Bays</span>
+                      <span className="font-medium">On-Site Parking Available</span>
                     </div>
                     <div className="bg-slate-100 p-2 sm:p-2.5 rounded text-slate-700 flex items-center gap-1.5 sm:gap-2">
                       <span className="material-symbols-outlined text-sm text-emerald-700">
                         badge
                       </span>
-                      <span className="font-medium">Visitor Concierge Desk</span>
+                      <span className="font-medium">Visitor Reception</span>
                     </div>
                   </div>
                 </div>
@@ -415,14 +412,13 @@ export default function ContactPage() {
                       <span className="material-symbols-outlined text-sm sm:text-base">
                         assignment_turned_in
                       </span>
-                      Formal Architectural Tender Form
+                      ONLINE ENQUIRY FORM
                     </div>
                     <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 tracking-tight font-heading">
-                      Submit Project Feasibility or Tender Specification
+                      Tell Us About Your Project
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                      Upload preliminary architectural drawings or schedule a direct site walkover
-                      with our resident engineering director.
+                      Fill in your details below to request a free site visit or quote. You can also upload plans or photos.
                     </p>
                   </div>
 
@@ -436,12 +432,12 @@ export default function ContactPage() {
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="name"
                           >
-                            Full Name &amp; Title *
+                            Full Name *
                           </label>
                           <input
                             className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
                             id="name"
-                            placeholder="e.g. Lord Davies / Sarah Jenkins"
+                            placeholder="e.g. Sarah Jenkins"
                             required
                             type="text"
                             value={formData.name}
@@ -453,7 +449,7 @@ export default function ContactPage() {
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="clientType"
                           >
-                            Client / Professional Role *
+                            I Am A... *
                           </label>
                           <select
                             className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
@@ -462,12 +458,12 @@ export default function ContactPage() {
                             value={formData.clientType}
                             onChange={handleInputChange}
                           >
-                            <option value="">Select Category...</option>
-                            <option value="private">Private Prime Homeowner</option>
-                            <option value="architect">RIBA Chartered Architect / Practice</option>
+                            <option value="">Select Option...</option>
+                            <option value="private">Homeowner</option>
+                            <option value="architect">Architect / Designer</option>
                             <option value="designer">Interior Architect / Designer</option>
-                            <option value="developer">Property Developer / Estate Asset Office</option>
-                            <option value="qs">Independent Quantity Surveyor / PM</option>
+                            <option value="developer">Property Developer / Landlord</option>
+                            <option value="qs">Project Manager / Surveyor</option>
                           </select>
                         </div>
                       </div>
@@ -479,12 +475,12 @@ export default function ContactPage() {
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="phone"
                           >
-                            Direct Telephone Number *
+                            Phone Number *
                           </label>
                           <input
                             className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
                             id="phone"
-                            placeholder="+44 7000 000000"
+                            placeholder="07123 456789"
                             required
                             type="tel"
                             value={formData.phone}
@@ -496,12 +492,12 @@ export default function ContactPage() {
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="email"
                           >
-                            Work / Personal Email Address *
+                            Email Address *
                           </label>
                           <input
                             className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
                             id="email"
-                            placeholder="client@estate.co.uk"
+                            placeholder="sarah.jenkins@example.co.uk"
                             required
                             type="email"
                             value={formData.email}
@@ -517,12 +513,12 @@ export default function ContactPage() {
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="postcode"
                           >
-                            London Borough / Postcode *
+                            Postcode / Area *
                           </label>
                           <input
                             className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
                             id="postcode"
-                            placeholder="e.g. SW3, W11, NW3"
+                            placeholder="e.g. SW3, TW4, CR0"
                             required
                             type="text"
                             value={formData.postcode}
@@ -534,7 +530,7 @@ export default function ContactPage() {
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="scope"
                           >
-                            Primary Scope of Works *
+                            Type of Project *
                           </label>
                           <select
                             className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
@@ -543,13 +539,13 @@ export default function ContactPage() {
                             value={formData.scope}
                             onChange={handleInputChange}
                           >
-                            <option value="">Select Scope...</option>
-                            <option value="extension">Structural Extension &amp; Slimline Glazing</option>
-                            <option value="basement">Subterranean Basement Excavation</option>
-                            <option value="heritage">Heritage / Grade I &amp; II Listed Conservation</option>
-                            <option value="loft">Full Mansard / Dormer Architectural Conversion</option>
-                            <option value="fitout">Turnkey Luxury Refurbishment &amp; Interior Fit-out</option>
-                            <option value="commercial">Boutique Commercial / Mixed-Use Structural</option>
+                            <option value="">Select Project Type...</option>
+                            <option value="extension">House Extension (Rear / Side-Return / Wrap-Around)</option>
+                            <option value="basement">Basement Conversion</option>
+                            <option value="heritage">Period &amp; Listed Property Refurbishment</option>
+                            <option value="loft">Loft Conversion (Dormer / Mansard / Velux)</option>
+                            <option value="fitout">Full House Renovation &amp; Refurbishment</option>
+                            <option value="commercial">Commercial / Office Fit-Out</option>
                           </select>
                         </div>
                       </div>
@@ -561,7 +557,7 @@ export default function ContactPage() {
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="budget"
                           >
-                            Target Capital Envelope (£)
+                            Approximate Budget
                           </label>
                           <select
                             className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
@@ -569,10 +565,10 @@ export default function ContactPage() {
                             value={formData.budget}
                             onChange={handleInputChange}
                           >
-                            <option value="tier1">£150k – £300k (Specialist Refurbishment)</option>
-                            <option value="tier2">£300k – £600k (Major Extension &amp; Remodel)</option>
-                            <option value="tier3">£600k – £1.5M (Prime Whole House Restoration)</option>
-                            <option value="tier4">£1.5M+ (High-Spec Heritage &amp; Subterranean)</option>
+                            <option value="tier1">Under £50,000</option>
+                            <option value="tier2">£50,000 – £150,000</option>
+                            <option value="tier3">£150,000 – £300,000</option>
+                            <option value="tier4">£300,000+</option>
                           </select>
                         </div>
                         <div className="space-y-1.5 sm:space-y-2">
@@ -580,7 +576,7 @@ export default function ContactPage() {
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="targetCommencement"
                           >
-                            Target Site Start
+                            Ideal Start Date
                           </label>
                           <select
                             className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
@@ -588,10 +584,10 @@ export default function ContactPage() {
                             value={formData.targetCommencement}
                             onChange={handleInputChange}
                           >
-                            <option value="immediate">Within 30 Days (Tender Ready)</option>
-                            <option value="q1">1 – 3 Months (In Planning)</option>
-                            <option value="q2">3 – 6 Months (Design Stage)</option>
-                            <option value="feasibility">Feasibility / Property Appraisal</option>
+                            <option value="immediate">As soon as possible (Ready to start)</option>
+                            <option value="q1">In 1 – 3 months</option>
+                            <option value="q2">In 3 – 6 months</option>
+                            <option value="feasibility">Just planning / Getting initial estimates</option>
                           </select>
                         </div>
                       </div>
@@ -602,12 +598,12 @@ export default function ContactPage() {
                           className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                           htmlFor="notes"
                         >
-                          Architectural Notes &amp; Scope Details
+                          Project Details
                         </label>
                         <textarea
                           className="w-full bg-slate-50 border border-slate-300 rounded-lg p-3.5 sm:p-4 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors resize-none"
                           id="notes"
-                          placeholder="Detail specific requirements: e.g. Party Wall conditions, steel beam configurations, bespoke joinery, or specific completion milestones."
+                          placeholder="Tell us about your project, your timeline, or any specific requirements you have..."
                           rows={4}
                           value={formData.notes}
                           onChange={handleInputChange}
@@ -617,7 +613,7 @@ export default function ContactPage() {
                       {/* File Attachment Dropzone */}
                       <div className="space-y-1.5 sm:space-y-2">
                         <label className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold">
-                          Tender Dossiers, Drawings or Planning Notices
+                          Upload Drawings, Plans or Photos (Optional)
                         </label>
                         <input
                           ref={fileInputRef}
@@ -644,10 +640,10 @@ export default function ContactPage() {
                             cloud_upload
                           </span>
                           <p className="text-xs sm:text-sm font-semibold text-slate-800 mt-2">
-                            Click to select architectural files or drag &amp; drop
+                            Click to select files or drag &amp; drop
                           </p>
                           <p className="text-[11px] sm:text-xs text-slate-500 mt-1">
-                            Accepted: PDF, DWG, BIM / IFC, ZIP packages up to 50MB
+                            Accepted: PDF, JPG, PNG, DWG, ZIP (up to 50MB)
                           </p>
 
                           {files.length > 0 && (
@@ -677,8 +673,8 @@ export default function ContactPage() {
                         >
                           <span className="font-semibold">
                             {isSubmitting
-                              ? "Transmitting Secure Dossier..."
-                              : "Submit For Director Review & Tender Appraisal"}
+                              ? "Sending Enquiry..."
+                              : "Request Free Site Visit & Quote"}
                           </span>
                           <span className="material-symbols-outlined text-base sm:text-lg">arrow_forward</span>
                         </button>
@@ -687,8 +683,7 @@ export default function ContactPage() {
                             lock
                           </span>
                           <span>
-                            Protected under strict NDA &amp; GDPR. Information treated with complete
-                            fiduciary privacy.
+                            We respect your privacy. Your details will only be used to respond to your enquiry.
                           </span>
                         </div>
                       </div>
@@ -700,12 +695,10 @@ export default function ContactPage() {
                         <span className="material-symbols-outlined text-3xl sm:text-4xl">check_circle</span>
                       </div>
                       <h4 className="text-xl sm:text-2xl font-bold text-slate-900 font-heading">
-                        Dossier Received Successfully
+                        Thank You — Enquiry Received
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
-                        Our Managing Director and Senior Quantity Surveyor will review your brief
-                        within 24 business hours. A formal acknowledgment and initial appraisal
-                        call will be scheduled.
+                        We have received your project details. A member of our team will review your information and get back to you within 24 hours to discuss next steps.
                       </p>
                       <div className="pt-4">
                         <button
@@ -713,7 +706,7 @@ export default function ContactPage() {
                           onClick={resetForm}
                           type="button"
                         >
-                          Submit another specification or amendment
+                          Submit another enquiry
                         </button>
                       </div>
                     </div>
@@ -724,21 +717,20 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* SECTION 3: Dark Direct Fiduciary Accountability & Practice Directors Section */}
+        {/* SECTION 3: Dark OUR EXPERIENCED TEAM & Practice Directors Section */}
         <section className="bg-gradient-to-b from-[#0f172a] via-[#0b1120] to-[#0f172a] text-white py-10 sm:py-16 lg:py-24 border-b border-slate-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12">
               <div>
                 <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded border border-emerald-700/50 inline-block">
-                  Direct Fiduciary Accountability
+                  OUR EXPERIENCED TEAM
                 </span>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mt-3 tracking-tight font-heading">
-                  Meet Our Practice Directors &amp; Commercial Leads
+                  Meet Our Senior Management Team
                 </h2>
               </div>
               <p className="text-xs sm:text-sm text-slate-300 max-w-md mt-4 md:mt-0 leading-relaxed">
-                Every JSTM contract is directly overseen by a chartered partner, guaranteeing clear
-                decisions, cost certainty, and rigorous build standards.
+                Every project is led by experienced professionals who ensure your build is completed on time, within budget, and to the highest standards.
               </p>
             </div>
 
@@ -766,16 +758,15 @@ export default function ContactPage() {
                   <div className="space-y-1.5 text-xs text-slate-300">
                     <div className="flex items-center gap-2">
                       <i className="fa-solid fa-circle-check text-emerald-400" />
-                      <span>Fellow, FMB (30+ Yrs Prime London)</span>
+                      <span>Fellow, FMB (30+ Yrs Experience)</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <i className="fa-solid fa-file-contract text-emerald-400" />
-                      <span>JCT &amp; Bespoke Main Contracts</span>
+                      <span>JCT &amp; Standard Contracts</span>
                     </div>
                   </div>
                   <p className="text-xs text-slate-400 mt-4 leading-relaxed">
-                    Leads executive procurement, multi-phase master programming, and strategic
-                    client governance across Chelsea and Westminster.
+                    30+ years leading residential building projects across London, focused on top-quality craft and personal client care.
                   </p>
                 </div>
                 <div className="mt-6 pt-4 border-t border-slate-800 flex flex-col gap-1.5">
@@ -807,23 +798,22 @@ export default function ContactPage() {
                         Marcus Sterling
                       </h3>
                       <span className="text-xs text-emerald-400 font-semibold">
-                        Head of Structural Eng.
+                        Head of Structural Engineering
                       </span>
                     </div>
                   </div>
                   <div className="space-y-1.5 text-xs text-slate-300">
                     <div className="flex items-center gap-2">
                       <i className="fa-solid fa-compass-drafting text-emerald-400" />
-                      <span>CEng MIStructE Accredited</span>
+                      <span>CEng MIStructE Qualified</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <i className="fa-solid fa-cube text-emerald-400" />
-                      <span>Subterranean &amp; Underpinning</span>
+                      <span>Basements, Lofts &amp; Extensions</span>
                     </div>
                   </div>
                   <p className="text-xs text-slate-400 mt-4 leading-relaxed">
-                    Oversees complex temporary works, basement retrofits, and high-span steel portal
-                    design across sensitive conservation areas.
+                    Expert in structural steel calculations, foundation design, and complex load-bearing wall removals.
                   </p>
                 </div>
                 <div className="mt-6 pt-4 border-t border-slate-800 flex flex-col gap-1.5">
@@ -853,23 +843,22 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-lg font-bold text-white font-heading">Elena Rostova</h3>
                       <span className="text-xs text-emerald-400 font-semibold">
-                        Dir. Architectural Liaison
+                        Architectural Project Lead
                       </span>
                     </div>
                   </div>
                   <div className="space-y-1.5 text-xs text-slate-300">
                     <div className="flex items-center gap-2">
                       <i className="fa-solid fa-landmark text-emerald-400" />
-                      <span>ARB / RIBA Chartered Partner</span>
+                      <span>ARB / RIBA Qualified</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <i className="fa-solid fa-shield text-emerald-400" />
-                      <span>Historic England &amp; Estate Approvals</span>
+                      <span>Planning &amp; Building Regulations</span>
                     </div>
                   </div>
                   <p className="text-xs text-slate-400 mt-4 leading-relaxed">
-                    Acts as the crucial bridge between external design studios and our site delivery
-                    teams to preserve architectural intent down to the millimeter.
+                    Works closely with architects, council planning officers, and clients to make sure every design detail is built accurately.
                   </p>
                 </div>
                 <div className="mt-6 pt-4 border-t border-slate-800 flex flex-col gap-1.5">
@@ -899,23 +888,22 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-lg font-bold text-white font-heading">James Thorne</h3>
                       <span className="text-xs text-emerald-400 font-semibold">
-                        Senior Estimator &amp; Lead QS
+                        Lead Estimator &amp; Quantity Surveyor
                       </span>
                     </div>
                   </div>
                   <div className="space-y-1.5 text-xs text-slate-300">
                     <div className="flex items-center gap-2">
                       <i className="fa-solid fa-calculator text-emerald-400" />
-                      <span>MRICS Commercial Standards</span>
+                      <span>MRICS Qualified</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <i className="fa-solid fa-stamp text-emerald-400" />
-                      <span>Fixed Price Contract Commitments</span>
+                      <span>Fixed-Price Costing</span>
                     </div>
                   </div>
                   <p className="text-xs text-slate-400 mt-4 leading-relaxed">
-                    Prepares exhaustive BoQs, transparent cost breakdowns, and manages rigorous
-                    cost-control mechanisms with zero unexpected variations.
+                    Prepares detailed, transparent fixed-price quotes with clear itemised breakdowns so there are never any unexpected costs.
                   </p>
                 </div>
                 <div className="mt-6 pt-4 border-t border-slate-800 flex flex-col gap-1.5">
@@ -933,19 +921,18 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* SECTION 4: Light Client Procurement FAQ */}
+        {/* SECTION 4: Light FREQUENTLY ASKED QUESTIONS */}
         <section className="bg-slate-50/70 text-slate-900 py-10 sm:py-16 lg:py-24 border-b border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-14">
               <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200 inline-block">
-                Client Procurement FAQ
+                FREQUENTLY ASKED QUESTIONS
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight font-heading">
-                Essential Questions Before Tendering
+                Frequently Asked Questions
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-                Clarity before engagement. Here is how JSTM Construction operates on prime London
-                residential projects and joint-venture frameworks.
+                Here are answers to the most common questions about our quotation process, contracts, and how we manage projects.
               </p>
             </div>
 
@@ -958,13 +945,10 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-base sm:text-lg font-bold text-slate-900 font-heading">
-                      How quickly do you turn around tenders?
+                      How quickly will I receive my quote?
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 mt-2 sm:mt-2.5 leading-relaxed">
-                      For fully specified architectural drawing sets and Schedules of Work, our
-                      commercial department provides line-item BoQ pricing within 5 to 10 working
-                      days. For preliminary feasibility appraisals, we can provide cost-per-square-meter
-                      guidance within 48 hours.
+                      For detailed architectural drawings, we provide an itemised fixed-price quote within 5 to 7 working days. If you are at an early stage, we can provide indicative costings within 24 to 48 hours.
                     </p>
                   </div>
                 </div>
@@ -978,13 +962,10 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 font-heading">
-                      Do you work alongside appointed RIBA architects?
+                      Can you work with my architect or interior designer?
                     </h3>
                     <p className="text-sm text-slate-600 mt-2.5 leading-relaxed">
-                      Yes. Over 70% of our turnover is realized in direct joint venture with London’s
-                      leading architectural practices and interior designers. We act as principal
-                      main contractor, respecting design integrity while contributing constructive
-                      value engineering.
+                      Yes, absolutely. We frequently work alongside client-appointed architects, structural engineers, and interior designers, or we can provide complete design-and-build services if you prefer.
                     </p>
                   </div>
                 </div>
@@ -1000,12 +981,10 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 font-heading">
-                      How are cost overruns prevented?
+                      How do you guarantee fixed prices with no hidden extras?
                     </h3>
                     <p className="text-sm text-slate-600 mt-2.5 leading-relaxed">
-                      We contract under standard JCT Minor Works or Standard Building contracts with
-                      fixed-price commitments for clearly scoped packages. No variation is undertaken
-                      without prior written sign-off by the client or contract administrator.
+                      We provide comprehensive, itemised contracts based on standard JCT guidelines. Every cost is clearly outlined before work starts. We never carry out extra work without your written approval in advance.
                     </p>
                   </div>
                 </div>
@@ -1019,13 +998,10 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 font-heading">
-                      Do you handle Party Wall notices &amp; council licenses?
+                      Do you arrange council permits and party wall agreements?
                     </h3>
                     <p className="text-sm text-slate-600 mt-2.5 leading-relaxed">
-                      Our in-house project managers coordinate directly with your appointed Party
-                      Wall surveyors, arrange scaffolding and skip highway licenses with
-                      Westminster, Kensington &amp; Chelsea, or Camden councils, and ensure complete
-                      statutory compliance.
+                      Yes. We coordinate with party wall surveyors, arrange skip permits, parking bay suspensions, and liaise directly with council building control inspectors to keep everything simple for you.
                     </p>
                   </div>
                 </div>
@@ -1040,10 +1016,10 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-slate-900 font-heading">
-                    Have a complex listed building enquiry?
+                    Planning a Listed Building or Conservation Area Project?
                   </h4>
                   <p className="text-xs text-slate-600 mt-0.5">
-                    Speak directly with our Historic Environment &amp; Conservation consultant.
+                    Our team has extensive experience with period homes, conservation permissions, and heritage craftsmanship.
                   </p>
                 </div>
               </div>
