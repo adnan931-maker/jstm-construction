@@ -18,18 +18,18 @@ export default function Footer() {
   };
 
   return (
-    <footer className="w-full bg-[#070b14] border-t border-slate-800 text-slate-300 pt-16 pb-8">
+    <footer className="w-full bg-[#070b14] border-t border-slate-800 text-slate-300 pt-10 sm:pt-16 pb-6 sm:pb-8">
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {/* Brand & Accreditation Column */}
           <div className="lg:col-span-2 space-y-4">
             <Logo size="md" href="/" />
-            <div className="text-sm text-slate-300 max-w-sm leading-relaxed space-y-1">
+            <div className="text-xs sm:text-sm text-slate-300 max-w-sm leading-relaxed space-y-1">
               <p className="font-semibold text-white">🛠️ Professional Building &amp; Property Services</p>
               <p className="text-emerald-400 font-medium">🪜 Extensions &bull; Renovations &bull; Bathroom &bull; Kitchen</p>
               <p className="text-slate-400">🏡 Quality workmanship, Reliable service across London.</p>
             </div>
-            <div className="text-sm space-y-2 text-slate-400 pt-2 border-t border-slate-800/80">
+            <div className="text-xs sm:text-sm space-y-2 text-slate-400 pt-2 border-t border-slate-800/80">
               <p className="flex items-start gap-2">
                 <i className="fa-solid fa-location-dot text-emerald-400 text-sm mt-1 shrink-0"></i>
                 <span>
@@ -69,7 +69,7 @@ export default function Footer() {
           {/* Core Services */}
           <div className="space-y-3">
             <h3 className="text-[16px] text-white font-semibold tracking-tight">Core Services</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
               <li className="text-slate-300 font-medium text-emerald-400/90">&bull; House Extensions</li>
               <li className="text-slate-300 font-medium text-emerald-400/90">&bull; Complete Renovations</li>
               <li className="text-slate-300 font-medium text-emerald-400/90">&bull; Bathroom Refurbishment</li>
@@ -84,7 +84,7 @@ export default function Footer() {
           {/* Company */}
           <div className="space-y-3">
             <h3 className="text-[16px] text-white font-semibold tracking-tight">Company</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
               <li>
                 <Link className="text-slate-400 hover:text-emerald-400 transition-colors" href="/about-us">
                   About Us
