@@ -154,9 +154,21 @@ export default function AboutUsPage() {
 
           {/* SECTION 1: HERO SECTION */}
           <section className="relative w-full bg-[#0b1120] text-white overflow-hidden border-b border-slate-800/80">
+            {/* Hero Background Image */}
+            <div className="absolute inset-0 z-0 overflow-hidden">
+              <Image
+                src="/assets/images/kensington_refurbishment.jpg"
+                alt="Premium London residential renovation by JSTM Construction"
+                fill
+                className="object-cover object-center opacity-20"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#0b1120]/95 via-[#0b1120]/80 to-[#0b1120]/90" />
+            </div>
+
             {/* Atmospheric Ambient Glows */}
-            <div className="absolute top-0 right-1/4 w-[700px] h-[700px] bg-emerald-500/10 rounded-full blur-[140px] pointer-events-none -z-0" />
-            <div className="absolute top-80 left-10 w-[550px] h-[550px] bg-sky-500/5 rounded-full blur-[120px] pointer-events-none -z-0" />
+            <div className="absolute top-0 right-1/4 w-[700px] h-[700px] bg-emerald-500/8 rounded-full blur-[140px] pointer-events-none z-0" />
+            <div className="absolute top-80 left-10 w-[550px] h-[550px] bg-sky-500/5 rounded-full blur-[120px] pointer-events-none z-0" />
 
             <div className="relative z-10 max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12 pt-8 sm:pt-10 pb-14 sm:pb-20">
               {/* Breadcrumb */}
@@ -193,24 +205,23 @@ export default function AboutUsPage() {
                   </p>
                 </div>
 
-                <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-2.5 sm:gap-3 pt-2 sm:pt-4 lg:pt-0">
+                <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 pt-2 sm:pt-4 lg:pt-0">
                   <a
                     href="#consultation-booking"
-                    className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-[13px] sm:text-[14px] px-5 py-3 sm:px-6 sm:py-4 rounded-xl shadow-[0_4px_20px_rgba(5,150,105,0.4)] transition-all duration-150 font-semibold group text-center"
+                    className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white no-underline text-[13px] sm:text-[14px] px-5 py-3 sm:px-6 sm:py-4 rounded-xl shadow-[0_4px_20px_rgba(5,150,105,0.4)] hover:shadow-[0_6px_24px_rgba(5,150,105,0.55)] transition-all duration-200 font-semibold group text-center"
                   >
                     <span>Book a Free Site Survey</span>
-                    <span className="material-symbols-outlined text-[16px] sm:text-[18px] group-hover:translate-x-1 transition-transform">
+                    <span className="material-symbols-outlined text-[16px] sm:text-[18px] group-hover:translate-x-1 transition-transform duration-200">
                       arrow_forward
                     </span>
                   </a>
-                  <button
-                    type="button"
-                    onClick={() => alert("Downloading JSTM Company Prospectus (PDF) - 2025 Edition")}
-                    className="inline-flex items-center justify-center gap-2 bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 text-[13px] sm:text-[14px] px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl transition-all duration-150 font-medium text-center"
+                  <a
+                    href="/portfolio"
+                    className="inline-flex items-center justify-center gap-2 bg-slate-800/70 hover:bg-slate-700/80 active:bg-slate-900 text-slate-200 hover:text-white no-underline border border-slate-700/60 hover:border-slate-500/60 text-[13px] sm:text-[14px] px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl transition-all duration-200 font-medium text-center group"
                   >
-                    <span className="material-symbols-outlined text-[16px] sm:text-[18px] text-emerald-400">download_for_offline</span>
-                    <span>Download Company Brochure (PDF)</span>
-                  </button>
+                    <span className="material-symbols-outlined text-[16px] sm:text-[18px] text-emerald-400">photo_library</span>
+                    <span>View Our Portfolio</span>
+                  </a>
                 </div>
               </div>
 
