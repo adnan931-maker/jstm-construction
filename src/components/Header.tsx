@@ -80,7 +80,7 @@ export default function Header({ currentPage = "home" }: HeaderProps) {
       </div>
 
       {/* MainHeader */}
-      <header className="sticky top-0 z-50 border-b border-slate-800/80 shadow-xl" style={{ backgroundColor: '#121927' }}>
+      <header className="sticky top-0 z-50 relative border-b border-slate-800/80 shadow-xl" style={{ backgroundColor: '#121927' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Brand Logo */}
@@ -151,7 +151,7 @@ export default function Header({ currentPage = "home" }: HeaderProps) {
             </nav>
 
             {/* Right Side Header Action */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-3">
               <Link
                 className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm shadow-lg shadow-emerald-700/30 transition-all duration-200 transform hover:-translate-y-0.5"
                 href="/contact"
@@ -161,8 +161,9 @@ export default function Header({ currentPage = "home" }: HeaderProps) {
               </Link>
               {/* Mobile Menu Trigger */}
               <button
-                aria-label="Toggle navigation"
-                className="lg:hidden text-slate-300 hover:text-white p-2 rounded-lg"
+                aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+                aria-expanded={mobileMenuOpen}
+                className="lg:hidden text-slate-200 hover:text-white p-2.5 rounded-lg border border-slate-700/60 bg-slate-800/40 hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
@@ -178,108 +179,119 @@ export default function Header({ currentPage = "home" }: HeaderProps) {
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-full z-40 border-b border-slate-800 p-6 shadow-2xl" style={{ backgroundColor: '#121927' }}>
-            <nav className="flex flex-col space-y-4 text-base font-semibold">
-              <Link
-                onClick={() => setMobileMenuOpen(false)}
-                className={`py-1 transition-colors ${
-                  isActive("home")
-                    ? "text-emerald-400"
-                    : "text-slate-300 hover:text-emerald-400"
-                }`}
-                href="/"
-              >
-                Home
-              </Link>
-              <Link
-                onClick={() => setMobileMenuOpen(false)}
-                className={`py-1 transition-colors ${
-                  isActive("about-us")
-                    ? "text-emerald-400"
-                    : "text-slate-300 hover:text-emerald-400"
-                }`}
-                href="/about-us"
-              >
-                About Us
-              </Link>
-              <Link
-                onClick={() => setMobileMenuOpen(false)}
-                className={`py-1 transition-colors ${
-                  isActive("services")
-                    ? "text-emerald-400"
-                    : "text-slate-300 hover:text-emerald-400"
-                }`}
-                href="/services"
-              >
-                Services
-              </Link>
-              <Link
-                onClick={() => setMobileMenuOpen(false)}
-                className={`py-1 transition-colors ${
-                  isActive("portfolio")
-                    ? "text-emerald-400"
-                    : "text-slate-300 hover:text-emerald-400"
-                }`}
-                href="/portfolio"
-              >
-                Portfolio
-              </Link>
-              <Link
-                onClick={() => setMobileMenuOpen(false)}
-                className={`py-1 transition-colors ${
-                  isActive("areas-we-cover")
-                    ? "text-emerald-400"
-                    : "text-slate-300 hover:text-emerald-400"
-                }`}
-                href="/areas-we-cover"
-              >
-                Areas We Cover
-              </Link>
-              <Link
-                onClick={() => setMobileMenuOpen(false)}
-                className={`py-1 transition-colors ${
-                  isActive("contact")
-                    ? "text-emerald-400"
-                    : "text-slate-300 hover:text-emerald-400"
-                }`}
-                href="/contact"
-              >
-                Contact
-              </Link>
-              <Link
-                onClick={() => setMobileMenuOpen(false)}
-                className="bg-emerald-600 hover:bg-emerald-500 text-white p-3 rounded-lg text-center mt-2 shadow-lg shadow-emerald-700/30 font-semibold"
-                href="/contact"
-              >
-                Get Free Quote
-              </Link>
-              <div className="pt-4 border-t border-slate-800 flex flex-col gap-2.5 text-sm font-normal">
-                <a
-                  href="tel:02035762228"
-                  className="flex items-center gap-2.5 text-slate-200 hover:text-emerald-400 font-semibold"
+          <>
+            {/* Backdrop overlay */}
+            <div
+              className="lg:hidden fixed inset-0 top-20 bg-black/60 backdrop-blur-xs z-40"
+              onClick={() => setMobileMenuOpen(false)}
+              aria-hidden="true"
+            />
+            <div
+              className="lg:hidden absolute top-full left-0 right-0 z-50 border-b border-slate-800 p-6 shadow-2xl max-h-[calc(100vh-5rem)] overflow-y-auto"
+              style={{ backgroundColor: '#121927' }}
+            >
+              <nav className="flex flex-col space-y-4 text-base font-semibold">
+                <Link
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`py-1.5 transition-colors ${
+                    isActive("home")
+                      ? "text-emerald-400"
+                      : "text-slate-300 hover:text-emerald-400"
+                  }`}
+                  href="/"
                 >
-                  <i className="fa-solid fa-phone text-xs text-emerald-400"></i>
-                  <span>020 3576 2228</span>
-                </a>
-                <a
-                  href="https://wa.me/447418095006"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2.5 text-emerald-400 hover:text-emerald-300 font-semibold"
+                  Home
+                </Link>
+                <Link
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`py-1.5 transition-colors ${
+                    isActive("about-us")
+                      ? "text-emerald-400"
+                      : "text-slate-300 hover:text-emerald-400"
+                  }`}
+                  href="/about-us"
                 >
-                  <i className="fa-brands fa-whatsapp text-sm"></i>
-                  <span>+44 7418 095006 (WhatsApp)</span>
-                </a>
-                <a
-                  href="mailto:info@jstmconstruction.com"
-                  className="flex items-center gap-2.5 text-slate-400 hover:text-emerald-400 text-xs"
+                  About Us
+                </Link>
+                <Link
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`py-1.5 transition-colors ${
+                    isActive("services")
+                      ? "text-emerald-400"
+                      : "text-slate-300 hover:text-emerald-400"
+                  }`}
+                  href="/services"
                 >
-                  <i className="fa-solid fa-envelope text-xs text-emerald-400"></i>
-                  <span>info@jstmconstruction.com</span>
-                </a>
-              </div>
-            </nav>
-          </div>
+                  Services
+                </Link>
+                <Link
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`py-1.5 transition-colors ${
+                    isActive("portfolio")
+                      ? "text-emerald-400"
+                      : "text-slate-300 hover:text-emerald-400"
+                  }`}
+                  href="/portfolio"
+                >
+                  Portfolio
+                </Link>
+                <Link
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`py-1.5 transition-colors ${
+                    isActive("areas-we-cover")
+                      ? "text-emerald-400"
+                      : "text-slate-300 hover:text-emerald-400"
+                  }`}
+                  href="/areas-we-cover"
+                >
+                  Areas We Cover
+                </Link>
+                <Link
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`py-1.5 transition-colors ${
+                    isActive("contact")
+                      ? "text-emerald-400"
+                      : "text-slate-300 hover:text-emerald-400"
+                  }`}
+                  href="/contact"
+                >
+                  Contact
+                </Link>
+                <Link
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="bg-emerald-600 hover:bg-emerald-500 text-white p-3 rounded-lg text-center mt-2 shadow-lg shadow-emerald-700/30 font-semibold"
+                  href="/contact"
+                >
+                  Get Free Quote
+                </Link>
+                <div className="pt-4 border-t border-slate-800 flex flex-col gap-2.5 text-sm font-normal">
+                  <a
+                    href="tel:02035762228"
+                    className="flex items-center gap-2.5 text-slate-200 hover:text-emerald-400 font-semibold"
+                  >
+                    <i className="fa-solid fa-phone text-xs text-emerald-400"></i>
+                    <span>020 3576 2228</span>
+                  </a>
+                  <a
+                    href="https://wa.me/447418095006"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2.5 text-emerald-400 hover:text-emerald-300 font-semibold"
+                  >
+                    <i className="fa-brands fa-whatsapp text-sm"></i>
+                    <span>+44 7418 095006 (WhatsApp)</span>
+                  </a>
+                  <a
+                    href="mailto:info@jstmconstruction.com"
+                    className="flex items-center gap-2.5 text-slate-400 hover:text-emerald-400 text-xs"
+                  >
+                    <i className="fa-solid fa-envelope text-xs text-emerald-400"></i>
+                    <span>info@jstmconstruction.com</span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </>
         )}
       </header>
     </>
