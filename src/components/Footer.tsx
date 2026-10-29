@@ -12,7 +12,7 @@ export default function Footer() {
     e.preventDefault();
     if (email) {
       setSubscribed(true);
-      alert("Thank you for subscribing to the JSTM Quarterly Architectural Briefing.");
+      alert("Thank you for subscribing to our updates.");
       setEmail("");
     }
   };
@@ -92,7 +92,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link className="text-slate-400 hover:text-emerald-400 transition-colors" href="/#process">
-                  Work Process &amp; Rigour
+                  Our Building Process
                 </Link>
               </li>
               <li>
@@ -102,7 +102,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link className="text-slate-400 hover:text-emerald-400 transition-colors" href="/#pricing">
-                  Interactive Estimator
+                  Cost Estimator
                 </Link>
               </li>
               <li>
@@ -112,22 +112,22 @@ export default function Footer() {
               </li>
               <li>
                 <Link className="text-slate-400 hover:text-emerald-400 transition-colors" href="/contact">
-                  Consultation &amp; Enquiries
+                  Contact &amp; Quotes
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Quarterly Registry */}
+          {/* Newsletter */}
           <div className="space-y-3">
-            <h3 className="text-[16px] text-white font-semibold tracking-tight">Quarterly Registry</h3>
+            <h3 className="text-[16px] text-white font-semibold tracking-tight">Newsletter</h3>
             <p className="text-sm text-slate-400">
-              Receive our architectural journals, structural briefing memos, and procurement market indices.
+              Receive our latest completed projects, home renovation advice, and building guides.
             </p>
             <form onSubmit={handleSubscribe} className="space-y-2">
               <input
                 className="w-full px-3 py-2 bg-slate-900 border border-slate-800 text-white placeholder:text-slate-500 rounded-lg text-sm focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500"
-                placeholder="architect@studio.com"
+                placeholder="your.email@example.co.uk"
                 type="email"
                 required
                 value={email}
@@ -137,7 +137,7 @@ export default function Footer() {
                 className="w-full bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-lg text-sm font-semibold transition-colors shadow-sm"
                 type="submit"
               >
-                {subscribed ? "Subscribed!" : "Subscribe to Briefing"}
+                {subscribed ? "Subscribed!" : "Subscribe"}
               </button>
             </form>
           </div>
@@ -149,8 +149,8 @@ export default function Footer() {
           <div className="flex items-center gap-4 flex-wrap">
             <span className="text-slate-500 hover:text-slate-300 cursor-pointer">Privacy Policy</span>
             <span className="text-slate-500 hover:text-slate-300 cursor-pointer">Terms of Engagement</span>
-            <span className="text-slate-500 hover:text-slate-300 cursor-pointer">CDM 2015 Compliance</span>
-            <span className="text-slate-500 hover:text-slate-300 cursor-pointer">Insurance Registry</span>
+            <span className="text-slate-500 hover:text-slate-300 cursor-pointer">Health &amp; Safety</span>
+            <span className="text-slate-500 hover:text-slate-300 cursor-pointer">Insurance Details</span>
           </div>
         </div>
       </div>
