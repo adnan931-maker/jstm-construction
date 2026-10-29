@@ -9,82 +9,82 @@ import Link from "next/link";
 const slides = [
   {
     src: "/gallery/project-01.jpg",
-    label: "Architectural Concepts & Elevations",
+    label: "Architectural Plans & Elevations",
     category: "Planning",
   },
   {
     src: "/gallery/project-02.jpg",
-    label: "Site Demolition & Groundwork",
+    label: "Groundwork & Foundations",
     category: "Groundwork",
   },
   {
     src: "/gallery/project-03.jpg",
-    label: "Vaulted Kitchen & Bespoke Cabinetry",
+    label: "Custom Kitchen & Dining Extension",
     category: "Kitchen",
   },
   {
     src: "/gallery/project-04.jpg",
-    label: "Living & Dining Hall Architecture",
+    label: "Open-Plan Living & Dining Room",
     category: "Interior",
   },
   {
     src: "/gallery/project-05.jpg",
-    label: "Vaulted Bedroom Refurbishment",
+    label: "New Master Bedroom Refurbishment",
     category: "Bedroom",
   },
   {
     src: "/gallery/project-06.jpg",
-    label: "Loft Detail & Ensuite Access",
+    label: "Loft Conversion with En-Suite",
     category: "Loft",
   },
   {
     src: "/gallery/project-07.jpg",
-    label: "Open-Plan Living Refurbishment",
+    label: "Modern Open-Plan Living Space",
     category: "Interior",
   },
   {
     src: "/gallery/project-08.jpg",
-    label: "Entrance Hallway Joinery",
+    label: "Hallway & Custom Joinery",
     category: "Interior",
   },
   {
     src: "/gallery/project-09.jpg",
-    label: "Calacatta Marble Ensuite",
+    label: "Marble En-Suite Bathroom",
     category: "Bathroom",
   },
   {
     src: "/gallery/project-10.jpg",
-    label: "Family Bathroom Handover",
+    label: "Finished Family Bathroom",
     category: "Bathroom",
   },
   {
     src: "/gallery/project-11.jpg",
-    label: "Bathroom Suite Renovation",
+    label: "Modern Bathroom Renovation",
     category: "Bathroom",
   },
   {
     src: "/gallery/project-12.jpg",
-    label: "Finished Bedroom Handover",
+    label: "Completed Bedroom Finish",
     category: "Bedroom",
   },
   {
     src: "/gallery/project-13.jpg",
-    label: "Landscaping & Striped Lawn",
+    label: "Garden Landscaping & Lawn",
     category: "Landscaping",
   },
   {
     src: "/gallery/project-14.jpg",
-    label: "Patio Paving & Lawn Handover",
+    label: "Patio Paving & Rear Garden",
     category: "Landscaping",
   },
   {
     src: "/gallery/project-15.jpg",
-    label: "Garden Landscaping Detail",
+    label: "Garden Patio & Outdoor Space",
     category: "Landscaping",
   },
   {
     src: "/gallery/project-16.jpg",
-    label: "Complete Garden Transformation",
+    label: "Completed Garden Renovation",
     category: "Landscaping",
   },
 ];
@@ -173,18 +173,18 @@ export default function PortfolioPage() {
           <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center text-center space-y-3 sm:space-y-4">
             <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full border shadow-lg" style={{ backgroundColor: "rgba(5,150,105,0.15)", borderColor: "rgba(16,185,129,0.4)" }}>
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-[10px] sm:text-[11px] font-mono uppercase tracking-widest font-semibold text-emerald-400">JSTM London Archive</span>
+              <span className="text-[10px] sm:text-[11px] font-mono uppercase tracking-widest font-semibold text-emerald-400">OUR RECENT WORK</span>
             </div>
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white max-w-4xl leading-tight">
-              Project Portfolio &amp; Visual Gallery
+              Our Project Portfolio &amp; Completed Work
             </h1>
             <p className="max-w-2xl text-slate-300 text-xs sm:text-base leading-relaxed">
-              Explore our curated portfolio of prime residential extensions, bespoke loft conversions, and high-specification architectural refurbishments across London.
+              Browse photos of our completed house extensions, loft conversions, and full home refurbishments across London.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 pt-2 sm:pt-3 text-[11px] sm:text-xs text-slate-400">
               {[
-                { icon: "verified", label: "RIBA & FMB Standards" },
-                { icon: "photo_library", label: "16 Curated Elevations & Stages" },
+                { icon: "verified", label: "FMB Master Builder Certified" },
+                { icon: "photo_library", label: "16 Featured Project Photos" },
                 { icon: "location_on", label: "All 32 London Boroughs" },
               ].map((s) => (
                 <div key={s.label} className="flex items-center gap-1.5 sm:gap-2">
@@ -461,10 +461,10 @@ export default function PortfolioPage() {
               Ready to Start?
             </div>
             <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight">
-              Let&apos;s Build Something Exceptional Together
+              Ready to Start Your Building Project?
             </h2>
             <p className="text-xs sm:text-sm md:text-base leading-relaxed max-w-xl mx-auto" style={{ color: "rgba(209,250,229,0.8)" }}>
-              From loft conversions to full refurbishments — get your free consultation and bespoke project estimate from London&apos;s most trusted master builders.
+              From house extensions and loft conversions to full home renovations — get friendly advice and a free, fixed quote from trusted London builders.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-1 sm:pt-2">
               <Link href="/contact" id="portfolio-cta-quote"
