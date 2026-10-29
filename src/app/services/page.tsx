@@ -57,7 +57,8 @@ const BADGES = [
 ];
 
 const H1_STYLE = { fontFamily: "'Plus Jakarta Sans', sans-serif" };
-const INPUT_CLS = "w-full px-3.5 py-2.5 bg-slate-900 border border-slate-800 rounded-lg text-[15px] text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500";
+const INPUT_CLS = "w-full h-11 sm:h-12 bg-slate-900 border border-slate-800 rounded-xl px-3.5 sm:px-4 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors";
+const SELECT_CLS = "w-full h-11 sm:h-12 bg-slate-900 border border-slate-800 rounded-xl px-3.5 sm:px-4 pr-10 text-xs sm:text-sm text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2334d399%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:18px_18px] bg-[right_14px_center] bg-no-repeat cursor-pointer";
 
 export default function ServicesPage() {
   const [cat, setCat] = useState<Category>("all");
@@ -281,79 +282,110 @@ export default function ServicesPage() {
           </section>
 
           {/* CONSULTATION FORM */}
-          <section id="book-survey" className="w-full bg-[#0b1120] py-14 sm:py-24 text-white border-b border-slate-800">
+          <section id="book-survey" className="w-full bg-[#0b1120] py-12 sm:py-20 text-white border-b border-slate-800">
             <div className="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                <div className="lg:col-span-5 space-y-6 sm:space-y-8">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+                <div className="lg:col-span-5 flex flex-col justify-between space-y-4 sm:space-y-5">
                   <div>
                     <span className="text-[10px] sm:text-[11px] font-bold text-emerald-400 uppercase tracking-widest block mb-1">Get Started</span>
-                    <h2 style={H1_STYLE} className="text-[22px] sm:text-[32px] md:text-[40px] leading-[1.2] sm:leading-[48px] tracking-[-0.02em] font-bold text-white">Book Your Free Site Survey &amp; Quote</h2>
-                    <p className="text-[13px] sm:text-[15px] text-slate-300 mt-2 sm:mt-3 leading-relaxed">Speak with our experienced building team. We'll visit your property, assess feasibility, and provide clear advice and estimated costs with no obligation.</p>
+                    <h2 style={H1_STYLE} className="text-[22px] sm:text-[32px] md:text-[38px] leading-[1.2] sm:leading-[1.15] tracking-[-0.02em] font-bold text-white">Book Your Free Site Survey &amp; Quote</h2>
+                    <p className="text-[13px] sm:text-[14px] text-slate-300 mt-2 sm:mt-2.5 leading-relaxed">Speak with our experienced building team. We'll visit your property, assess feasibility, and provide clear advice and estimated costs with no obligation.</p>
                   </div>
-                  <div className="bg-[#0f172a] border border-slate-800 p-5 sm:p-8 rounded-xl shadow-lg space-y-5 sm:space-y-6">
-                    <div className="flex items-center gap-3 sm:gap-4">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-600 rounded-lg flex items-center justify-center text-white shadow-[0_0_15px_rgba(5,150,105,0.4)] shrink-0"><span className="material-symbols-outlined text-[22px] sm:text-[26px]">apartment</span></div>
-                      <div><span className="text-[16px] sm:text-[20px] font-bold text-white block">JST Construction HQ</span><span className="text-[12px] sm:text-[13px] text-slate-400">Suite A204 Vista Centre, 50 Salisbury Rd, Cranford, Hounslow TW4 6JQ</span></div>
+                  <div className="bg-[#0f172a] border border-slate-800 p-5 sm:p-7 rounded-2xl shadow-xl flex-1 flex flex-col justify-between space-y-4 sm:space-y-5">
+                    <div className="flex items-start gap-3 sm:gap-4">
+                      <div className="w-10 h-10 sm:w-11 sm:h-11 bg-emerald-600 rounded-xl flex items-center justify-center text-white shadow-[0_0_15px_rgba(5,150,105,0.4)] shrink-0"><span className="material-symbols-outlined text-[22px] sm:text-[24px]">apartment</span></div>
+                      <div className="space-y-0.5">
+                        <span className="text-[15px] sm:text-[17px] font-bold text-white block">JSTM Construction HQ • London</span>
+                        <span className="text-[11px] sm:text-[12px] text-slate-400 leading-snug block">Suite A204 Vista Centre, 50 Salisbury Rd, Cranford, Hounslow TW4 6JQ</span>
+                      </div>
                     </div>
-                    <div className="space-y-3 text-[13px] sm:text-[15px] text-slate-200">
+                    <div className="space-y-2.5 text-[13px] sm:text-[14px] text-slate-200 py-1">
                       <div className="flex items-center gap-3">
-                        <span className="material-symbols-outlined text-emerald-400 text-[18px] sm:text-[20px]">phone</span>
+                        <div className="w-7 h-7 rounded-lg bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                          <span className="material-symbols-outlined text-[16px]">phone</span>
+                        </div>
                         <a href="tel:02035762228" className="font-semibold text-white hover:text-emerald-400 transition-colors">020 3576 2228</a>
                       </div>
                       <div className="flex items-center gap-3">
-                        <i className="fa-brands fa-whatsapp text-emerald-400 text-[16px] sm:text-[18px]"></i>
+                        <div className="w-7 h-7 rounded-lg bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                          <i className="fa-brands fa-whatsapp text-[15px]"></i>
+                        </div>
                         <a href="https://wa.me/447418095006" target="_blank" rel="noopener noreferrer" className="font-bold text-emerald-400 hover:text-emerald-300 transition-colors">+44 7418 095006 (WhatsApp)</a>
                       </div>
                       <div className="flex items-center gap-3">
-                        <span className="material-symbols-outlined text-emerald-400 text-[18px] sm:text-[20px]">mail</span>
+                        <div className="w-7 h-7 rounded-lg bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                          <span className="material-symbols-outlined text-[16px]">mail</span>
+                        </div>
                         <a href="mailto:info@jstmconstruction.com" className="text-white hover:text-emerald-400 transition-colors">info@jstmconstruction.com</a>
                       </div>
                       <div className="flex items-center gap-3">
-                        <span className="material-symbols-outlined text-emerald-400 text-[18px] sm:text-[20px]">schedule</span>
+                        <div className="w-7 h-7 rounded-lg bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                          <span className="material-symbols-outlined text-[16px]">schedule</span>
+                        </div>
                         <span className="text-slate-400">Mon – Sat: 07:30 – 18:30 GMT</span>
                       </div>
                     </div>
-                    <div className="pt-3 sm:pt-4 bg-slate-900 border border-slate-800 rounded-lg p-3.5 sm:p-4 text-[12px] sm:text-[13px] text-slate-300">
-                      <div className="flex items-center gap-2 text-emerald-400 font-bold mb-1"><span className="material-symbols-outlined text-[16px] sm:text-[18px]">verified</span><span>Fast Response: Within 4 Business Hours</span></div>
-                      All enquiries are reviewed by our senior building team before your free site visit is scheduled.
+                    <div className="space-y-2.5 pt-1">
+                      <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-3 sm:p-3.5 text-[11px] sm:text-[12px] text-slate-300">
+                        <div className="flex items-center gap-2 text-emerald-400 font-bold mb-1"><span className="material-symbols-outlined text-[16px]">verified</span><span>Fast Response: Within 4 Business Hours</span></div>
+                        All enquiries are reviewed by our senior building team before your free site visit is scheduled.
+                      </div>
+                      <div className="grid grid-cols-2 gap-2 text-[11px]">
+                        <div className="bg-slate-900/80 border border-slate-800/80 p-2 rounded-lg text-slate-300 flex items-center gap-1.5">
+                          <span className="material-symbols-outlined text-emerald-400 text-sm">verified_user</span>
+                          <span>10-Yr Warranty</span>
+                        </div>
+                        <div className="bg-slate-900/80 border border-slate-800/80 p-2 rounded-lg text-slate-300 flex items-center gap-1.5">
+                          <span className="material-symbols-outlined text-emerald-400 text-sm">workspace_premium</span>
+                          <span>FMB Member</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="lg:col-span-7 bg-[#0f172a] border border-slate-800 p-5 sm:p-8 md:p-10 rounded-xl shadow-xl">
-                  <form className="space-y-4 sm:space-y-6" onSubmit={e=>{e.preventDefault();alert("Thank you. Your consultation request has been received. A JSTM Site Director will contact you within 4 hours.");}}>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-5">
-                      <div className="space-y-1.5 sm:space-y-2"><label htmlFor="sb-name" className="block text-[13px] sm:text-[14px] font-semibold text-slate-200">Full Name *</label><input id="sb-name" type="text" required placeholder="e.g. James Smith" className={INPUT_CLS} /></div>
-                      <div className="space-y-1.5 sm:space-y-2"><label htmlFor="sb-pc" className="block text-[13px] sm:text-[14px] font-semibold text-slate-200">London Postcode *</label><input id="sb-pc" type="text" required placeholder="e.g. SW3 4PB" className={INPUT_CLS} /></div>
+                <div className="lg:col-span-7 flex flex-col">
+                  <div className="bg-[#0f172a] border border-slate-800 p-5 sm:p-7 md:p-8 rounded-2xl shadow-xl flex-1 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-[17px] sm:text-[19px] font-bold text-white mb-1">Request a Free Site Survey</h3>
+                      <p className="text-[12px] sm:text-[13px] text-slate-400 mb-4 sm:mb-5">Enter your details and project type below. We will contact you to confirm a convenient date and time.</p>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-5">
-                      <div className="space-y-1.5 sm:space-y-2"><label htmlFor="sb-email" className="block text-[13px] sm:text-[14px] font-semibold text-slate-200">Email Address *</label><input id="sb-email" type="email" required placeholder="name@domain.co.uk" className={INPUT_CLS} /></div>
-                      <div className="space-y-1.5 sm:space-y-2"><label htmlFor="sb-phone" className="block text-[13px] sm:text-[14px] font-semibold text-slate-200">Direct Telephone *</label><input id="sb-phone" type="tel" required placeholder="+44 7..." className={INPUT_CLS} /></div>
-                    </div>
-                    <div className="space-y-1.5 sm:space-y-2">
-                      <label htmlFor="sb-svc" className="block text-[13px] sm:text-[14px] font-semibold text-slate-200">Primary Construction Specialism *</label>
-                      <select id="sb-svc" required className={INPUT_CLS}>
-                        <option value="" disabled>Select from our 8 specialisms...</option>
-                        <option value="extensions">01. House Extensions (Rear / Wraparound / Side-Return)</option>
-                        <option value="lofts">02. Loft Conversions (Mansard / Dormer / Hip-to-Gable)</option>
-                        <option value="refurbishments">03. Full Turnkey Property Refurbishment</option>
-                        <option value="kitchens-bathrooms">04. Luxury Kitchen &amp; Bathroom Renovation</option>
-                        <option value="roofing-structural">05. Structural Engineering &amp; Slate Roofing</option>
-                        <option value="flooring-tiling">06. Hardwood Parquet, Screed &amp; Marble Tiling</option>
-                        <option value="painting-decorating">07. Premium Painting &amp; Heritage Plastering</option>
-                        <option value="general-building">08. General Building, Joinery &amp; Brickwork</option>
-                      </select>
-                    </div>
-                    <div className="space-y-1.5 sm:space-y-2">
-                      <label htmlFor="sb-scope" className="block text-[13px] sm:text-[14px] font-semibold text-slate-200">Project Scope &amp; Intended Start Date</label>
-                      <textarea id="sb-scope" rows={3} placeholder="Tell us about your property, what you want to build, and your target start date..." className={INPUT_CLS} />
-                    </div>
-                    <div className="pt-2">
-                      <button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-500 text-white text-[13px] sm:text-[14px] font-semibold py-3.5 sm:py-4 rounded-lg shadow-[0_4px_20px_rgba(5,150,105,0.4)] transition-all duration-150 flex items-center justify-center gap-2">
-                        <span className="material-symbols-outlined text-[18px] sm:text-[20px]">send</span><span>Book a Free Site Survey</span>
-                      </button>
-                      <p className="text-[11px] sm:text-xs text-slate-400 text-center mt-3">Your information is strictly confidential and used only to prepare your quote. No marketing third parties.</p>
-                    </div>
-                  </form>
+                    <form className="space-y-3.5 sm:space-y-4 flex-1 flex flex-col justify-between" onSubmit={e=>{e.preventDefault();alert("Thank you. Your consultation request has been received. A JSTM Site Director will contact you within 4 hours.");}}>
+                      <div className="space-y-3 sm:space-y-3.5">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                          <div className="space-y-1.5"><label htmlFor="sb-name" className="block text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider">Full Name *</label><input id="sb-name" type="text" required placeholder="e.g. James Smith" className={INPUT_CLS} /></div>
+                          <div className="space-y-1.5"><label htmlFor="sb-pc" className="block text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider">London Postcode *</label><input id="sb-pc" type="text" required placeholder="e.g. SW3 4PB" className={INPUT_CLS} /></div>
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                          <div className="space-y-1.5"><label htmlFor="sb-email" className="block text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider">Email Address *</label><input id="sb-email" type="email" required placeholder="name@domain.co.uk" className={INPUT_CLS} /></div>
+                          <div className="space-y-1.5"><label htmlFor="sb-phone" className="block text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider">Direct Telephone *</label><input id="sb-phone" type="tel" required placeholder="+44 7..." className={INPUT_CLS} /></div>
+                        </div>
+                        <div className="space-y-1.5">
+                          <label htmlFor="sb-svc" className="block text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider">Primary Construction Specialism *</label>
+                          <select id="sb-svc" required className={SELECT_CLS} defaultValue="">
+                            <option value="" disabled>Select from our 8 specialisms...</option>
+                            <option value="extensions">01. House Extensions (Rear / Wraparound / Side-Return)</option>
+                            <option value="lofts">02. Loft Conversions (Mansard / Dormer / Hip-to-Gable)</option>
+                            <option value="refurbishments">03. Full Turnkey Property Refurbishment</option>
+                            <option value="kitchens-bathrooms">04. Luxury Kitchen &amp; Bathroom Renovation</option>
+                            <option value="roofing-structural">05. Structural Engineering &amp; Slate Roofing</option>
+                            <option value="flooring-tiling">06. Hardwood Parquet, Screed &amp; Marble Tiling</option>
+                            <option value="painting-decorating">07. Premium Painting &amp; Heritage Plastering</option>
+                            <option value="general-building">08. General Building, Joinery &amp; Brickwork</option>
+                          </select>
+                        </div>
+                        <div className="space-y-1.5">
+                          <label htmlFor="sb-scope" className="block text-[11px] sm:text-[12px] font-semibold text-slate-300 uppercase tracking-wider">Project Scope &amp; Intended Start Date</label>
+                          <textarea id="sb-scope" rows={3} placeholder="Tell us about your property, what you want to build, and your target start date..." className={`${INPUT_CLS} h-auto py-2.5 sm:py-3 resize-none`} />
+                        </div>
+                      </div>
+                      <div className="pt-2 space-y-2.5">
+                        <button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white text-[13px] sm:text-[14px] font-semibold py-3.5 sm:py-4 rounded-xl shadow-[0_4px_20px_rgba(5,150,105,0.4)] hover:shadow-[0_6px_24px_rgba(5,150,105,0.55)] transition-all duration-200 flex items-center justify-center gap-2">
+                          <span className="material-symbols-outlined text-[18px] sm:text-[20px]">send</span><span>Book a Free Site Survey</span>
+                        </button>
+                        <p className="text-[10px] sm:text-[11px] text-slate-400 text-center">Your information is strictly confidential and used only to prepare your quote. No marketing third parties.</p>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
