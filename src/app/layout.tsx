@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import TopLoadingBar from "@/components/TopLoadingBar";
+import WhatsAppWidget from "@/components/WhatsAppWidget";
+import ChatBot from "@/components/ChatBot";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -61,6 +63,8 @@ export default function RootLayout({
       <body className="antialiased min-h-screen selection:bg-emerald-500 selection:text-white">
         <TopLoadingBar />
         {children}
+        <WhatsAppWidget />
+        <ChatBot />
       </body>
     </html>
   );
