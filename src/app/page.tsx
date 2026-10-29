@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 type ProjectCategory =
   | "All Projects"
@@ -168,18 +169,18 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               {/*  Hero Copy  */}
               <div className="lg:col-span-7 space-y-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-600/40 text-emerald-400 text-[11px] sm:text-xs font-semibold uppercase tracking-wider">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-600/40 text-emerald-400 text-[11px] sm:text-xs font-semibold uppercase tracking-wider animate-fade-in-up">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                   🛠️ Professional Building &amp; Property Services
                 </div>
-                <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-white">
+                <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-white animate-fade-in-up [animation-delay:150ms]">
                   Built With Strength, Precision &amp; <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-200">Craftsmanship</span>
                 </h1>
-                <p className="text-xs sm:text-base lg:text-lg text-slate-300 leading-relaxed max-w-2xl font-light">
+                <p className="text-xs sm:text-base lg:text-lg text-slate-300 leading-relaxed max-w-2xl font-light animate-fade-in-up [animation-delay:300ms]">
                   Quality home extensions, renovations, and property services across London. From initial design to completion, we deliver exceptional craftsmanship on time and on budget.
                 </p>
                 {/*  Hero Action Buttons  */}
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2 animate-fade-in-up [animation-delay:450ms]">
                   <a className="inline-flex items-center justify-center px-5 py-3 sm:px-7 sm:py-3.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base shadow-xl shadow-emerald-900/40 transition-all duration-200" href="#contact">
                     <span>Request a Free Site Survey</span>
                     <i className="fa-solid fa-calendar-check ml-2.5"></i>
@@ -189,7 +190,7 @@ export default function HomePage() {
                   </a>
                 </div>
                 {/*  Guarantee Badges under Buttons  */}
-                <div className="grid grid-cols-2 gap-4 pt-6 max-w-lg border-t border-slate-800/80">
+                <div className="grid grid-cols-2 gap-4 pt-6 max-w-lg border-t border-slate-800/80 animate-fade-in-up [animation-delay:600ms]">
                   <div className="flex items-center gap-2.5 sm:gap-3">
                     <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-emerald-950/60 border border-emerald-800/50 flex items-center justify-center text-emerald-400 shrink-0">
                       <i className="fa-solid fa-leaf text-sm sm:text-base"></i>
@@ -211,7 +212,7 @@ export default function HomePage() {
                 </div>
               </div>
               {/*  Hero Visual Grid / Image Composition  */}
-              <div className="lg:col-span-5 relative">
+              <div className="lg:col-span-5 relative animate-fade-in-up [animation-delay:350ms]">
                 <div className="relative mx-auto max-w-md lg:max-w-none">
                   <div className="relative overflow-hidden rounded-2xl border-2 border-emerald-600/30 shadow-2xl shadow-emerald-950/50 bg-slate-900">
                     <img alt="JSTM Construction site directors reviewing architectural drawings on a London renovation project" className="w-full h-[320px] sm:h-[460px] object-cover" src="/assets/images/director_reviewing_drawings.jpg" />
@@ -227,7 +228,7 @@ export default function HomePage() {
                     </div>
                   </div>
                   {/*  Floating Experience Pill  */}
-                  <div className="absolute -top-3 -left-3 sm:-top-5 sm:-left-5 bg-emerald-600 text-white p-3 sm:p-4 rounded-xl shadow-xl flex items-center gap-2.5 sm:gap-3 border border-emerald-400/30">
+                  <div className="absolute -top-3 -left-3 sm:-top-5 sm:-left-5 bg-emerald-600 text-white p-3 sm:p-4 rounded-xl shadow-xl flex items-center gap-2.5 sm:gap-3 border border-emerald-400/30 animate-float">
                     <div className="text-2xl sm:text-3xl font-extrabold font-heading">15+</div>
                     <div className="text-[10px] sm:text-xs font-semibold leading-tight uppercase tracking-wider">
                       Years of<br />Experience
@@ -244,35 +245,41 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/*  Highlight Item 1  */}
-              <div className="flex items-start gap-4 p-5 rounded-xl bg-charcoal-950/80 border border-slate-800 hover:border-emerald-600/40 transition-colors">
-                <div className="w-12 h-12 rounded-lg bg-emerald-950/60 border border-emerald-700/40 text-emerald-400 flex items-center justify-center shrink-0 text-xl">
-                  <i className="fa-solid fa-trophy"></i>
+              <AnimateOnScroll delay={80} direction="up">
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-charcoal-950/80 border border-slate-800 hover:border-emerald-600/50 hover:-translate-y-1.5 transition-all duration-300 shadow-sm hover:shadow-lg">
+                  <div className="w-12 h-12 rounded-lg bg-emerald-950/60 border border-emerald-700/40 text-emerald-400 flex items-center justify-center shrink-0 text-xl">
+                    <i className="fa-solid fa-trophy"></i>
+                  </div>
+                  <div>
+                    <h3 className="text-sm sm:text-base font-bold text-white font-heading">Quality Workmanship</h3>
+                    <p className="text-xs text-slate-400 mt-1 leading-relaxed">Federation of Master Builders (FMB) audited standards with high-quality finishes on every project.</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-sm sm:text-base font-bold text-white font-heading">Quality Workmanship</h3>
-                  <p className="text-xs text-slate-400 mt-1 leading-relaxed">Federation of Master Builders (FMB) audited standards with high-quality finishes on every project.</p>
-                </div>
-              </div>
+              </AnimateOnScroll>
               {/*  Highlight Item 2  */}
-              <div className="flex items-start gap-4 p-5 rounded-xl bg-charcoal-950/80 border border-slate-800 hover:border-emerald-600/40 transition-colors">
-                <div className="w-12 h-12 rounded-lg bg-emerald-950/60 border border-emerald-700/40 text-emerald-400 flex items-center justify-center shrink-0 text-xl">
-                  <i className="fa-solid fa-diagram-project"></i>
+              <AnimateOnScroll delay={160} direction="up">
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-charcoal-950/80 border border-slate-800 hover:border-emerald-600/50 hover:-translate-y-1.5 transition-all duration-300 shadow-sm hover:shadow-lg">
+                  <div className="w-12 h-12 rounded-lg bg-emerald-950/60 border border-emerald-700/40 text-emerald-400 flex items-center justify-center shrink-0 text-xl">
+                    <i className="fa-solid fa-diagram-project"></i>
+                  </div>
+                  <div>
+                    <h3 className="text-sm sm:text-base font-bold text-white font-heading">Dedicated Project Manager</h3>
+                    <p className="text-xs text-slate-400 mt-1 leading-relaxed">Your direct point of contact with regular weekly updates and clear communication throughout.</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-sm sm:text-base font-bold text-white font-heading">Dedicated Project Manager</h3>
-                  <p className="text-xs text-slate-400 mt-1 leading-relaxed">Your direct point of contact with regular weekly updates and clear communication throughout.</p>
-                </div>
-              </div>
+              </AnimateOnScroll>
               {/*  Highlight Item 3  */}
-              <div className="flex items-start gap-4 p-5 rounded-xl bg-charcoal-950/80 border border-slate-800 hover:border-emerald-600/40 transition-colors">
-                <div className="w-12 h-12 rounded-lg bg-emerald-950/60 border border-emerald-700/40 text-emerald-400 flex items-center justify-center shrink-0 text-xl">
-                  <i className="fa-solid fa-id-card-clip"></i>
+              <AnimateOnScroll delay={240} direction="up">
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-charcoal-950/80 border border-slate-800 hover:border-emerald-600/50 hover:-translate-y-1.5 transition-all duration-300 shadow-sm hover:shadow-lg">
+                  <div className="w-12 h-12 rounded-lg bg-emerald-950/60 border border-emerald-700/40 text-emerald-400 flex items-center justify-center shrink-0 text-xl">
+                    <i className="fa-solid fa-id-card-clip"></i>
+                  </div>
+                  <div>
+                    <h3 className="text-sm sm:text-base font-bold text-white font-heading">Certified London Trades</h3>
+                    <p className="text-xs text-slate-400 mt-1 leading-relaxed">Qualified Gas Safe and NICEIC approved tradespeople backed by £5M public liability insurance.</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-sm sm:text-base font-bold text-white font-heading">Certified London Trades</h3>
-                  <p className="text-xs text-slate-400 mt-1 leading-relaxed">Qualified Gas Safe and NICEIC approved tradespeople backed by £5M public liability insurance.</p>
-                </div>
-              </div>
+              </AnimateOnScroll>
             </div>
           </div>
         </section>
@@ -283,20 +290,23 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/*  Image Collage Left  */}
               <div className="lg:col-span-5 relative">
-                <div className="relative">
-                  <img alt="London townhouse renovation in progress by JSTM master craft team" className="rounded-2xl shadow-xl w-full h-[340px] sm:h-[480px] object-cover" src="/assets/images/townhouse_renovation.jpg" />
-                  {/*  Small inset image  */}
-                  <div className="absolute -bottom-8 -right-6 w-56 sm:w-64 rounded-xl border-4 border-white shadow-2xl overflow-hidden hidden sm:block bg-charcoal-900">
-                    <img alt="High-end joinery and steelwork" className="w-full h-36 object-cover" src="/assets/images/joinery_steelwork.jpg" />
-                    <div className="p-3 bg-charcoal-900 text-white">
-                      <p className="text-xs font-bold text-emerald-400 font-heading">Passivhaus Ready</p>
-                      <p className="text-[11px] text-slate-300">Sustainable building envelopes</p>
+                <AnimateOnScroll direction="right">
+                  <div className="relative group">
+                    <img alt="London townhouse renovation in progress by JSTM master craft team" className="rounded-2xl shadow-xl w-full h-[340px] sm:h-[480px] object-cover group-hover:scale-[1.01] transition-transform duration-500" src="/assets/images/townhouse_renovation.jpg" />
+                    {/*  Small inset image  */}
+                    <div className="absolute -bottom-8 -right-6 w-56 sm:w-64 rounded-xl border-4 border-white shadow-2xl overflow-hidden hidden sm:block bg-charcoal-900 animate-float">
+                      <img alt="High-end joinery and steelwork" className="w-full h-36 object-cover" src="/assets/images/joinery_steelwork.jpg" />
+                      <div className="p-3 bg-charcoal-900 text-white">
+                        <p className="text-xs font-bold text-emerald-400 font-heading">Passivhaus Ready</p>
+                        <p className="text-[11px] text-slate-300">Sustainable building envelopes</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </AnimateOnScroll>
               </div>
               {/*  Content Right  */}
               <div className="lg:col-span-7 lg:pl-6 space-y-4 sm:space-y-6">
+                <AnimateOnScroll direction="left">
                 <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs">
                   <span className="w-6 h-0.5 bg-emerald-600"></span>
                   About JSTM Construction London
@@ -347,6 +357,7 @@ export default function HomePage() {
                     <div className="text-[10px] sm:text-xs font-semibold text-slate-500 uppercase leading-tight">Skilled London<br />Tradesmen</div>
                   </div>
                 </div>
+                </AnimateOnScroll>
               </div>
             </div>
           </div>
@@ -356,19 +367,21 @@ export default function HomePage() {
         <section className="py-14 sm:py-20 bg-slate-50 border-y border-slate-200/80" data-purpose="services-grid" id="services">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/*  Section Header  */}
-            <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
-              <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">
-                <span className="w-4 h-0.5 bg-emerald-600"></span>
-                Our Building Capabilities
-                <span className="w-4 h-0.5 bg-emerald-600"></span>
+            <AnimateOnScroll direction="up">
+              <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+                <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">
+                  <span className="w-4 h-0.5 bg-emerald-600"></span>
+                  Our Building Capabilities
+                  <span className="w-4 h-0.5 bg-emerald-600"></span>
+                </div>
+                <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading">
+                  Complete Building Services Across London
+                </h2>
+                <p className="text-slate-600 mt-2.5 sm:mt-4 text-xs sm:text-sm lg:text-base">
+                  From house extensions and loft conversions to full house refurbishments, we provide complete, reliable building solutions with guaranteed quality.
+                </p>
               </div>
-              <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading">
-                Complete Building Services Across London
-              </h2>
-              <p className="text-slate-600 mt-2.5 sm:mt-4 text-xs sm:text-sm lg:text-base">
-                From house extensions and loft conversions to full house refurbishments, we provide complete, reliable building solutions with guaranteed quality.
-              </p>
-            </div>
+            </AnimateOnScroll>
             {/*  8 Core Services Grid  */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/*  Service 1: House Extensions  */}
@@ -560,7 +573,8 @@ export default function HomePage() {
         {/*  BEGIN: QuickEnquiryBanner  */}
         <section className="bg-charcoal-900 text-white py-10 sm:py-12 border-y border-slate-800" data-purpose="quick-consultation-banner">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-r from-emerald-950 via-charcoal-900 to-charcoal-950 rounded-2xl p-6 sm:p-12 border border-emerald-800/40 shadow-2xl">
+            <AnimateOnScroll direction="fade">
+              <div className="bg-gradient-to-r from-emerald-950 via-charcoal-900 to-charcoal-950 rounded-2xl p-6 sm:p-12 border border-emerald-800/40 shadow-2xl hover:border-emerald-700/60 transition-colors">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-7">
                   <span className="text-emerald-400 font-semibold text-[11px] sm:text-xs uppercase tracking-wider">Free Consultation &amp; Advice</span>
@@ -599,76 +613,87 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+            </AnimateOnScroll>
           </div>
         </section>
         {/*  END: QuickEnquiryBanner  */}
         {/*  BEGIN: WorkProcessSection  */}
         <section className="py-14 sm:py-20 lg:py-28 bg-white" data-purpose="work-process" id="process">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16 gap-6">
-              <div className="max-w-2xl">
-                <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">
-                  <span className="w-4 h-0.5 bg-emerald-600"></span>
-                  Methodical Execution
+            <AnimateOnScroll direction="up">
+              <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16 gap-6">
+                <div className="max-w-2xl">
+                  <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">
+                    <span className="w-4 h-0.5 bg-emerald-600"></span>
+                    Methodical Execution
+                  </div>
+                  <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading">
+                    Our Simple 4-Step Building Process
+                  </h2>
+                  <p className="text-slate-600 text-xs sm:text-sm lg:text-base mt-2 sm:mt-3">
+                    We manage your build carefully from first consultation to final inspection, keeping your project on time and on budget.
+                  </p>
                 </div>
-                <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading">
-                  Our Simple 4-Step Building Process
-                </h2>
-                <p className="text-slate-600 text-xs sm:text-sm lg:text-base mt-2 sm:mt-3">
-                  We manage your build carefully from first consultation to final inspection, keeping your project on time and on budget.
-                </p>
+                <a className="inline-flex items-center font-bold text-xs sm:text-sm text-emerald-700 hover:text-emerald-800" href="#contact">
+                  <span>Book a Free Site Survey</span>
+                  <i className="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                </a>
               </div>
-              <a className="inline-flex items-center font-bold text-xs sm:text-sm text-emerald-700 hover:text-emerald-800" href="#contact">
-                <span>Book a Free Site Survey</span>
-                <i className="fa-solid fa-arrow-right ml-2 text-xs"></i>
-              </a>
-            </div>
+            </AnimateOnScroll>
             {/*  4 Step Cards Grid  */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
               {/*  Step 1  */}
-              <div className="p-5 sm:p-6 rounded-2xl bg-charcoal-900 text-white relative overflow-hidden border border-slate-800">
-                <span className="absolute top-4 right-4 text-4xl sm:text-5xl font-black text-slate-800 font-heading select-none">01</span>
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-lg sm:text-xl mb-4 sm:mb-6">
-                  <i className="fa-solid fa-clipboard-check"></i>
+              <AnimateOnScroll delay={80} direction="up">
+                <div className="p-5 sm:p-6 rounded-2xl bg-charcoal-900 text-white relative overflow-hidden border border-slate-800 hover:border-emerald-600/50 hover:-translate-y-1.5 transition-all duration-300 shadow-md h-full">
+                  <span className="absolute top-4 right-4 text-4xl sm:text-5xl font-black text-slate-800 font-heading select-none">01</span>
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-lg sm:text-xl mb-4 sm:mb-6">
+                    <i className="fa-solid fa-clipboard-check"></i>
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Planning &amp; Feasibility</h3>
+                  <p className="text-xs text-slate-400 leading-relaxed">
+                    We visit your property to discuss your ideas, assess structural feasibility, and advise on planning rules.
+                  </p>
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Planning &amp; Feasibility</h3>
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  We visit your property to discuss your ideas, assess structural feasibility, and advise on planning rules.
-                </p>
-              </div>
+              </AnimateOnScroll>
               {/*  Step 2  */}
-              <div className="p-5 sm:p-6 rounded-2xl bg-charcoal-900 text-white relative overflow-hidden border border-slate-800">
-                <span className="absolute top-4 right-4 text-4xl sm:text-5xl font-black text-slate-800 font-heading select-none">02</span>
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-lg sm:text-xl mb-4 sm:mb-6">
-                  <i className="fa-solid fa-drafting-compass"></i>
+              <AnimateOnScroll delay={160} direction="up">
+                <div className="p-5 sm:p-6 rounded-2xl bg-charcoal-900 text-white relative overflow-hidden border border-slate-800 hover:border-emerald-600/50 hover:-translate-y-1.5 transition-all duration-300 shadow-md h-full">
+                  <span className="absolute top-4 right-4 text-4xl sm:text-5xl font-black text-slate-800 font-heading select-none">02</span>
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-lg sm:text-xl mb-4 sm:mb-6">
+                    <i className="fa-solid fa-drafting-compass"></i>
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Design &amp; Engineering</h3>
+                  <p className="text-xs text-slate-400 leading-relaxed">
+                    Detailed architectural drawings, structural engineer calculations, and building regulations submissions.
+                  </p>
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Design &amp; Engineering</h3>
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  Detailed architectural drawings, structural engineer calculations, and building regulations submissions.
-                </p>
-              </div>
+              </AnimateOnScroll>
               {/*  Step 3  */}
-              <div className="p-5 sm:p-6 rounded-2xl bg-charcoal-900 text-white relative overflow-hidden border border-slate-800">
-                <span className="absolute top-4 right-4 text-4xl sm:text-5xl font-black text-slate-800 font-heading select-none">03</span>
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-lg sm:text-xl mb-4 sm:mb-6">
-                  <i className="fa-solid fa-helmet-safety"></i>
+              <AnimateOnScroll delay={240} direction="up">
+                <div className="p-5 sm:p-6 rounded-2xl bg-charcoal-900 text-white relative overflow-hidden border border-slate-800 hover:border-emerald-600/50 hover:-translate-y-1.5 transition-all duration-300 shadow-md h-full">
+                  <span className="absolute top-4 right-4 text-4xl sm:text-5xl font-black text-slate-800 font-heading select-none">03</span>
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-lg sm:text-xl mb-4 sm:mb-6">
+                    <i className="fa-solid fa-helmet-safety"></i>
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Construction &amp; Build</h3>
+                  <p className="text-xs text-slate-400 leading-relaxed">
+                    Skilled tradesmen working on-site, managed daily by your project manager with clean workspaces and weekly updates.
+                  </p>
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Construction &amp; Build</h3>
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  Skilled tradesmen working on-site, managed daily by your project manager with clean workspaces and weekly updates.
-                </p>
-              </div>
+              </AnimateOnScroll>
               {/*  Step 4  */}
-              <div className="p-5 sm:p-6 rounded-2xl bg-charcoal-900 text-white relative overflow-hidden border border-slate-800">
-                <span className="absolute top-4 right-4 text-4xl sm:text-5xl font-black text-slate-800 font-heading select-none">04</span>
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-lg sm:text-xl mb-4 sm:mb-6">
-                  <i className="fa-solid fa-key"></i>
+              <AnimateOnScroll delay={320} direction="up">
+                <div className="p-5 sm:p-6 rounded-2xl bg-charcoal-900 text-white relative overflow-hidden border border-slate-800 hover:border-emerald-600/50 hover:-translate-y-1.5 transition-all duration-300 shadow-md h-full">
+                  <span className="absolute top-4 right-4 text-4xl sm:text-5xl font-black text-slate-800 font-heading select-none">04</span>
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-lg sm:text-xl mb-4 sm:mb-6">
+                    <i className="fa-solid fa-key"></i>
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Final Inspection &amp; Handover</h3>
+                  <p className="text-xs text-slate-400 leading-relaxed">
+                    Building Control sign-off, full snagging walkthrough, and your 10-year warranty guarantee pack.
+                  </p>
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-white font-heading mb-1.5 sm:mb-2">Final Inspection &amp; Handover</h3>
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  Detailed quality inspection, Building Control completion certificate, and your 10-year warranty guarantee pack.
-                </p>
-              </div>
+              </AnimateOnScroll>
             </div>
           </div>
         </section>
@@ -705,19 +730,21 @@ export default function HomePage() {
         {/*  BEGIN: WhyChooseUsDark  */}
         <section className="py-14 sm:py-20 lg:py-28 bg-charcoal-950 text-white border-b border-slate-800" data-purpose="why-choose-us">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
-              <div className="inline-flex items-center gap-2 text-emerald-400 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">
-                <span className="w-4 h-0.5 bg-emerald-500"></span>
-                Why Choose JSTM London
-                <span className="w-4 h-0.5 bg-emerald-500"></span>
+            <AnimateOnScroll direction="up">
+              <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
+                <div className="inline-flex items-center gap-2 text-emerald-400 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">
+                  <span className="w-4 h-0.5 bg-emerald-500"></span>
+                  Why Choose JSTM London
+                  <span className="w-4 h-0.5 bg-emerald-500"></span>
+                </div>
+                <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-white font-heading">
+                  Your Trusted London Construction Partner
+                </h2>
+                <p className="text-slate-400 text-xs sm:text-sm lg:text-base mt-2 sm:mt-3">
+                  We take the hassle out of building work: clear pricing with no hidden surprises, agreed completion dates, and certified builders you can trust.
+                </p>
               </div>
-              <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-white font-heading">
-                Your Trusted London Construction Partner
-              </h2>
-              <p className="text-slate-400 text-xs sm:text-sm lg:text-base mt-2 sm:mt-3">
-                We take the hassle out of building work: clear pricing with no hidden surprises, agreed completion dates, and certified builders you can trust.
-              </p>
-            </div>
+            </AnimateOnScroll>
             <div className="bg-charcoal-900 rounded-3xl p-5 sm:p-10 border border-slate-800 shadow-2xl">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-center">
                 {/*  Site Image Left  */}
@@ -768,22 +795,30 @@ export default function HomePage() {
             </div>
             {/*  Metrics Counters (from Reference)  */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-8 sm:mt-12">
-              <div className="bg-charcoal-900 p-4 sm:p-6 rounded-2xl border border-slate-800 text-center">
-                <div className="text-2xl sm:text-4xl font-extrabold text-white font-heading">99.2%</div>
-                <p className="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 mt-1 font-semibold">Client Satisfaction</p>
-              </div>
-              <div className="bg-charcoal-900 p-4 sm:p-6 rounded-2xl border border-slate-800 text-center">
-                <div className="text-2xl sm:text-4xl font-extrabold text-white font-heading">450+</div>
-                <p className="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 mt-1 font-semibold">London Homes Delivered</p>
-              </div>
-              <div className="bg-charcoal-900 p-4 sm:p-6 rounded-2xl border border-slate-800 text-center">
-                <div className="text-2xl sm:text-4xl font-extrabold text-white font-heading">15+</div>
-                <p className="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 mt-1 font-semibold">Years Experience</p>
-              </div>
-              <div className="bg-charcoal-900 p-4 sm:p-6 rounded-2xl border border-slate-800 text-center">
-                <div className="text-2xl sm:text-4xl font-extrabold text-white font-heading">100%</div>
-                <p className="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 mt-1 font-semibold">Insured &amp; Guaranteed</p>
-              </div>
+              <AnimateOnScroll delay={80} direction="up">
+                <div className="bg-charcoal-900 p-4 sm:p-6 rounded-2xl border border-slate-800 hover:border-emerald-600/40 hover:-translate-y-1 transition-all duration-300 text-center">
+                  <div className="text-2xl sm:text-4xl font-extrabold text-emerald-400 font-heading">99.2%</div>
+                  <p className="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 mt-1 font-semibold">Client Satisfaction</p>
+                </div>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={160} direction="up">
+                <div className="bg-charcoal-900 p-4 sm:p-6 rounded-2xl border border-slate-800 hover:border-emerald-600/40 hover:-translate-y-1 transition-all duration-300 text-center">
+                  <div className="text-2xl sm:text-4xl font-extrabold text-emerald-400 font-heading">450+</div>
+                  <p className="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 mt-1 font-semibold">London Homes Delivered</p>
+                </div>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={240} direction="up">
+                <div className="bg-charcoal-900 p-4 sm:p-6 rounded-2xl border border-slate-800 hover:border-emerald-600/40 hover:-translate-y-1 transition-all duration-300 text-center">
+                  <div className="text-2xl sm:text-4xl font-extrabold text-emerald-400 font-heading">15+</div>
+                  <p className="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 mt-1 font-semibold">Years Experience</p>
+                </div>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={320} direction="up">
+                <div className="bg-charcoal-900 p-4 sm:p-6 rounded-2xl border border-slate-800 hover:border-emerald-600/40 hover:-translate-y-1 transition-all duration-300 text-center">
+                  <div className="text-2xl sm:text-4xl font-extrabold text-emerald-400 font-heading">100%</div>
+                  <p className="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 mt-1 font-semibold">Insured &amp; Guaranteed</p>
+                </div>
+              </AnimateOnScroll>
             </div>
           </div>
         </section>
@@ -791,19 +826,21 @@ export default function HomePage() {
         {/*  BEGIN: FeaturedProjects  */}
         <section className="py-14 sm:py-20 lg:py-28 bg-white" data-purpose="portfolio-showcase" id="projects">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-              <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">
-                <span className="w-4 h-0.5 bg-emerald-600"></span>
-                Recent Projects
-                <span className="w-4 h-0.5 bg-emerald-600"></span>
+            <AnimateOnScroll direction="up">
+              <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
+                <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">
+                  <span className="w-4 h-0.5 bg-emerald-600"></span>
+                  Recent Projects
+                  <span className="w-4 h-0.5 bg-emerald-600"></span>
+                </div>
+                <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading">
+                  Recent Transformations Across London
+                </h2>
+                <p className="text-slate-600 text-xs sm:text-sm lg:text-base mt-2 sm:mt-3">
+                  Take a look at some of our completed home extensions, loft conversions, and full house renovations across London.
+                </p>
               </div>
-              <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading">
-                Recent Transformations Across London
-              </h2>
-              <p className="text-slate-600 text-xs sm:text-sm lg:text-base mt-2 sm:mt-3">
-                Take a look at some of our completed home extensions, loft conversions, and full house renovations across London.
-              </p>
-            </div>
+            </AnimateOnScroll>
 
             {/*  Filter Buttons  */}
             <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-8 sm:mb-12">
@@ -877,90 +914,98 @@ export default function HomePage() {
         {/*  BEGIN: TransparentPricingGuide  */}
         <section className="py-14 sm:py-20 lg:py-28 bg-slate-50 border-y border-slate-200/80" data-purpose="pricing-packages" id="pricing">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
-              <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">
-                <span className="w-4 h-0.5 bg-emerald-600"></span>
-                Cost Guide
-                <span className="w-4 h-0.5 bg-emerald-600"></span>
+            <AnimateOnScroll direction="up">
+              <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
+                <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2 sm:mb-3">
+                  <span className="w-4 h-0.5 bg-emerald-600"></span>
+                  Cost Guide
+                  <span className="w-4 h-0.5 bg-emerald-600"></span>
+                </div>
+                <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading">
+                  Clear &amp; Transparent Pricing Guide
+                </h2>
+                <p className="text-slate-600 text-xs sm:text-sm lg:text-base mt-2 sm:mt-3">
+                  Every home is unique, but our guide prices give you a realistic idea of costs before we provide a free, itemized quote.
+                </p>
               </div>
-              <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading">
-                Clear &amp; Transparent Pricing Guide
-              </h2>
-              <p className="text-slate-600 text-xs sm:text-sm lg:text-base mt-2 sm:mt-3">
-                Every home is unique, but our guide prices give you a realistic idea of costs before we provide a free, itemized quote.
-              </p>
-            </div>
+            </AnimateOnScroll>
             {/*  3 Tier Pricing Cards (Reflecting Reference Sequence)  */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-stretch">
               {/*  Package 1: Essential Refurbishment  */}
-              <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
-                <div>
-                  <span className="text-[10px] sm:text-xs uppercase font-extrabold tracking-wider text-slate-400">Package 01</span>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mt-1">Room / Floor Refurbishment</h3>
-                  <p className="text-xs text-slate-500 mt-1.5 sm:mt-2">High-quality upgrade for single rooms, bathrooms, or full apartment floors.</p>
-                  <div className="mt-5 mb-5 sm:mt-6 sm:mb-6 pb-5 sm:pb-6 border-b border-slate-100">
-                    <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 font-heading">£18,500+</span>
-                    <span className="text-[11px] sm:text-xs text-slate-500 block mt-1">Guide price (excl. VAT)</span>
+              <AnimateOnScroll delay={80} direction="up">
+                <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between h-full">
+                  <div>
+                    <span className="text-[10px] sm:text-xs uppercase font-extrabold tracking-wider text-slate-400">Package 01</span>
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mt-1">Room / Floor Refurbishment</h3>
+                    <p className="text-xs text-slate-500 mt-1.5 sm:mt-2">High-quality upgrade for single rooms, bathrooms, or full apartment floors.</p>
+                    <div className="mt-5 mb-5 sm:mt-6 sm:mb-6 pb-5 sm:pb-6 border-b border-slate-100">
+                      <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 font-heading">£18,500+</span>
+                      <span className="text-[11px] sm:text-xs text-slate-500 block mt-1">Guide price (excl. VAT)</span>
+                    </div>
+                    <ul className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm text-slate-600 mb-6 sm:mb-8">
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Full strip-out &amp; rubbish removal</li>
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> New wiring &amp; NICEIC electrical certificate</li>
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Premium plastering &amp; decorating</li>
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Engineered flooring installation</li>
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> 5-Year Craftsmanship Guarantee</li>
+                    </ul>
                   </div>
-                  <ul className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm text-slate-600 mb-6 sm:mb-8">
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Full strip-out &amp; rubbish removal</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> New wiring &amp; NICEIC electrical certificate</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Premium plastering &amp; decorating</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Engineered flooring installation</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> 5-Year Craftsmanship Guarantee</li>
-                  </ul>
+                  <a className="w-full py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors" href="#contact">
+                    Request a Free Quote
+                  </a>
                 </div>
-                <a className="w-full py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors" href="#contact">
-                  Request a Free Quote
-                </a>
-              </div>
+              </AnimateOnScroll>
               {/*  Package 2: Extension & Loft (Featured)  */}
-              <div className="bg-charcoal-900 text-white rounded-2xl p-6 sm:p-8 border-2 border-emerald-500 shadow-2xl relative flex flex-col justify-between transform md:-translate-y-2">
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-emerald-500 text-charcoal-950 font-extrabold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full shadow">
-                  Most Popular London Choice
-                </div>
-                <div>
-                  <span className="text-[10px] sm:text-xs uppercase font-extrabold tracking-wider text-emerald-400">Package 02</span>
-                  <h3 className="text-lg sm:text-xl font-bold text-white font-heading mt-1">Extension / Loft Conversion</h3>
-                  <p className="text-xs text-slate-300 mt-1.5 sm:mt-2">Rear or side-return extension, or a full dormer loft conversion.</p>
-                  <div className="mt-5 mb-5 sm:mt-6 sm:mb-6 pb-5 sm:pb-6 border-b border-slate-800">
-                    <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-emerald-400 font-heading">£55,000+</span>
-                    <span className="text-[11px] sm:text-xs text-slate-400 block mt-1">Guide price (excl. VAT)</span>
+              <AnimateOnScroll delay={160} direction="up">
+                <div className="bg-charcoal-900 text-white rounded-2xl p-6 sm:p-8 border-2 border-emerald-500 shadow-2xl relative flex flex-col justify-between transform md:-translate-y-2 hover:-translate-y-3 transition-all duration-300 h-full animate-pulse-glow">
+                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-emerald-500 text-charcoal-950 font-extrabold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full shadow">
+                    Most Popular London Choice
                   </div>
-                  <ul className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm text-slate-300 mb-6 sm:mb-8">
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Structural steel installation &amp; foundations</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Building Regulations &amp; planning support</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Bi-fold doors, rooflights &amp; flat roofing</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Energy-efficient insulation &amp; underfloor heating</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> 10-Year Insurance-Backed Guarantee</li>
-                  </ul>
+                  <div>
+                    <span className="text-[10px] sm:text-xs uppercase font-extrabold tracking-wider text-emerald-400">Package 02</span>
+                    <h3 className="text-lg sm:text-xl font-bold text-white font-heading mt-1">Extension / Loft Conversion</h3>
+                    <p className="text-xs text-slate-300 mt-1.5 sm:mt-2">Rear or side-return extension, or a full dormer loft conversion.</p>
+                    <div className="mt-5 mb-5 sm:mt-6 sm:mb-6 pb-5 sm:pb-6 border-b border-slate-800">
+                      <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-emerald-400 font-heading">£55,000+</span>
+                      <span className="text-[11px] sm:text-xs text-slate-400 block mt-1">Guide price (excl. VAT)</span>
+                    </div>
+                    <ul className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm text-slate-300 mb-6 sm:mb-8">
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Structural steel installation &amp; foundations</li>
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Building Regulations &amp; planning support</li>
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Bi-fold doors, rooflights &amp; flat roofing</li>
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> Energy-efficient insulation &amp; underfloor heating</li>
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-400"></i> 10-Year Insurance-Backed Guarantee</li>
+                    </ul>
+                  </div>
+                  <a className="w-full py-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors shadow-lg shadow-emerald-950" href="#contact">
+                    Book Feasibility Survey
+                  </a>
                 </div>
-                <a className="w-full py-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors shadow-lg shadow-emerald-950" href="#contact">
-                  Book Feasibility Survey
-                </a>
-              </div>
+              </AnimateOnScroll>
               {/*  Package 3: Turnkey House Refurbishment  */}
-              <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
-                <div>
-                  <span className="text-[10px] sm:text-xs uppercase font-extrabold tracking-wider text-slate-400">Package 03</span>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mt-1">Complete House Renovation</h3>
-                  <p className="text-xs text-slate-500 mt-1.5 sm:mt-2">Full house transformation from bare brick to premium painted finishes.</p>
-                  <div className="mt-5 mb-5 sm:mt-6 sm:mb-6 pb-5 sm:pb-6 border-b border-slate-100">
-                    <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 font-heading">£120,000+</span>
-                    <span className="text-[11px] sm:text-xs text-slate-500 block mt-1">Guide price (excl. VAT)</span>
+              <AnimateOnScroll delay={240} direction="up">
+                <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between h-full">
+                  <div>
+                    <span className="text-[10px] sm:text-xs uppercase font-extrabold tracking-wider text-slate-400">Package 03</span>
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mt-1">Complete House Renovation</h3>
+                    <p className="text-xs text-slate-500 mt-1.5 sm:mt-2">Full house transformation from bare brick to premium painted finishes.</p>
+                    <div className="mt-5 mb-5 sm:mt-6 sm:mb-6 pb-5 sm:pb-6 border-b border-slate-100">
+                      <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 font-heading">£120,000+</span>
+                      <span className="text-[11px] sm:text-xs text-slate-500 block mt-1">Guide price (excl. VAT)</span>
+                    </div>
+                    <ul className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm text-slate-600 mb-6 sm:mb-8">
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Full layout redesign &amp; wall removals</li>
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> New fitted kitchen &amp; luxury bathrooms</li>
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Complete new heating, plumbing &amp; electrics</li>
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Full-time on-site Project Director</li>
+                      <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> 10-Year Structural Guarantee</li>
+                    </ul>
                   </div>
-                  <ul className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm text-slate-600 mb-6 sm:mb-8">
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Full layout redesign &amp; wall removals</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> New fitted kitchen &amp; luxury bathrooms</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Complete new heating, plumbing &amp; electrics</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> Full-time on-site Project Director</li>
-                    <li className="flex items-center gap-2"><i className="fa-solid fa-check text-emerald-600"></i> 10-Year Structural Guarantee</li>
-                  </ul>
+                  <a className="w-full py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors" href="#contact">
+                    Book a Consultation
+                  </a>
                 </div>
-                <a className="w-full py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors" href="#contact">
-                  Book a Consultation
-                </a>
-              </div>
+              </AnimateOnScroll>
             </div>
           </div>
         </section>
@@ -971,18 +1016,21 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
               {/*  Testimonial Visual  */}
               <div className="lg:col-span-5 relative">
-                <div className="relative">
-                  <img alt="Satisfied London property owners receiving handover from JSTM Project Director" className="rounded-2xl border border-slate-800 shadow-2xl w-full h-[280px] sm:h-[380px] object-cover" src="/assets/images/client_handover.jpg" />
-                  <div className="absolute -bottom-3 -right-3 sm:-bottom-5 sm:-right-5 bg-emerald-600 text-white p-3.5 sm:p-5 rounded-2xl shadow-xl flex items-center gap-2.5 sm:gap-3">
-                    <div className="text-2xl sm:text-3xl font-black font-heading">4.9/5</div>
-                    <div className="text-[10px] sm:text-[11px] font-semibold uppercase leading-tight">
-                      Trustpilot<br />&amp; Houzz Rating
+                <AnimateOnScroll direction="right">
+                  <div className="relative group">
+                    <img alt="Satisfied London property owners receiving handover from JSTM Project Director" className="rounded-2xl border border-slate-800 shadow-2xl w-full h-[280px] sm:h-[380px] object-cover group-hover:scale-[1.01] transition-transform duration-500" src="/assets/images/client_handover.jpg" />
+                    <div className="absolute -bottom-3 -right-3 sm:-bottom-5 sm:-right-5 bg-emerald-600 text-white p-3.5 sm:p-5 rounded-2xl shadow-xl flex items-center gap-2.5 sm:gap-3 animate-float">
+                      <div className="text-2xl sm:text-3xl font-black font-heading">4.9/5</div>
+                      <div className="text-[10px] sm:text-[11px] font-semibold uppercase leading-tight">
+                        Trustpilot<br />&amp; Houzz Rating
+                      </div>
                     </div>
                   </div>
-                </div>
+                </AnimateOnScroll>
               </div>
               {/*  Testimonial Quote  */}
               <div className="lg:col-span-7 space-y-4 sm:space-y-6">
+                <AnimateOnScroll direction="left">
                 <div className="inline-flex items-center gap-2 text-emerald-400 font-bold uppercase tracking-wider text-[11px] sm:text-xs">
                   <span className="w-4 h-0.5 bg-emerald-500"></span>
                   Client Testimonials
@@ -1011,6 +1059,7 @@ export default function HomePage() {
                     <span className="flex items-center gap-2 hover:text-white"><i className="fa-solid fa-certificate text-emerald-500"></i> TrustMark Govt Endorsed</span>
                   </div>
                 </div>
+                </AnimateOnScroll>
               </div>
             </div>
           </div>
@@ -1019,9 +1068,11 @@ export default function HomePage() {
         {/*  BEGIN: ContactSection  */}
         <section className="py-14 sm:py-20 lg:py-28 bg-white" data-purpose="survey-contact-form" id="contact">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-stretch">
               {/*  Contact Left: Form (Matching Reference Dark Card Form)  */}
-              <div className="lg:col-span-7 bg-charcoal-900 text-white rounded-3xl p-6 sm:p-12 border border-slate-800 shadow-2xl">
+              <div className="lg:col-span-7">
+                <AnimateOnScroll direction="right">
+                  <div className="bg-charcoal-900 text-white rounded-3xl p-6 sm:p-12 border border-slate-800 shadow-2xl h-full">
                 <span className="text-emerald-400 font-bold uppercase tracking-wider text-[11px] sm:text-xs">Direct Consultation</span>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white mt-1 font-heading">
                   Book a Free Site Survey &amp; Quote
@@ -1073,8 +1124,12 @@ export default function HomePage() {
                   </button>
                 </form>
               </div>
-              {/*  Contact Right: Company Info & Borough Coverage  */}
-              <div className="lg:col-span-5 flex flex-col justify-between space-y-6 sm:space-y-8">
+            </AnimateOnScroll>
+          </div>
+          {/*  Contact Right: Company Info & Borough Coverage  */}
+          <div className="lg:col-span-5">
+            <AnimateOnScroll direction="left">
+              <div className="flex flex-col justify-between space-y-6 sm:space-y-8">
                 <div>
                   <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2">
                     <span className="w-4 h-0.5 bg-emerald-600"></span>
@@ -1139,9 +1194,11 @@ export default function HomePage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </AnimateOnScroll>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
         {/*  END: ContactSection  */}
       </main>
       <Footer />
