@@ -1,11 +1,125 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+type ProjectCategory =
+  | "All Projects"
+  | "House Extensions"
+  | "Loft Conversions"
+  | "Full Refurbishments"
+  | "Kitchens & Bathrooms";
+
+interface TransformationProject {
+  id: string;
+  category: "House Extensions" | "Loft Conversions" | "Full Refurbishments" | "Kitchens & Bathrooms";
+  title: string;
+  locationBadge: string;
+  image: string;
+  alt: string;
+  description: string;
+  duration: string;
+}
+
+const PROJECT_FILTERS: ProjectCategory[] = [
+  "All Projects",
+  "House Extensions",
+  "Loft Conversions",
+  "Full Refurbishments",
+  "Kitchens & Bathrooms",
+];
+
+const TRANSFORMATION_PROJECTS: TransformationProject[] = [
+  {
+    id: "kensington-refurb",
+    category: "Full Refurbishments",
+    title: "Kensington Edwardian Townhouse",
+    locationBadge: "Full Refurbishment • Kensington W8",
+    image: "/assets/images/kensington_refurbishment.jpg",
+    alt: "Kensington Edwardian Full Refurbishment",
+    description: "Complete 4-storey townhouse renovation, modern insulation, open-plan kitchen, and bespoke herringbone wood flooring.",
+    duration: "22 Weeks",
+  },
+  {
+    id: "richmond-loft",
+    category: "Loft Conversions",
+    title: "Richmond Skyline Mansard Loft",
+    locationBadge: "Loft Conversion • Richmond TW9",
+    image: "/assets/images/richmond_loft_conversion.jpg",
+    alt: "Richmond Double Dormer Loft Conversion",
+    description: "Created two spacious double bedrooms and a luxury walk-in shower room with custom Juliet balconies.",
+    duration: "9 Weeks",
+  },
+  {
+    id: "wandsworth-ext",
+    category: "House Extensions",
+    title: "Wandsworth Open-Plan Living",
+    locationBadge: "House Extension • Wandsworth SW18",
+    image: "/assets/images/wandsworth_wrap_around_extension.jpg",
+    alt: "Wandsworth Contemporary Wrap-Around Extension",
+    description: "Wrap-around ground floor extension with large sliding glass doors, rooflights, and a bright new family kitchen.",
+    duration: "14 Weeks",
+  },
+  {
+    id: "battersea-ext",
+    category: "House Extensions",
+    title: "Battersea Modern Kitchen & Extension",
+    locationBadge: "House Extension • Battersea SW11",
+    image: "/gallery/project-03.jpg",
+    alt: "Battersea Contemporary Rear Extension",
+    description: "Rear kitchen and dining extension with slimline steel doors, integrated skylights, and seamless patio garden flow.",
+    duration: "12 Weeks",
+  },
+  {
+    id: "wimbledon-loft",
+    category: "Loft Conversions",
+    title: "Wimbledon L-Shaped Dormer Loft",
+    locationBadge: "Loft Conversion • Wimbledon SW19",
+    image: "/gallery/project-06.jpg",
+    alt: "Wimbledon Dormer Loft Conversion",
+    description: "Spacious master bedroom suite conversion with custom fitted wardrobes, en-suite bathroom, and panoramic skyline views.",
+    duration: "8 Weeks",
+  },
+  {
+    id: "chelsea-refurb",
+    category: "Full Refurbishments",
+    title: "Chelsea Townhouse Interior Remodel",
+    locationBadge: "Full Refurbishment • Chelsea SW3",
+    image: "/assets/images/townhouse_renovation.jpg",
+    alt: "Chelsea Townhouse Interior Renovation",
+    description: "Complete interior overhaul including load-bearing wall removals, acoustic insulation, and handcrafted architectural joinery.",
+    duration: "18 Weeks",
+  },
+  {
+    id: "fulham-kitchen",
+    category: "Kitchens & Bathrooms",
+    title: "Fulham Bespoke Kitchen & Island",
+    locationBadge: "Kitchen Renovation • Fulham SW6",
+    image: "/gallery/project-03.jpg",
+    alt: "Fulham Custom Kitchen Renovation",
+    description: "Handcrafted contemporary kitchen island with waterfall quartz worktops, bespoke cabinetry, and ambient lighting.",
+    duration: "4 Weeks",
+  },
+  {
+    id: "mayfair-bathroom",
+    category: "Kitchens & Bathrooms",
+    title: "Mayfair Marble En-Suite Bathroom",
+    locationBadge: "Bathroom Renovation • Mayfair W1",
+    image: "/gallery/project-09.jpg",
+    alt: "Mayfair Luxury Marble Bathroom Renovation",
+    description: "High-spec Italian marble bathroom featuring a walk-in rainfall shower, bespoke vanity unit, and concealed LED lighting.",
+    duration: "3 Weeks",
+  },
+];
+
 export default function HomePage() {
+  const [activeProjectFilter, setActiveProjectFilter] = useState<ProjectCategory>("All Projects");
+
+  const filteredProjects = activeProjectFilter === "All Projects"
+    ? TRANSFORMATION_PROJECTS
+    : TRANSFORMATION_PROJECTS.filter((p) => p.category === activeProjectFilter);
   return (
     <div className="min-h-screen bg-[#FAFAF9] text-[#1E293B]">
 
@@ -690,79 +804,72 @@ export default function HomePage() {
                 Take a look at some of our completed home extensions, loft conversions, and full house renovations across London.
               </p>
             </div>
+
             {/*  Filter Buttons  */}
             <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-8 sm:mb-12">
-              <button className="px-4 py-1.5 sm:px-5 sm:py-2 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider bg-emerald-600 text-white shadow-md">All Projects</button>
-              <button className="px-4 py-1.5 sm:px-5 sm:py-2 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700">House Extensions</button>
-              <button className="px-4 py-1.5 sm:px-5 sm:py-2 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700">Loft Conversions</button>
-              <button className="px-4 py-1.5 sm:px-5 sm:py-2 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700">Full Refurbishments</button>
-              <button className="px-4 py-1.5 sm:px-5 sm:py-2 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700">Kitchens &amp; Bathrooms</button>
+              {PROJECT_FILTERS.map((cat) => (
+                <button
+                  key={cat}
+                  type="button"
+                  onClick={() => setActiveProjectFilter(cat)}
+                  className={`px-4 py-1.5 sm:px-5 sm:py-2 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
+                    activeProjectFilter === cat
+                      ? "bg-emerald-600 text-white shadow-md shadow-emerald-900/20 scale-105"
+                      : "bg-slate-100 hover:bg-slate-200 text-slate-700"
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
             </div>
+
             {/*  Projects Grid  */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-              {/*  Project 1  */}
-              <div className="group rounded-2xl overflow-hidden bg-slate-900 relative shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div className="h-56 sm:h-72 w-full overflow-hidden">
-                  <img alt="Kensington Edwardian Full Refurbishment" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/assets/images/kensington_refurbishment.jpg" />
-                </div>
-                <div className="p-5 sm:p-6 bg-white border border-slate-200 border-t-0 rounded-b-2xl">
-                  <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Full Refurbishment • Kensington W8</span>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mt-2">
-                    Kensington Edwardian Townhouse
-                  </h3>
-                  <p className="text-xs text-slate-500 mt-2 line-clamp-2">
-                    Complete 4-storey townhouse renovation, modern insulation, open-plan kitchen, and bespoke herringbone wood flooring.
-                  </p>
-                  <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                    <span className="font-medium text-slate-700">Duration: 22 Weeks</span>
-                    <span className="text-emerald-700 font-bold group-hover:underline flex items-center">Case Study <i className="fa-solid fa-arrow-right ml-1"></i></span>
+              {filteredProjects.map((project) => (
+                <Link
+                  key={project.id}
+                  href="/portfolio"
+                  className="group rounded-2xl overflow-hidden bg-slate-900 relative shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+                >
+                  <div className="h-56 sm:h-72 w-full overflow-hidden relative bg-slate-800">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      alt={project.alt}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      src={project.image}
+                    />
                   </div>
-                </div>
-              </div>
-              {/*  Project 2  */}
-              <div className="group rounded-2xl overflow-hidden bg-slate-900 relative shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div className="h-56 sm:h-72 w-full overflow-hidden">
-                  <img alt="Richmond Double Dormer Loft Conversion" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/assets/images/richmond_loft_conversion.jpg" />
-                </div>
-                <div className="p-5 sm:p-6 bg-white border border-slate-200 border-t-0 rounded-b-2xl">
-                  <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Loft Conversion • Richmond TW9</span>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mt-2">
-                    Richmond Skyline Mansard Loft
-                  </h3>
-                  <p className="text-xs text-slate-500 mt-2 line-clamp-2">
-                    Created two spacious double bedrooms and a luxury walk-in shower room with custom Juliet balconies.
-                  </p>
-                  <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                    <span className="font-medium text-slate-700">Duration: 9 Weeks</span>
-                    <span className="text-emerald-700 font-bold group-hover:underline flex items-center">Case Study <i className="fa-solid fa-arrow-right ml-1"></i></span>
+                  <div className="p-5 sm:p-6 bg-white border border-slate-200 border-t-0 rounded-b-2xl flex-1 flex flex-col justify-between">
+                    <div>
+                      <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded inline-block">
+                        {project.locationBadge}
+                      </span>
+                      <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mt-2 group-hover:text-emerald-700 transition-colors">
+                        {project.title}
+                      </h3>
+                      <p className="text-xs text-slate-500 mt-2 line-clamp-2">
+                        {project.description}
+                      </p>
+                    </div>
+                    <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+                      <span className="font-medium text-slate-700">Duration: {project.duration}</span>
+                      <span className="text-emerald-700 font-bold group-hover:underline flex items-center">
+                        Case Study <i className="fa-solid fa-arrow-right ml-1"></i>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </div>
-              {/*  Project 3  */}
-              <div className="group rounded-2xl overflow-hidden bg-slate-900 relative shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div className="h-56 sm:h-72 w-full overflow-hidden">
-                  <img alt="Wandsworth Contemporary Wrap-Around Extension" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/assets/images/wandsworth_wrap_around_extension.jpg" />
-                </div>
-                <div className="p-5 sm:p-6 bg-white border border-slate-200 border-t-0 rounded-b-2xl">
-                  <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">House Extension • Wandsworth SW18</span>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mt-2">
-                    Wandsworth Open-Plan Living
-                  </h3>
-                  <p className="text-xs text-slate-500 mt-2 line-clamp-2">
-                    Wrap-around ground floor extension with large sliding glass doors, rooflights, and a bright new family kitchen.
-                  </p>
-                  <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                    <span className="font-medium text-slate-700">Duration: 14 Weeks</span>
-                    <span className="text-emerald-700 font-bold group-hover:underline flex items-center">Case Study <i className="fa-solid fa-arrow-right ml-1"></i></span>
-                  </div>
-                </div>
-              </div>
+                </Link>
+              ))}
             </div>
+
             <div className="mt-8 sm:mt-12 text-center">
-              <a className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg border-2 border-emerald-700 text-emerald-800 hover:bg-emerald-700 hover:text-white font-bold text-xs sm:text-sm transition-colors" href="#contact">
+              <Link
+                className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg border-2 border-emerald-700 text-emerald-800 hover:bg-emerald-700 hover:text-white font-bold text-xs sm:text-sm transition-colors"
+                href="/portfolio"
+              >
                 <span>View All 50+ London Case Studies</span>
                 <i className="fa-solid fa-arrow-right ml-2"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
