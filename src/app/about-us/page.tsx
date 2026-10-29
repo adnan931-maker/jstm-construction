@@ -456,8 +456,6 @@ export default function AboutUsPage() {
               </div>
             </div>
           </section>
-            </div>
-          </section>
 
           {/* SECTION 5: INDUSTRY ACCREDITATIONS & CODE OF PRACTICE */}
           <section className="w-full bg-[#0b1120] text-white py-14 sm:py-20 border-b border-slate-800">
