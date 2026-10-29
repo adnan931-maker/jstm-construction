@@ -227,53 +227,53 @@ export default function ContactPage() {
         </section>
 
         {/* SECTION 2: Light Mayfair Executive HQ & Tender Submission Split Layout */}
-        <section className="bg-slate-50/70 py-10 sm:py-16 lg:py-24 border-b border-slate-200">
+        <section className="bg-slate-50/70 py-10 sm:py-16 lg:py-20 border-b border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
               {/* LEFT COLUMN: Executive Consultation Hub & Logistics (5 cols) */}
-              <div className="lg:col-span-5 space-y-5 sm:space-y-8">
+              <div className="lg:col-span-5 flex flex-col justify-between space-y-4 sm:space-y-5">
                 <div>
                   <span className="text-[11px] sm:text-xs font-bold tracking-wider uppercase text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200 inline-block">
                     Our Office
                   </span>
-                  <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3 tracking-tight font-heading">
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2.5 tracking-tight font-heading">
                     Contact JSTM Construction
                   </h2>
-                  <p className="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
                     We are here to answer your questions, arrange site visits, review drawings, and provide clear quotations.
                   </p>
                 </div>
 
                 {/* Contact Channels List */}
-                <div className="space-y-3 sm:space-y-4">
+                <div className="space-y-3">
                   {/* Physical Location */}
-                  <div className="bg-white p-4 sm:p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition-shadow flex items-start gap-3 sm:gap-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
-                      <span className="material-symbols-outlined text-xl sm:text-2xl">apartment</span>
+                  <div className="bg-white p-3.5 sm:p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow transition-shadow flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
+                      <span className="material-symbols-outlined text-xl">apartment</span>
                     </div>
-                    <div className="space-y-1">
+                    <div className="space-y-0.5">
                       <span className="text-[10px] sm:text-xs text-slate-500 uppercase font-bold tracking-wider">
                         Office Address
                       </span>
-                      <div className="text-sm sm:text-base text-slate-900 font-bold">
-                        JST Construction Suite A204, 2nd Floor Vista Centre
+                      <div className="text-xs sm:text-sm text-slate-900 font-bold">
+                        JSTM Construction • Suite A204, 2nd Floor, Vista Centre
                       </div>
-                      <div className="text-xs sm:text-sm text-slate-600">
-                        50 Salisbury Road, Cranford, Hounslow TW4 6JQ, United Kingdom
+                      <div className="text-xs text-slate-600">
+                        50 Salisbury Road, Cranford, Hounslow TW4 6JQ
                       </div>
-                      <div className="pt-1 text-[11px] sm:text-xs text-emerald-700 flex items-center gap-1.5 font-semibold">
-                        <span className="material-symbols-outlined text-sm">schedule</span>
+                      <div className="pt-0.5 text-[11px] text-emerald-700 flex items-center gap-1 font-semibold">
+                        <span className="material-symbols-outlined text-xs">schedule</span>
                         Serving all 32 London Boroughs &bull; Mon - Sat: 07:30 - 18:30 GMT
                       </div>
                     </div>
                   </div>
 
                   {/* Telephony */}
-                  <div className="bg-white p-4 sm:p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition-shadow flex items-start gap-3 sm:gap-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
-                      <span className="material-symbols-outlined text-xl sm:text-2xl">support_agent</span>
+                  <div className="bg-white p-3.5 sm:p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow transition-shadow flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
+                      <span className="material-symbols-outlined text-xl">support_agent</span>
                     </div>
-                    <div className="space-y-2 w-full">
+                    <div className="space-y-1.5 w-full">
                       <span className="text-[10px] sm:text-xs text-slate-500 uppercase font-bold tracking-wider">
                         Call or Message Us
                       </span>
@@ -301,16 +301,16 @@ export default function ContactPage() {
                   </div>
 
                   {/* Email Dispatches */}
-                  <div className="bg-white p-4 sm:p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition-shadow flex items-start gap-3 sm:gap-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
-                      <span className="material-symbols-outlined text-xl sm:text-2xl">mark_email_read</span>
+                  <div className="bg-white p-3.5 sm:p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow transition-shadow flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
+                      <span className="material-symbols-outlined text-xl">mark_email_read</span>
                     </div>
-                    <div className="space-y-2 w-full">
+                    <div className="space-y-1 w-full">
                       <span className="text-[10px] sm:text-xs text-slate-500 uppercase font-bold tracking-wider">
                         Email Us
                       </span>
                       <div className="flex flex-col text-xs sm:text-sm">
-                        <span className="text-slate-500 text-[11px] sm:text-xs">General Enquiries &amp; Drawings:</span>
+                        <span className="text-slate-500 text-[11px]">General Enquiries &amp; Drawings:</span>
                         <a
                           className="font-bold text-emerald-700 hover:underline"
                           href="mailto:info@jstmconstruction.com"
@@ -318,96 +318,98 @@ export default function ContactPage() {
                           info@jstmconstruction.com
                         </a>
                       </div>
-                      <p className="text-[11px] sm:text-xs text-slate-500 pt-1">
+                      <p className="text-[11px] text-slate-500">
                         Send your plans or photos for a clear quote within 24 hours.
                       </p>
                     </div>
                   </div>
 
                   {/* Hours & Site Compliance Notice */}
-                  <div className="bg-white p-4 sm:p-6 rounded-xl border border-slate-200 shadow-sm flex items-start gap-3 sm:gap-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
-                      <span className="material-symbols-outlined text-xl sm:text-2xl">event_available</span>
+                  <div className="bg-white p-3.5 sm:p-4 rounded-xl border border-slate-200 shadow-sm flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
+                      <span className="material-symbols-outlined text-xl">event_available</span>
                     </div>
-                    <div className="space-y-1">
+                    <div className="space-y-0.5">
                       <span className="text-[10px] sm:text-xs text-slate-500 uppercase font-bold tracking-wider">
                         Working Hours
                       </span>
-                      <div className="text-sm sm:text-base text-slate-900 font-bold">
-                        Office Hours: Mon - Sat 07:30 - 18:30
+                      <div className="text-xs sm:text-sm text-slate-900 font-bold">
+                        Office: Mon - Sat 07:30 - 18:30 &bull; Site Work: 08:00 – 17:00
                       </div>
-                      <p className="text-[11px] sm:text-xs text-slate-600 leading-snug">
-                        Our sites operate strictly within standard local council working hours (08:00 – 17:00) with clean and considerate conduct.
+                      <p className="text-[11px] text-slate-600 leading-snug">
+                        Strictly compliant with local council hours, clean and considerate conduct.
                       </p>
                     </div>
                   </div>
                 </div>
 
                 {/* Interactive Map Representation with Directions Card */}
-                <div className="bg-white rounded-xl border border-slate-200 p-3 sm:p-4 shadow-sm overflow-hidden">
-                  <div className="flex items-center justify-between mb-2 sm:mb-3 px-1">
-                    <div className="flex items-center gap-2">
-                      <span className="material-symbols-outlined text-emerald-600 text-lg sm:text-xl">
-                        near_me
-                      </span>
-                      <span className="text-xs sm:text-sm text-slate-900 font-bold">
-                        Location &amp; Access
-                      </span>
+                <div className="bg-white rounded-xl border border-slate-200 p-3 sm:p-3.5 shadow-sm overflow-hidden flex-1 flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center justify-between mb-2 px-1">
+                      <div className="flex items-center gap-1.5">
+                        <span className="material-symbols-outlined text-emerald-600 text-lg">
+                          near_me
+                        </span>
+                        <span className="text-xs sm:text-sm text-slate-900 font-bold">
+                          Location &amp; Access
+                        </span>
+                      </div>
+                      <span className="text-[11px] text-slate-500">Hounslow &bull; Greater London</span>
                     </div>
-                    <span className="text-[11px] sm:text-xs text-slate-500">Hounslow &bull; Greater London</span>
-                  </div>
 
-                  {/* Map Image Container */}
-                  <div className="w-full h-44 sm:h-56 rounded-lg relative overflow-hidden flex items-end p-3 border border-slate-200 group">
-                    <Image
-                      src="/assets/images/contact/mayfair_map.jpg"
-                      alt="Map view near JST Construction Vista Centre Cranford"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="relative z-10 bg-slate-950/90 backdrop-blur-md px-2.5 sm:px-3 py-1.5 sm:py-2 rounded text-white text-[11px] sm:text-xs font-semibold flex items-center gap-2 border border-slate-800 shadow-md">
-                      <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                      <span>JST Construction • Suite A204 Vista Centre</span>
+                    {/* Map Image Container */}
+                    <div className="w-full h-36 sm:h-44 rounded-lg relative overflow-hidden flex items-end p-2.5 border border-slate-200 group">
+                      <Image
+                        src="/assets/images/contact/mayfair_map.jpg"
+                        alt="Map view near JSTM Construction Vista Centre Cranford"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="relative z-10 bg-slate-950/90 backdrop-blur-md px-2.5 py-1.5 rounded text-white text-[11px] font-semibold flex items-center gap-2 border border-slate-800 shadow-md">
+                        <span className="w-2 h-2 rounded-full bg-emerald-400" />
+                        <span>JSTM Construction • Vista Centre, Cranford</span>
+                      </div>
                     </div>
                   </div>
 
                   {/* Route Details */}
-                  <div className="mt-3 sm:mt-4 grid grid-cols-2 gap-2 text-[11px] sm:text-xs">
-                    <div className="bg-slate-100 p-2 sm:p-2.5 rounded text-slate-700 flex items-center gap-1.5 sm:gap-2">
+                  <div className="mt-2.5 grid grid-cols-2 gap-2 text-[11px]">
+                    <div className="bg-slate-100 p-2 rounded text-slate-700 flex items-center gap-1.5">
                       <span className="material-symbols-outlined text-sm text-emerald-700">
                         directions_subway
                       </span>
-                      <span className="font-medium">Green Park (5 min)</span>
+                      <span className="font-medium">Hatton Cross (4 min)</span>
                     </div>
-                    <div className="bg-slate-100 p-2 sm:p-2.5 rounded text-slate-700 flex items-center gap-1.5 sm:gap-2">
+                    <div className="bg-slate-100 p-2 rounded text-slate-700 flex items-center gap-1.5">
                       <span className="material-symbols-outlined text-sm text-emerald-700">
                         directions_subway
                       </span>
-                      <span className="font-medium">Bond Street (6 min)</span>
+                      <span className="font-medium">Hounslow West (6 min)</span>
                     </div>
-                    <div className="bg-slate-100 p-2 sm:p-2.5 rounded text-slate-700 flex items-center gap-1.5 sm:gap-2">
+                    <div className="bg-slate-100 p-2 rounded text-slate-700 flex items-center gap-1.5">
                       <span className="material-symbols-outlined text-sm text-emerald-700">
                         local_parking
                       </span>
-                      <span className="font-medium">On-Site Parking Available</span>
+                      <span className="font-medium">On-Site Visitor Parking</span>
                     </div>
-                    <div className="bg-slate-100 p-2 sm:p-2.5 rounded text-slate-700 flex items-center gap-1.5 sm:gap-2">
+                    <div className="bg-slate-100 p-2 rounded text-slate-700 flex items-center gap-1.5">
                       <span className="material-symbols-outlined text-sm text-emerald-700">
-                        badge
+                        local_shipping
                       </span>
-                      <span className="font-medium">Visitor Reception</span>
+                      <span className="font-medium">M4 / A4 Corridor Access</span>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* RIGHT COLUMN: High-Density Project Intake & Tender Form */}
-              <div className="lg:col-span-7">
-                <div className="bg-white text-slate-900 rounded-2xl p-5 sm:p-8 lg:p-10 border border-slate-200 shadow-xl relative overflow-hidden">
+              <div className="lg:col-span-7 flex flex-col">
+                <div className="bg-white text-slate-900 rounded-2xl p-5 sm:p-8 lg:p-10 border border-slate-200 shadow-xl relative overflow-hidden flex-1 flex flex-col justify-between">
                   {/* Top Emerald Accent Line */}
                   <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-emerald-600 via-emerald-400 to-emerald-700" />
 
-                  <div className="mb-5 sm:mb-8">
+                  <div className="mb-5 sm:mb-6">
                     <div className="inline-flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">
                       <span className="material-symbols-outlined text-sm sm:text-base">
                         assignment_turned_in
@@ -424,10 +426,10 @@ export default function ContactPage() {
 
                   {/* Form Body or Success Confirmation */}
                   {!isSubmitted ? (
-                    <form className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
+                    <form className="space-y-4 sm:space-y-5 flex-1 flex flex-col justify-between" onSubmit={handleSubmit}>
                       {/* Name & Role */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                        <div className="space-y-1.5 sm:space-y-2">
+                        <div className="space-y-1.5">
                           <label
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="name"
@@ -435,7 +437,7 @@ export default function ContactPage() {
                             Full Name *
                           </label>
                           <input
-                            className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
+                            className="w-full h-11 sm:h-12 bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
                             id="name"
                             placeholder="e.g. Sarah Jenkins"
                             required
@@ -444,7 +446,7 @@ export default function ContactPage() {
                             onChange={handleInputChange}
                           />
                         </div>
-                        <div className="space-y-1.5 sm:space-y-2">
+                        <div className="space-y-1.5">
                           <label
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="clientType"
@@ -452,7 +454,7 @@ export default function ContactPage() {
                             I Am A... *
                           </label>
                           <select
-                            className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
+                            className="w-full h-11 sm:h-12 bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 pr-10 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23059669%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:18px_18px] bg-[right_12px_center] bg-no-repeat cursor-pointer"
                             id="clientType"
                             required
                             value={formData.clientType}
@@ -470,7 +472,7 @@ export default function ContactPage() {
 
                       {/* Contact Coordinates */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                        <div className="space-y-1.5 sm:space-y-2">
+                        <div className="space-y-1.5">
                           <label
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="phone"
@@ -478,7 +480,7 @@ export default function ContactPage() {
                             Phone Number *
                           </label>
                           <input
-                            className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
+                            className="w-full h-11 sm:h-12 bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
                             id="phone"
                             placeholder="07123 456789"
                             required
@@ -487,7 +489,7 @@ export default function ContactPage() {
                             onChange={handleInputChange}
                           />
                         </div>
-                        <div className="space-y-1.5 sm:space-y-2">
+                        <div className="space-y-1.5">
                           <label
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="email"
@@ -495,7 +497,7 @@ export default function ContactPage() {
                             Email Address *
                           </label>
                           <input
-                            className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
+                            className="w-full h-11 sm:h-12 bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
                             id="email"
                             placeholder="sarah.jenkins@example.co.uk"
                             required
@@ -508,7 +510,7 @@ export default function ContactPage() {
 
                       {/* Borough & Scope */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                        <div className="space-y-1.5 sm:space-y-2">
+                        <div className="space-y-1.5">
                           <label
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="postcode"
@@ -516,7 +518,7 @@ export default function ContactPage() {
                             Postcode / Area *
                           </label>
                           <input
-                            className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
+                            className="w-full h-11 sm:h-12 bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
                             id="postcode"
                             placeholder="e.g. SW3, TW4, CR0"
                             required
@@ -525,7 +527,7 @@ export default function ContactPage() {
                             onChange={handleInputChange}
                           />
                         </div>
-                        <div className="space-y-1.5 sm:space-y-2">
+                        <div className="space-y-1.5">
                           <label
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="scope"
@@ -533,14 +535,14 @@ export default function ContactPage() {
                             Type of Project *
                           </label>
                           <select
-                            className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
+                            className="w-full h-11 sm:h-12 bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 pr-10 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23059669%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:18px_18px] bg-[right_12px_center] bg-no-repeat cursor-pointer"
                             id="scope"
                             required
                             value={formData.scope}
                             onChange={handleInputChange}
                           >
                             <option value="">Select Project Type...</option>
-                            <option value="extension">House Extension (Rear / Side-Return / Wrap-Around)</option>
+                            <option value="extension">House Extension (Rear / Side / Wrap-Around)</option>
                             <option value="basement">Basement Conversion</option>
                             <option value="heritage">Period &amp; Listed Property Refurbishment</option>
                             <option value="loft">Loft Conversion (Dormer / Mansard / Velux)</option>
@@ -552,7 +554,7 @@ export default function ContactPage() {
 
                       {/* Financial Envelope & Target Timeline */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                        <div className="space-y-1.5 sm:space-y-2">
+                        <div className="space-y-1.5">
                           <label
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="budget"
@@ -560,7 +562,7 @@ export default function ContactPage() {
                             Approximate Budget
                           </label>
                           <select
-                            className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
+                            className="w-full h-11 sm:h-12 bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 pr-10 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23059669%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:18px_18px] bg-[right_12px_center] bg-no-repeat cursor-pointer"
                             id="budget"
                             value={formData.budget}
                             onChange={handleInputChange}
@@ -571,7 +573,7 @@ export default function ContactPage() {
                             <option value="tier4">£300,000+</option>
                           </select>
                         </div>
-                        <div className="space-y-1.5 sm:space-y-2">
+                        <div className="space-y-1.5">
                           <label
                             className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                             htmlFor="targetCommencement"
@@ -579,7 +581,7 @@ export default function ContactPage() {
                             Ideal Start Date
                           </label>
                           <select
-                            className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors"
+                            className="w-full h-11 sm:h-12 bg-slate-50 border border-slate-300 rounded-lg px-3.5 sm:px-4 pr-10 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23059669%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:18px_18px] bg-[right_12px_center] bg-no-repeat cursor-pointer"
                             id="targetCommencement"
                             value={formData.targetCommencement}
                             onChange={handleInputChange}
@@ -593,7 +595,7 @@ export default function ContactPage() {
                       </div>
 
                       {/* Description / Architectural Specifics */}
-                      <div className="space-y-1.5 sm:space-y-2">
+                      <div className="space-y-1.5">
                         <label
                           className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold"
                           htmlFor="notes"
@@ -601,17 +603,17 @@ export default function ContactPage() {
                           Project Details
                         </label>
                         <textarea
-                          className="w-full bg-slate-50 border border-slate-300 rounded-lg p-3.5 sm:p-4 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors resize-none"
+                          className="w-full bg-slate-50 border border-slate-300 rounded-lg p-3 sm:p-3.5 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition-colors resize-none"
                           id="notes"
                           placeholder="Tell us about your project, your timeline, or any specific requirements you have..."
-                          rows={4}
+                          rows={3}
                           value={formData.notes}
                           onChange={handleInputChange}
                         />
                       </div>
 
                       {/* File Attachment Dropzone */}
-                      <div className="space-y-1.5 sm:space-y-2">
+                      <div className="space-y-1.5">
                         <label className="block text-[11px] sm:text-xs uppercase tracking-wider text-slate-700 font-bold">
                           Upload Drawings, Plans or Photos (Optional)
                         </label>
@@ -630,23 +632,24 @@ export default function ContactPage() {
                           onDragLeave={() => setIsDragging(false)}
                           onDrop={handleFileDrop}
                           onClick={() => fileInputRef.current?.click()}
-                          className={`border-2 border-dashed rounded-xl p-4 sm:p-6 text-center cursor-pointer transition-all group ${isDragging
-                            ? "border-emerald-600 bg-emerald-50/50"
-                            : "border-slate-300 hover:border-emerald-500 bg-slate-50/60"
-                            }`}
+                          className={`border-2 border-dashed rounded-xl p-3.5 sm:p-5 text-center cursor-pointer transition-all group ${
+                            isDragging
+                              ? "border-emerald-600 bg-emerald-50/50"
+                              : "border-slate-300 hover:border-emerald-500 bg-slate-50/60"
+                          }`}
                         >
-                          <span className="material-symbols-outlined text-3xl sm:text-4xl text-emerald-600 group-hover:scale-110 transition-transform">
+                          <span className="material-symbols-outlined text-2xl sm:text-3xl text-emerald-600 group-hover:scale-110 transition-transform">
                             cloud_upload
                           </span>
-                          <p className="text-xs sm:text-sm font-semibold text-slate-800 mt-2">
+                          <p className="text-xs sm:text-sm font-semibold text-slate-800 mt-1">
                             Click to select files or drag &amp; drop
                           </p>
-                          <p className="text-[11px] sm:text-xs text-slate-500 mt-1">
+                          <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5">
                             Accepted: PDF, JPG, PNG, DWG, ZIP (up to 50MB)
                           </p>
 
                           {files.length > 0 && (
-                            <div className="mt-3 flex flex-wrap gap-2 justify-center">
+                            <div className="mt-2.5 flex flex-wrap gap-2 justify-center">
                               {files.map((file, idx) => (
                                 <span
                                   key={idx}
@@ -664,9 +667,9 @@ export default function ContactPage() {
                       </div>
 
                       {/* Submit Action & NDA Notice */}
-                      <div className="pt-2 sm:pt-4 space-y-3 sm:space-y-4">
+                      <div className="pt-2 space-y-2.5">
                         <button
-                          className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 sm:py-4 rounded-lg flex items-center justify-center gap-2 sm:gap-3 transition-colors shadow-lg shadow-emerald-700/20 disabled:opacity-75 text-xs sm:text-sm"
+                          className="w-full bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white font-bold py-3.5 sm:py-4 rounded-xl flex items-center justify-center gap-2 sm:gap-3 transition-all duration-200 shadow-lg shadow-emerald-700/20 hover:shadow-emerald-700/30 disabled:opacity-75 text-xs sm:text-sm"
                           type="submit"
                           disabled={isSubmitting}
                         >
@@ -677,8 +680,8 @@ export default function ContactPage() {
                           </span>
                           <span className="material-symbols-outlined text-base sm:text-lg">arrow_forward</span>
                         </button>
-                        <div className="flex items-center justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs text-slate-500">
-                          <span className="material-symbols-outlined text-emerald-600 text-sm sm:text-base">
+                        <div className="flex items-center justify-center gap-1.5 sm:gap-2 text-[11px] text-slate-500">
+                          <span className="material-symbols-outlined text-emerald-600 text-sm">
                             lock
                           </span>
                           <span>
