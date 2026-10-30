@@ -287,7 +287,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h3 className="text-sm sm:text-base font-bold text-white font-heading">Dedicated Project Manager</h3>
-                    <p className="text-xs text-slate-400 mt-1 leading-relaxed">Your direct point of contact with regular weekly updates and clear communication throughout. We manage your build carefully from first consultation to final inspection.</p>
+                    <p className="text-xs text-slate-400 mt-1 leading-relaxed">Your direct point of contact with regular weekly updates and clear communication throughout. We manage your build carefully.</p>
                   </div>
                 </div>
               </AnimateOnScroll>
