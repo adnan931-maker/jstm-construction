@@ -317,16 +317,14 @@ export default function AboutUsPage() {
                       <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 bg-slate-900/95 group-hover:bg-slate-900/98 border border-slate-800 group-hover:border-emerald-500/40 backdrop-blur-md p-3.5 sm:p-5 rounded-xl text-white shadow-xl transition-all duration-300">
                         <div className="flex items-center gap-1.5 text-emerald-400 mb-1">
                           <span className="material-symbols-outlined text-[18px] sm:text-[20px]">format_quote</span>
-                          <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-300 font-semibold">
-                            Managing Director&apos;s Mandate
-                          </span>
+
                         </div>
                         <p className="text-[12px] sm:text-[13px] text-slate-200 italic mb-2 leading-relaxed">
                           &ldquo;Building or extending your home should be exciting, not stressful. We treat every property with the utmost care, communicate openly, and deliver work we are truly proud of.&rdquo;
                         </p>
                         <div className="flex items-center justify-between text-[11px] sm:text-[12px] pt-2 border-t border-slate-800 text-slate-400">
-                          <span className="font-semibold text-slate-200">Julian Davies</span>
-                          <span className="text-emerald-400">Founder &amp; Managing Director</span>
+                          <span className="font-semibold text-slate-200"></span>
+                          <span className="text-emerald-400">Founder</span>
                         </div>
                       </div>
                     </div>
