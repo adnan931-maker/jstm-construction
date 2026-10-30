@@ -21,26 +21,26 @@ export default function WhatsAppWidget() {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${defaultMessage}`;
 
   return (
-    <div className="fixed bottom-6 left-6 z-40 flex items-center gap-3">
+    <div className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-40 flex items-center gap-3">
       {/* Floating Action Button */}
       <a
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with JSTM Construction on WhatsApp"
-        className="relative group flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-[0_4px_25px_rgba(37,211,102,0.5)] hover:shadow-[0_6px_35px_rgba(37,211,102,0.7)] transition-all duration-300 hover:scale-110 active:scale-95"
+        className="relative group flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] text-white shadow-[0_4px_25px_rgba(37,211,102,0.5)] hover:shadow-[0_6px_35px_rgba(37,211,102,0.7)] transition-all duration-300 hover:scale-110 active:scale-95"
       >
         {/* Pulse ring */}
         <span className="absolute -inset-1 rounded-full bg-[#25D366]/40 animate-ping pointer-events-none" />
 
         {/* WhatsApp Icon */}
-        <i className="fa-brands fa-whatsapp text-3xl group-hover:rotate-12 transition-transform duration-300 relative z-10" />
+        <i className="fa-brands fa-whatsapp text-2xl sm:text-3xl group-hover:rotate-12 transition-transform duration-300 relative z-10" />
 
         {/* Online Presence Dot */}
-        <span className="absolute top-1 right-1 w-3.5 h-3.5 rounded-full bg-emerald-300 border-2 border-slate-950 shadow-[0_0_8px_#34d399]" />
+        <span className="absolute top-0.5 right-0.5 sm:top-1 sm:right-1 w-3 sm:w-3.5 h-3 sm:h-3.5 rounded-full bg-emerald-300 border-2 border-slate-950 shadow-[0_0_8px_#34d399]" />
       </a>
 
-      {/* Greeting Bubble */}
+      {/* Greeting Bubble (Only visible on sm+ screens to keep mobile view clean) */}
       {showTooltip && (
         <div className="hidden sm:flex items-center gap-3 bg-slate-900/95 backdrop-blur-md border border-emerald-500/30 text-white pl-4 pr-3 py-2.5 rounded-2xl shadow-2xl animate-fade-in-up">
           <div className="space-y-0.5">

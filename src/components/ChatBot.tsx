@@ -150,6 +150,18 @@ export default function ChatBot() {
     }
   }, [messages, isOpen]);
 
+  // Lock background scroll on mobile when chat modal is open
+  useEffect(() => {
+    if (isOpen && window.innerWidth < 640) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   const handleSendMessage = (textToSend?: string) => {
     const text = (textToSend || inputValue).trim();
     if (!text) return;
@@ -177,27 +189,46 @@ export default function ChatBot() {
       };
       setIsTyping(false);
       setMessages((prev) => [...prev, botMsg]);
-    }, 700);
+    }, 600);
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
-      {/* ─── Chat Window ─────────────────────────────────────────────────── */}
+    <>
+      {/* ─── Mobile Backdrop Overlay ────────────────────────────────────── */}
       {isOpen && (
-        <div className="mb-4 w-[360px] sm:w-[410px] max-w-[calc(100vw-2rem)] h-[540px] max-h-[82vh] bg-[#0c1424] border border-emerald-500/30 rounded-3xl shadow-2xl flex flex-col overflow-hidden backdrop-blur-2xl animate-fade-in-up">
+        <div
+          onClick={() => setIsOpen(false)}
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm sm:hidden z-50 animate-fade-in"
+          aria-hidden="true"
+        />
+      )}
+
+      {/* ─── Chat Window Container ───────────────────────────────────────── */}
+      {isOpen && (
+        <div
+          className="fixed inset-x-0 bottom-0 sm:inset-x-auto sm:right-6 sm:bottom-24 z-50 
+                     h-[90dvh] max-h-[90dvh] sm:h-[560px] sm:max-h-[82vh] 
+                     w-full sm:w-[410px] 
+                     bg-[#0c1424] border-t sm:border border-emerald-500/30 
+                     rounded-t-[28px] sm:rounded-3xl shadow-2xl flex flex-col overflow-hidden 
+                     backdrop-blur-2xl animate-fade-in-up"
+        >
+          {/* Mobile top drag/swipe indicator */}
+          <div className="w-12 h-1 bg-slate-700/80 rounded-full mx-auto mt-2.5 mb-1 sm:hidden shrink-0" />
+
           {/* Header */}
-          <div className="bg-gradient-to-r from-slate-900 via-[#0b1628] to-emerald-950 p-4 border-b border-emerald-500/20 flex items-center justify-between text-white shrink-0">
+          <div className="bg-gradient-to-r from-slate-900 via-[#0b1628] to-emerald-950 p-3.5 sm:p-4 border-b border-emerald-500/20 flex items-center justify-between text-white shrink-0">
             <div className="flex items-center gap-3">
               <div className="relative">
-                <div className="w-10 h-10 rounded-full bg-emerald-600 border border-emerald-400 flex items-center justify-center text-white font-bold shadow-[0_0_12px_rgba(16,185,129,0.5)]">
-                  <span className="material-symbols-outlined text-[20px]">engineering</span>
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-600 border border-emerald-400 flex items-center justify-center text-white font-bold shadow-[0_0_12px_rgba(16,185,129,0.5)]">
+                  <span className="material-symbols-outlined text-[18px] sm:text-[20px]">engineering</span>
                 </div>
-                <span className="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-400 border-2 border-slate-900 shadow-[0_0_6px_#34d399]" />
+                <span className="absolute bottom-0 right-0 w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-400 border-2 border-slate-900 shadow-[0_0_6px_#34d399]" />
               </div>
               <div>
                 <div className="text-sm font-bold flex items-center gap-1.5">
                   <span>JSTM Build Advisor</span>
-                  <span className="text-[10px] bg-emerald-950 border border-emerald-500/40 text-emerald-400 px-1.5 py-0.5 rounded font-mono font-medium">AI</span>
+                  <span className="text-[9px] sm:text-[10px] bg-emerald-950 border border-emerald-500/40 text-emerald-400 px-1.5 py-0.5 rounded font-mono font-medium">AI</span>
                 </div>
                 <p className="text-[11px] text-slate-300 flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
@@ -206,12 +237,21 @@ export default function ChatBot() {
               </div>
             </div>
 
-            <div className="flex items-center gap-1 text-slate-400">
+            <div className="flex items-center gap-1.5 text-slate-400">
+              <a
+                href="tel:02035762228"
+                aria-label="Call JSTM Office"
+                className="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-slate-700 hover:text-emerald-400 flex items-center justify-center transition-colors text-xs"
+                title="Call 020 3576 2228"
+              >
+                <i className="fa-solid fa-phone" />
+              </a>
+
               <button
                 type="button"
                 onClick={() => setIsOpen(false)}
                 aria-label="Close Chat"
-                className="w-8 h-8 rounded-full hover:bg-slate-800 hover:text-white flex items-center justify-center transition-colors"
+                className="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-slate-700 hover:text-white flex items-center justify-center transition-colors"
               >
                 <i className="fa-solid fa-xmark text-sm" />
               </button>
@@ -219,23 +259,25 @@ export default function ChatBot() {
           </div>
 
           {/* Quick Notice Banner */}
-          <div className="bg-emerald-950/40 border-b border-emerald-500/15 px-4 py-1.5 text-[11px] text-emerald-300 flex items-center justify-between">
-            <span className="flex items-center gap-1.5">
-              <span className="material-symbols-outlined text-[14px] text-emerald-400">verified</span>
-              <span>10-Yr Warranty • FMB Master Builder</span>
+          <div className="bg-emerald-950/40 border-b border-emerald-500/15 px-3.5 sm:px-4 py-1.5 text-[11px] text-emerald-300 flex items-center justify-between">
+            <span className="flex items-center gap-1.5 truncate">
+              <span className="material-symbols-outlined text-[14px] text-emerald-400 shrink-0">verified</span>
+              <span className="truncate">10-Yr Warranty • FMB Master Builder</span>
             </span>
-            <a href="tel:02035762228" className="hover:underline font-semibold text-emerald-200">020 3576 2228</a>
+            <span className="text-[10px] bg-emerald-900/60 text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-500/30 shrink-0">
+              Free Survey
+            </span>
           </div>
 
           {/* Message List */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-3.5 custom-scrollbar text-xs">
+          <div className="flex-1 overflow-y-auto p-3.5 sm:p-4 space-y-3 custom-scrollbar text-xs">
             {messages.map((m) => (
               <div
                 key={m.id}
                 className={`flex flex-col ${m.sender === "user" ? "items-end" : "items-start"}`}
               >
                 <div
-                  className={`max-w-[85%] rounded-2xl p-3.5 shadow-md leading-relaxed whitespace-pre-line ${
+                  className={`max-w-[88%] sm:max-w-[85%] rounded-2xl p-3 sm:p-3.5 shadow-md leading-relaxed whitespace-pre-line text-xs sm:text-xs ${
                     m.sender === "user"
                       ? "bg-emerald-600 text-white rounded-br-none"
                       : "bg-slate-900/90 text-slate-200 border border-slate-800 rounded-bl-none"
@@ -251,7 +293,7 @@ export default function ChatBot() {
                           href={m.action.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 rounded-lg font-semibold text-[11px] shadow-sm transition-colors"
+                          className="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white px-3 py-1.5 rounded-lg font-semibold text-[11px] shadow-sm transition-colors"
                         >
                           {m.action.icon && (
                             <span className="material-symbols-outlined text-[14px]">
@@ -265,7 +307,7 @@ export default function ChatBot() {
                         <Link
                           href={m.action.href}
                           onClick={() => setIsOpen(false)}
-                          className="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 rounded-lg font-semibold text-[11px] shadow-sm transition-colors"
+                          className="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white px-3 py-1.5 rounded-lg font-semibold text-[11px] shadow-sm transition-colors"
                         >
                           {m.action.icon && (
                             <span className="material-symbols-outlined text-[14px]">
@@ -285,7 +327,7 @@ export default function ChatBot() {
 
             {/* Typing Indicator */}
             {isTyping && (
-              <div className="flex items-center gap-1.5 p-3 rounded-2xl bg-slate-900 border border-slate-800 text-emerald-400 w-fit">
+              <div className="flex items-center gap-1.5 p-2.5 sm:p-3 rounded-2xl bg-slate-900 border border-slate-800 text-emerald-400 w-fit">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-bounce [animation-delay:0ms]" />
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-bounce [animation-delay:150ms]" />
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-bounce [animation-delay:300ms]" />
@@ -295,13 +337,13 @@ export default function ChatBot() {
           </div>
 
           {/* Quick Suggestion Chips */}
-          <div className="px-3 py-2 bg-slate-950/70 border-t border-slate-800/80 overflow-x-auto hide-scrollbar flex items-center gap-1.5 shrink-0">
+          <div className="px-3 py-2 bg-slate-950/70 border-t border-slate-800/80 overflow-x-auto hide-scrollbar flex items-center gap-1.5 shrink-0 touch-pan-x">
             {SUGGESTIONS.map((s) => (
               <button
                 key={s.label}
                 type="button"
                 onClick={() => handleSendMessage(s.query)}
-                className="shrink-0 px-2.5 py-1 bg-slate-900 hover:bg-slate-850 hover:border-emerald-500/50 border border-slate-800 rounded-full text-[11px] text-slate-300 hover:text-white transition-all whitespace-nowrap"
+                className="shrink-0 px-2.5 py-1 bg-slate-900 hover:bg-slate-800 active:bg-emerald-950 border border-slate-800 hover:border-emerald-500/50 rounded-full text-[11px] text-slate-300 hover:text-white transition-all whitespace-nowrap"
               >
                 {s.label}
               </button>
@@ -314,20 +356,21 @@ export default function ChatBot() {
               e.preventDefault();
               handleSendMessage();
             }}
-            className="p-3 bg-[#0a1120] border-t border-slate-800/80 flex items-center gap-2 shrink-0"
+            className="p-2.5 sm:p-3 bg-[#0a1120] border-t border-slate-800/80 flex items-center gap-2 shrink-0 pb-[max(0.75rem,env(safe-area-inset-bottom))]"
           >
             <input
               type="text"
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               placeholder="Ask about extensions, lofts, costs..."
-              className="flex-1 bg-slate-900 border border-slate-800 text-white rounded-xl px-3.5 py-2.5 text-xs focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 placeholder:text-slate-500"
+              /* text-base on mobile prevents iOS auto-zoom, sm:text-xs on desktop */
+              className="flex-1 bg-slate-900 border border-slate-800 text-white rounded-xl px-3.5 py-2.5 text-base sm:text-xs focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 placeholder:text-slate-500"
             />
             <button
               type="submit"
               disabled={!inputValue.trim()}
               aria-label="Send message"
-              className="w-10 h-10 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-40 disabled:hover:bg-emerald-600 text-white flex items-center justify-center transition-all shrink-0 shadow-md shadow-emerald-950/50"
+              className="w-10 h-10 rounded-xl bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 disabled:opacity-40 disabled:hover:bg-emerald-600 text-white flex items-center justify-center transition-all shrink-0 shadow-md shadow-emerald-950/50"
             >
               <span className="material-symbols-outlined text-[18px]">send</span>
             </button>
@@ -336,27 +379,29 @@ export default function ChatBot() {
       )}
 
       {/* ─── Floating Trigger Button ────────────────────────────────────── */}
-      <button
-        type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label={isOpen ? "Close building advisor chat" : "Open building advisor chat"}
-        className="relative group flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-tr from-emerald-700 via-emerald-600 to-teal-500 text-white shadow-[0_4px_25px_rgba(5,150,105,0.5)] hover:shadow-[0_6px_35px_rgba(5,150,105,0.7)] transition-all duration-300 hover:scale-110 active:scale-95"
-      >
-        {/* Pulsing glow */}
-        <span className="absolute -inset-1 rounded-full bg-emerald-500/30 animate-ping pointer-events-none" />
+      <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50">
+        <button
+          type="button"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Close building advisor chat" : "Open building advisor chat"}
+          className="relative group flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-tr from-emerald-700 via-emerald-600 to-teal-500 text-white shadow-[0_4px_25px_rgba(5,150,105,0.5)] hover:shadow-[0_6px_35px_rgba(5,150,105,0.7)] transition-all duration-300 hover:scale-110 active:scale-95"
+        >
+          {/* Pulsing glow */}
+          <span className="absolute -inset-1 rounded-full bg-emerald-500/30 animate-ping pointer-events-none" />
 
-        {/* Unread badge */}
-        {hasUnread && !isOpen && (
-          <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-amber-500 text-[10px] font-bold text-slate-950 shadow-md animate-bounce">
-            1
+          {/* Unread badge */}
+          {hasUnread && !isOpen && (
+            <span className="absolute -top-1 -right-1 flex h-4 w-4 sm:h-5 sm:w-5 items-center justify-center rounded-full bg-amber-500 text-[9px] sm:text-[10px] font-bold text-slate-950 shadow-md animate-bounce">
+              1
+            </span>
+          )}
+
+          {/* Icon Toggle */}
+          <span className="material-symbols-outlined text-[22px] sm:text-[26px] transition-transform duration-300 group-hover:scale-110">
+            {isOpen ? "close" : "forum"}
           </span>
-        )}
-
-        {/* Icon Toggle */}
-        <span className="material-symbols-outlined text-[26px] transition-transform duration-300 group-hover:scale-110">
-          {isOpen ? "close" : "forum"}
-        </span>
-      </button>
-    </div>
+        </button>
+      </div>
+    </>
   );
 }
