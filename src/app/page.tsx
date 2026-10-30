@@ -287,7 +287,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h3 className="text-sm sm:text-base font-bold text-white font-heading">Dedicated Project Manager</h3>
-                    <p className="text-xs text-slate-400 mt-1 leading-relaxed">Your direct point of contact with regular weekly updates and clear communication throughout.</p>
+                    <p className="text-xs text-slate-400 mt-1 leading-relaxed">Your direct point of contact with regular weekly updates and clear communication throughout. We manage your build carefully from first consultation to final inspection.</p>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -330,56 +330,56 @@ export default function HomePage() {
               {/*  Content Right  */}
               <div className="lg:col-span-7 lg:pl-6 space-y-4 sm:space-y-6">
                 <AnimateOnScroll direction="left">
-                <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs">
-                  <span className="w-6 h-0.5 bg-emerald-600"></span>
-                  About JSTM Construction London
-                </div>
-                <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                  Trusted London Builders &amp; Home Renovation Specialists
-                </h2>
-                <p className="text-slate-600 leading-relaxed text-xs sm:text-sm lg:text-base">
-                  With over 15 years of building experience, JSTM Construction helps London homeowners create beautiful, practical spaces. Whether you need a ground-floor extension, a loft conversion, or a full house refurbishment, we deliver quality workmanship with transparent pricing and clear communication.
-                </p>
-                {/*  Nav Tabs Mimic  */}
-                <div className="border-b border-slate-200">
-                  <div className="flex space-x-4 sm:space-x-6 text-xs sm:text-sm font-semibold">
-                    <button className="pb-3 border-b-2 border-emerald-600 text-emerald-700">Our Mission</button>
-                    <button className="pb-3 text-slate-500 hover:text-slate-900">London Expertise</button>
-                    <button className="pb-3 text-slate-500 hover:text-slate-900">Core Values</button>
+                  <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs">
+                    <span className="w-6 h-0.5 bg-emerald-600"></span>
+                    About JSTM Construction London
                   </div>
-                </div>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed italic bg-emerald-50/70 p-3.5 sm:p-4 rounded-lg border-l-4 border-emerald-600">
-                  "Our goal is straightforward: deliver top-quality building work without the stress. We keep you updated, stick to agreed budgets, and build spaces your family will enjoy for years to come."
-                </p>
-                {/*  Bullet Checklist  */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 pt-2">
-                  <div className="flex items-center space-x-2.5 text-xs sm:text-sm font-medium text-slate-800">
-                    <i className="fa-solid fa-circle-check text-emerald-600"></i>
-                    <span>Planning Permission &amp; Building Control Guidance</span>
+                  <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                    Trusted London Builders &amp; Home Renovation Specialists
+                  </h2>
+                  <p className="text-slate-600 leading-relaxed text-xs sm:text-sm lg:text-base">
+                    With over 15 years of building experience, JSTM Construction helps London homeowners create beautiful, practical spaces. Whether you need a ground-floor extension, a loft conversion, or a full house refurbishment, we deliver quality workmanship with transparent pricing and clear communication.
+                  </p>
+                  {/*  Nav Tabs Mimic  */}
+                  <div className="border-b border-slate-200">
+                    <div className="flex space-x-4 sm:space-x-6 text-xs sm:text-sm font-semibold">
+                      <button className="pb-3 border-b-2 border-emerald-600 text-emerald-700">Our Mission</button>
+                      <button className="pb-3 text-slate-500 hover:text-slate-900">London Expertise</button>
+                      <button className="pb-3 text-slate-500 hover:text-slate-900">Core Values</button>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-2.5 text-xs sm:text-sm font-medium text-slate-800">
-                    <i className="fa-solid fa-circle-check text-emerald-600"></i>
-                    <span>Clear, Fixed-Price Quotes &amp; Agreed Schedules</span>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed italic bg-emerald-50/70 p-3.5 sm:p-4 rounded-lg border-l-4 border-emerald-600">
+                    "Our goal is straightforward: deliver top-quality building work without the stress. We keep you updated, stick to agreed budgets, and build spaces your family will enjoy for years to come."
+                  </p>
+                  {/*  Bullet Checklist  */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 pt-2">
+                    <div className="flex items-center space-x-2.5 text-xs sm:text-sm font-medium text-slate-800">
+                      <i className="fa-solid fa-circle-check text-emerald-600"></i>
+                      <span>Planning Permission &amp; Building Control Guidance</span>
+                    </div>
+                    <div className="flex items-center space-x-2.5 text-xs sm:text-sm font-medium text-slate-800">
+                      <i className="fa-solid fa-circle-check text-emerald-600"></i>
+                      <span>Clear, Fixed-Price Quotes &amp; Agreed Schedules</span>
+                    </div>
+                    <div className="flex items-center space-x-2.5 text-xs sm:text-sm font-medium text-slate-800">
+                      <i className="fa-solid fa-circle-check text-emerald-600"></i>
+                      <span>Honest, Transparent Pricing with No Hidden Extras</span>
+                    </div>
+                    <div className="flex items-center space-x-2.5 text-xs sm:text-sm font-medium text-slate-800">
+                      <i className="fa-solid fa-circle-check text-emerald-600"></i>
+                      <span>Dedicated Project Manager on Every Build</span>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-2.5 text-xs sm:text-sm font-medium text-slate-800">
-                    <i className="fa-solid fa-circle-check text-emerald-600"></i>
-                    <span>Honest, Transparent Pricing with No Hidden Extras</span>
+                  <div className="pt-3 sm:pt-4 flex items-center gap-6">
+                    <a className="inline-flex items-center px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg bg-emerald-900 hover:bg-emerald-800 text-white font-semibold text-xs sm:text-sm transition-colors shadow" href="#services">
+                      <span>Discover Services</span>
+                      <i className="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                    <div className="flex items-center space-x-2.5 sm:space-x-3">
+                      <div className="text-xl sm:text-2xl font-black text-emerald-700 font-heading">25+</div>
+                      <div className="text-[10px] sm:text-xs font-semibold text-slate-500 uppercase leading-tight">Skilled London<br />Tradesmen</div>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-2.5 text-xs sm:text-sm font-medium text-slate-800">
-                    <i className="fa-solid fa-circle-check text-emerald-600"></i>
-                    <span>Dedicated Project Manager on Every Build</span>
-                  </div>
-                </div>
-                <div className="pt-3 sm:pt-4 flex items-center gap-6">
-                  <a className="inline-flex items-center px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg bg-emerald-900 hover:bg-emerald-800 text-white font-semibold text-xs sm:text-sm transition-colors shadow" href="#services">
-                    <span>Discover Services</span>
-                    <i className="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                  </a>
-                  <div className="flex items-center space-x-2.5 sm:space-x-3">
-                    <div className="text-xl sm:text-2xl font-black text-emerald-700 font-heading">25+</div>
-                    <div className="text-[10px] sm:text-xs font-semibold text-slate-500 uppercase leading-tight">Skilled London<br />Tradesmen</div>
-                  </div>
-                </div>
                 </AnimateOnScroll>
               </div>
             </div>
@@ -598,44 +598,44 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <AnimateOnScroll direction="fade">
               <div className="bg-gradient-to-r from-emerald-950 via-charcoal-900 to-charcoal-950 rounded-2xl p-6 sm:p-12 border border-emerald-800/40 shadow-2xl hover:border-emerald-700/60 transition-colors">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <div className="lg:col-span-7">
-                  <span className="text-emerald-400 font-semibold text-[11px] sm:text-xs uppercase tracking-wider">Free Consultation &amp; Advice</span>
-                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white mt-1 font-heading">
-                    Have a London Project in Mind? Let’s Talk.
-                  </h3>
-                  <p className="text-slate-300 text-xs sm:text-sm mt-2 max-w-xl">
-                    Get straightforward advice and an estimated budget guide for your project within 24 hours. No obligation.
-                  </p>
-                  {/*  Quick Enquiry Form  */}
-                  <form className="mt-5 sm:mt-6 flex flex-col sm:flex-row gap-3 max-w-lg" onSubmit={(e) => { e.preventDefault(); alert("Form submitted successfully! A JSTM project surveyor will contact you shortly."); }}>
-                    <input className="flex-1 bg-charcoal-800 border border-slate-700 rounded-lg px-4 py-3 text-xs sm:text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter your email or phone..." required type="email" />
-                    <button className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 sm:px-6 py-3 rounded-lg text-xs sm:text-sm transition-colors whitespace-nowrap shadow-md shadow-emerald-900/50" type="submit">
-                      Request Callback
-                    </button>
-                  </form>
-                </div>
-                {/*  Direct Contact Box  */}
-                <div className="lg:col-span-5 flex flex-col sm:flex-row items-start sm:items-center justify-end gap-4 sm:gap-6 border-t lg:border-t-0 lg:border-l border-slate-800 lg:pl-8 pt-5 lg:pt-0">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-emerald-600/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl sm:text-2xl shrink-0">
-                    <i className="fa-solid fa-headset"></i>
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                  <div className="lg:col-span-7">
+                    <span className="text-emerald-400 font-semibold text-[11px] sm:text-xs uppercase tracking-wider">Free Consultation &amp; Advice</span>
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white mt-1 font-heading">
+                      Have a London Project in Mind? Let’s Talk.
+                    </h3>
+                    <p className="text-slate-300 text-xs sm:text-sm mt-2 max-w-xl">
+                      Get straightforward advice and an estimated budget guide for your project within 24 hours. No obligation.
+                    </p>
+                    {/*  Quick Enquiry Form  */}
+                    <form className="mt-5 sm:mt-6 flex flex-col sm:flex-row gap-3 max-w-lg" onSubmit={(e) => { e.preventDefault(); alert("Form submitted successfully! A JSTM project surveyor will contact you shortly."); }}>
+                      <input className="flex-1 bg-charcoal-800 border border-slate-700 rounded-lg px-4 py-3 text-xs sm:text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter your email or phone..." required type="email" />
+                      <button className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 sm:px-6 py-3 rounded-lg text-xs sm:text-sm transition-colors whitespace-nowrap shadow-md shadow-emerald-900/50" type="submit">
+                        Request Callback
+                      </button>
+                    </form>
                   </div>
-                  <div className="space-y-1">
-                    <span className="text-[10px] sm:text-xs uppercase text-slate-400 font-bold tracking-wider">Direct Landline &bull; WhatsApp</span>
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
-                      <a className="block text-base sm:text-xl font-black text-white hover:text-emerald-400 transition-colors font-heading" href="tel:02035762228">
-                        020 3576 2228
-                      </a>
-                      <span className="hidden sm:inline text-slate-600">|</span>
-                      <a className="inline-flex items-center gap-1.5 text-xs sm:text-base font-bold text-emerald-400 hover:text-emerald-300 transition-colors" href="https://wa.me/447418095006" target="_blank" rel="noopener noreferrer">
-                        <i className="fa-brands fa-whatsapp text-sm sm:text-lg"></i> +44 7418 095006
-                      </a>
+                  {/*  Direct Contact Box  */}
+                  <div className="lg:col-span-5 flex flex-col sm:flex-row items-start sm:items-center justify-end gap-4 sm:gap-6 border-t lg:border-t-0 lg:border-l border-slate-800 lg:pl-8 pt-5 lg:pt-0">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-emerald-600/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl sm:text-2xl shrink-0">
+                      <i className="fa-solid fa-headset"></i>
                     </div>
-                    <p className="text-[11px] sm:text-xs text-slate-400">Free advice &bull; Fast response &bull; No obligation</p>
+                    <div className="space-y-1">
+                      <span className="text-[10px] sm:text-xs uppercase text-slate-400 font-bold tracking-wider">Direct Landline &bull; WhatsApp</span>
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
+                        <a className="block text-base sm:text-xl font-black text-white hover:text-emerald-400 transition-colors font-heading" href="tel:02035762228">
+                          020 3576 2228
+                        </a>
+                        <span className="hidden sm:inline text-slate-600">|</span>
+                        <a className="inline-flex items-center gap-1.5 text-xs sm:text-base font-bold text-emerald-400 hover:text-emerald-300 transition-colors" href="https://wa.me/447418095006" target="_blank" rel="noopener noreferrer">
+                          <i className="fa-brands fa-whatsapp text-sm sm:text-lg"></i> +44 7418 095006
+                        </a>
+                      </div>
+                      <p className="text-[11px] sm:text-xs text-slate-400">Free advice &bull; Fast response &bull; No obligation</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             </AnimateOnScroll>
           </div>
         </section>
@@ -872,11 +872,10 @@ export default function HomePage() {
                   key={cat}
                   type="button"
                   onClick={() => setActiveProjectFilter(cat)}
-                  className={`px-4 py-1.5 sm:px-5 sm:py-2 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
-                    activeProjectFilter === cat
-                      ? "bg-emerald-600 text-white shadow-md shadow-emerald-900/20 scale-105"
-                      : "bg-slate-100 hover:bg-slate-200 text-slate-700"
-                  }`}
+                  className={`px-4 py-1.5 sm:px-5 sm:py-2 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${activeProjectFilter === cat
+                    ? "bg-emerald-600 text-white shadow-md shadow-emerald-900/20 scale-105"
+                    : "bg-slate-100 hover:bg-slate-200 text-slate-700"
+                    }`}
                 >
                   {cat}
                 </button>
@@ -1054,34 +1053,34 @@ export default function HomePage() {
               {/*  Testimonial Quote  */}
               <div className="lg:col-span-7 space-y-4 sm:space-y-6">
                 <AnimateOnScroll direction="left">
-                <div className="inline-flex items-center gap-2 text-emerald-400 font-bold uppercase tracking-wider text-[11px] sm:text-xs">
-                  <span className="w-4 h-0.5 bg-emerald-500"></span>
-                  Client Testimonials
-                </div>
-                <div className="flex text-accent-amber text-base sm:text-lg gap-1">
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                </div>
-                <blockquote className="text-sm sm:text-xl lg:text-2xl text-slate-200 font-light italic leading-relaxed">
-                  "JSTM Construction carried out our rear kitchen extension and loft conversion in Fulham. Their pricing was completely transparent from start to finish. They finished two weeks ahead of schedule and the quality of the finish is outstanding."
-                </blockquote>
-                <div>
-                  <h4 className="text-base sm:text-lg font-bold text-white font-heading">Dr. Julian &amp; Sarah Thorne</h4>
-                  <p className="text-xs text-emerald-400 font-medium">Fulham SW6 • Full Ground Extension &amp; Mansard Conversion</p>
-                </div>
-                {/*  Accreditation Partner Badges  */}
-                <div className="pt-6 sm:pt-8 border-t border-slate-800/80">
-                  <p className="text-[10px] sm:text-xs uppercase font-bold text-slate-400 tracking-wider mb-3 sm:mb-4">Official Certifications &amp; Accreditations</p>
-                  <div className="flex flex-wrap items-center gap-4 sm:gap-8 text-slate-400 text-xs sm:text-sm font-semibold">
-                    <span className="flex items-center gap-2 hover:text-white"><i className="fa-solid fa-shield-halved text-emerald-500"></i> FMB Master Builder</span>
-                    <span className="flex items-center gap-2 hover:text-white"><i className="fa-solid fa-fire-burner text-emerald-500"></i> Gas Safe Registered</span>
-                    <span className="flex items-center gap-2 hover:text-white"><i className="fa-solid fa-bolt text-emerald-500"></i> NICEIC Approved</span>
-                    <span className="flex items-center gap-2 hover:text-white"><i className="fa-solid fa-certificate text-emerald-500"></i> TrustMark Govt Endorsed</span>
+                  <div className="inline-flex items-center gap-2 text-emerald-400 font-bold uppercase tracking-wider text-[11px] sm:text-xs">
+                    <span className="w-4 h-0.5 bg-emerald-500"></span>
+                    Client Testimonials
                   </div>
-                </div>
+                  <div className="flex text-accent-amber text-base sm:text-lg gap-1">
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                  </div>
+                  <blockquote className="text-sm sm:text-xl lg:text-2xl text-slate-200 font-light italic leading-relaxed">
+                    "JSTM Construction carried out our rear kitchen extension and loft conversion in Fulham. Their pricing was completely transparent from start to finish. They finished two weeks ahead of schedule and the quality of the finish is outstanding."
+                  </blockquote>
+                  <div>
+                    <h4 className="text-base sm:text-lg font-bold text-white font-heading">Dr. Julian &amp; Sarah Thorne</h4>
+                    <p className="text-xs text-emerald-400 font-medium">Fulham SW6 • Full Ground Extension &amp; Mansard Conversion</p>
+                  </div>
+                  {/*  Accreditation Partner Badges  */}
+                  <div className="pt-6 sm:pt-8 border-t border-slate-800/80">
+                    <p className="text-[10px] sm:text-xs uppercase font-bold text-slate-400 tracking-wider mb-3 sm:mb-4">Official Certifications &amp; Accreditations</p>
+                    <div className="flex flex-wrap items-center gap-4 sm:gap-8 text-slate-400 text-xs sm:text-sm font-semibold">
+                      <span className="flex items-center gap-2 hover:text-white"><i className="fa-solid fa-shield-halved text-emerald-500"></i> FMB Master Builder</span>
+                      <span className="flex items-center gap-2 hover:text-white"><i className="fa-solid fa-fire-burner text-emerald-500"></i> Gas Safe Registered</span>
+                      <span className="flex items-center gap-2 hover:text-white"><i className="fa-solid fa-bolt text-emerald-500"></i> NICEIC Approved</span>
+                      <span className="flex items-center gap-2 hover:text-white"><i className="fa-solid fa-certificate text-emerald-500"></i> TrustMark Govt Endorsed</span>
+                    </div>
+                  </div>
                 </AnimateOnScroll>
               </div>
             </div>
@@ -1096,132 +1095,132 @@ export default function HomePage() {
               <div className="lg:col-span-7">
                 <AnimateOnScroll direction="right">
                   <div className="bg-charcoal-900 text-white rounded-3xl p-6 sm:p-12 border border-slate-800 shadow-2xl h-full">
-                <span className="text-emerald-400 font-bold uppercase tracking-wider text-[11px] sm:text-xs">Direct Consultation</span>
-                <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white mt-1 font-heading">
-                  Book a Free Site Survey &amp; Quote
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-400 mt-2 mb-6 sm:mb-8">
-                  Tell us about your project below. Our team will review your requirements and get back to you within 24 hours with free, friendly advice.
-                </p>
-                <form className="space-y-3.5 sm:space-y-4" onSubmit={(e) => { e.preventDefault(); alert("Form submitted successfully! A JSTM project surveyor will contact you shortly."); }}>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                    <div>
-                      <label className="block text-xs font-semibold text-slate-300 mb-1">Your Full Name *</label>
-                      <input className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="e.g. James Smith" required type="text" />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-semibold text-slate-300 mb-1">London Postcode *</label>
-                      <input className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="e.g. SW3 4AA" required type="text" />
-                    </div>
+                    <span className="text-emerald-400 font-bold uppercase tracking-wider text-[11px] sm:text-xs">Direct Consultation</span>
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white mt-1 font-heading">
+                      Book a Free Site Survey &amp; Quote
+                    </h2>
+                    <p className="text-xs sm:text-sm text-slate-400 mt-2 mb-6 sm:mb-8">
+                      Tell us about your project below. Our team will review your requirements and get back to you within 24 hours with free, friendly advice.
+                    </p>
+                    <form className="space-y-3.5 sm:space-y-4" onSubmit={(e) => { e.preventDefault(); alert("Form submitted successfully! A JSTM project surveyor will contact you shortly."); }}>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                        <div>
+                          <label className="block text-xs font-semibold text-slate-300 mb-1">Your Full Name *</label>
+                          <input className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="e.g. James Smith" required type="text" />
+                        </div>
+                        <div>
+                          <label className="block text-xs font-semibold text-slate-300 mb-1">London Postcode *</label>
+                          <input className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="e.g. SW3 4AA" required type="text" />
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                        <div>
+                          <label className="block text-xs font-semibold text-slate-300 mb-1">Email Address *</label>
+                          <input className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="name@example.com" required type="email" />
+                        </div>
+                        <div>
+                          <label className="block text-xs font-semibold text-slate-300 mb-1">Contact Phone *</label>
+                          <input className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="+44 7000 000000" required type="tel" />
+                        </div>
+                      </div>
+                      <div>
+                        <label className="block text-xs font-semibold text-slate-300 mb-1">Primary Service Needed *</label>
+                        <select className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                          <option>House Extension (Rear/Side/Wraparound)</option>
+                          <option>Loft Conversion (Mansard/Dormer/Velux)</option>
+                          <option>Full Property Refurbishment</option>
+                          <option>Kitchen &amp; Bathroom Renovation</option>
+                          <option>Roofing &amp; Structural Engineering</option>
+                          <option>Flooring &amp; Tiling Works</option>
+                          <option>Painting &amp; Decorating</option>
+                          <option>General Building &amp; Joinery</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label className="block text-xs font-semibold text-slate-300 mb-1">Tell Us About Your Project</label>
+                        <textarea className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="Tell us about your property (e.g. Victorian terrace, semi-detached), what work you need, and your target start date..." rows={4}></textarea>
+                      </div>
+                      <button className="w-full py-3 sm:py-4 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 shadow-xl shadow-emerald-950 flex items-center justify-center gap-2" type="submit">
+                        <span>Request Free Survey &amp; Quote</span>
+                        <i className="fa-solid fa-arrow-right text-xs"></i>
+                      </button>
+                    </form>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                    <div>
-                      <label className="block text-xs font-semibold text-slate-300 mb-1">Email Address *</label>
-                      <input className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="name@example.com" required type="email" />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-semibold text-slate-300 mb-1">Contact Phone *</label>
-                      <input className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="+44 7000 000000" required type="tel" />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1">Primary Service Needed *</label>
-                    <select className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none">
-                      <option>House Extension (Rear/Side/Wraparound)</option>
-                      <option>Loft Conversion (Mansard/Dormer/Velux)</option>
-                      <option>Full Property Refurbishment</option>
-                      <option>Kitchen &amp; Bathroom Renovation</option>
-                      <option>Roofing &amp; Structural Engineering</option>
-                      <option>Flooring &amp; Tiling Works</option>
-                      <option>Painting &amp; Decorating</option>
-                      <option>General Building &amp; Joinery</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1">Tell Us About Your Project</label>
-                    <textarea className="w-full bg-charcoal-800 border border-slate-700 rounded-lg px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-white focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="Tell us about your property (e.g. Victorian terrace, semi-detached), what work you need, and your target start date..." rows={4}></textarea>
-                  </div>
-                  <button className="w-full py-3 sm:py-4 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 shadow-xl shadow-emerald-950 flex items-center justify-center gap-2" type="submit">
-                    <span>Request Free Survey &amp; Quote</span>
-                    <i className="fa-solid fa-arrow-right text-xs"></i>
-                  </button>
-                </form>
+                </AnimateOnScroll>
               </div>
-            </AnimateOnScroll>
-          </div>
-          {/*  Contact Right: Company Info & Borough Coverage  */}
-          <div className="lg:col-span-5">
-            <AnimateOnScroll direction="left">
-              <div className="flex flex-col justify-between space-y-6 sm:space-y-8">
-                <div>
-                  <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2">
-                    <span className="w-4 h-0.5 bg-emerald-600"></span>
-                    Let’s Work Together
+              {/*  Contact Right: Company Info & Borough Coverage  */}
+              <div className="lg:col-span-5">
+                <AnimateOnScroll direction="left">
+                  <div className="flex flex-col justify-between space-y-6 sm:space-y-8">
+                    <div>
+                      <div className="inline-flex items-center gap-2 text-emerald-700 font-bold uppercase tracking-wider text-[11px] sm:text-xs mb-2">
+                        <span className="w-4 h-0.5 bg-emerald-600"></span>
+                        Let’s Work Together
+                      </div>
+                      <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 font-heading">
+                        Our London Office &amp; Operations
+                      </h2>
+                      <p className="text-slate-600 text-xs sm:text-sm mt-2 sm:mt-3 leading-relaxed">
+                        Call or message us directly to discuss your project. We manage residential building projects across all London boroughs daily.
+                      </p>
+                      {/*  Office Details Card  */}
+                      <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-5">
+                        <div className="flex items-start gap-3 sm:gap-4">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center justify-center shrink-0 text-lg sm:text-xl">
+                            <i className="fa-solid fa-phone"></i>
+                          </div>
+                          <div>
+                            <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-400">Direct Landline</h4>
+                            <a className="text-base sm:text-lg font-bold text-slate-900 hover:text-emerald-700 font-heading block" href="tel:02035762228">020 3576 2228</a>
+                            <p className="text-[11px] sm:text-xs text-slate-500">Mon - Sat: 07:30 - 18:30 GMT</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3 sm:gap-4">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-200 flex items-center justify-center shrink-0 text-lg sm:text-xl">
+                            <i className="fa-brands fa-whatsapp"></i>
+                          </div>
+                          <div>
+                            <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-400">WhatsApp Instant Chat</h4>
+                            <a className="text-base sm:text-lg font-bold text-emerald-600 hover:text-emerald-700 font-heading block" href="https://wa.me/447418095006" target="_blank" rel="noopener noreferrer">+44 7418 095006</a>
+                            <p className="text-[11px] sm:text-xs text-slate-500">Send photos or plans on WhatsApp for a quick chat</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3 sm:gap-4">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center justify-center shrink-0 text-lg sm:text-xl">
+                            <i className="fa-solid fa-location-dot"></i>
+                          </div>
+                          <div>
+                            <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-400">Office Address</h4>
+                            <p className="text-sm sm:text-base font-bold text-slate-900 font-heading">JST Construction Suite A204, 2nd Floor Vista Centre</p>
+                            <p className="text-xs sm:text-sm text-slate-700">50 Salisbury Road, Cranford, Hounslow TW4 6JQ, United Kingdom</p>
+                            <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5">Serving all 32 London Boroughs &amp; Greater London</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3 sm:gap-4">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center justify-center shrink-0 text-lg sm:text-xl">
+                            <i className="fa-solid fa-envelope"></i>
+                          </div>
+                          <div>
+                            <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-400">Email Us</h4>
+                            <a className="text-sm sm:text-base font-bold text-slate-900 hover:text-emerald-700 font-heading" href="mailto:info@jstmconstruction.com">info@jstmconstruction.com</a>
+                            <p className="text-[11px] sm:text-xs text-slate-500">We reply to all email enquiries within 24 hours</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {/*  Boroughs Grid  */}
+                    <div className="p-4 sm:p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                      <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-700 tracking-wider mb-1.5 sm:mb-2">Key Areas We Cover Across London:</h4>
+                      <p className="text-[11px] sm:text-xs text-slate-500 leading-relaxed">
+                        Kensington &amp; Chelsea, Westminster, Hammersmith &amp; Fulham, Wandsworth, Richmond, Islington, Camden, Southwark, Lambeth, Greenwich, Wimbledon, and Hampstead.
+                      </p>
+                    </div>
                   </div>
-                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 font-heading">
-                    Our London Office &amp; Operations
-                  </h2>
-                  <p className="text-slate-600 text-xs sm:text-sm mt-2 sm:mt-3 leading-relaxed">
-                    Call or message us directly to discuss your project. We manage residential building projects across all London boroughs daily.
-                  </p>
-                  {/*  Office Details Card  */}
-                  <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-5">
-                    <div className="flex items-start gap-3 sm:gap-4">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center justify-center shrink-0 text-lg sm:text-xl">
-                        <i className="fa-solid fa-phone"></i>
-                      </div>
-                      <div>
-                        <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-400">Direct Landline</h4>
-                        <a className="text-base sm:text-lg font-bold text-slate-900 hover:text-emerald-700 font-heading block" href="tel:02035762228">020 3576 2228</a>
-                        <p className="text-[11px] sm:text-xs text-slate-500">Mon - Sat: 07:30 - 18:30 GMT</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3 sm:gap-4">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-200 flex items-center justify-center shrink-0 text-lg sm:text-xl">
-                        <i className="fa-brands fa-whatsapp"></i>
-                      </div>
-                      <div>
-                        <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-400">WhatsApp Instant Chat</h4>
-                        <a className="text-base sm:text-lg font-bold text-emerald-600 hover:text-emerald-700 font-heading block" href="https://wa.me/447418095006" target="_blank" rel="noopener noreferrer">+44 7418 095006</a>
-                        <p className="text-[11px] sm:text-xs text-slate-500">Send photos or plans on WhatsApp for a quick chat</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3 sm:gap-4">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center justify-center shrink-0 text-lg sm:text-xl">
-                        <i className="fa-solid fa-location-dot"></i>
-                      </div>
-                      <div>
-                        <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-400">Office Address</h4>
-                        <p className="text-sm sm:text-base font-bold text-slate-900 font-heading">JST Construction Suite A204, 2nd Floor Vista Centre</p>
-                        <p className="text-xs sm:text-sm text-slate-700">50 Salisbury Road, Cranford, Hounslow TW4 6JQ, United Kingdom</p>
-                        <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5">Serving all 32 London Boroughs &amp; Greater London</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3 sm:gap-4">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center justify-center shrink-0 text-lg sm:text-xl">
-                        <i className="fa-solid fa-envelope"></i>
-                      </div>
-                      <div>
-                        <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-400">Email Us</h4>
-                        <a className="text-sm sm:text-base font-bold text-slate-900 hover:text-emerald-700 font-heading" href="mailto:info@jstmconstruction.com">info@jstmconstruction.com</a>
-                        <p className="text-[11px] sm:text-xs text-slate-500">We reply to all email enquiries within 24 hours</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/*  Boroughs Grid  */}
-                <div className="p-4 sm:p-6 rounded-2xl bg-slate-50 border border-slate-200">
-                  <h4 className="text-[10px] sm:text-xs uppercase font-bold text-slate-700 tracking-wider mb-1.5 sm:mb-2">Key Areas We Cover Across London:</h4>
-                  <p className="text-[11px] sm:text-xs text-slate-500 leading-relaxed">
-                    Kensington &amp; Chelsea, Westminster, Hammersmith &amp; Fulham, Wandsworth, Richmond, Islington, Camden, Southwark, Lambeth, Greenwich, Wimbledon, and Hampstead.
-                  </p>
-                </div>
+                </AnimateOnScroll>
               </div>
-            </AnimateOnScroll>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
         {/*  END: ContactSection  */}
       </main>
       <Footer />
