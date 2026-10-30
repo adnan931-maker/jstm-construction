@@ -60,7 +60,7 @@ const BOROUGH_DOSSIERS: BoroughDossier[] = [
     delivered: "95+ Delivered",
     image: "/assets/images/areas/westminster_mayfair.jpg",
     alt: "Luxurious Mayfair penthouse interior refurbishment featuring dark timber parquet herringbone flooring and bronze accents",
-    description: "High-spec refurbishments across Mayfair, Belgravia, and Marylebone apartments. We coordinate smoothly with major London estates, manage council access permits, and soundproof to the highest standard.",
+    description: "High-spec refurbishments across Mayfair, Belgravia, and Marylebone apartments. We coordinate smoothly with major London estates.",
     metric1Label: "Estate Approvals",
     metric1Val: "Experienced with London Estates",
     metric2Label: "Parking & Permits",
@@ -370,11 +370,10 @@ export default function AreasWeCoverPage() {
                   key={btn.val}
                   type="button"
                   onClick={() => setSelectedBorough(btn.val as BoroughCategory)}
-                  className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-150 border ${
-                    selectedBorough === btn.val
-                      ? "bg-emerald-600 text-white shadow-sm border-emerald-600"
-                      : "bg-slate-100 text-slate-700 hover:text-slate-900 hover:bg-slate-200 border-slate-200"
-                  }`}
+                  className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-150 border ${selectedBorough === btn.val
+                    ? "bg-emerald-600 text-white shadow-sm border-emerald-600"
+                    : "bg-slate-100 text-slate-700 hover:text-slate-900 hover:bg-slate-200 border-slate-200"
+                    }`}
                 >
                   {btn.label}
                 </button>
