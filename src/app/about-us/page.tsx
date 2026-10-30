@@ -301,8 +301,8 @@ export default function AboutUsPage() {
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-slate-900 border border-slate-200/60 group-hover:border-emerald-500/60 group-hover:-translate-y-1.5 transition-all duration-500 ease-out">
                       <div className="relative h-[280px] sm:h-[440px] w-full overflow-hidden">
                         <Image
-                          src="/assets/images/about/townhouse_refurbishment_hero.jpg"
-                          alt="A pristine high-end London townhouse under architectural refurbishment in Chelsea"
+                          src="/assets/images/wandsworth_wrap_around_extension.jpg"
+                          alt="Wandsworth wrap-around house extension under construction by JSTM Construction London"
                           fill
                           className="object-cover group-hover:scale-108 transition-all duration-700 ease-out will-change-transform"
                           sizes="(max-width: 1024px) 100vw, 42vw"
