@@ -122,7 +122,7 @@ export default function HomePage() {
     ? TRANSFORMATION_PROJECTS
     : TRANSFORMATION_PROJECTS.filter((p) => p.category === activeProjectFilter);
   return (
-    <div className="min-h-screen bg-[#FAFAF9] text-[#1E293B]">
+    <div className="min-h-screen bg-[#FAFAF9] text-[#1E293B] w-full overflow-x-hidden">
 
       <Header currentPage="home" />
       <main id="home">

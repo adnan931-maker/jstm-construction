@@ -50,13 +50,13 @@ export default function TopLoadingBar() {
       />
       {/* Glowing leading dot */}
       <div
-        className="fixed top-0 z-[9999] h-[3px] w-[80px] transition-all ease-out"
+        className="fixed top-0 z-[9999] h-[3px] w-[80px] transition-all ease-out pointer-events-none"
         style={{
           left: `calc(${progress}% - 80px)`,
           transitionDuration: progress === 100 ? "200ms" : "400ms",
           background:
             "linear-gradient(to right, transparent, rgba(52,211,153,0.6), #6ee7b7)",
-          boxShadow: "4px 0 12px 2px rgba(52,211,153,0.9)",
+          boxShadow: "0 0 10px 1px rgba(52,211,153,0.9)",
         }}
       />
     </>

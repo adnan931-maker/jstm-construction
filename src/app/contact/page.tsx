@@ -77,7 +77,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="bg-[#FAFAF9] text-slate-800 antialiased selection:bg-emerald-500 selection:text-white min-h-screen">
+    <div className="bg-[#FAFAF9] text-slate-800 antialiased selection:bg-emerald-500 selection:text-white min-h-screen w-full overflow-x-hidden">
       <Header currentPage="contact" />
 
       <main className="w-full">
@@ -105,9 +105,9 @@ export default function ContactPage() {
                 <span className="text-emerald-400">Contact Us</span>
               </nav>
               <span className="h-4 w-px bg-slate-700/60 hidden sm:block" />
-              <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-slate-900/80 backdrop-blur-md px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-semibold tracking-wider uppercase text-emerald-400 border border-emerald-500/30 shadow-sm">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span>GET IN TOUCH • FAST RESPONSE</span>
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-slate-900/80 backdrop-blur-md px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-semibold tracking-wider uppercase text-emerald-400 border border-emerald-500/30 shadow-sm max-w-full">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+                <span className="truncate">GET IN TOUCH • FAST RESPONSE</span>
               </div>
             </div>
 

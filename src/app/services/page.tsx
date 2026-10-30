@@ -66,7 +66,7 @@ export default function ServicesPage() {
   const svcs = cat === "all" ? SERVICES : SERVICES.filter(s => s.category === cat);
 
   return (
-    <div className="bg-[#0b1120] text-slate-800 antialiased selection:bg-emerald-500 selection:text-white min-h-screen">
+    <div className="bg-[#0b1120] text-slate-800 antialiased selection:bg-emerald-500 selection:text-white min-h-screen w-full overflow-x-hidden">
       <Header currentPage="services" />
       <main className="w-full bg-[#0b1120]">
         <div className="flex flex-col w-full">
@@ -94,9 +94,12 @@ export default function ServicesPage() {
                   <Link href="/" className="hover:text-emerald-400 transition-colors flex items-center gap-1"><span className="material-symbols-outlined text-[14px] sm:text-[15px]">home</span> Home</Link>
                   <span>/</span><span className="text-white font-semibold">Our Building Services</span>
                 </nav>
-                <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-slate-900/90 border border-emerald-500/30 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-slate-300 shadow-inner">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]" />
-                  <span className="text-[9px] sm:text-[11px] font-semibold tracking-wider uppercase text-emerald-300">PROFESSIONAL RESIDENTIAL BUILDING SERVICES ACROSS LONDON</span>
+                <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-slate-900/90 border border-emerald-500/30 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-slate-300 shadow-inner max-w-full">
+                  <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399] shrink-0" />
+                  <span className="text-[9px] sm:text-[11px] font-semibold tracking-wider uppercase text-emerald-300 truncate">
+                    <span className="sm:hidden">RESIDENTIAL SERVICES LONDON</span>
+                    <span className="hidden sm:inline">PROFESSIONAL RESIDENTIAL BUILDING SERVICES ACROSS LONDON</span>
+                  </span>
                 </div>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-end mb-10 sm:mb-14">
@@ -135,8 +138,8 @@ export default function ServicesPage() {
           </div>
 
           {/* FILTER NAV */}
-          <section className="sticky top-20 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
-            <div className="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12 py-3 overflow-x-auto">
+          <section className="sticky top-20 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm w-full overflow-hidden">
+            <div className="max-w-[1280px] w-full mx-auto px-4 md:px-8 lg:px-12 py-3 overflow-x-auto hide-scrollbar">
               <div className="flex items-center gap-2 min-w-max">
                 {FILTERS.map(btn=>(
                   <button key={btn.value} type="button" onClick={()=>setCat(btn.value)} className={`px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[12px] sm:text-[14px] font-semibold transition-all duration-150 border ${cat===btn.value?"bg-emerald-600 text-white shadow-sm border-emerald-600":"bg-slate-100 text-slate-700 hover:text-slate-900 hover:bg-slate-200 border-slate-200"}`}>{btn.label}</button>

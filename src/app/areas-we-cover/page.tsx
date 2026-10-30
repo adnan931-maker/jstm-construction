@@ -256,7 +256,7 @@ export default function AreasWeCoverPage() {
   };
 
   return (
-    <div className="bg-[#f8fafc] text-slate-800 antialiased selection:bg-emerald-500 selection:text-white min-h-screen">
+    <div className="bg-[#f8fafc] text-slate-800 antialiased selection:bg-emerald-500 selection:text-white min-h-screen w-full overflow-x-hidden">
       <Header currentPage="areas" />
 
       <main className="w-full">
@@ -276,9 +276,9 @@ export default function AreasWeCoverPage() {
                 <span className="text-emerald-400">Areas We Cover</span>
               </nav>
 
-              <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-slate-900/90 border border-emerald-500/30 text-emerald-300 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-semibold uppercase tracking-wider shadow-inner">
-                <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]" />
-                <span>GREATER LONDON & SURREY COVERAGE</span>
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-slate-900/90 border border-emerald-500/30 text-emerald-300 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-semibold uppercase tracking-wider shadow-inner max-w-full">
+                <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399] shrink-0" />
+                <span className="truncate">GREATER LONDON &amp; SURREY COVERAGE</span>
               </div>
             </div>
 

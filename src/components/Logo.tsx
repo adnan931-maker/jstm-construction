@@ -139,9 +139,9 @@ export default function Logo({
           </span>
         </div>
         <p
-          className={`${subtitleSizes[size]} uppercase tracking-[0.22em] ${
+          className={`${subtitleSizes[size]} uppercase tracking-[0.14em] sm:tracking-[0.22em] ${
             theme === "light" ? "text-slate-600" : "text-slate-400"
-          } font-bold group-hover:text-emerald-400 transition-colors`}
+          } font-bold group-hover:text-emerald-400 transition-colors whitespace-nowrap`}
         >
           Construction &amp; Refurbishment
         </p>

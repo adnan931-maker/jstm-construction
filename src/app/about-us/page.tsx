@@ -148,7 +148,7 @@ export default function AboutUsPage() {
   };
 
   return (
-    <div className="bg-[#0b1120] text-slate-800 antialiased selection:bg-emerald-500 selection:text-white min-h-screen">
+    <div className="bg-[#0b1120] text-slate-800 antialiased selection:bg-emerald-500 selection:text-white min-h-screen w-full overflow-x-hidden">
       <Header currentPage="about" />
 
       <main className="w-full bg-[#0b1120]">
@@ -183,10 +183,11 @@ export default function AboutUsPage() {
               </nav>
 
               {/* Institutional Overline Chip */}
-              <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-slate-900/90 border border-emerald-500/30 text-emerald-300 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-lg shadow-sm mb-4 sm:mb-6 animate-fade-in-up">
-                <span className="material-symbols-outlined text-[14px] sm:text-[16px] text-emerald-400">verified</span>
-                <span className="text-[10px] sm:text-[11px] tracking-wider uppercase font-semibold">
-                  EST. 2008 • TRUSTED LONDON RESIDENTIAL BUILDERS
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-slate-900/90 border border-emerald-500/30 text-emerald-300 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-lg shadow-sm mb-4 sm:mb-6 animate-fade-in-up max-w-full">
+                <span className="material-symbols-outlined text-[14px] sm:text-[16px] text-emerald-400 shrink-0">verified</span>
+                <span className="text-[10px] sm:text-[11px] tracking-wider uppercase font-semibold truncate">
+                  <span className="sm:hidden">EST. 2008 • LONDON BUILDERS</span>
+                  <span className="hidden sm:inline">EST. 2008 • TRUSTED LONDON RESIDENTIAL BUILDERS</span>
                 </span>
               </div>
 

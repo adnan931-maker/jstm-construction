@@ -135,7 +135,7 @@ export default function PortfolioPage() {
   }, [isFullscreen]);
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#f8fafc" }}>
+    <div className="min-h-screen flex flex-col w-full overflow-x-hidden" style={{ backgroundColor: "#f8fafc" }}>
       <Header currentPage="portfolio" />
 
       <main className="flex-1">
