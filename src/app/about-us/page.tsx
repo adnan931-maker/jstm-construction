@@ -78,7 +78,7 @@ const PROTOCOLS = [
 
 const LEADERSHIP = [
   {
-    name: "Julian Davies",
+    name: "JSTM",
     role: "Founder & Managing Director",
     badge: "Fellow FMB",
     tagLabel: "Experience",
